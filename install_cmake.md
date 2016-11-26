@@ -1,6 +1,6 @@
 # Install CMake
 
-We use CMake for project generating.
+We use CMake for project generating. Official download page: [link](https://cmake.org/download/)
 
 ## Ubuntu (working on all tested versions)
 
