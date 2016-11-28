@@ -47,21 +47,3 @@ gst-inspect-1.0 pocketsphinx
 sudo modprobe snd_pcm_oss
 pocketsphinx_continuous -inmic yes
 ```
-
-Our software integrates the previous dependencies. Note that you will be prompted for your password upon using '''sudo''' a couple of times:
-
-```bash
-cd  # go home
-mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
-git clone https://github.com/roboticslab-uc3m/teo-head.git  # Download teo-head software from the repository
-cd teo-head; mkdir build; cd build; cmake ..  # Configure the teo-head software
-make  # Compile
-sudo make install  # Install :-)
-```
-
-You may want to (from the same build dir):
-```bash
-echo "export TEO_HEAD_DIR=`pwd`" >> ~/.bashrc
-```
-
-For additional TEO options use ccmake instead of cmake.
