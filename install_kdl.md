@@ -1,4 +1,4 @@
-## Install KDL (Ubuntu 14.10)
+## Install KDL
 
 We use KDL for kinematics. Official download page: [link](http://www.orocos.org/kdl). </br>
 Installing KDL on Ubuntu is quite straightforward. Note that you will be prompted for your password upon using '''sudo''' a couple of times:
