@@ -1,4 +1,4 @@
-## Install OpenRAVE (Ubuntu 14.10)
+## Install OpenRAVE
 
 We use the OpenRAVE core library for simulations. Note that you will be prompted for your password upon using '''sudo'''. 
 Official download page: [link](http://openrave.org/). To install a precompiled version of OpenRAVE, type:
