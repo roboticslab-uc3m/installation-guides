@@ -7,4 +7,4 @@ Before opening a fresh issue, do a search on [the wiki](http://robots.uc3m.es) a
 * Feel free to attach any other information illustrating the issue if copying and pasting text is not an option.
 
 Notes:
-* We follow the [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/) git workflow.
+* We used to follow the [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/) git workflow, but now pushing a bit to master due to GitBook. ;-)
