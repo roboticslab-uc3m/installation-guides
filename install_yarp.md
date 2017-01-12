@@ -9,7 +9,7 @@ Official download page: [link](http://www.yarp.it/)
 
 ```bash
 sudo apt-get install build-essential libace-dev subversion git
-sudo apt-get install libgsl0-dev  # Needed for creating YARP lib_math we use for kinematics
+sudo apt-get install libeigen3-dev  # Needed for creating YARP lib_math we use for kinematics
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/yarp
@@ -22,7 +22,7 @@ make -j3;  sudo make install; sudo ldconfig; cd  # go home
 
 ```bash
 sudo apt-get install build-essential libace-dev subversion git
-sudo apt-get install libgsl0-dev  # Needed for creating YARP lib_math we use for kinematics
+sudo apt-get install libeigen3-dev  # Needed for creating YARP lib_math we use for kinematics
 sudo apt-get install libgtkmm-2.4-dev  # Needed for YARP GUIs: yarpview, gyarpmanager
 sudo apt-get install libjpeg8-dev   # Needed for mjpeg_carrier for ravebot cam on web
 cd  # go home
@@ -38,7 +38,7 @@ make -j3;  sudo make install; sudo ldconfig; cd  # go home
 ```bash
 # YARP
 sudo apt-get install build-essential cmake cmake-curses-gui libace-dev
-sudo apt-get install libgsl0-dev  # Needed for creating YARP lib_math
+sudo apt-get install libeigen3-dev  # Needed for creating YARP lib_math
 sudo apt-get install libgtkmm-2.4-dev  # Needed for YARP GUIs, e.g. yarpview
 sudo apt-get install libjpeg8-dev   # Needed for mjpeg_carrier
 cd  # go home
