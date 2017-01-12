@@ -1,4 +1,4 @@
-## Install build-essentials
+## Install build-essential
 
 This package is needed for working with Debian packages.
 
