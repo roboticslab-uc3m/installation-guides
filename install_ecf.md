@@ -1,4 +1,4 @@
-## ECF (1.4.1)
+## Install ECF (1.4.1)
 
 We use Evolutionary Computation Framework (ECF) for evolutionary computation applications. Official page: [link](http://ecf.zemris.fer.hr/) . 
 

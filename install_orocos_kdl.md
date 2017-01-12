@@ -1,4 +1,4 @@
-## orocos_kdl
+## Install OROCOS KDL
 
 We use orocos_kdl for robot kinematics. Official page: [link](http://www.orocos.org/kdl)
 
