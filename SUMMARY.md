@@ -1,3 +1,3 @@
 # Summary
 
-* [install_aquila.md](Install Aquila)
+* [Install Aquila](install_aquila.md)
