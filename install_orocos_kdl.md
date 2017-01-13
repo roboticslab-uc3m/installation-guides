@@ -1,6 +1,8 @@
-## Install OROCOS KDL
+# Install OROCOS KDL
 
-We use orocos_kdl for robot kinematics. Official page: [link](http://www.orocos.org/kdl)
+We use Orocos KDL for robot kinematics. Official page: [link](http://www.orocos.org/kdl)
+
+# Install OROCOS KDL (Ubuntu)
 
 ```bash
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
