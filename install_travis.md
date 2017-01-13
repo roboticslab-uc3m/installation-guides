@@ -1,6 +1,10 @@
 ## Install Travis
 
-This library is a wrapper of OpenCV hosted on SourceForge. We install it from source to assure the CMake file is created.
+This library is a wrapper of OpenCV hosted on SourceForge.
+
+First install [OpenCV](install_opencv.md).
+
+## Install Travis (Ubuntu)
 
 ```bash
 svn co svn://svn.code.sf.net/p/travislibrary/code/main travis

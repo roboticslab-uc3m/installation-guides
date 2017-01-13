@@ -2,6 +2,8 @@
 
 We use Speech Recognition for give voice orders.
 
+# Install Speech Recognition (Ubuntu)
+
 ```bash
 # Speech Recognition: 
 sudo apt-get install libgstreamer1.0-dev
