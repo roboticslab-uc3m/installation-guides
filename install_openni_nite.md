@@ -1,12 +1,16 @@
 # Install OpenNI2 & NiTE2
 
+We use OpenNI2 for ASUS and Kinect support.
+
+## Install Xtion Pro Live OpenNI driver (Ubuntu)
+
 ```bash
-# Xtion Pro Live OpenNI driver
 sudo apt-get install libopenni-sensor-primesense0 
 ```
 
+## Install OpenNI2 (Ubuntu)
+
 ```bash
-# OpenNI2
 sudo apt-get install git libusb-1.0-0-dev libudev-dev  # libpcl-dev & pcl-tools instead of libpcl-all-dev as of Dic/2015
 sudo apt-get install openjdk-6-jdk  # if not using other java version
 sudo apt-get install freeglut3-dev
@@ -20,8 +24,9 @@ sudo ln -s $PWD/Include /usr/local/include/OpenNI2  # $PWD should be /yourPathTo
 sudo ldconfig
 ```
 
+## Install NiTE2.2 (Ubuntu)
+
 ```bash
-# NiTE2.2
 cd  # go home
 mkdir -p src; cd src  # make $HOME/src if it doesn't exist; then, enter it
 wget https://sourceforge.net/projects/roboticslab/files/External/nite/NiTE-Linux-x64-2.2.tar.bz2
