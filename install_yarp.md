@@ -1,8 +1,11 @@
 # Install YARP
 
-We use YARP for communications. Installing YARP on Ubuntu is quite straightforward. </br> 
-Note that you will be prompted for your password upon using '''sudo''' a couple of times. </br>
+We use YARP for communications. Installing YARP on Ubuntu is quite straightforward.
+
+Note that you will be prompted for your password upon using `sudo` a couple of times. 
+
 For additional options use ccmake instead of cmake.
+
 Official download page: [link](http://www.yarp.it/) 
 
 ## Install YARP (Debian 6.0)
