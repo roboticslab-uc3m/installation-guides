@@ -4,7 +4,7 @@ We use CMake for project generating.
 
 Official download page: [link](https://cmake.org/download/)
 
-## Ubuntu (working on all tested versions)
+## Install CMake (Ubuntu)
 
 Installing CMake on Ubuntu is quite straightforward. Note that you will be prompted for your password upon using `sudo`. Type:
 

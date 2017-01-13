@@ -1,8 +1,10 @@
-## Install Aquila
+# Install Aquila
 
 We use Aquila as a library for Dynamic Time Warping (DTW) operations.
 
 Official page: [link](http://aquila-dsp.org/)
+
+## Install Aquila (Ubuntu)
 
 ```bash
 sudo apt-get install libsfml-dev
