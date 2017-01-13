@@ -1,10 +1,10 @@
-## Install ECF (1.4.1)
+# Install ECF (1.4.1)
 
 We use Evolutionary Computation Framework (ECF) for evolutionary computation applications.
 
 Official page: [link](http://ecf.zemris.fer.hr/) . 
 
-## Ubuntu (working on all tested versions)
+## Install ECF (1.4.1) (Ubuntu)
 
 ```bash
 wget https://sourceforge.net/projects/ecfproject/files/ECF_1.4.1/ECF_1.4.1.tar.gz/download -O ECF_1.4.1.tar.gz
