@@ -9,7 +9,7 @@ sudo apt-get install libgstreamer-plugins-base1.0-dev
 sudo apt-get install autoconf
 sudo apt-get install bison
 
-# Installation sphinxbase
+# Install sphinxbase
 cd
 cd repos
 git clone https://github.com/cmusphinx/sphinxbase.git
@@ -20,7 +20,7 @@ make -j4
 make check # to be sure that all is ok
 sudo make install
 
-# Installation pocketsphinx
+# Install pocketsphinx
 cd
 cd repos
 git clone https://github.com/cmusphinx/pocketsphinx

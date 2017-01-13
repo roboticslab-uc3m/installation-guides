@@ -1,6 +1,10 @@
-## Install Pygame
+# Install Pygame
 
-We use pygame for graphic-user interfaces. Official page: [link] (http://pygame.org/hifi.html)
+We use pygame for graphic-user interfaces.
+
+Official page: [link] (http://pygame.org/hifi.html)
+
+## Install Pygame (Ubuntu)
 
 ```bash
 sudo apt-get install python-pygame
