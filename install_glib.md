@@ -1,4 +1,4 @@
-## Install GLib
+# Install GLib
 
 Official reference manual and downloads: [link](https://developer.gnome.org/glib/).
 
