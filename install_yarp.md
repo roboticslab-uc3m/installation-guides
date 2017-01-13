@@ -27,6 +27,7 @@ make -j3;  sudo make install; sudo ldconfig; cd  # go home
 sudo apt-get install build-essential libace-dev subversion git
 sudo apt-get install libeigen3-dev  # Needed for creating YARP lib_math we use for kinematics
 sudo apt-get install libgtkmm-2.4-dev  # Needed for YARP GUIs: yarpview, gyarpmanager
+sudo apt-get install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
 sudo apt-get install libjpeg8-dev   # Needed for mjpeg_carrier for ravebot cam on web
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
@@ -42,6 +43,7 @@ make -j3;  sudo make install; sudo ldconfig; cd  # go home
 sudo apt-get install build-essential libace-dev subversion git
 sudo apt-get install libeigen3-dev  # Needed for creating YARP lib_math we use for kinematics
 sudo apt-get install libgtkmm-2.4-dev  # Needed for YARP GUIs: yarpview, gyarpmanager
+sudo apt-get install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
 sudo apt-get install libjpeg8-dev   # Needed for mjpeg_carrier for ravebot cam on web
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
@@ -53,10 +55,13 @@ make -j3;  sudo make install; sudo ldconfig; cd  # go home
 
 ## Install YARP with OpenNI2DeviceServer (Ubuntu 15.04)
 
+Note: NiTE only required for skeletons.
+
 ```bash
 sudo apt-get install build-essential cmake cmake-curses-gui libace-dev
 sudo apt-get install libeigen3-dev  # Needed for creating YARP lib_math
 sudo apt-get install libgtkmm-2.4-dev  # Needed for YARP GUIs, e.g. yarpview
+sudo apt-get install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
 sudo apt-get install libjpeg8-dev   # Needed for mjpeg_carrier
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
