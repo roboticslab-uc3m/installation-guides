@@ -14,9 +14,3 @@ cd orocos_kinematics_dynamics/orocos_kdl; mkdir build; cd build
 cmake ..
 make -j3;  sudo make install; sudo ldconfig; cd  # go home
 ```
-
-Starting from <b>Ubuntu 16.04</b>, KDL is conveniently distributed as a package:
-
-```bash
-sudo apt-get install liborocos-kdl-dev
-```
