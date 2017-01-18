@@ -71,6 +71,7 @@ cmake .. -DCREATE_SHARED_LIBRARY=OFF -DCREATE_LIB_MATH=ON -DCREATE_GUIS=ON -DCRE
 make
 sudo make install
 sudo ldconfig
-# you can now launch "yarpdev --device OpenNI2DeviceServer" from /YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist
 ```
+
+You may need to launch `yarpdev --device OpenNI2DeviceServer` from /YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist if using NiTE.
 
