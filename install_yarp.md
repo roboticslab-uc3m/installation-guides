@@ -73,3 +73,4 @@ sudo make install
 sudo ldconfig
 # you can now launch "yarpdev --device OpenNI2DeviceServer" from /YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist
 ```
+
