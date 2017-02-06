@@ -15,6 +15,7 @@ sudo apt-get install build-essential libace-dev subversion git
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/yarp
+git checkout cb579d658e18d1ca5c221298f23f5c854ec9c7ea  # near 2.3.64.14
 cd yarp; mkdir build; cd build
 cmake .. -DYARP_NO_DEPRECATED_WARNINGS=ON  # YARP_DEPRECATED_MSG giving errors as of 01/2017
 make -j3;  sudo make install; sudo ldconfig; cd  # go home
