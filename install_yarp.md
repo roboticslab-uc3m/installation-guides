@@ -12,7 +12,6 @@ Official download page: [link](http://www.yarp.it/)
 
 ```bash
 sudo apt-get install build-essential libace-dev subversion git
-sudo apt-get install libeigen3-dev  # Needed for creating YARP lib_math we use for kinematics
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/yarp
