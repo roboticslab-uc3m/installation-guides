@@ -75,3 +75,7 @@ sudo ldconfig
 
 You may need to launch `yarpdev --device OpenNI2DeviceServer` from /YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist if using NiTE.
 
+## Note for Linux Mint 17.3 Rosa
+```bash
+sudo apt-get install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
+```
