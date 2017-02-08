@@ -19,7 +19,7 @@ sudo apt-get install cmake-curses-gui  # Recommended, as it contains ccmake.
 deb http://backports.debian.org/debian-backports/ squeeze-backports main
 ```
 
-to your /etc/apt/sources.list file. Then run the following lines from a terminal. Note that you will be prompted for your password upon using '''sudo'''.
+to your /etc/apt/sources.list file. Then run the following lines from a terminal. Note that you will be prompted for your password upon using `sudo`.
 
 ```bash
 sudo apt-get update
