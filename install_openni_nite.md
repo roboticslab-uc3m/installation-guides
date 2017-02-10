@@ -16,7 +16,7 @@ sudo apt-get install openjdk-6-jdk  # if not using other java version
 sudo apt-get install freeglut3-dev
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
-git clone https://github.com/occipital/OpenNI2.git  # Fork with working copy of Xtion Pro Live OpenNI2 driver.
+git clone https://github.com/occipital/OpenNI2.git  # We used to have a fork off 6857677beee08e264fc5aeecb1adf647a7d616ab with working copy of Xtion Pro Live OpenNI2 driver.
 cd OpenNI2 && make
 sudo ln -s $PWD/Bin/x64-Release/libOpenNI2.so /usr/local/lib/  # $PWD should be /yourPathTo/OpenNI2
 sudo ln -s $PWD/Bin/x64-Release/OpenNI2/ /usr/local/lib/  # $PWD should be /yourPathTo/OpenNI2
