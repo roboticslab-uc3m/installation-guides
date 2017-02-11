@@ -24,7 +24,7 @@ sudo apt-get pcl-tools # no sensor here, but libopenni-sensor-primesense0 may be
 
 ## Install PCL (More modern Ubuntu, such as 16.04)
 
-No official ppa, [install from source](http://pointclouds.org/documentation/tutorials/compiling_pcl_posix.php).
+No official PPA, [install from source](http://pointclouds.org/documentation/tutorials/compiling_pcl_posix.php).
 
 ## Install PCL (For any distro with CUDA for KinFu)
 
