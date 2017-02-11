@@ -27,6 +27,7 @@ sudo add-apt-repository ppa:openrave/release
 sudo apt-get update
 sudo apt-get install openrave
 ```
+
 ## Install OpenRAVE (Ubuntu 15.10)
 
 ```bash
@@ -34,7 +35,8 @@ sudo add-apt-repository ppa:openrave/release
 sudo apt-get update
 sudo apt-get install openrave
 ```
-## Install OpenRAVE (Ubuntu 16.04)
+
+## Install OpenRAVE (More moderm Ubuntu, such as 16.04)
 
 No official PPA, install from source.
 
