@@ -4,7 +4,7 @@ We use the OpenRAVE core library for simulations. Note that you will be prompted
 
 Official download page: [link](http://openrave.org/). To install a precompiled version of OpenRAVE, type:
 
-## Install OpenRAVE (Ubuntu)
+## Install OpenRAVE (Ubuntu 14.04)
 
 ```bash
 sudo add-apt-repository ppa:openrave/release
@@ -12,7 +12,31 @@ sudo apt-get update
 sudo apt-get install openrave
 ```
 
-If nothing happens (e.g. Ubuntu 14.10 as of Dic/2014), a precompiled version of OpenRAVE might not be available on your specific Ubuntu distribution. To compile from source, type:
+## Install OpenRAVE (Ubuntu 14.10)
+
+```bash
+sudo add-apt-repository ppa:openrave/release
+sudo apt-get update
+sudo apt-get install openrave
+```
+
+## Install OpenRAVE (Ubuntu 15.04)
+
+```bash
+sudo add-apt-repository ppa:openrave/release
+sudo apt-get update
+sudo apt-get install openrave
+```
+## Install OpenRAVE (Ubuntu 15.10)
+
+```bash
+sudo add-apt-repository ppa:openrave/release
+sudo apt-get update
+sudo apt-get install openrave
+```
+## Install OpenRAVE (Ubuntu 16.04)
+
+No official PPA, install from source.
 
 ```bash
 sudo apt-get install git-core
