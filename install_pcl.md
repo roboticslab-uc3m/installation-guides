@@ -1,10 +1,10 @@
-# Install Point Coud Library (PCL)
+# Install PCL
 
-We use PCL for 2D/3D image and point cloud processing. Official download page: [link](http://pointclouds.org/)
+We use the Point Coud Library (PCL) for 2D/3D image and point cloud processing. Official download page: [link](http://pointclouds.org/)
 
 - First install [OpenNI2 & NiTE2](install_openni_nite.md) for Xtion Pro Live support.
 
-## Install Point Coud Library (PCL) (Ubuntu)
+## Install PCL (Ubuntu)
 
 ```bash
 sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
