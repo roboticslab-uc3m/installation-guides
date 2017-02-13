@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [Install Aquila](install_aquila.md)
 * [Install Boost](install_boost.md)
 * [Install CMake](install_cmake.md)
@@ -17,4 +18,5 @@
 * [Install Speech Recognition](install_speech_recognition.md)
 * [Install Travis](install_travis.md)
 * [Install YARP](install_yarp.md)
+* [Install Scikit-Image](install-scikit-image.md)
 
