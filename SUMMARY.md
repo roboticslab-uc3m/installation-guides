@@ -14,7 +14,7 @@
 * [Install OpenRAVE](install_openrave.md)
 * [Install OROCOS KDL](install_orocos_kdl.md)
 * [Install PCL](install_pcl.md)
-* Install pip
+* [Install pip](install-pip.md)
 * [Install Pygame](install_pygame.md)
 * [Install Scikit-Image](install-scikit-image.md)
 * [Install Speech Recognition](install_speech_recognition.md)
