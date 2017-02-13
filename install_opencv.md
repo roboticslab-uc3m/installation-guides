@@ -79,5 +79,17 @@ The last step can also be done by hand using `ccmake`.
 $ make
 $ sudo make install
 ```
+
 ## Install OpenCV 3 (With contrib, Python 3 support and fix for SVM_load)
-ToDo
+OpenCV 3 has no method to load the SVM unless the specific commit where this was fixed is used (see [this](https://github.com/opencv/opencv/issues/4969) and [this](https://github.com/roboticslab-uc3m/textiles/issues/20) for related info).
+
+To install OpenCV 3 with support for SVM loading, follow the previous steps, executing the following commands after step 10: 
+
+```bash
+$ cd ../opencv
+$ git checkout 37cbcf024c2b4160648299887a7c28d7cf28b1d3
+$ cd ../opencv_contrib
+$ git checkout 5409d5ad560523c85c6796cc5a009347072d883c
+```
+
+Then, continue with the previous guide, executing steps 11 and 12.
