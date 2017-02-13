@@ -40,11 +40,44 @@ $ sudo apt-get install python3.4-dev
 ```
 
 7. [Install pip](install-pip.md)
-7. [Install Numpy](install-numpy.md)
+8. [Install Numpy](install-numpy.md)
 ```
-$ pip install numpy
+$ sudo -H pip install numpy
 ```
+9. Download OpenCV main repo
+```
+$ mkdir -p repos
+$ cd repos
+$ git clone https://github.com/Itseez/opencv.git
+$ cd opencv
+$ git checkout 3.0.0
+```
+10. Download OpenCV contrib repo
+```
+$ cd ..
+$ git clone https://github.com/Itseez/opencv_contrib.git
+$ cd opencv_contrib
+$ git checkout 3.0.0
+```
+11. Configure OpenCV main repo
+```
+$ cd ../opencv
+$ mkdir build
+$ cd build
+$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
+	-D CMAKE_INSTALL_PREFIX=/usr/local \
+	-D INSTALL_C_EXAMPLES=ON \
+	-D INSTALL_PYTHON_EXAMPLES=ON \
+	-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
+	-D BUILD_EXAMPLES=ON ..
+```
+The last step can also be done by hand using `ccmake`.
 
-
+12. Compile and install
+(This will probably take a long time, use the `-j` flag to speed up things using multithreaded compilation)
+```
+$ make
+$ sudo make install
+```
 ## Install OpenCV 3 (With contrib, Python 3 support and fix for SVM_load)
 ToDo
