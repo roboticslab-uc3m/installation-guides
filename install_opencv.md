@@ -39,12 +39,12 @@ $ sudo apt-get install libatlas-base-dev gfortran
 $ sudo apt-get install python3.4-dev
 ```
 
-7. [Install Numpy]()
+7. [Install pip](install-pip.md)
+7. [Install Numpy](install-numpy.md)
 ```
 $ pip install numpy
 ```
-	
-$ pip install numpy
+
 
 ## Install OpenCV 3 (With contrib, Python 3 support and fix for SVM_load)
 ToDo
