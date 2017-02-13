@@ -9,6 +9,7 @@
 * [Install GLib](install_glib.md)
 * [Install KDL](install_kdl.md)
 * [Install MBROLA](install_mbrola.md)
+* [Install NumPy](install-numpy.md)
 * [Install OpenCV](install_opencv.md)
 * [Install OpenNI2 & NiTE2](install_openni_nite.md)
 * [Install OpenRAVE](install_openrave.md)
