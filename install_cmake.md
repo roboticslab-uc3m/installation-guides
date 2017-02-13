@@ -13,7 +13,7 @@ sudo apt-get install cmake
 sudo apt-get install cmake-curses-gui  # Recommended, as it contains ccmake.
 ```
 
-## Install CMake (Debian 6.0.10): v2.8.9
+## Install CMake 2.8.9 (Debian 6.0.10)
 
 Make sure you have squeeze backports as APT sources set up as indicated on [teo_body_install_on_debian_6.md#the-specifics-apt-sources](https://github.com/roboticslab-uc3m/teo-body/blob/develop/doc/teo_body_install_on_debian_6.md#the-specifics-apt-sources).
 
