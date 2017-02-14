@@ -36,8 +36,7 @@ Make sure you have previously:
 
 ```bash
 cd  # go home
-mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
-cd yarp && mkdir build && cd build
+cd repos/yarp/build
 cmake .. -DCREATE_DEVICE_LIBRARY_MODULES=ON -DENABLE_yarpmod_OpenNI2DeviceServer=ON -DOPENNI2_INCLUDE_LOCAL=/usr/local/include/OpenNI2/ -DOPENNI2_LIBRARY=/usr/local/lib/libOpenNI2.so -DNITE2_INCLUDE_LOCAL=/usr/local/include/NiTE-Linux-x64-2.2 -DNITE2_LIBRARY=/usr/local/lib/libNiTE2.so
 make
 sudo make install
