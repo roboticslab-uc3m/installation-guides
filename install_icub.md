@@ -13,10 +13,10 @@ cmake .. -DENABLE_icubmod_xsensmtx=ON
 make -j3;  sudo make install; sudo ldconfig; cd  # go home
 ```
 
-Try it out:
+Try `xsensmtx` out:
 ```bash
-Terminal 2: yarp server
-sudo chmod 777 /dev/ttyUSB0
-(Volviendo a la terminal 1) sudo yarpdev --subdevice xsensmtx --device inertial --name /inertial
-Terminal 3: yarp read ... /inertial
+[Terminal 1] yarp server
+[Terminal 2] sudo chmod 777 /dev/ttyUSB0
+[Terminal 2] sudo yarpdev --subdevice xsensmtx --device inertial --name /inertial
+[Terminal 3] yarp read ... /inertial
 ```
