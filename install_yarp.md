@@ -30,6 +30,10 @@ make -j3;  sudo make install; sudo ldconfig; cd  # go home
 
 Note: NiTE only required for skeletons.
 
+Make sure you have previously:
+ 
+- [Install OpenNI2 & NiTE2](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_openni_nite.md)
+
 ```bash
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
