@@ -10,7 +10,7 @@ Official download page: [link](http://www.yarp.it/)
 
 ## Install YARP (Ubuntu)
 
-As can be seen, here we are accounting for: YARP lib_math, the GUIs and mjpeg carrier.
+As can be seen, here we are accounting for: YARP `lib_math`, the GUIs and `mjpeg` carrier.
 
 ```bash
 sudo apt-get install build-essential libace-dev subversion git
