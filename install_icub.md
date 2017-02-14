@@ -2,6 +2,8 @@
 
 We use the icub-main repository for the `xsensmtx` device.
 
+Make sure you have previously installed [YARP with lib_math](https://github.com/roboticslab-uc3m/installation-guides/blob/develop/install_yarp.md).
+
 ```bash
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
