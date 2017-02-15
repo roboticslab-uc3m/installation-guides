@@ -29,3 +29,5 @@ No official PPA, [install from source](http://pointclouds.org/documentation/tuto
 ## Install PCL (For any distro with CUDA for KinFu)
 
 No official ppa, install CUDA, then [install from source](http://pointclouds.org/documentation/tutorials/compiling_pcl_posix.php) setting additional flags to get `pcl_kinfu_largeScale`, `pcl_kinfu_largeScale_mesh_output`, `pcl_kinfu_largeScale_texture_output`.
+
+See additional info [here](https://david-estevez.gitbooks.io/install-guides/content/01_pcl_cuda.html).

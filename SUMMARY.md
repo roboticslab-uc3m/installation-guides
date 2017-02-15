@@ -17,6 +17,7 @@
 * [Install PCL](install_pcl.md)
 * [Install pip](install-pip.md)
 * [Install Pygame](install_pygame.md)
+* [Install pypcd](install-pypcd.md)
 * [Install Scikit-Image](install-scikit-image.md)
 * [Install Speech Recognition](install_speech_recognition.md)
 * [Install Travis](install_travis.md)
