@@ -16,7 +16,6 @@
 * [Install OpenCV](install_opencv.md)
 * [Install OpenNI2 & NiTE2](install_openni_nite.md)
 * [Install OpenRAVE](install_openrave.md)
-* [Install OROCOS KDL](install_orocos_kdl.md)
 * [Install PCL](install_pcl.md)
 * [Install pip](install-pip.md)
 * [Install Pygame](install_pygame.md)
