@@ -15,7 +15,7 @@ sudo apt-get install cmake-curses-gui  # Recommended, as it contains ccmake.
 
 ## Install CMake 2.8.9 (Debian 6.0.10)
 
-Make sure you have squeeze backports as APT sources set up as indicated on [teo_body_install_on_debian_6.md#the-specifics-apt-sources](https://github.com/roboticslab-uc3m/teo-body/blob/develop/doc/teo_body_install_on_debian_6.md#the-specifics-apt-sources).
+Make sure you have squeeze backports as APT sources set up as indicated on [yarp_devices_install_on_debian_6.md#the-specifics-apt-sources](https://github.com/roboticslab-uc3m/yarp-devices/blob/develop/doc/yarp_devices_install_on_debian_6.md#the-specifics-apt-sources).
 
 Then run the following lines from a terminal. Note that you will be prompted for your password upon using `sudo`.
 
