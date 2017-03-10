@@ -32,7 +32,7 @@ make -j3; sudo make install; cd  # go home
 
 ```bash
 sudo apt-get install libfcl-dev
-cd openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRAVE=ON
+cd $HOME/repos/openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRAVE=ON
 make -j3; sudo make install; cd  # go home
 ```
 For more references regarding FCL from source on other versions, refer to [this issue](https://github.com/roboticslab-uc3m/installation-guides/issues/3).
