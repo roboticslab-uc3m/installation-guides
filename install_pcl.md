@@ -10,7 +10,7 @@ We use the Point Coud Library (PCL) for 2D/3D image and point cloud processing. 
 sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
 sudo apt-get update
 sudo apt-get install libpcl-all libpcl-all-dev
-sudo apt-get install libopenni-sensor-primesense0 libopenni-sensor-pointclouds0  # no pcl-tools here
+sudo apt-get install libopenni-sensor-pointclouds0  # no pcl-tools here; and libopenni-sensor-primesense0 cannot be installed simultaneously.
 ```
 
 ## Install PCL (Ubuntu 14.10)
