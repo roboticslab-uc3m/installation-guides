@@ -2,9 +2,12 @@
 
 We use the OpenRAVE core library for simulations. Note that you will be prompted for your password upon using `sudo`.
 
-Official download page: [link](http://openrave.org/). To install a precompiled version of OpenRAVE, type:
+- Official links: [[OpenRAVE](http://openrave.org/)]. [[OpenRAVE: Building and Installing page](http://openrave.org/docs/latest_stable/coreapihtml/installation.html)].
+- Additional links: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)]. [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)]. [[ref3, xenial](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/)].
 
-## Install OpenRAVE (Ubuntu)
+## Install OpenRAVE (Ubuntu 12.04)
+
+To install a precompiled version of OpenRAVE, type:
 
 ```bash
 sudo add-apt-repository ppa:openrave/release
@@ -12,16 +15,27 @@ sudo apt-get update
 sudo apt-get install openrave
 ```
 
-If nothing happens (e.g. Ubuntu 14.10 as of Dic/2014), a precompiled version of OpenRAVE might not be available on your specific Ubuntu distribution. To compile from source, type:
+## Install OpenRAVE (Most modern Ubuntu, such as 14.04 or 16.04)
+
+No official PPA, install from source.
 
 ```bash
 sudo apt-get install git-core
 sudo apt-get install libboost-all-dev
-sudo apt-get install libqt4-dev qt4-dev-tools libxml2-dev libode-dev libfcl-dev  # libfcl-dev recent as of Oct 2016
+sudo apt-get install libqt4-dev qt4-dev-tools libxml2-dev libode-dev
 sudo apt-get install libsoqt4-dev libcoin80-dev
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
 git clone --branch latest_stable https://github.com/rdiankov/openrave.git
-cd openrave; mkdir build; cd build; cmake ..  # Use -DOPT_VIDEORECORDING=OFF if there are AV errors, -DOPENRAVE_PLUGIN_FCLRAVE=OFF if fcl errors.
+cd openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRAVE=OFF  # Use -DOPT_VIDEORECORDING=OFF if there are AV errors
 make -j3; sudo make install; cd  # go home
 ```
+
+## Install OpenRAVE with FCL (Confirmed for Ubuntu 15.04, 15.10, 16.10, 17.04)
+
+```bash
+sudo apt-get install libfcl-dev
+cd $HOME/repos/openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRAVE=ON
+make -j3; sudo make install; cd  # go home
+```
+For more references regarding FCL from source on other versions, refer to [this issue](https://github.com/roboticslab-uc3m/installation-guides/issues/3).
