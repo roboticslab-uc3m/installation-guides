@@ -2,7 +2,7 @@
 
 We use the OpenRAVE core library for simulations. Note that you will be prompted for your password upon using `sudo`.
 
-Official page: [link](http://openrave.org/). [Building and Installing](http://openrave.org/docs/latest_stable/coreapihtml/installation.html). [Additional resource](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/).
+Links: [Official page](http://openrave.org/). [Building and Installing](http://openrave.org/docs/latest_stable/coreapihtml/installation.html). [Additional resource](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/).
 
 ## Install OpenRAVE (Ubuntu 12.04)
 
