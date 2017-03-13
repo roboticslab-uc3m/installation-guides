@@ -2,7 +2,14 @@
 
 We use the OpenRAVE core library for simulations. Note that you will be prompted for your password upon using `sudo`.
 
-Links: [Official page](http://openrave.org/). [Building and Installing](http://openrave.org/docs/latest_stable/coreapihtml/installation.html). [Additional resource](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/).
+Official links:
+- [OpenRAVE](http://openrave.org/).
+- [OpenRAVE: Building and Installing page](http://openrave.org/docs/latest_stable/coreapihtml/installation.html).
+
+Additional links:
+* http://fsuarez6.github.io/blog/openrave-trusty/ (trusty, see next link if still in trouble with FCL)
+* http://fsuarez6.github.io/blog/workstation-setup-xenial/ (xenial)
+* http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/ (trusty).
 
 ## Install OpenRAVE (Ubuntu 12.04)
 
