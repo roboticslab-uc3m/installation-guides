@@ -2,7 +2,7 @@
 
 This library is a wrapper of OpenCV hosted on SourceForge.
 
-- First install [OpenCV](install_opencv.md).
+- First install [OpenCV](install-opencv.md).
 
 ## Install Travis (Ubuntu)
 

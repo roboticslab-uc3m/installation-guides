@@ -24,4 +24,4 @@ sudo apt-get install git
 
 ## Using YCM on Ubuntu 12.04
 
-YCM requires CMake 2.8.9 or later, which means that you need to compile or backport CMake on Ubuntu precise (12.04) releases. You may either [upgrade to 2.8.11.2](install_cmake.md#ubuntu-1204-backports) or [compile 2.8.9 with OpenSSL support](install_cmake.md#openssl-support).
+YCM requires CMake 2.8.9 or later, which means that you need to compile or backport CMake on Ubuntu precise (12.04) releases. You may either [upgrade to 2.8.11.2](install-cmake.md#ubuntu-1204-backports) or [compile 2.8.9 with OpenSSL support](install-cmake.md#openssl-support).
