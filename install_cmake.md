@@ -28,7 +28,9 @@ sudo apt-get install cmake
 Older versions were reported to lack OpenSSL support needed for downloading external data through `file(DOWNLOAD)` commands. In that case, you'll need to install any required dependencies and compile CMake by yourself. E.g. for CMake 2.8.9 on Ubuntu 12.04:
 
 ```bash
+sudo apt-get install cmake # get CMake 2.8.7 first
 sudo apt-get install libcurl4-openssl-dev
+cd && mkdir -p repos && cd repos
 git clone https://github.com/kitware/cmake
 cd cmake
 git checkout tags/v2.8.9
@@ -36,7 +38,7 @@ mkdir build && cd build
 cmake .. -DCMAKE_USE_SYSTEM_CURL:BOOL=ON -DCMAKE_USE_OPENSSL:BOOL=ON
 make
 sudo make install
-hash -r # rebuild executable cache to use new 'cmake' command
+hash -r # rebuild executable cache to use new 'cmake' (2.8.9) command
 ```
 
 ## Install CMake 2.8.9 (Debian 6.0.10)
