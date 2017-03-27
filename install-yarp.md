@@ -23,7 +23,7 @@ mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/yarp
 cd yarp; mkdir build; cd build
 cmake .. -DCREATE_LIB_MATH=ON -DCREATE_GUIS=ON -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_mjpeg_carrier=ON # configure
-NB_CORES=$(grep -c '^processor' /proc/cpuinfo); make -j$((NB_CORES+1)) -l${NB_CORES}  # compile
+make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # go home
 ```
 
@@ -39,7 +39,7 @@ Make sure you have previously installed YARP and:
 cd  # go home
 cd repos/yarp/build
 cmake .. -DCREATE_DEVICE_LIBRARY_MODULES=ON -DENABLE_yarpmod_OpenNI2DeviceServer=ON -DENABLE_yarpmod_OpenNI2DeviceClient=ON -DOPENNI2_INCLUDE_LOCAL=/usr/local/include/OpenNI2/ -DOPENNI2_LIBRARY=/usr/local/lib/libOpenNI2.so -DNITE2_INCLUDE_LOCAL=/usr/local/include/NiTE-Linux-x64-2.2 -DNITE2_LIBRARY=/usr/local/lib/libNiTE2.so
-NB_CORES=$(grep -c '^processor' /proc/cpuinfo); make -j$((NB_CORES+1)) -l${NB_CORES}  # compile
+make -j$(nproc)  # compile
 sudo make install
 sudo ldconfig
 ```
@@ -61,6 +61,6 @@ git clone https://github.com/robotology/yarp
 git checkout e1221283abb1abc77619429bb4d9408cbb1cf6c8  # Corresponds to 2.3.68+181-20170203.11+gite122128
 cd yarp; mkdir build; cd build
 cmake .. -DYARP_NO_DEPRECATED_WARNINGS=ON  # YARP_DEPRECATED_MSG happened on 2.3.66.2 -> 2.3.68
-NB_CORES=$(grep -c '^processor' /proc/cpuinfo); make -j$((NB_CORES+1)) -l${NB_CORES}  # compile
+make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd  # go home
 ```
