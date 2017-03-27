@@ -1,13 +1,13 @@
 ## Install Travis
 
-This library is a wrapper of OpenCV hosted on SourceForge.
+This library is a wrapper of OpenCV hosted on GitHub.
 
 - First install [OpenCV](install-opencv.md).
 
 ## Install Travis (Ubuntu)
 
 ```bash
-svn co svn://svn.code.sf.net/p/travislibrary/code/main travis
+git clone https://github.com/roboticslab-uc3m/travislib.git
 cd travis; mkdir build; cd build
 cmake ..
 make -j3; sudo make install
