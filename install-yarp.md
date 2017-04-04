@@ -19,7 +19,7 @@ sudo apt-get install libgtkmm-2.4-dev  # Needed for YARP GUIs: yarpview, gyarpma
 sudo apt-get install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
 sudo apt-get install libjpeg8-dev   # Needed for mjpeg carrier
 cd  # go home
-mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/yarp
 cd yarp; mkdir build; cd build
 cmake .. -DCREATE_LIB_MATH=ON -DCREATE_GUIS=ON -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_mjpeg_carrier=ON # configure
@@ -56,7 +56,7 @@ sudo apt-get install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
 ```bash
 sudo apt-get install build-essential libace-dev subversion git
 cd  # go home
-mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/yarp
 git checkout e1221283abb1abc77619429bb4d9408cbb1cf6c8  # Corresponds to 2.3.68+181-20170203.11+gite122128
 cd yarp; mkdir build; cd build

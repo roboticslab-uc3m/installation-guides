@@ -8,7 +8,7 @@ Note that you will be prompted for your password upon using `sudo`. Type:
 
 ```bash
 cd                                               # go home
-mkdir -p repos; cd repos                         # make $HOME/repos if it doesn't exist; then, enter it
+mkdir -p repos; cd repos                         # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/ycm.git  # clone repository
 cd ycm; mkdir build; cd build; cmake ..          # configure
 sudo make install; cd                            # install and return home

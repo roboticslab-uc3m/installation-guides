@@ -10,7 +10,7 @@ Installing KDL on Ubuntu is quite straightforward. Note that you will be prompte
 
 ```bash
 cd  # go home
-mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/orocos/orocos_kinematics_dynamics.git
 cd orocos_kinematics_dynamics/orocos_kdl; mkdir build; cd build
 cmake ..
