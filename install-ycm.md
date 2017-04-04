@@ -11,6 +11,7 @@ cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/ycm.git  # clone repository
 cd ycm; mkdir build; cd build; cmake ..  # configure
+make -j$(nproc)  # download external modules
 sudo make install; cd  # install and go home
 ```
 
