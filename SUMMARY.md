@@ -22,6 +22,6 @@
 * [Install pypcd](install-pypcd.md)
 * [Install Scikit-Image](install-scikit-image.md)
 * [Install Speech Recognition](install-speech-recognition.md)
-* [Install Travis](install-travis.md)
+* [Install Travis](install-travislib.md)
 * [Install YARP](install-yarp.md)
 * [Install YCM](install-ycm.md)

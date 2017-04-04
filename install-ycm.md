@@ -7,11 +7,11 @@ We use YCM to benefit from additional CMake modules and superbuild support. The 
 Note that you will be prompted for your password upon using `sudo`. Type:
 
 ```bash
-cd                                               # go home
-mkdir -p repos; cd repos                         # make $HOME/repos if it doesn't exist; then, enter it
+cd  # go home
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/ycm.git  # clone repository
-cd ycm; mkdir build; cd build; cmake ..          # configure
-sudo make install; cd                            # install and return home
+cd ycm; mkdir build; cd build; cmake ..  # configure
+sudo make install; cd  # install and go home
 ```
 
 ## Include YCM in CMake project - soft dependency
@@ -22,6 +22,19 @@ CMake-based projects may bootstrap YCM so that its sources are downloaded on dem
 sudo apt-get install git
 ```
 
+Remember to configure your Git username and email ([YCM and Git](#ycm-and-git)).
+
 ## Using YCM on Ubuntu 12.04
 
 YCM requires CMake 2.8.9 or later, which means that you need to compile or backport CMake on Ubuntu precise (12.04) releases. You may either [upgrade to 2.8.11.2](install-cmake.md#ubuntu-1204-backports) or [compile 2.8.9 with OpenSSL support](install-cmake.md#openssl-support).
+
+## YCM and Git
+
+Apart from installing Git, YCM requires that you set your username and e-mail. Type the following commands anywhere, filling the corresponding fields:
+
+```bash
+git config --global user.name "My Username"
+git config --global user.email "user@example.com"
+```
+
+You may set these values on a per-repository basis. In order to achieve that, browse to the root directory of the desired repo and type the previous commands, replacing `--global` with `--local`.

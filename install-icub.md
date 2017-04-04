@@ -6,11 +6,12 @@ Make sure you have previously installed [YARP with lib_math](install-yarp.md).
 
 ```bash
 cd  # go home
-mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/icub-main
 cd icub-main; mkdir build; cd build
 cmake .. -DENABLE_icubmod_xsensmtx=ON
-make -j3;  sudo make install; sudo ldconfig; cd  # go home
+make -j$(nproc)  # compile
+sudo make install; sudo ldconfig; cd  # install and go home
 ```
 
 Try `xsensmtx` out:
