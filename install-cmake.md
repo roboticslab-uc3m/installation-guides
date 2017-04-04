@@ -36,7 +36,7 @@ cd cmake
 git checkout tags/v2.8.9
 mkdir build && cd build
 cmake .. -DCMAKE_USE_SYSTEM_CURL:BOOL=ON -DCMAKE_USE_OPENSSL:BOOL=ON
-make
+make -j$(nproc)
 sudo make install
 hash -r # rebuild executable cache to use new 'cmake' (2.8.9) command
 ```
