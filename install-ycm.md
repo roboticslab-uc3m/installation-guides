@@ -7,11 +7,11 @@ We use YCM to benefit from additional CMake modules and superbuild support. The 
 Note that you will be prompted for your password upon using `sudo`. Type:
 
 ```bash
-cd                                               # go home
-mkdir -p repos; cd repos                         # create $HOME/repos if it doesn't exist; then, enter it
+cd  # go home
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/ycm.git  # clone repository
-cd ycm; mkdir build; cd build; cmake ..          # configure
-sudo make install; cd                            # install and return home
+cd ycm; mkdir build; cd build; cmake ..  # configure
+sudo make install; cd  # install and go home
 ```
 
 ## Include YCM in CMake project - soft dependency

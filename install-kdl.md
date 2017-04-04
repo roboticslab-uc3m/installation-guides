@@ -14,5 +14,6 @@ mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter 
 git clone https://github.com/orocos/orocos_kinematics_dynamics.git
 cd orocos_kinematics_dynamics/orocos_kdl; mkdir build; cd build
 cmake ..
-make -j3;  sudo make install; sudo ldconfig; cd  # go home
+make -j$(nproc)  # compile
+sudo make install; sudo ldconfig; cd  # install and go home
 ```

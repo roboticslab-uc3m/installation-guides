@@ -10,7 +10,8 @@ mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter 
 git clone https://github.com/robotology/icub-main
 cd icub-main; mkdir build; cd build
 cmake .. -DENABLE_icubmod_xsensmtx=ON
-make -j3;  sudo make install; sudo ldconfig; cd  # go home
+make -j$(nproc)  # compile
+sudo make install; sudo ldconfig; cd  # install and go home
 ```
 
 Try `xsensmtx` out:

@@ -30,7 +30,7 @@ mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter 
 git clone --branch latest_stable https://github.com/rdiankov/openrave.git
 cd openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRAVE=OFF  # Use -DOPT_VIDEORECORDING=OFF if there are AV errors
 make -j$(nproc)
-sudo make install; cd  # go home
+sudo make install; cd  # install and go home
 ```
 
 ## Install OpenRAVE with FCL (Confirmed for Ubuntu 15.04, 15.10, 16.10, 17.04)
@@ -39,6 +39,6 @@ sudo make install; cd  # go home
 sudo apt-get install libfcl-dev
 cd $HOME/repos/openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRAVE=ON
 make -j$(nproc)
-sudo make install; cd  # go home
+sudo make install; cd  # install and go home
 ```
 For more references regarding FCL from source on other versions, refer to [this issue](https://github.com/roboticslab-uc3m/installation-guides/issues/3).
