@@ -17,3 +17,15 @@ cmake ..
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd  # install and go home
 ```
+
+## Install roboticslab-uc3m/KDL -b issue78 (Ubuntu)
+
+```bash
+cd  # go home
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
+git clone -b issue78 https://github.com/roboticslab-uc3m/orocos_kinematics_dynamics.git
+cd orocos_kinematics_dynamics/orocos_kdl; mkdir build; cd build
+cmake ..
+make -j$(nproc)  # compile
+sudo make install; sudo ldconfig; cd  # install and go home
+```
