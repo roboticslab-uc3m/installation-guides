@@ -19,7 +19,7 @@ sudo apt-get install libopenni-sensor-primesense0 # no pcl-tools here; and libop
 sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
 sudo apt-get update
 sudo apt-get install libpcl-dev
-sudo apt-get pcl-tools # no sensor here, but libopenni-sensor-primesense0 may be found elsewhere
+sudo apt-get install pcl-tools # no sensor here, but libopenni-sensor-primesense0 may be found elsewhere
 ```
 
 ## Install PCL (More modern Ubuntu, such as 16.04)
