@@ -6,6 +6,8 @@ We use the Point Coud Library (PCL) for 2D/3D image and point cloud processing. 
 
 ## Install PCL 1.7.2-1+trusty6 (Ubuntu 14.04)
 
+For Trusty and similar versions, we need to add the [jochen-sprickerhof PPA](https://launchpad.net/~v-launchpad-jochen-sprickerhof-de/+archive/ubuntu/pcl).
+
 ```bash
 sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
 sudo apt-get update
