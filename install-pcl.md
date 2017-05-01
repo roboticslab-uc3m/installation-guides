@@ -24,7 +24,7 @@ sudo apt-get install pcl-tools # no sensor here, but libopenni-sensor-primesense
 
 ## Install PCL 1.7.2-14build1 (Ubuntu 16.04)
 
-PCL is available directly as part of `universe` in modern Ubuntu distros.
+PCL is available directly as part of `universe` in modern Ubuntu distros (see [here](https://launchpad.net/ubuntu/+source/pcl)).
 
 ```bash
 sudo apt-get install libpcl-dev
