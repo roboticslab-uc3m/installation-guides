@@ -15,7 +15,9 @@ sudo apt-get install libpcl-all libpcl-all-dev
 sudo apt-get install libopenni-sensor-primesense0 # no pcl-tools here; and libopenni-sensor-pointclouds0 cannot be installed simultaneously.
 ```
 
-## Install PCL (Ubuntu 14.10)
+## Install PCL 1.7.2-3~utopic1 with VTK (Ubuntu 14.10)
+
+For Utopic and similar versions, we need to add the jochen-sprickerhof PPA [[ref](https://launchpad.net/~v-launchpad-jochen-sprickerhof-de/+archive/ubuntu/pcl)], while VTK is available directly as part of `universe` [[ref](http://packages.ubuntu.com/source/trusty/vtk)].
 
 ```bash
 sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
