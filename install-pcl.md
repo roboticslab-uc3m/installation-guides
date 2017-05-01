@@ -17,7 +17,7 @@ sudo apt-get install libopenni-sensor-primesense0 # no pcl-tools here; and libop
 
 ## Install PCL 1.7.2-3~utopic1 with VTK (Ubuntu 14.10)
 
-For Utopic and similar versions, we need to add the jochen-sprickerhof PPA [[ref](https://launchpad.net/~v-launchpad-jochen-sprickerhof-de/+archive/ubuntu/pcl)], while VTK is available directly as part of `universe` [[ref](http://packages.ubuntu.com/source/trusty/vtk)].
+For Utopic and similar versions, we need to add the jochen-sprickerhof PPA [[ref](https://launchpad.net/~v-launchpad-jochen-sprickerhof-de/+archive/ubuntu/pcl)].
 
 ```bash
 sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
