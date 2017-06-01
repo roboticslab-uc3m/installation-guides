@@ -33,6 +33,12 @@ make -j$(nproc)
 sudo make install; cd  # install and go home
 ```
 
+Note that you may end up requiring over 2 GB of free space during the installation of `apt` dependencies. To avoid that, use the `--no-install-recommends` option as in:
+
+`sudo apt-get install --no-install-recommends package`
+
+Thus, `apt` would not try to install non-critical packages marked as *recommended* by the dependencies of OpenRAVE.
+
 ## Install OpenRAVE with FCL (Confirmed for Ubuntu 15.04, 15.10, 16.10, 17.04)
 
 ```bash
