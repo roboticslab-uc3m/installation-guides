@@ -5,6 +5,3 @@ Before opening a fresh issue, do a search on [the wiki](http://robots.uc3m.es) a
 * Include what you expected to happen and what actually happened.
 * Please include information on what operating system and version you are working with. Also add any other relevant details.
 * Feel free to attach any other information illustrating the issue if copying and pasting text is not an option.
-
-Notes:
-* We used to follow the [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/) git workflow, but now pushing a bit to master due to GitBook. ;-)
