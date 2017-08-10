@@ -21,6 +21,7 @@
 * [Install Pygame](install-pygame.md)
 * [Install pypcd](install-pypcd.md)
 * [Install Scikit-Image](install-scikit-image.md)
+* [Install Spacenav](install-spacenav.md)
 * [Install Speech Recognition](install-speech-recognition.md)
 * [Install Travis](install-travislib.md)
 * [Install YARP](install-yarp.md)
