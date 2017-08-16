@@ -24,5 +24,6 @@
 * [Install Spacenav](install-spacenav.md)
 * [Install Speech Recognition](install-speech-recognition.md)
 * [Install Travis](install-travislib.md)
+* [Install XWiimote](install-xwiimote.md)
 * [Install YARP](install-yarp.md)
 * [Install YCM](install-ycm.md)
