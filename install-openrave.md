@@ -39,6 +39,10 @@ Note that you may end up requiring over 2 GB of free space during the installati
 
 Thus, `apt` would not try to install non-critical packages marked as *recommended* by the dependencies of OpenRAVE.
 
+In case you are getting `pcrecpp.h: No such file or directory` errors during compilation ([rdiankov/openrave#296](https://github.com/rdiankov/openrave/issues/296)), run the following command and `make` again:
+
+`sudo apt-get install libpcre++-dev`
+
 ## Install OpenRAVE with FCL (Confirmed for Ubuntu 15.04, 15.10, 16.10, 17.04)
 
 ```bash
