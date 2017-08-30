@@ -15,7 +15,6 @@ As can be seen, here we are accounting for: YARP `lib_math`, the GUIs and `mjpeg
 ```bash
 sudo apt-get install build-essential libace-dev subversion git
 sudo apt-get install libeigen3-dev  # Needed for creating YARP lib_math used for kinematics, etc.
-sudo apt-get install libgtkmm-2.4-dev  # Needed for YARP GUIs: yarpview, gyarpmanager
 sudo apt-get install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
 sudo apt-get install libjpeg8-dev   # Needed for mjpeg carrier
 cd  # go home
