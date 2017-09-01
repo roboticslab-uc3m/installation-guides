@@ -25,6 +25,7 @@ sudo apt-get install libboost-all-dev
 sudo apt-get install libqt4-dev qt4-dev-tools libxml2-dev libode-dev
 sudo apt-get install libsoqt4-dev libcoin80-dev
 sudo apt-get install python-sympy python-scipy  # For openravepy
+sudo apt-get install libcollada-dom2.4-dp-dev  # Open .zae files
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone --branch latest_stable https://github.com/rdiankov/openrave.git
