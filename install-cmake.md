@@ -20,6 +20,7 @@ CMake packages up to release 2.8.12 are distributed on Ubuntu Trusty (14.04). Ho
 ```bash
 sudo apt-get update
 sudo apt-get install cmake3
+sudo apt-get install cmake3-curses-gui  # Recommended, includes ccmake
 ```
 
 ### Ubuntu 12.04 backports
