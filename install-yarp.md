@@ -52,7 +52,7 @@ sudo apt-get install swig
 
 **Note:** If you are on Ubuntu Trusty (14.04), you have to install it with
 ```bash
-sudo apt-get install update
+sudo apt-get update
 sudo apt-get install swig3.0
 ```
 
