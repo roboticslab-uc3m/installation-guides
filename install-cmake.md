@@ -13,6 +13,15 @@ sudo apt-get install cmake
 sudo apt-get install cmake-curses-gui  # Recommended, as it contains ccmake.
 ```
 
+### Ubuntu 14.04 backports
+
+CMake packages up to release 2.8.12 are distributed on Ubuntu Trusty (14.04). However, a CMake 3.0 backport is also included in the oficial repositories.
+
+```bash
+sudo apt-get update
+sudo apt-get install cmake3
+```
+
 ### Ubuntu 12.04 backports
 
 CMake packages up to release 2.8.7 are distributed on Ubuntu precise (12.04). However, you can pull and install CMake 2.8.11.2 from an additional repository:
