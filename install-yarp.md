@@ -44,8 +44,19 @@ sudo make install; sudo ldconfig; cd # install and go home
 
 ## Install Python bindings
 
-Make sure you have installed previously YARP.
+Swig is needed in order to build the python bindings. It is normally installed with
+```bash
+sudo apt-get update
+sudo apt-get install swig
+```
 
+**Note:** If you are on Ubuntu Trusty (14.04), you have to install it with
+```bash
+sudo apt-get install update
+sudo apt-get install swig3.0
+```
+
+Make sure you have installed previously YARP.
 ```bash
 cd  # go home
 cd repos/yarp/build
