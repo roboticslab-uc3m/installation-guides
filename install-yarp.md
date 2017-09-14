@@ -27,6 +27,34 @@ make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
 
+
+## Install ROS support
+
+Make sure you have installed previously YARP and that the ROS environment is not sourced, as it causes the build to fail.
+If you have the line `source /opt/ros/indigo/setup.bash` at the end of ~/.bashrc, comment it, save the file and open a new terminal.
+
+```bash
+cd  # go home
+cd repos/yarp/build
+cmake .. -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_mjpeg_carrier=ON -DENABLE_yarpcar_tcpros_carrier=ON -DENABLE_yarpcar_xmlrpc_carrier=ON
+make -j$(nproc)  # compile
+sudo make install; sudo ldconfig; cd # install and go home
+```
+
+
+## Install Python bindings
+
+Make sure you have installed previously YARP.
+
+```bash
+cd  # go home
+cd repos/yarp/build
+cmake .. -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON
+make -j$(nproc)  # compile
+sudo make install; sudo ldconfig; cd # install and go home
+```
+
+
 ## Install additional YARP device: OpenNI2DeviceServer (Ubuntu)
 
 Note: NiTE only required for skeletons.
@@ -45,10 +73,12 @@ sudo make install; sudo ldconfig; cd # install and go home
 
 You may need to launch `yarpdev --device OpenNI2DeviceServer` from /YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist if using NiTE.
 
+
 ## Note for Linux Mint 17.3 Rosa
 ```bash
 sudo apt-get install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
 ```
+
 
 ## Install YARP 2.3.68+ (Debian 6.0.10)
 
