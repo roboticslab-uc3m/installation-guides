@@ -15,7 +15,7 @@ sudo apt-get install cmake-curses-gui  # Recommended, as it contains ccmake.
 
 ### Ubuntu 14.04 backports
 
-CMake packages up to release 2.8.12 are distributed on Ubuntu Trusty (14.04). However, a CMake 3.0 backport is also included in the oficial repositories.
+CMake packages up to release 2.8.12 are distributed on Ubuntu Trusty (14.04). However, a CMake 3.5 backport is also included in the oficial repositories.
 
 ```bash
 sudo apt-get update
