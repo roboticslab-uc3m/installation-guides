@@ -48,11 +48,11 @@ Swig is needed in order to build the python bindings. It is normally installed w
 ```bash
 sudo apt-get update
 sudo apt-get install swig
+sudo apt-get install libpython-dev  # not installed by default on clean distros
 ```
 
-**Note:** If you are on Ubuntu Trusty (14.04), you have to install it with
+**Note:** If you are on Ubuntu Trusty (14.04), you have to install swig3.0 instead of swig
 ```bash
-sudo apt-get update
 sudo apt-get install swig3.0
 ```
 
