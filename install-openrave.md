@@ -20,7 +20,7 @@ sudo apt-get install openrave
 No official PPA, install from source.
 
 ```bash
-sudo apt-get install git-core
+sudo apt-get install git
 sudo apt-get install libboost-all-dev
 sudo apt-get install libqt4-dev qt4-dev-tools libxml2-dev libode-dev
 sudo apt-get install libsoqt4-dev libcoin80-dev
