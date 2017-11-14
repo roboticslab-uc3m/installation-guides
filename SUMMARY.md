@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Install Aquila](install-aquila.md)
+* [Install Aravis](install-aravis.md)
 * [Install Boost](install-boost.md)
 * [Install build-essential](install-build-essential.md)
 * [Install CMake](install-cmake.md)
@@ -11,6 +12,7 @@
 * [Install GLib](install-glib.md)
 * [Install icub-main](install-icub.md)
 * [Install KDL](install-kdl.md)
+* Install Aravis
 * [Install MBROLA](install-mbrola.md)
 * [Install NumPy](install-numpy.md)
 * [Install OpenCV](install-opencv.md)
@@ -26,4 +28,4 @@
 * [Install Travis](install-travislib.md)
 * [Install XWiimote](install-xwiimote.md)
 * [Install YARP](install-yarp.md)
-* [Install YCM](install-ycm.md)
+
