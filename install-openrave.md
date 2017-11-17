@@ -5,16 +5,6 @@ We use the OpenRAVE core library for simulations. Note that you will be prompted
 - Official links: [[OpenRAVE](http://openrave.org/)]. [[OpenRAVE: Building and Installing page](http://openrave.org/docs/latest_stable/coreapihtml/installation.html)].
 - Additional links: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)]. [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)]. [[ref3, xenial](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/)].
 
-## Install OpenRAVE (Ubuntu 12.04)
-
-To install a precompiled version of OpenRAVE, type:
-
-```bash
-sudo add-apt-repository ppa:openrave/release
-sudo apt-get update
-sudo apt-get install openrave
-```
-
 ## Install OpenRAVE (Most modern Ubuntu, such as 14.04 or 16.04)
 
 No official PPA, install from source.
@@ -53,3 +43,13 @@ make -j$(nproc)
 sudo make install; cd  # install and go home
 ```
 For more references regarding FCL from source on other versions, refer to [this issue](https://github.com/roboticslab-uc3m/installation-guides/issues/3).
+
+## Install OpenRAVE (Ubuntu 12.04)
+
+To install a precompiled version of OpenRAVE, type:
+
+```bash
+sudo add-apt-repository ppa:openrave/release
+sudo apt-get update
+sudo apt-get install openrave
+```
