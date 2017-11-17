@@ -18,8 +18,8 @@ sudo apt-get install python-sympy python-scipy  # For openravepy
 sudo apt-get install libcollada-dom2.4-dp-dev  # Open .zae files
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
-git clone --branch latest_stable https://github.com/rdiankov/openrave.git
-cd openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRAVE=OFF  # Use -DOPT_VIDEORECORDING=OFF if there are AV errors
+git clone --branch master https://github.com/rdiankov/openrave.git
+cd openrave; mkdir build; cd build; cmake ..  # Use -DOPT_VIDEORECORDING=OFF if there are AV errors
 make -j$(nproc)
 sudo make install; cd  # install and go home
 ```
@@ -29,10 +29,6 @@ Note that you may end up requiring over 2 GB of free space during the installati
 `sudo apt-get install --no-install-recommends package`
 
 Thus, `apt` would not try to install non-critical packages marked as *recommended* by the dependencies of OpenRAVE.
-
-In case you are getting `pcrecpp.h: No such file or directory` errors during compilation ([rdiankov/openrave#296](https://github.com/rdiankov/openrave/issues/296)), run the following command and `make` again:
-
-`sudo apt-get install libpcre++-dev`
 
 ## Install OpenRAVE with FCL (Confirmed for Ubuntu 15.04, 15.10, 16.10, 17.04)
 
