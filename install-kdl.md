@@ -4,7 +4,7 @@ We use Orocos KDL for robot kinematics. Official download page: [link](http://ww
 
 Make sure you have previously installed [Eigen3](install-eigen.md).
 
-Installing KDL on Ubuntu is quite straightforward. Note that you will be prompted for your password upon using '''sudo''' a couple of times:
+Installing KDL on Ubuntu is quite straightforward. Note that you will be prompted for your password upon using `sudo` a couple of times:
 
 ## Install KDL (Ubuntu)
 
