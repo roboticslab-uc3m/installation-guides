@@ -5,7 +5,7 @@ We use MBROLA Voices for speech synthesis. Official download page: [link](http:/
 ## Install MBROLA Voices (Ubuntu)
 
 ```bash
-sudo apt-get install espeak libespeak-dev
-sudo apt-get install mbrola-en1
-sudo apt-get install mbrola-es1
+sudo apt install espeak libespeak-dev
+sudo apt install mbrola-en1
+sudo apt install mbrola-es1
 ```

@@ -10,12 +10,12 @@ We use the OpenRAVE core library for simulations. Note that you will be prompted
 No official PPA, install from source.
 
 ```bash
-sudo apt-get install git
-sudo apt-get install libboost-all-dev
-sudo apt-get install libqt4-dev qt4-dev-tools libxml2-dev libode-dev
-sudo apt-get install libsoqt4-dev libcoin80-dev
-sudo apt-get install python-sympy python-scipy  # For openravepy
-sudo apt-get install libcollada-dom2.4-dp-dev  # Open .zae files
+sudo apt install git
+sudo apt install libboost-all-dev
+sudo apt install libqt4-dev qt4-dev-tools libxml2-dev libode-dev
+sudo apt install libsoqt4-dev libcoin80-dev
+sudo apt install python-sympy python-scipy  # For openravepy
+sudo apt install libcollada-dom2.4-dp-dev  # Open .zae files
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone --branch master https://github.com/rdiankov/openrave.git
@@ -26,14 +26,14 @@ sudo make install; cd  # install and go home
 
 Note that you may end up requiring over 2 GB of free space during the installation of `apt` dependencies. To avoid that, use the `--no-install-recommends` option as in:
 
-`sudo apt-get install --no-install-recommends package`
+`sudo apt install --no-install-recommends package`
 
 Thus, `apt` would not try to install non-critical packages marked as *recommended* by the dependencies of OpenRAVE.
 
 ## Install OpenRAVE with FCL (Confirmed for Ubuntu 15.04, 15.10, 16.10, 17.04)
 
 ```bash
-sudo apt-get install libfcl-dev
+sudo apt install libfcl-dev
 cd $HOME/repos/openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRAVE=ON
 make -j$(nproc)
 sudo make install; cd  # install and go home

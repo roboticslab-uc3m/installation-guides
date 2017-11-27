@@ -7,7 +7,7 @@ Official page: [link](http://aquila-dsp.org/)
 ## Install Aquila (Ubuntu)
 
 ```bash
-sudo apt-get install libsfml-dev
+sudo apt install libsfml-dev
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone git://github.com/zsiciarz/aquila.git

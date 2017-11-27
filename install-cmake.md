@@ -9,8 +9,8 @@ Official download page: [link](https://cmake.org/download/)
 Installing CMake on Ubuntu is quite straightforward. Note that you will be prompted for your password upon using `sudo`. Type:
 
 ```bash
-sudo apt-get install cmake
-sudo apt-get install cmake-curses-gui  # Recommended, as it contains ccmake.
+sudo apt install cmake
+sudo apt install cmake-curses-gui  # Recommended, as it contains ccmake.
 ```
 
 ### Ubuntu 14.04 backports
@@ -18,9 +18,9 @@ sudo apt-get install cmake-curses-gui  # Recommended, as it contains ccmake.
 CMake packages up to release 2.8.12 are distributed on Ubuntu Trusty (14.04). However, a CMake 3.5 backport is also included in the oficial repositories.
 
 ```bash
-sudo apt-get update
-sudo apt-get install cmake3
-sudo apt-get install cmake3-curses-gui  # Recommended, includes ccmake
+sudo apt update
+sudo apt install cmake3
+sudo apt install cmake3-curses-gui  # Recommended, includes ccmake
 ```
 
 ### Ubuntu 12.04 backports
@@ -38,8 +38,8 @@ sudo apt-get install cmake
 Older versions were reported to lack OpenSSL support needed for downloading external data through `file(DOWNLOAD)` commands. In that case, you'll need to install any required dependencies and compile CMake by yourself. E.g. for CMake 2.8.9 on Ubuntu 12.04:
 
 ```bash
-sudo apt-get install cmake # get CMake 2.8.7 first
-sudo apt-get install libcurl4-openssl-dev
+sudo apt install cmake # get CMake 2.8.7 first
+sudo apt install libcurl4-openssl-dev
 cd && mkdir -p repos && cd repos
 git clone https://github.com/kitware/cmake
 cd cmake

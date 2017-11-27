@@ -9,5 +9,5 @@ This library is no longer maintained. See [Install XWiimote](./install-xwiimote.
 ## Install CWiiD (Ubuntu)
 
 ```bash
-sudo apt-get install libcwiid-dev
+sudo apt install libcwiid-dev
 ```

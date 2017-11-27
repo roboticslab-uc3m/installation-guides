@@ -7,7 +7,7 @@ This package contains the Eigen C++ template library and development files.
 Installing Eigen3 on Ubuntu is quite straightforward. Note that you will be prompted for your password upon using `sudo`. Type:
 
 ```bash
-sudo apt-get install libeigen3-dev
+sudo apt install libeigen3-dev
 ```
 
 ## Install Eigen3 (Windows)

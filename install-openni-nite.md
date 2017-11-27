@@ -5,15 +5,15 @@ We use OpenNI2 for ASUS and Kinect support.
 ## Install Xtion Pro Live OpenNI driver (Ubuntu)
 
 ```bash
-sudo apt-get install libopenni-sensor-primesense0 
+sudo apt install libopenni-sensor-primesense0 
 ```
 
 ## Install OpenNI2 (Ubuntu)
 
 ```bash
-sudo apt-get install git libusb-1.0-0-dev libudev-dev  # libpcl-dev & pcl-tools instead of libpcl-all-dev as of Dic/2015
-sudo apt-get install openjdk-6-jdk  # if not using other java version
-sudo apt-get install freeglut3-dev
+sudo apt install git libusb-1.0-0-dev libudev-dev  # libpcl-dev & pcl-tools instead of libpcl-all-dev as of Dic/2015
+sudo apt install openjdk-6-jdk  # if not using other java version
+sudo apt install freeglut3-dev
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/occipital/OpenNI2.git  # We used to have a fork off 6857677beee08e264fc5aeecb1adf647a7d616ab with working copy of Xtion Pro Live OpenNI2 driver.

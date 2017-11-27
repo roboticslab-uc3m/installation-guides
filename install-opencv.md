@@ -5,7 +5,7 @@ We use OpenCV for real-time computer vision. Official download page: [link](http
 ## Install OpenCV (Ubuntu)
 
 ```bash
-sudo apt-get install libopencv-dev
+sudo apt install libopencv-dev
 ```
 
 ## Install OpenCV 3 (With contrib and Python 3 support)
@@ -13,33 +13,33 @@ Adapted from [this post](http://www.pyimagesearch.com/2015/07/20/install-opencv-
 
 1. Upgrade any pre-installed packages:
    ```bash
-   $ sudo apt-get update
-   $ sudo apt-get upgrade
+   $ sudo apt update
+   $ sudo apt upgrade
    ```
 
 2. Install developer tools used to compile OpenCV 3.0:
    ```bash
-   $ sudo apt-get install build-essential cmake git pkg-config
+   $ sudo apt install build-essential cmake git pkg-config
    ```
 
 3. Install libraries and packages used to read various image and video formats from disk:
    ```bash
-   $ sudo apt-get install libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev
-   $ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+   $ sudo apt install libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev
+   $ sudo apt install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
    ```
 4. Install GTK so we can use OpenCV’s GUI features:
    ```
-   $ sudo apt-get install libgtk2.0-dev
+   $ sudo apt install libgtk2.0-dev
    ```
 
 5. Install packages that are used to optimize various functions inside OpenCV, such as matrix operations:
    ```
-   $ sudo apt-get install libatlas-base-dev gfortran
+   $ sudo apt install libatlas-base-dev gfortran
    ```
 
 6. Install the Python 3.4+ headers and development files:
    ```
-   $ sudo apt-get install python3.4-dev
+   $ sudo apt install python3.4-dev
    ```
 
 7. [Install pip](install-pip.md)

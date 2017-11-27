@@ -7,11 +7,11 @@ Linux device driver and utilities: [link](https://github.com/dvdhrm/xwiimote). W
 ## Install XWiimote (Ubuntu)
 
 ```bash
-sudo apt-get install libxwiimote-dev
+sudo apt install libxwiimote-dev
 ```
 
 To get the `xwiishow` tool (handy `ncurses`-based GUI for testing):
 
 ```bash
-sudo apt-get install xwiimote
+sudo apt install xwiimote
 ```

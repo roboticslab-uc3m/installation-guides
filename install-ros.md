@@ -10,8 +10,8 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 421C365
 
 Download and install ROS
 ```bash
-sudo apt-get update
-sudo apt-get install git python-rosinstall ros-indigo-desktop-full python-catkin-tools ros-indigo-joint-state-controller ros-indigo-twist-mux ros-indigo-ompl ros-indigo-controller-manager ros-indigo-moveit-core ros-indigo-moveit-ros-perception ros-indigo-moveit-ros-move-group ros-indigo-moveit-kinematics ros-indigo-moveit-ros-planning-interface ros-indigo-moveit-simple-controller-manager ros-indigo-moveit-planners-ompl ros-indigo-joy ros-indigo-joy-teleop ros-indigo-teleop-tools ros-indigo-control-toolbox ros-indigo-sound-play ros-indigo-navigation ros-indigo-eband-local-planner ros-indigo-depthimage-to-laserscan  ros-indigo-openslam-gmapping ros-indigo-gmapping ros-indigo-moveit-commander ros-indigo-geometry-experimental
+sudo apt update
+sudo apt install git python-rosinstall ros-indigo-desktop-full python-catkin-tools ros-indigo-joint-state-controller ros-indigo-twist-mux ros-indigo-ompl ros-indigo-controller-manager ros-indigo-moveit-core ros-indigo-moveit-ros-perception ros-indigo-moveit-ros-move-group ros-indigo-moveit-kinematics ros-indigo-moveit-ros-planning-interface ros-indigo-moveit-simple-controller-manager ros-indigo-moveit-planners-ompl ros-indigo-joy ros-indigo-joy-teleop ros-indigo-teleop-tools ros-indigo-control-toolbox ros-indigo-sound-play ros-indigo-navigation ros-indigo-eband-local-planner ros-indigo-depthimage-to-laserscan  ros-indigo-openslam-gmapping ros-indigo-gmapping ros-indigo-moveit-commander ros-indigo-geometry-experimental
 ```
 
 extend the environment to include the catkin commands in any new opened console

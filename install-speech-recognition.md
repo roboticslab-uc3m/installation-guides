@@ -6,10 +6,10 @@ We use Speech Recognition for give voice orders.
 
 ```bash
 # Speech Recognition: 
-sudo apt-get install libgstreamer1.0-dev
-sudo apt-get install libgstreamer-plugins-base1.0-dev
-sudo apt-get install autoconf
-sudo apt-get install bison
+sudo apt install libgstreamer1.0-dev
+sudo apt install libgstreamer-plugins-base1.0-dev
+sudo apt install autoconf
+sudo apt install bison
 
 # Install sphinxbase
 cd
