@@ -20,7 +20,7 @@ sudo make install; cd  # install and go home
 CMake-based projects may bootstrap YCM so that its sources are downloaded on demand - it's up to the developers to reflect this in the documentation. Under these assumptions, you should not worry about the previous installation step as everything would land in your project's `<build-tree>/install` directory by default. However, you may want to avoid this process (and the subsequent need for Internet connection) by installing YCM in your system paths - in this respect, please refer to the previous section. Additionally, it must be noted that bootstrapping YCM itself as well as downloading any remote package integrated in the superbuild requires that an appropriate VCS client is installed on the system. Usually, these projects are Git-based and all you need to do is to install `git` (we assume you did this already):
 
 ```bash
-sudo apt-get install git
+sudo apt install git
 ```
 
 Remember to configure your Git username and email ([YCM and Git](#ycm-and-git)).

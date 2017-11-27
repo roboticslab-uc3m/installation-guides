@@ -7,7 +7,7 @@ sudo apt install glib-2.0 gobject-2.0 gio-2.0 libxml-2.0 thread-2.0 zlib gstream
 ```
 3. Install even more dependiencies:
 ```
-sudo apt-get install autoconf intltool python-gobject-dev gobject-introspection gtk-doc-tools libgstreamer0.10-dev python-gst0.10-dev libxml2-dev
+sudo apt install autoconf intltool python-gobject-dev gobject-introspection gtk-doc-tools libgstreamer0.10-dev python-gst0.10-dev libxml2-dev
 ```
 4. Uncompress the downloaded Aravis package and open a terminal in that folder.
 5. Run `autogen.sh`
@@ -23,7 +23,7 @@ The most common are:
 Builds the aravis example application that allows basic interaction with your camera. The viewer needs GTK+3 and libnotify. You can install them with
 
 ```
-sudo apt-get install libgtk-3-dev libnotify-dev libgstreamer1.0 libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-bad
+sudo apt install libgtk-3-dev libnotify-dev libgstreamer1.0 libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-bad
 ```
 
 ##### --enable-gst-plugin 

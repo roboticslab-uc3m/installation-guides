@@ -7,5 +7,5 @@ Official page: [link] (http://pygame.org/hifi.html)
 ## Install Pygame (Ubuntu)
 
 ```bash
-sudo apt-get install python-pygame
+sudo apt install python-pygame
 ```

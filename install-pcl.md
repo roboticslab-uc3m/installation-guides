@@ -10,9 +10,9 @@ For Trusty and similar versions, we need to add the jochen-sprickerhof PPA [[ref
 
 ```bash
 sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
-sudo apt-get update
-sudo apt-get install libpcl-all libpcl-all-dev
-sudo apt-get install libopenni-sensor-primesense0 # no pcl-tools here; and libopenni-sensor-pointclouds0 cannot be installed simultaneously.
+sudo apt update
+sudo apt install libpcl-all libpcl-all-dev
+sudo apt install libopenni-sensor-primesense0 # no pcl-tools here; and libopenni-sensor-pointclouds0 cannot be installed simultaneously.
 ```
 
 ## Install PCL 1.7.2-3~utopic1 with VTK (Ubuntu 14.10)
@@ -21,9 +21,9 @@ For Utopic and similar versions, we need to add the jochen-sprickerhof PPA [[ref
 
 ```bash
 sudo add-apt-repository ppa:v-launchpad-jochen-sprickerhof-de/pcl
-sudo apt-get update
-sudo apt-get install libpcl-dev
-sudo apt-get install pcl-tools # no sensor here, but libopenni-sensor-primesense0 may be found elsewhere
+sudo apt update
+sudo apt install libpcl-dev
+sudo apt install pcl-tools # no sensor here, but libopenni-sensor-primesense0 may be found elsewhere
 ```
 
 ## Install PCL 1.7.2-14build1 with VTK 6.2.0+dfsg1-10build1 (Ubuntu 16.04)
@@ -31,7 +31,7 @@ sudo apt-get install pcl-tools # no sensor here, but libopenni-sensor-primesense
 PCL is available directly as part of `universe` in modern Ubuntu distros [[ref](https://launchpad.net/ubuntu/+source/pcl)].
 
 ```bash
-sudo apt-get install libpcl-dev  # depends: libvtk6-dev
+sudo apt install libpcl-dev  # depends: libvtk6-dev
 ```
 
 ## Install PCL (From source)

@@ -12,5 +12,5 @@ $ sudo -H pip install numpy
 # Install Numpy using the Ubuntu package manager
 
 ```bash
-$ sudo apt-get install python-numpy
+$ sudo apt install python-numpy
 ```

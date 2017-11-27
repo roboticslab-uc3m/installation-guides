@@ -13,11 +13,11 @@ Official download page: [link](http://www.yarp.it/)
 As can be seen, here we are accounting for: YARP `lib_math`, the GUIs and `mjpeg` carrier.
 
 ```bash
-sudo apt-get install build-essential libace-dev subversion git
-sudo apt-get install libeigen3-dev  # Needed for creating YARP lib_math used for kinematics, etc.
-sudo apt-get install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
-sudo apt-get install libjpeg8-dev   # Needed for mjpeg carrier
-sudo apt-get install libedit-dev  # Enables keyboard arrow keys within an RPC communication channel via terminal
+sudo apt install build-essential libace-dev subversion git
+sudo apt install libeigen3-dev  # Needed for creating YARP lib_math used for kinematics, etc.
+sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
+sudo apt install libjpeg8-dev   # Needed for mjpeg carrier
+sudo apt install libedit-dev  # Enables keyboard arrow keys within an RPC communication channel via terminal
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/yarp
@@ -46,14 +46,14 @@ sudo make install; sudo ldconfig; cd # install and go home
 
 Swig is needed in order to build the python bindings. It is normally installed with
 ```bash
-sudo apt-get update
-sudo apt-get install swig
-sudo apt-get install libpython-dev  # not installed by default on clean distros
+sudo apt update
+sudo apt install swig
+sudo apt install libpython-dev  # not installed by default on clean distros
 ```
 
 **Note:** If you are on Ubuntu Trusty (14.04), you have to install swig3.0 instead of swig
 ```bash
-sudo apt-get install swig3.0
+sudo apt install swig3.0
 ```
 
 Make sure you have installed previously YARP.
@@ -87,7 +87,7 @@ You may need to launch `yarpdev --device OpenNI2DeviceServer` from /YOUR_PATH_TO
 
 ## Note for Linux Mint 17.3 Rosa
 ```bash
-sudo apt-get install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
+sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
 ```
 
 
