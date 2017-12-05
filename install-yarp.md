@@ -65,6 +65,14 @@ make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
 
+### Install Python bindings with IFrameGrabberControls2 support
+
+The only difference with respect to the previous instructions is that you will need to use [David-Estevez's fork, branch feature-framegrabbercontrols-bindings](https://github.com/David-Estevez/yarp/tree/feature-framegrabbercontrols-bindings) instead of the official yarp.
+
+```bash
+git clone https://github.com/David-Estevez/yarp
+git checkout feature-framegrabbercontrols-bindings
+```
 
 ## Install additional YARP device: OpenNI2DeviceServer (Ubuntu)
 
