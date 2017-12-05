@@ -28,4 +28,5 @@
 * [Install Travis](install-travislib.md)
 * [Install XWiimote](install-xwiimote.md)
 * [Install YARP](install-yarp.md)
+* [Install Setuptools](install-setuptools.md)
 
