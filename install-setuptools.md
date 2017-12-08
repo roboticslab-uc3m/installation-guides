@@ -6,6 +6,6 @@
 This requires [pip](install-pip.md). (Use `pip3` to install the Python 3 version of Setuptools):
 
 ```bash
-$ sudo -H pip install setuptools
+sudo -H pip install setuptools
 ```
 
