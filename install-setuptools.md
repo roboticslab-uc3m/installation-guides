@@ -10,7 +10,7 @@ sudo -H pip install setuptools
 ```
 
 ## Install Setuptools using pip3
-This requires [pip3](install-pip.md).
+This requires [pip3](install-pip.md#install-latest-pip3-on-gnulinux).
 
 ```bash
 sudo -H pip3 install setuptools
