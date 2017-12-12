@@ -12,8 +12,8 @@ If green LEDs are off after switching on the PC and "jr3pci_driver" does not app
 
 ```bash 
 sudo make
- sudo insmod jr3pci-driver.ko
- sudo make node
+sudo insmod jr3pci-driver.ko
+sudo make node
 ```
 
 If it doesn't work, type `lspci` to see PCI devices connected to the computer. It should be there `PCI bridge: Pericom Semiconductor PI7C9X110 PCI Express to PCI bridge` which is the PCI card Adapter.
