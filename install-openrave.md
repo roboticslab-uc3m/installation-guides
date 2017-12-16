@@ -49,3 +49,6 @@ sudo add-apt-repository ppa:openrave/release
 sudo apt-get update
 sudo apt-get install openrave
 ```
+
+## Tutorials
+- https://scaron.info/teaching/getting-started-with-openrave.html
