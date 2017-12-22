@@ -32,9 +32,9 @@ make -j$(nproc)  # compile
 sudo make install # install
 
 # We need to configure the path to look for shared libaries
-echo "export LD_LIBRARY_PATH=/usr/local/lib" >> ~/.bashrc
-echo "export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig" >> ~/.bashrc
-echo "export GST_PLUGIN_PATH=/usr/local/lib/gstreamer-1.0" >> ~/.bashrc
+echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib" >> ~/.bashrc
+echo "export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" >> ~/.bashrc
+echo "export GST_PLUGIN_PATH=$GST_PLUGIN_PATH:/usr/local/lib/gstreamer-1.0" >> ~/.bashrc
 
 # To verify that GStreamer can find the plugin. You should get a large amount of output, ending with something like this:
 # decoder             : The underlying decoder
