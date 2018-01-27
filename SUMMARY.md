@@ -12,7 +12,6 @@
 * [Install GLib](install-glib.md)
 * [Install icub-main](install-icub.md)
 * [Install KDL](install-kdl.md)
-* Install Aravis
 * [Install MBROLA](install-mbrola.md)
 * [Install NumPy](install-numpy.md)
 * [Install OpenCV](install-opencv.md)
