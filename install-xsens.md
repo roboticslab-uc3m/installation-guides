@@ -1,5 +1,5 @@
 # Install XSENS
-Install:
+Download, compile and install XSENS YARP device from `icub-main` repository.
 ```bash
 sudo apt install libgsl0-dev  # Seems to be hard dependency
 cd  # go home
@@ -12,7 +12,7 @@ sudo make install
 sudo ldconfig
 ```
 
-Check:
+Check installation:
 ```bash
 yarpdev --list | grep xsensmtx
 ```
