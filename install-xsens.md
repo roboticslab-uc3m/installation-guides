@@ -19,7 +19,7 @@ yarpdev --list | grep xsensmtx
 
 ## View XSENS data
 
-Run:
+Run (may require `sudo`):
 ```bash
 yarpdev --device inertial --subdevice xsensmtx --name /inertial
 ```
