@@ -33,9 +33,13 @@ In order to  run the acquisition program for all sensors data acquisition:
 
 ## Troubleshooting JR3
 
-If green LEDs are off after switching on the PC and `jr3pci_driver` does not appear after doing `lsmod`, try in the jr3 directory (on manipulation PC: `/home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/`) and see README_loli.
+Green LEDs should be ON after `jr3pci_driver` module is loaded (see `lsmod`). Check `/etc/rc.local` to see if this is the default upon switching on the PC. Possible fixes if not working:
 
-If it is due to a kernel upgrade, sometimes this works:
+1. Type `lspci` to see PCI devices connected to the computer. It should be there `PCI bridge: Pericom Semiconductor PI7C9X110 PCI Express to PCI bridge` which is the PCI card Adapter.
+
+1. Try in the jr3 directory (on manipulation PC: `/home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/`) and see README_loli.
+
+1. If it is due to a kernel upgrade, sometimes this works:
 
 ```bash 
 sudo make clean
@@ -44,6 +48,4 @@ sudo insmod jr3pci-driver.ko
 sudo make node
 ```
 
-If it doesn't work, type `lspci` to see PCI devices connected to the computer. It should be there `PCI bridge: Pericom Semiconductor PI7C9X110 PCI Express to PCI bridge` which is the PCI card Adapter.
-If nothing works, shutdown and revise connections!! (Revise: PCI adapter connections, power and PCI slots).
-
+1. If nothing works, shutdown and revise connections!! (Revise: PCI adapter connections, power and PCI slots).
