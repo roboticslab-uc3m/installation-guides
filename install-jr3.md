@@ -5,7 +5,7 @@ Now add the following lines to `/etc/rc.local` (lines before the exit) to automa
 ```bash
 cd  # go $HOME
 cd repos
-git clone https://github.com/lpinel/LoliRepo
+git clone https://github.com/roboticslab-uc3m/LoliRepo
 cd /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5
 make
 insmod /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/jr3pci-driver.ko
