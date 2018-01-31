@@ -3,9 +3,12 @@
 Now add the following lines to `/etc/rc.local` (lines before the exit) to automatically run the jr3 module in the PC switching on:
 
 ```bash
- insmod /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/jr3pci-driver.ko
- mknod /dev/jr3 c 39 0
- chmod 777 /dev/jr3 #admin permission 
+cd  # go $HOME
+cd repos
+git clone https://github.com/lpinel/LoliRepo
+insmod /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/jr3pci-driver.ko
+mknod /dev/jr3 c 39 0
+chmod 777 /dev/jr3 #admin permission 
 ```
 
 If green LEDs are off after switching on the PC and "jr3pci_driver" does not appear after doing lsmod, try in the jr3 directory (on manipulation PC: `/home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/`) and see README_loli. Maybe `make clean` before, sometimes works:
