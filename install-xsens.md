@@ -16,3 +16,10 @@ Check installation:
 ```bash
 yarpdev --list | grep xsensmtx
 ```
+
+## View XSENS data
+
+Run:
+```bash
+yarpdev --device inertial --subdevice xsensmtx --name /inertial
+```
