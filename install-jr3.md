@@ -9,7 +9,7 @@ cd /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5
 make
 cd /lib/modules/$(uname -r)/kernel/drivers
 sudo mkdir jr3
-sudo cp /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/jr3pci-driver.ko
+sudo cp /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/jr3pci-driver.ko jr3/
 ```
 
 To load the compiled driver, add the following lines to `/etc/rc.local` (lines before the exit) to automatically run the jr3 module in the PC switching on (may require `sudo` if run manually):
