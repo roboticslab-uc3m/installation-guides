@@ -8,7 +8,7 @@ git clone https://github.com/roboticslab-uc3m/jr3pci-linux
 cd jr3pci-linux
 make
 cd /lib/modules/$(uname -r)/kernel/drivers
-sudo mkdir jr3
+sudo mkdir -p jr3
 sudo cp $HOME/repos/jr3pci-linux/jr3pci-driver.ko jr3/
 sudo depmod
 ```
