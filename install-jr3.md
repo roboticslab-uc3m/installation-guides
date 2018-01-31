@@ -4,12 +4,12 @@ Download, compile and install JR3 kernel driver.
 ```bash
 cd  # go $HOME
 cd repos
-git clone https://github.com/roboticslab-uc3m/LoliRepo
-cd /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5
+https://github.com/roboticslab-uc3m/jr3pci-linux
+cd jr3pci-linux
 make
 cd /lib/modules/$(uname -r)/kernel/drivers
 sudo mkdir jr3
-sudo cp /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/jr3pci-driver.ko jr3/
+sudo cp $HOME/repos/jr3pci-linux/jr3pci-driver.ko jr3/
 sudo depmod
 ```
 
