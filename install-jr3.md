@@ -37,7 +37,7 @@ Green LEDs should be ON after `jr3pci_driver` module is loaded (see `lsmod | gre
 
 1. Type `lspci` to see PCI devices connected to the computer. It should be there `PCI bridge: Pericom Semiconductor PI7C9X110 PCI Express to PCI bridge` which is the PCI card Adapter.
 
-1. Try in the jr3 directory (on manipulation PC: `/home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/`) and see README_loli.
+1. Shutdown and review connections!! (review: PCI adapter connections, power and PCI slots).
 
 1. If it is due to a kernel upgrade, sometimes this works:
    ```bash 
@@ -46,5 +46,3 @@ Green LEDs should be ON after `jr3pci_driver` module is loaded (see `lsmod | gre
    sudo insmod jr3pci-driver.ko
    sudo make node
    ```
-
-1. If nothing works, shutdown and review connections!! (review: PCI adapter connections, power and PCI slots).
