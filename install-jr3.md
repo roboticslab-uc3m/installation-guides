@@ -16,8 +16,8 @@ sudo depmod
 To load the compiled driver, add the following lines to `/etc/rc.local` (lines before the exit) to automatically run the jr3 module in the PC switching on (may require `sudo` if run manually):
 
 ```bash
-modprobe jr3pci-driver # Replaces: insmod jr3pci-driver.ko
-mknod /dev/jr3 c 39 0
+modprobe jr3pci-driver  # Replaces: insmod jr3pci-driver.ko
+mknod /dev/jr3 c 39 0  # Equivalent to (in code dir): make node
 chmod 777 /dev/jr3
 ```
 
@@ -39,10 +39,13 @@ Green LEDs should be ON after `jr3pci_driver` module is loaded (see `lsmod | gre
 
 1. Shutdown and review connections!! (review: PCI adapter connections, power and PCI slots).
 
-1. If it is due to a kernel upgrade, sometimes this works:
+1. If it is due to a kernel upgrade, sometimes cleaning and installing again works:
    ```bash 
+   cd $HOME/repos/jr3pci-linux
    sudo make clean
-   sudo make
-   sudo insmod jr3pci-driver.ko
-   sudo make node
+   make
+   cd /lib/modules/$(uname -r)/kernel/drivers
+   sudo mkdir -p jr3
+   sudo cp $HOME/repos/jr3pci-linux/jr3pci-driver.ko jr3/
+   sudo depmod
    ```
