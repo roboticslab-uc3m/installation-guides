@@ -9,10 +9,10 @@
 * [Install CWiiD](install-cwiid.md)
 * [Install ECF](install-ecf.md)
 * [Install Eigen](install-eigen.md)
+* [Install ESPEAK with MBROLA](install-espeak-mbrola.md)
 * [Install GLib](install-glib.md)
 * [Install icub-main](install-icub.md)
 * [Install KDL](install-kdl.md)
-* [Install MBROLA](install-mbrola.md)
 * [Install NumPy](install-numpy.md)
 * [Install OpenCV](install-opencv.md)
 * [Install OpenNI2 & NiTE2](install-openni-nite.md)
@@ -28,4 +28,3 @@
 * [Install XWiimote](install-xwiimote.md)
 * [Install YARP](install-yarp.md)
 * [Install Setuptools](install-setuptools.md)
-
