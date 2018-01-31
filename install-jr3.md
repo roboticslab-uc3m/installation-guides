@@ -1,5 +1,6 @@
 # Install JR3
 
+Download and compile JR3 kernel driver.
 ```bash
 cd  # go $HOME
 cd repos
@@ -8,7 +9,7 @@ cd /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5
 make
 ```
 
-Now add the following lines to `/etc/rc.local` (lines before the exit) to automatically run the jr3 module in the PC switching on (may require `sudo` if run manually):
+To load the compiled driver, add the following lines to `/etc/rc.local` (lines before the exit) to automatically run the jr3 module in the PC switching on (may require `sudo` if run manually):
 
 ```bash
 insmod /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/jr3pci-driver.ko
