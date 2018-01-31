@@ -35,7 +35,7 @@ In order to  run the acquisition program for all sensors data acquisition:
 
 Green LEDs should be ON after `jr3pci_driver` module is loaded (see `lsmod | grep jr3`). Check `/etc/rc.local` to see if this is the default upon switching on the PC. Possible fixes if not working:
 
-1. Type `lspci` to see PCI devices connected to the computer. It should be there `PCI bridge: Pericom Semiconductor PI7C9X110 PCI Express to PCI bridge` which is the PCI card Adapter.
+1. Type `lspci` to see PCI devices connected to the computer. The PCI card Adapter `PCI bridge: Pericom Semiconductor PI7C9X110 PCI Express to PCI bridge` should be there.
 
 1. Shutdown and review connections!! (review: PCI adapter connections, power and PCI slots).
 
