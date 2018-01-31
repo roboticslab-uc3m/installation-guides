@@ -24,4 +24,9 @@ sudo make node
 If it doesn't work, type `lspci` to see PCI devices connected to the computer. It should be there `PCI bridge: Pericom Semiconductor PI7C9X110 PCI Express to PCI bridge` which is the PCI card Adapter.
 If nothing works, shutdown and revise connections!! (Revise: PCI adapter connections, power and PCI slots).
 
-In order to  **run the acquisition program**, go to manipulation PC: `/home/teo/repos/LoliRepo/LoliRepo/TFM/jr3Yarp/jr3pci4channelYarp/build` and execute `./jr3pci4channelYarp` for all sensors data acquisition.
+In order to  **run the acquisition program** for all sensors data acquisition:
+1. Install https://github.com/roboticslab-uc3m/yarp-devices
+1. Go to manipulation PC:
+   ```
+   yarpdev --device Jr3 --period 20 --name /jr3  --ports "(ch0:o ch1:o ch2:o ch3:o)" --channels 24 --ch0:o 0 5 0 5 --ch1:o 6 11 0 5 --ch2:o 12 17 0 5 --ch3:o 18 23 0 5
+   ```
