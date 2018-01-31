@@ -30,3 +30,4 @@ In order to  **run the acquisition program** for all sensors data acquisition:
    ```
    yarpdev --device Jr3 --period 20 --name /jr3  --ports "(ch0:o ch1:o ch2:o ch3:o)" --channels 24 --ch0:o 0 5 0 5 --ch1:o 6 11 0 5 --ch2:o 12 17 0 5 --ch3:o 18 23 0 5
    ```
+1. Data can be vizualized via classic `yarp read ... /jr3/ch0:o` or like in [teoTools.xml](https://github.com/roboticslab-uc3m/teo-configuration-files/blob/762ebe5079e05da38602e21e2feccd9901d8513d/share/teoTools/scripts/teoTools.xml#L44-L71).
