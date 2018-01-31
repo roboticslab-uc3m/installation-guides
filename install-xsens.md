@@ -1,5 +1,6 @@
 # Install XSENS
-```
+Install:
+```bash
 sudo apt install libgsl0-dev  # Seems to be hard dependency
 cd  # go home
 mkdir -p repos; cd repos  # make $HOME/repos if it doesn't exist; then, enter it
@@ -9,4 +10,9 @@ cmake ..  -DENABLE_icubmod_xsensmtx=ON  # Configure the icub-main software
 make -j$(nproc)  # compile
 sudo make install
 sudo ldconfig
+```
+
+Check:
+```bash
+yarpdev --list | grep xsensmtx
 ```
