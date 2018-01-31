@@ -17,9 +17,18 @@ Check installation:
 yarpdev --list | grep xsensmtx
 ```
 
-## View XSENS data
+# Set rules to avoid needing sudo
 
-Run (may require `sudo`):
+In order to allow yarp to read data from the sensors connected via USB port, you need to add the following rule for udev system:
+
+` KERNEL == "ttyUSB0", MODE = "0777"`
+
+The advise from [debian udev documentation](https://wiki.debian.org/udev) is to define rules in a file named `z21\_persistent-local.rules`. If there is no such file, it is recommended to create one. Taking this in consideration, the file
+name and path should look like this: `/etc/udev/rules.d/z21\_persistent-local.rules`
+
+# View XSENS data
+
+Run (may require `sudo` if rules not set):
 ```bash
 yarpdev --device inertial --subdevice xsensmtx --name /inertial
 ```
