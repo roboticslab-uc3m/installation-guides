@@ -9,7 +9,7 @@
 * [Install CWiiD](install-cwiid.md)
 * [Install ECF](install-ecf.md)
 * [Install Eigen](install-eigen.md)
-* [Install ESPEAK with MBROLA](install-espeak-mbrola.md)
+* [Install eSpeak with MBROLA](install-espeak-mbrola.md)
 * [Install GLib](install-glib.md)
 * [Install icub-main](install-icub.md)
 * [Install KDL](install-kdl.md)
