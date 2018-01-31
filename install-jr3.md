@@ -1,4 +1,4 @@
-# JR3 card
+# Install JR3
 
 Now add the following lines to `/etc/rc.local` (lines before the exit) to automatically run the jr3 module in the PC switching on:
 
