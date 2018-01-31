@@ -23,3 +23,5 @@ Run (may require `sudo`):
 ```bash
 yarpdev --device inertial --subdevice xsensmtx --name /inertial
 ```
+
+Data can be vizualized via classic `yarp read ... /inertial` or like in [teoTools.xml](https://github.com/roboticslab-uc3m/teo-configuration-files/blob/762ebe5079e05da38602e21e2feccd9901d8513d/share/teoTools/scripts/teoTools.xml#L74-L79).
