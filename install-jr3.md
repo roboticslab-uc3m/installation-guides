@@ -1,18 +1,21 @@
 # Install JR3
 
-Download and compile JR3 kernel driver.
+Download, compile and install JR3 kernel driver.
 ```bash
 cd  # go $HOME
 cd repos
 git clone https://github.com/roboticslab-uc3m/LoliRepo
 cd /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5
 make
+cd /lib/modules/$(uname -r)/kernel/drivers
+sudo mkdir jr3
+sudo cp /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/jr3pci-driver.ko
 ```
 
 To load the compiled driver, add the following lines to `/etc/rc.local` (lines before the exit) to automatically run the jr3 module in the PC switching on (may require `sudo` if run manually):
 
 ```bash
-insmod /home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/jr3pci-driver.ko
+modprobe jr3pci-driver # Replaces: insmod jr3pci-driver.ko
 mknod /dev/jr3 c 39 0
 chmod 777 /dev/jr3
 ```
@@ -29,9 +32,12 @@ In order to  run the acquisition program for all sensors data acquisition:
 
 ## Troubleshooting JR3
 
-If green LEDs are off after switching on the PC and "jr3pci_driver" does not appear after doing lsmod, try in the jr3 directory (on manipulation PC: `/home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/`) and see README_loli. Maybe `make clean` before, sometimes works:
+If green LEDs are off after switching on the PC and "jr3pci_driver" does not appear after doing lsmod, try in the jr3 directory (on manipulation PC: `/home/teo/repos/LoliRepo/jr3/jr3pci-linux-0.5/`) and see README_loli.
+
+If it is due to a kernel upgrade, sometimes this works:
 
 ```bash 
+sudo make clean
 sudo make
 sudo insmod jr3pci-driver.ko
 sudo make node
