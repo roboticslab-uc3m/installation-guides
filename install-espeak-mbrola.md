@@ -1,6 +1,8 @@
 # Install eSpeak with MBROLA Voices
 
-We use ESPEAK with MBROLA Voices for speech synthesis. Official download page of MBROLA: [link](http://espeak.sourceforge.net/mbrola.html)
+We use ESPEAK with MBROLA Voices for speech synthesis.
+- Official download page of eSpeak: [link](http://espeak.sourceforge.net/)
+- Official download page of MBROLA: [link](http://espeak.sourceforge.net/mbrola.html)
 
 ## Install eSpeak and MBROLA Voices (Ubuntu)
 
