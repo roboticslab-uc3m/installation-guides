@@ -4,7 +4,7 @@ Download, compile and install JR3 kernel driver.
 ```bash
 cd  # go $HOME
 cd repos
-https://github.com/roboticslab-uc3m/jr3pci-linux
+git clone https://github.com/roboticslab-uc3m/jr3pci-linux
 cd jr3pci-linux
 make
 cd /lib/modules/$(uname -r)/kernel/drivers
