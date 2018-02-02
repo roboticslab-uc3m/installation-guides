@@ -97,18 +97,3 @@ You may need to launch `yarpdev --device OpenNI2DeviceServer` from /YOUR_PATH_TO
 ```bash
 sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
 ```
-
-
-## Install YARP 2.3.68+ (Debian 6.0.10)
-
-```bash
-sudo apt-get install build-essential libace-dev subversion git
-cd  # go home
-mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
-git clone https://github.com/robotology/yarp
-git checkout e1221283abb1abc77619429bb4d9408cbb1cf6c8  # Corresponds to 2.3.68+181-20170203.11+gite122128
-cd yarp; mkdir build; cd build
-cmake .. -DYARP_NO_DEPRECATED_WARNINGS=ON  # YARP_DEPRECATED_MSG happened on 2.3.66.2 -> 2.3.68
-make -j$(nproc)  # compile
-sudo make install; sudo ldconfig; cd # install and go home
-```
