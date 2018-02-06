@@ -27,6 +27,8 @@ sudo ldconfig
 
 ## Install NiTE2.2 (Ubuntu)
 
+For detecting skeletons, not mandatory for YARP since long ago.
+
 ```bash
 cd  # go home
 mkdir -p src; cd src  # create $HOME/src if it doesn't exist; then, enter it
