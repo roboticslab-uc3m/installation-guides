@@ -25,6 +25,22 @@ sudo ln -s $PWD/Include /usr/local/include/OpenNI2  # $PWD should be /yourPathTo
 sudo ldconfig
 ```
 
+## Install Kinect OpenNI2 driver (Ubuntu)
+
+Yes! Support for ye-oldie Kinect v1, via compiling OpenNI2 support as documented [here](https://github.com/OpenKinect/libfreenect/tree/master/OpenNI2-FreenectDriver). Approximate commands:
+
+```bash
+sudo apt install libxm-dev
+cd  # go home
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
+git clone https://github.com/OpenKinect/libfreenect
+cd libfreenect && mkdir -p build
+cmake .. -DBUILD_OPENNI2_DRIVER=ON
+sudo make install
+sudo ldconfig
+sudo ln -s /usr/local/lib/OpenNI2-FreenectDriver/libFreenectDriver.so /usr/local/lib/OpenNI2/Drivers
+```
+
 ## Install NiTE2.2 (Ubuntu)
 
 For detecting skeletons, not mandatory for YARP since long ago.
