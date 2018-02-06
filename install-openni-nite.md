@@ -12,7 +12,7 @@ sudo apt install libopenni-sensor-primesense0
 
 ```bash
 sudo apt install git libusb-1.0-0-dev libudev-dev  # libpcl-dev & pcl-tools instead of libpcl-all-dev as of Dic/2015
-sudo apt install openjdk-6-jdk  # if not using other java version
+sudo apt install openjdk-8-jdk  # for xenial; openjdk-6-jdk for trusty; if not using other java version.
 sudo apt install freeglut3-dev
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
