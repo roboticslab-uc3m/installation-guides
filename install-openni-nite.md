@@ -30,7 +30,7 @@ sudo ldconfig
 Yes! Support for ye-oldie Kinect v1, via compiling OpenNI2 support as documented [here](https://github.com/OpenKinect/libfreenect/tree/master/OpenNI2-FreenectDriver). Approximate commands:
 
 ```bash
-sudo apt install libxm-dev
+sudo apt install libxmu-dev
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/OpenKinect/libfreenect
