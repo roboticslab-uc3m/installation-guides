@@ -6,7 +6,7 @@
 sudo apt-get install daemontools daemontools-run csh
 ```
 
-"daemontools" can be activated in "/etc/rc.local" through the line (before exit):
+`daemontools` can be activated in `/etc/rc.local` through the line (before exit):
 
 ```bash
 /bin/csh -cf '/usr/bin/svscanboot &'
