@@ -14,25 +14,33 @@ sudo apt-get install daemontools daemontools-run csh
 
 ## Create a service
 
-Create /etc/service/whatever/run and give chmod +x
+Create /etc/service/whatever/run and give `chmod +x`
 
 ## Monitoring
 
-Get the status of, say, a '/etc/service/yarprun' service with:
+Get the status of, say, a `/etc/service/yarprun` service with:
 
-`sudo svstat /etc/service/yarprun`
+```bash
+sudo svstat /etc/service/yarprun
+```
 
 Stop the service with:
 
-`sudo svc -d /etc/service/yarprun`
+```bash
+sudo svc -d /etc/service/yarprun`
+```
 
 Start the service with:
 
-`sudo svc -u /etc/service/yarprun`
+```bash
+sudo svc -u /etc/service/yarprun`
+```
 
 You can get some log messages for debugging with:
 
-`ps aux | grep readproctitle`
+```bash
+ps aux | grep readproctitle
+```
 
 -----
 
