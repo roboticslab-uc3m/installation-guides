@@ -14,7 +14,7 @@ sudo apt-get install daemontools daemontools-run csh
 
 ## Create a service
 
-Create /etc/service/whatever/run and give `chmod +x`
+Create `/etc/service/whatever/run` and give `chmod +x` permissions.
 
 ## Monitoring
 
