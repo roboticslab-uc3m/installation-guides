@@ -11,6 +11,7 @@
 * [Install Eigen](install-eigen.md)
 * [Install eSpeak with MBROLA](install-espeak-mbrola.md)
 * [Install GLib](install-glib.md)
+* [Install googletest](install-googletest.md)
 * [Install icub-main](install-icub.md)
 * [Install KDL](install-kdl.md)
 * [Install NumPy](install-numpy.md)
