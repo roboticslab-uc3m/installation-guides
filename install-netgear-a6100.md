@@ -5,7 +5,7 @@ First, we have to install required drivers that have not been merged with the li
 We can install the required build packages, corresponding to our kernel version:
 ```bash
  uname -r
- sudo apt-get install linux-headers-$(uname -r) build-essential
+ sudo apt install linux-headers-$(uname -r) build-essential
 ```
 
 Now, we will download the source code: 
