@@ -1,4 +1,6 @@
-# Setting up Wifi connection: Netgear A6100 WiFi USB Mini Adapter
+# Netgear A6100 WiFi USB Mini Adapter
+
+Note: this was for Debian 6.0. May be different or not required on Ubuntu.
 
 First, we have to install required drivers that have not been merged with the linux kernel and do not come with most linux distros.
 
