@@ -24,7 +24,7 @@ Compile the kernel module:
  make
 ```
 
-Now Then install using make install. Then add 8812au to the end of the file /etc/modules with tee -a to tell the OS to load the driver when it boots
+Now install using make install. Then add 8812au to the end of the file /etc/modules with tee -a to tell the OS to load the driver when it boots
 ```bash
  sudo make install
  sudo modprobe 8812au
