@@ -10,13 +10,6 @@ Similar to the advice from [debian udev documentation](https://wiki.debian.org/u
 ```
 KERNEL == "ttyUSB0", MODE = "0777"
 ```
-
-## Install Xtion Pro Live OpenNI driver (Ubuntu)
-
-```bash
-sudo apt install libopenni-sensor-primesense0 
-```
-
 ## Install OpenNI2 (Ubuntu)
 
 ```bash
@@ -32,6 +25,12 @@ sudo ln -s $PWD/Bin/x64-Release/libOpenNI2.so /usr/local/lib/  # $PWD should be 
 sudo ln -s $PWD/Bin/x64-Release/OpenNI2/ /usr/local/lib/  # $PWD should be /yourPathTo/OpenNI2
 sudo ln -s $PWD/Include /usr/local/include/OpenNI2  # $PWD should be /yourPathTo/OpenNI2
 sudo ldconfig
+```
+
+## Install ASUS Xtion Pro Live OpenNI driver (Ubuntu)
+
+```bash
+sudo apt install libopenni-sensor-primesense0 
 ```
 
 ## Install Kinect OpenNI2 driver (Ubuntu)
