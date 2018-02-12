@@ -87,9 +87,10 @@ cmake .. -DCREATE_DEVICE_LIBRARY_MODULES=ON -DENABLE_yarpmod_OpenNI2DeviceServer
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
+You should now be able to launch `yarpdev --device OpenNI2DeviceServer`.
 
 ### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
-NiTE only required for skeletons. You may need to launch `yarpdev --device OpenNI2DeviceServer` from /YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist if using NiTE.
+NiTE only required for skeletons.
 ```bash
 cd  # go home
 cd repos/yarp/build
@@ -97,6 +98,7 @@ cmake .. -DNITE2_INCLUDE_LOCAL=/usr/local/include/NiTE-Linux-x64-2.2 -DNITE2_LIB
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
+You may need to launch `yarpdev --device OpenNI2DeviceServer` from /YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist if using NiTE.
 
 ## Note for Linux Mint 17.3 Rosa
 ```bash
