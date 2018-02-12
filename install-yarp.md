@@ -88,7 +88,7 @@ make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
 
-## Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
+### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
 NiTE only required for skeletons. You may need to launch `yarpdev --device OpenNI2DeviceServer` from /YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist if using NiTE.
 ```bash
 cd  # go home
