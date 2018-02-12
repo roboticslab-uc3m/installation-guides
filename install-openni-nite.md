@@ -2,6 +2,15 @@
 
 We use OpenNI2 for ASUS and Kinect support.
 
+# Set rules to avoid needing sudo
+
+In order to allow a non-sudoer to read data from the sensors connected via USB port, you need to add a rule for udev system. 
+
+Similar to the advice from [debian udev documentation](https://wiki.debian.org/udev), create `/etc/udev/rules.d/80-persistent-local-usb.rules` with the following contents:
+```
+KERNEL == "ttyUSB0", MODE = "0777"
+```
+
 ## Install Xtion Pro Live OpenNI driver (Ubuntu)
 
 ```bash
