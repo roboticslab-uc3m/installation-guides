@@ -89,7 +89,7 @@ cmake .. -DNITE2_INCLUDE_LOCAL=/usr/local/include/NiTE-Linux-x64-2.2 -DNITE2_LIB
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
-You may need to launch `yarpdev --device OpenNI2DeviceServer` from /YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist if using NiTE.
+You may need to launch `yarpdev --device OpenNI2DeviceServer` from `/YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist` if using NiTE.
 
 ## Note for Linux Mint 17.3 Rosa
 ```bash
