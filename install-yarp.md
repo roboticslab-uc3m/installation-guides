@@ -87,7 +87,7 @@ cmake .. -DCREATE_DEVICE_LIBRARY_MODULES=ON -DENABLE_yarpmod_OpenNI2DeviceServer
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
-You should now be able to launch `yarpdev --device OpenNI2DeviceServer`.
+You should now be able to launch `yarpdev --device OpenNI2DeviceServer`. It is a complex device, see options with `yarpdev --device OpenNI2DeviceServer` or example [here](https://github.com/roboticslab-uc3m/teo-configuration-files/blob/ee168eaf61454113b1ac7113fbb24e10af679bc3/share/teoBase/scripts/teoBase.xml#L35-L36).
 
 ### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
 NiTE only required for skeletons.
