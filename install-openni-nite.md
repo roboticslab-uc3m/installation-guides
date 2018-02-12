@@ -2,18 +2,10 @@
 
 We use OpenNI2 for ASUS and Kinect support.
 
-## Set rules to avoid needing sudo
-
-In order to allow a non-sudoer to read data from the sensors connected via USB port, you need to add a rule for udev system. 
-
-Similar to the advice from [debian udev documentation](https://wiki.debian.org/udev), create `/etc/udev/rules.d/80-persistent-local-usb.rules` with the following contents:
-```
-KERNEL == "ttyUSB0", MODE = "0777"
-```
 ## Install OpenNI2 (Ubuntu)
 
 ```bash
-sudo apt install git libusb-1.0-0-dev libudev-dev  # libpcl-dev & pcl-tools instead of libpcl-all-dev as of Dic/2015
+sudo apt install git libusb-1.0-0-dev libudev-dev
 sudo apt install openjdk-8-jdk  # for xenial; openjdk-6-jdk for trusty; if not using other java version.
 sudo apt install freeglut3-dev
 cd  # go home
@@ -47,6 +39,15 @@ cmake .. -DBUILD_OPENNI2_DRIVER=ON
 sudo make install
 sudo ldconfig
 sudo ln -s /usr/local/lib/OpenNI2-FreenectDriver/libFreenectDriver.so /usr/local/lib/OpenNI2/Drivers
+```
+
+## Set rules to avoid needing sudo
+
+In order to allow a non-sudoer to read data from the sensors connected via USB port, you need to add a rule for udev system. 
+
+Similar to the advice from [debian udev documentation](https://wiki.debian.org/udev), create `/etc/udev/rules.d/80-persistent-local-usb.rules` with the following contents:
+```
+KERNEL == "ttyUSB0", MODE = "0777"
 ```
 
 ## Install NiTE2.2 (Ubuntu)
