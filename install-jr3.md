@@ -49,3 +49,6 @@ Green LEDs should be ON after `jr3pci_driver` module is loaded (see `lsmod | gre
    sudo cp $HOME/repos/jr3pci-linux/jr3pci-driver.ko jr3/
    sudo depmod
    ```
+
+## Unclassified
+The following repo contains a driver described as suitable for jr3 for Xenomai using RTDM: https://github.com/wdomski/jr3
