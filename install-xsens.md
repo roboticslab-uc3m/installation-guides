@@ -17,7 +17,7 @@ Check installation:
 yarpdev --list | grep xsensmtx
 ```
 
-# Set rules to avoid needing sudo
+## Set rules to avoid needing sudo
 
 In order to allow a non-sudoer to read data from the sensors connected via USB port, you need to add a rule for udev system. 
 
@@ -26,8 +26,7 @@ Similar to the advice from [debian udev documentation](https://wiki.debian.org/u
 KERNEL == "ttyUSB0", MODE = "0777"
 ```
 
-
-# View XSENS data
+## View XSENS data
 
 Run (may require `sudo` if rules not set):
 ```bash
