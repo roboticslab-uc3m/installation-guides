@@ -2,7 +2,7 @@
 
 We use OpenNI2 for ASUS and Kinect support.
 
-# Set rules to avoid needing sudo
+## Set rules to avoid needing sudo
 
 In order to allow a non-sudoer to read data from the sensors connected via USB port, you need to add a rule for udev system. 
 
