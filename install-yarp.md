@@ -88,10 +88,14 @@ make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
 
-### With NiTE too
+## Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
 NiTE only required for skeletons. You may need to launch `yarpdev --device OpenNI2DeviceServer` from /YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist if using NiTE.
 ```bash
+cd  # go home
+cd repos/yarp/build
 cmake .. -DNITE2_INCLUDE_LOCAL=/usr/local/include/NiTE-Linux-x64-2.2 -DNITE2_LIBRARY=/usr/local/lib/libNiTE2.so
+make -j$(nproc)  # compile
+sudo make install; sudo ldconfig; cd # install and go home
 ```
 
 ## Note for Linux Mint 17.3 Rosa
