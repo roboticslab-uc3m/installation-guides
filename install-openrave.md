@@ -58,6 +58,8 @@ Installers such as openrave-0.9.0-5cfc74-win32-vc100-setup are broken (break do 
 References:
 - http://robots.uc3m.es/index.php/OpenRAVE_R1457_Windows_Install
 - https://www.cs.cmu.edu/~motionplanning/homework/hw1/hw1.html
+- http://openrave.org/docs/latest_stable/coreapihtml/installation_windows.html
+- https://github.com/rdiankov/openrave
 
 ## Tutorials
 - https://scaron.info/teaching/getting-started-with-openrave.html
