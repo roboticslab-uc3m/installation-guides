@@ -1,14 +1,12 @@
 # Install YARP
 
-We use YARP for communications. Installing YARP on Ubuntu is quite straightforward.
-
-Note that you will be prompted for your password upon using `sudo` a couple of times. 
-
-For additional options use ccmake instead of cmake.
-
-Official download page: [link](http://www.yarp.it/) 
+We use YARP for communications. Official page: [link](http://www.yarp.it/) 
 
 ## Install YARP (Ubuntu)
+
+Installing YARP on Ubuntu is quite straightforward.
+
+Note that you will be prompted for your password upon using `sudo` a couple of times. 
 
 As can be seen, here we are accounting for: YARP `lib_math`, the GUIs and `mjpeg` carrier.
 
@@ -27,6 +25,7 @@ make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
 
+For additional options use `ccmake` instead of `cmake`.
 
 ## Install ROS support
 
@@ -95,3 +94,9 @@ You may need to launch `yarpdev --device OpenNI2DeviceServer` from `/YOUR_PATH_T
 ```bash
 sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
 ```
+
+## Install YARP (Windows)
+
+Binary releases usually work well: http://www.yarp.it/download.html
+
+For instance `yarp_2.3.70_v14_x86_1.exe	` has been tested on Windows 10, and we even got a nice: `Windows 10	+	cmake 3.9.4	+ VS 15 2017	jdk-8u152-windows-i586.exe	+ MATLAB R2015b (8.6 32 bit)` setup working nicely, only having to install `things.i` manually (see https://github.com/robotology/yarp/issues/698) and doing `javac -source 1.3 -target 1.3 *.java` with 1.5 instead. Note that binsings have been improved, so should expect better results with `yarp_2.3.72`.
