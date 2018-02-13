@@ -1,13 +1,14 @@
 # Install OpenRAVE
 
-We use the OpenRAVE core library for simulations. Note that you will be prompted for your password upon using `sudo`.
+We use the OpenRAVE core library for simulations.
 
 - Official links: [[OpenRAVE](http://openrave.org/)]. [[OpenRAVE: Building and Installing page](http://openrave.org/docs/latest_stable/coreapihtml/installation.html)].
-- Additional links: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)]. [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)]. [[ref3, xenial](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/)].
 
 ## Install OpenRAVE (Most modern Ubuntu, such as 14.04 or 16.04)
 
-No official PPA, install from source.
+- Additional links: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)]. [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)]. [[ref3, xenial](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/)].
+
+No official PPA, install from source. Note that you will be prompted for your password upon using `sudo`.
 
 ```bash
 sudo apt install git
@@ -49,6 +50,14 @@ sudo add-apt-repository ppa:openrave/release
 sudo apt-get update
 sudo apt-get install openrave
 ```
+
+## Install OpenRAVE (Windows)
+
+Installers such as openrave-0.9.0-5cfc74-win32-vc100-setup are broken (break do to broken Boost 1.44 and Qt links, not to mention old VS version), so we go old-school.
+
+References:
+- http://robots.uc3m.es/index.php/OpenRAVE_R1457_Windows_Install
+- https://www.cs.cmu.edu/~motionplanning/homework/hw1/hw1.html
 
 ## Tutorials
 - https://scaron.info/teaching/getting-started-with-openrave.html
