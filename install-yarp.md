@@ -99,4 +99,4 @@ sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
 
 Binary releases usually work well: http://www.yarp.it/download.html
 
-For instance `yarp_2.3.70_v14_x86_1.exe	` has been tested on Windows 10, and we even got a nice: `Windows 10	+	cmake 3.9.4	+ VS 15 2017	jdk-8u152-windows-i586.exe	+ MATLAB R2015b (8.6 32 bit)` setup working nicely, only having to install `things.i` manually (see https://github.com/robotology/yarp/issues/698) and doing `javac -source 1.3 -target 1.3 *.java` with 1.5 instead. Note that binsings have been improved, so should expect better results with `yarp_2.3.72`.
+For instance `yarp_2.3.70_v14_x86_1.exe	` has been tested on Windows 10, and we even got a nice: `Windows 10	+	cmake 3.9.4	+ VS 15 2017 + jdk-8u152-windows-i586.exe	+ MATLAB R2015b (8.6 32 bit)` setup working nicely, only having to install `things.i` manually (see https://github.com/robotology/yarp/issues/698) and doing `javac -source 1.3 -target 1.3 *.java` with 1.5 instead. Note that binsings have been improved, so should expect better results with `yarp_2.3.72`.
