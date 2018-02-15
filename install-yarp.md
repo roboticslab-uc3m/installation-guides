@@ -35,7 +35,7 @@ If you have the line `source /opt/ros/indigo/setup.bash` at the end of ~/.bashrc
 ```bash
 cd  # go home
 cd repos/yarp/build
-cmake .. -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_mjpeg_carrier=ON -DENABLE_yarpcar_tcpros_carrier=ON -DENABLE_yarpcar_xmlrpc_carrier=ON
+cmake .. -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_tcpros_carrier=ON -DENABLE_yarpcar_xmlrpc_carrier=ON
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
