@@ -82,7 +82,7 @@ You should now be able to launch `yarpdev --device OpenNI2DeviceServer`. It is a
 ### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
 NiTE only required for skeletons.
 ```bash
-cd  # go home
+cd  # go home In addition to above steps for OpenNI:
 cd repos/yarp/build
 cmake .. -DNITE2_INCLUDE_LOCAL=/usr/local/include/NiTE-Linux-x64-2.2 -DNITE2_LIBRARY=/usr/local/lib/libNiTE2.so
 make -j$(nproc)  # compile
