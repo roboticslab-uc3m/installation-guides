@@ -59,6 +59,7 @@ References:
 - http://robots.uc3m.es/index.php/OpenRAVE_R1457_Windows_Install
 - https://www.cs.cmu.edu/~motionplanning/homework/hw1/hw1.html
 - http://openrave.org/docs/latest_stable/coreapihtml/installation_windows.html
+- http://sukhoy.public.iastate.edu/openrave/
 - https://github.com/rdiankov/openrave
 
 ## Tutorials
