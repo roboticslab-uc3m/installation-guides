@@ -109,5 +109,5 @@ sudo make install; sudo ldconfig; cd # install and go home
 ## Install MATLAB bindings
 
 Two options here:
-1. Classical way via Java bindings, which is similar to Python, then setting `classpath.txt` and `librarypath.txt `. Ref: http://wiki.icub.org/wiki/Calling_yarp_from_Matlab
+1. Classical way via Java bindings, which is similar to Python, then setting the `classpath.txt` and `librarypath.txt` files contained within MATLAB. Ref: http://wiki.icub.org/wiki/Calling_yarp_from_Matlab
 1. New repo directly against MATLAB. Note that it links against MATLAB libs, so you must match compiler in addition to bits (Windows MATLAB 2017b only provides 64-bit mingw version). Ref: https://github.com/robotology-playground/yarp-matlab-bindings
