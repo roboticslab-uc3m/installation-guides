@@ -40,7 +40,6 @@ make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
 
-
 ## Install Python bindings
 
 Swig is needed in order to build the python bindings. It is normally installed with
@@ -63,6 +62,12 @@ cmake .. -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
+
+## Install MATLAB bindings
+
+Two options here:
+1. Classical way via Java bindings, which is similar to Python, then setting `classpath.txt` and `librarypath.txt `. Ref: http://wiki.icub.org/wiki/Calling_yarp_from_Matlab
+1. New repo directly against MATLAB. Note that it links against MATLAB libs, so you must match compiler in addition to bits (Windows MATLAB 2017b only provides 64-bit mingw version). Ref: https://github.com/robotology-playground/yarp-matlab-bindings
 
 ## Install additional YARP device: OpenNI2DeviceServer (Ubuntu)
 
