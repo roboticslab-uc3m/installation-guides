@@ -27,6 +27,19 @@ sudo make install; sudo ldconfig; cd # install and go home
 
 For additional options use `ccmake` instead of `cmake`.
 
+### Note for Linux Mint 17.3 Rosa
+```bash
+sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
+```
+
+## Install YARP (Windows)
+
+Binary releases usually work well: http://www.yarp.it/download.html
+
+For instance `yarp_2.3.70_v14_x86_1.exe	` has been tested on Windows 10, and we even got a nice: `Windows 10	+	cmake 3.9.4	+ VS 15 2017 + jdk-8u152-windows-i586.exe	+ MATLAB R2015b (8.6 32 bit)` setup working nicely, only having to install `things.i` manually (see https://github.com/robotology/yarp/issues/698) and doing `javac -source 1.3 -target 1.3 *.java` with `1.5` instead. Note that bindings have been improved, so should expect better results with `yarp_2.3.72`.
+
+# Install Additional Plugins: Carriers
+
 ## Install ROS support
 
 Make sure you have installed previously YARP and that the ROS environment is not sourced, as it causes the build to fail.
@@ -39,6 +52,36 @@ cmake .. -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_tcpros_carrier=ON -DENAB
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
+
+# Install Additional Plugins: Devices
+
+## Install additional YARP device: OpenNI2DeviceServer (Ubuntu)
+
+Make sure you have previously installed YARP and:
+ 
+- [Install OpenNI2 & NiTE2](install-openni-nite.md)
+
+```bash
+cd  # go home
+cd repos/yarp/build
+cmake .. -DCREATE_DEVICE_LIBRARY_MODULES=ON -DENABLE_yarpmod_OpenNI2DeviceServer=ON -DENABLE_yarpmod_OpenNI2DeviceClient=ON -DOpenNI2_INCLUDE_DIR=/usr/local/include/OpenNI2/ -DOpenNI2_LIBRARY=/usr/local/lib/libOpenNI2.so
+make -j$(nproc)  # compile
+sudo make install; sudo ldconfig; cd # install and go home
+```
+You should now be able to launch `yarpdev --device OpenNI2DeviceServer`. It is a complex device, see options with `yarpdev --device OpenNI2DeviceServer --verbose` (where there is an option to see modes) or example [here](https://github.com/roboticslab-uc3m/teo-configuration-files/blob/ee168eaf61454113b1ac7113fbb24e10af679bc3/share/teoBase/scripts/teoBase.xml#L35-L36).
+
+### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
+NiTE only required for skeletons.
+```bash
+cd  # go home In addition to above steps for OpenNI:
+cd repos/yarp/build
+cmake .. -DNITE2_INCLUDE_LOCAL=/usr/local/include/NiTE-Linux-x64-2.2 -DNITE2_LIBRARY=/usr/local/lib/libNiTE2.so
+make -j$(nproc)  # compile
+sudo make install; sudo ldconfig; cd # install and go home
+```
+You may need to launch `yarpdev --device OpenNI2DeviceServer` from `/YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist` if using NiTE.
+
+# Install Bindings
 
 ## Install Python bindings
 
@@ -68,40 +111,3 @@ sudo make install; sudo ldconfig; cd # install and go home
 Two options here:
 1. Classical way via Java bindings, which is similar to Python, then setting `classpath.txt` and `librarypath.txt `. Ref: http://wiki.icub.org/wiki/Calling_yarp_from_Matlab
 1. New repo directly against MATLAB. Note that it links against MATLAB libs, so you must match compiler in addition to bits (Windows MATLAB 2017b only provides 64-bit mingw version). Ref: https://github.com/robotology-playground/yarp-matlab-bindings
-
-## Install additional YARP device: OpenNI2DeviceServer (Ubuntu)
-
-Make sure you have previously installed YARP and:
- 
-- [Install OpenNI2 & NiTE2](install-openni-nite.md)
-
-```bash
-cd  # go home
-cd repos/yarp/build
-cmake .. -DCREATE_DEVICE_LIBRARY_MODULES=ON -DENABLE_yarpmod_OpenNI2DeviceServer=ON -DENABLE_yarpmod_OpenNI2DeviceClient=ON -DOpenNI2_INCLUDE_DIR=/usr/local/include/OpenNI2/ -DOpenNI2_LIBRARY=/usr/local/lib/libOpenNI2.so
-make -j$(nproc)  # compile
-sudo make install; sudo ldconfig; cd # install and go home
-```
-You should now be able to launch `yarpdev --device OpenNI2DeviceServer`. It is a complex device, see options with `yarpdev --device OpenNI2DeviceServer --verbose` (where there is an option to see modes) or example [here](https://github.com/roboticslab-uc3m/teo-configuration-files/blob/ee168eaf61454113b1ac7113fbb24e10af679bc3/share/teoBase/scripts/teoBase.xml#L35-L36).
-
-### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
-NiTE only required for skeletons.
-```bash
-cd  # go home In addition to above steps for OpenNI:
-cd repos/yarp/build
-cmake .. -DNITE2_INCLUDE_LOCAL=/usr/local/include/NiTE-Linux-x64-2.2 -DNITE2_LIBRARY=/usr/local/lib/libNiTE2.so
-make -j$(nproc)  # compile
-sudo make install; sudo ldconfig; cd # install and go home
-```
-You may need to launch `yarpdev --device OpenNI2DeviceServer` from `/YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist` if using NiTE.
-
-## Note for Linux Mint 17.3 Rosa
-```bash
-sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
-```
-
-## Install YARP (Windows)
-
-Binary releases usually work well: http://www.yarp.it/download.html
-
-For instance `yarp_2.3.70_v14_x86_1.exe	` has been tested on Windows 10, and we even got a nice: `Windows 10	+	cmake 3.9.4	+ VS 15 2017 + jdk-8u152-windows-i586.exe	+ MATLAB R2015b (8.6 32 bit)` setup working nicely, only having to install `things.i` manually (see https://github.com/robotology/yarp/issues/698) and doing `javac -source 1.3 -target 1.3 *.java` with `1.5` instead. Note that bindings have been improved, so should expect better results with `yarp_2.3.72`.
