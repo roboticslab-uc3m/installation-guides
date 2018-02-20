@@ -24,7 +24,7 @@ Adapted from [this post](http://www.pyimagesearch.com/2015/07/20/install-opencv-
 
 3. Install libraries and packages used to read various image and video formats from disk:
    ```bash
-   $ sudo apt install libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev
+   $ sudo apt install libjpeg8-dev libtiff-dev libjasper-dev libpng12-dev
    $ sudo apt install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
    ```
 4. Install GTK so we can use OpenCV’s GUI features:
