@@ -25,6 +25,7 @@
 * [Install Scikit-Image](install-scikit-image.md)
 * [Install Spacenav](install-spacenav.md)
 * [Install Speech Recognition](install-speech-recognition.md)
+* [Install SWIG](install-swig.md)
 * [Install Travis](install-travislib.md)
 * [Install XWiimote](install-xwiimote.md)
 * [Install YARP](install-yarp.md)

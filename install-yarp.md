@@ -83,21 +83,19 @@ You may need to launch `yarpdev --device OpenNI2DeviceServer` from `/YOUR_PATH_T
 
 # Install Bindings
 
+Swig is needed in order to build all language bindings. Refer to [Install SWIG](install-swig.md).
+
 ## Install Python bindings
 
-Swig is needed in order to build the python bindings. It is normally installed with
+First, install Python development packages.
+
 ```bash
 sudo apt update
-sudo apt install swig
 sudo apt install libpython-dev  # not installed by default on clean distros
 ```
 
-**Note:** If you are on Ubuntu Trusty (14.04), you have to install swig3.0 instead of swig
-```bash
-sudo apt install swig3.0
-```
+Make sure you have previously installed YARP.
 
-Make sure you have installed previously YARP.
 ```bash
 cd  # go home
 cd repos/yarp/build
@@ -105,6 +103,48 @@ cmake .. -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
+
+## Install Java bindings
+
+First, install the Java JDK. There are several versions at hand, so make sure you pick the Java release you are later going to work with in your applications.
+
+```bash
+sudo apt update
+sudo apt install openjdk-8-jdk  # on Trusty, use openjdk-7-jdk
+```
+
+Make sure you have previously installed YARP.
+
+```bash
+cd  # go home
+cd repos/yarp/build
+cmake .. -DYARP_COMPILE_BINDINGS=ON -DCREATE_JAVA=ON
+sudo make install; sudo ldconfig; cd  # install and go home
+```
+
+In case you run into trouble because of CMake not finding Java paths, we'll define here a variable that may hold different values depending on the system you are working on, and use it later. As a prerequisite, inspect the usual JVM installation path with `ls /usr/lib/jvm`.
+
+On Ubuntu 16.04 64 bits, you should see a `java-1.8.0-openjdk-amd64` directory symlink. Store its location in a new environment variable:
+
+```bash
+JAVA_JVM_PATH=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+```
+
+On different installations, the path will look differently. Adjust the variable to your needs, or use the following script to handle this for you:
+
+```bash
+JAVA_JVM_PATH=$(find /usr/lib/jvm/ -name java-1.*.*-openjdk* -type l | head -n 1)
+```
+
+Now, run the CMake command again and proceed with the installation:
+
+```bash
+cd ~/repos/yarp/build
+cmake .. -DJAVA_AWT_INCLUDE_PATH=$JAVA_JVM_PATH/include -DJAVA_AWT_LIBRARY=$JAVA_JVM_PATH/include/jawt.h -DJAVA_INCLUDE_PATH=$JAVA_JVM_PATH/include -DJAVA_INCLUDE_PATH2=$JAVA_JVM_PATH/include/linux -DJAVA_JVM_LIBRARY=$JAVA_JVM_PATH/include/jni.h
+sudo make install; sudo ldconfig; cd  # install and go home
+```
+
+You might need to set the `CLASSPATH` and `LD_LIBRARY_PATH` variables prior to calling YARP bindings in your application in order to find the generated `*.jar` and `*.so` files, respectively.
 
 ## Install MATLAB bindings
 
