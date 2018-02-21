@@ -83,21 +83,19 @@ You may need to launch `yarpdev --device OpenNI2DeviceServer` from `/YOUR_PATH_T
 
 # Install Bindings
 
+Swig is needed in order to build all language bindings. Refer to [Install SWIG](install-swig.md).
+
 ## Install Python bindings
 
-Swig is needed in order to build the python bindings. It is normally installed with
+First, install Python development packages.
+
 ```bash
 sudo apt update
-sudo apt install swig
 sudo apt install libpython-dev  # not installed by default on clean distros
 ```
 
-**Note:** If you are on Ubuntu Trusty (14.04), you have to install swig3.0 instead of swig
-```bash
-sudo apt install swig3.0
-```
-
 Make sure you have installed previously YARP.
+
 ```bash
 cd  # go home
 cd repos/yarp/build
