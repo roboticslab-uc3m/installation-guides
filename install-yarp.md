@@ -104,6 +104,8 @@ make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
 
+Also, extra care should be taken with Python 2 vs 3 (e.g. toggle `t` to see paths 2.7 vs 3.5m).
+
 ## Install Java bindings
 
 First, install the Java JDK. There are several versions at hand, so make sure you pick the Java release you are later going to work with in your applications.
