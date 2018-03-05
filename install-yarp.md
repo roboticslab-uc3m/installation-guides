@@ -94,7 +94,7 @@ sudo apt update
 sudo apt install libpython-dev  # not installed by default on clean distros
 ```
 
-Make sure you have previously installed YARP.
+Make sure you have previously installed YARP and update `cmake` version to 3.8 or superior (https://cmake.org/install/) 
 
 ```bash
 cd  # go home
