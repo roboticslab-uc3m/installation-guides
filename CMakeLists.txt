@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.6)
 
 project(ROBOTICSLAB_INSTALLATION_GUIDES)
 
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+
 find_package(YARP REQUIRED)
 list(APPEND CMAKE_MODULE_PATH ${YARP_MODULE_PATH})
 include(YarpInstallationHelpers)
