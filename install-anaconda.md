@@ -14,7 +14,7 @@ export PYTHONPATH=~/repos/rllab:$PYTHONPATH #Export rllab to pythonpath.
 ```
 This usually not so easy, some package need additional steps:
 
-## Install YARP inside anaconda
+## Install YARP python bindings inside anaconda
 
 Make sure you have performed a [normal installation](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-yarp.md) of YARP first. Then:
 
