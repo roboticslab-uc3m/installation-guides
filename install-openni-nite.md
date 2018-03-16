@@ -30,12 +30,14 @@ sudo apt install libopenni-sensor-primesense0
 Yes! Support for ye-oldie Kinect v1, via compiling OpenNI2 support as documented [here](https://github.com/OpenKinect/libfreenect/tree/master/OpenNI2-FreenectDriver). Approximate commands:
 
 ```bash
-sudo apt install libxmu-dev
+sudo apt-get install libxmu-dev libxi-dev
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/OpenKinect/libfreenect
 cd libfreenect && mkdir -p build
+cd build
 cmake .. -DBUILD_OPENNI2_DRIVER=ON
+make -j$(nproc)  # compile
 sudo make install
 sudo ldconfig
 sudo ln -s /usr/local/lib/OpenNI2-FreenectDriver/libFreenectDriver.so /usr/local/lib/OpenNI2/Drivers
