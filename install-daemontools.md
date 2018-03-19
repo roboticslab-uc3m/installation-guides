@@ -3,7 +3,7 @@
 ## Install on Ubuntu
 
 ```bash
-sudo apt-get install daemontools daemontools-run csh
+sudo apt install daemontools daemontools-run csh
 ```
 
 `daemontools` can be activated in `/etc/rc.local` through the line (before exit):

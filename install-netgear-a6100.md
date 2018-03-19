@@ -3,8 +3,8 @@
 ## Ubuntu 16.04:
 
 ```bash
-sudo apt-get update
-sudo apt-get install linux-headers-generic build-essential git
+sudo apt update
+sudo apt install linux-headers-generic build-essential git
 cd $HOME
 mkdir -p src
 cd src

@@ -5,11 +5,11 @@ We use googletest for performing automated unit testing (usually via Travis CI).
 ## Install googletest (Ubuntu 14.04 and 16.04)
 
 ```bash
-sudo apt-get install libgtest-dev
+sudo apt install libgtest-dev
 ```
 
 ## Install googletest (Ubuntu 17.04 and later)
 
 ```bash
-sudo apt-get install googletest
+sudo apt install googletest
 ```

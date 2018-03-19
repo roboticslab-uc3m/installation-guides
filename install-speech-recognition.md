@@ -12,8 +12,8 @@ sudo apt install autoconf
 sudo apt install bison
 
 # Install sphinxbase
-sudo apt-get install libtool
-sudo apt-get install swig2.0
+sudo apt install libtool
+sudo apt install swig2.0
 cd
 cd repos
 git clone https://github.com/cmusphinx/sphinxbase.git
