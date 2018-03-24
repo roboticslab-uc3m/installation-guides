@@ -27,6 +27,13 @@ sudo make install; sudo ldconfig; cd # install and go home
 
 For additional options use `ccmake` instead of `cmake`.
 
+A nice feature is to enable yarp auto-completion:
+
+```bash
+source ~/repos/yarp/scripts/yarp_completion  # Activate in current bash session
+echo "source ~/repos/yarp/scripts/yarp_completion" >> ~/.bashrc  # Activate in future bash sessions
+```
+
 ### Note for Linux Mint 17.3 Rosa
 ```bash
 sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
