@@ -61,11 +61,17 @@ References:
 - http://sukhoy.public.iastate.edu/openrave/
 - https://github.com/rdiankov/openrave
 
-## Tutorials
-- https://scaron.info/teaching/getting-started-with-openrave.html
+# Generate Databases
 
-## Additional installation tutorial/script links:
+- https://github.com/roboticslab-uc3m/teo-openrave-models/tree/develop/scripts/python ([permalink](https://github.com/roboticslab-uc3m/teo-openrave-models/tree/0efd49e662495f8ca329ac0089fc37243ab7519c/scripts/python))
+
+# External
+
+## External Installation Tutorial/Script Links:
 - https://github.com/crigroup/openrave-installation
    - Older by same user: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)].
    - Older by same user: [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)].
 - [[ref3, xenial](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/)].
+
+### External Tutorials
+- https://scaron.info/teaching/getting-started-with-openrave.html
