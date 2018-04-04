@@ -64,7 +64,7 @@ References:
 ## Tutorials
 - https://scaron.info/teaching/getting-started-with-openrave.html
 
-## Additional links:
+## Additional installation tutorial/script links:
 - https://github.com/crigroup/openrave-installation
    - Older by same user: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)].
    - Older by same user: [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)].
