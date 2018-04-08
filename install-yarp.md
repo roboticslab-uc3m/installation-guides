@@ -11,7 +11,7 @@ Note that you will be prompted for your password upon using `sudo` a couple of t
 As can be seen, here we are accounting for: YARP `lib_math`, the GUIs and `mjpeg` carrier.
 
 ```bash
-sudo apt install build-essential libace-dev subversion git
+sudo apt install build-essential libace-dev git
 sudo apt install libeigen3-dev  # Needed for creating YARP lib_math used for kinematics, etc.
 sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
 sudo apt install libjpeg8-dev   # Needed for mjpeg carrier
