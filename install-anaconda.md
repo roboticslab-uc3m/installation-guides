@@ -1,8 +1,8 @@
-# Install anaconda
+# Install Anaconda
 
-anaconda is a bundle of python packages and environments to work with machine learning applications. To install it just follow the instructions in the [original documentation](https://docs.anaconda.com/anaconda/install/linux) (If you are installing anaconda as a rllab dependecy **make sure to download the python 2.7 installer**).
+Anaconda (excerpt from official documentation) is a package manager, an environment manager, a Python distribution, and a collection of over 1,000+ open source packages. To install it just follow the instructions in the [original documentation](https://docs.anaconda.com/anaconda/install/linux) (If you are installing anaconda as a rllab dependecy **make sure to download the python 2.7 installer**).
 
-anaconda creates its own environments inside the system. This means, that some packages that are installed outside anaconda, have to be installed inside too. To do this you just have to follow the normal installation instructions of the package but inside the anaconda environment. 
+Anaconda creates its own environments inside the system. This means, that some packages that are installed outside anaconda, have to be installed inside too. To do this you just have to follow the normal installation instructions of the package but inside the anaconda environment. 
 
 **NOTE:** Make sure to create another build folder (build_anaconda for example) for the new installation, the rest is the same. Example for rllab3 environment:
 
