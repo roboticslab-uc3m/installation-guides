@@ -10,10 +10,10 @@ sudo apt install libgstreamer1.0-dev
 sudo apt install libgstreamer-plugins-base1.0-dev
 sudo apt install autoconf
 sudo apt install bison
+sudo apt install libtool # Ubuntu 14.04
+sudo apt install swig # Ubuntu 14.04
 
 # Install sphinxbase
-sudo apt install libtool
-sudo apt install swig2.0
 cd
 cd repos
 git clone https://github.com/cmusphinx/sphinxbase.git
