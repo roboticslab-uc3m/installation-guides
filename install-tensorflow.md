@@ -15,5 +15,5 @@ sudo apt update
 ```
 
 Working setups (GM200 GeForce GTX TITAN X rev a1):
-- CUDA 9.0 (uninstalls any NVIDIA driver, installs 38_ driver) + tensorflow 1.5 (directly using `tensorflow-gpu` binary). We go to legacy and get `deb (local)` (`cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb` and patches from [here](https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=deblocal)). Official documentation is currently at CUDA 9.0, and [here](https://github.com/tensorflow/tensorflow/issues/16886#issuecomment-365108781) they say 9.1 will be skipped.
+- CUDA 9.0 (uninstalls any NVIDIA driver, installs `384` driver) + tensorflow 1.5 (directly using `tensorflow-gpu` binary). We go to legacy and get `deb (local)` (`cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb` and patches from [here](https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=deblocal)). Official documentation is currently at CUDA 9.0, and [here](https://github.com/tensorflow/tensorflow/issues/16886#issuecomment-365108781) they say 9.1 will be skipped.
 - Not tested: CUDA 8.0 + tensorflow 1.4 (directly using `tensorflow-gpu` binary)
