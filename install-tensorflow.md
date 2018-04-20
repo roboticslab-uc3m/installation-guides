@@ -13,9 +13,11 @@ Working setups (GM200 GeForce GTX TITAN X rev a1):
    - tensorflow 1.5 (directly using `tensorflow-gpu` binary). 
 - Not tested: CUDA 8.0 + tensorflow 1.4 (directly using `tensorflow-gpu` binary)
 
-Your `.profile` end lines:
+The end of your `.profile` will probably end up looking something like:
 ```bash
+# CUDA
 PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
 LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+# cuDNN
 LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}/usr/local/cuda/extras/CUPTI/lib64
 ```
