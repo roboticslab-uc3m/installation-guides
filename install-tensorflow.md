@@ -8,7 +8,7 @@ Official page: [link](https://www.tensorflow.org/install/)
 
 Before attempting GPU installation, check the requirements on GPU (micro-architecture, etc) from the official documentation.
 
-Tip: At time of writing, you can increment the number of options for NVIDIA drivers (e.g. from only `384.111`/`nouveau` to `390`/`394`...) in the Ubuntu `Addiditional Drivers` application by previously running:
+Tip: At time of writing, you can increment the number of options for NVIDIA drivers (e.g. from `nouveau`/`384.111` to `nouveau`/`384.130`/`390.48`/`396.18`) in the Ubuntu `Addiditional Drivers` application by previously running:
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
