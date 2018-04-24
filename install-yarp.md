@@ -111,7 +111,16 @@ make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
 
-Also, extra care should be taken with Python 2 vs 3 (e.g. toggle `t` to see paths 2.7 vs 3.5m).
+Also, extra care should be taken with multiple Python versions (e.g. 2.x vs 3.x). The following command has been tested on Ubuntu Xenial to force Python 3.5m (note distro version is 3.5m, where `m` is `--with-pymalloc` [ref](https://www.python.org/dev/peps/pep-3149/#proposal)):
+```bash
+cmake -DYARP_COMPILE_BINDINGS:BOOL=ON -DCREATE_PYTHON:BOOL=ON -DYARP_USE_PYTHON_VERSION=3.5 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so -DCMAKE_INSTALL_PYTHONDIR=lib/python3.5/dist-packages ..
+```
+
+In this specific case, `CMAKE_INSTALL_PYTHONDIR` is apparently ignored, so you should:
+```
+sudo ln -s /usr/local/lib/python3/dist-packages/_yarp.so /usr/local/lib/python3.5/dist-packages/
+sudo ln -s /usr/local/lib/python3/dist-packages/yarp.py /usr/local/lib/python3.5/dist-packages/
+```
 
 ## Install Java bindings
 
