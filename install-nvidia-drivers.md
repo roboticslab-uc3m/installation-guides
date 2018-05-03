@@ -7,3 +7,7 @@ At time of writing, you can increment the number of options for NVIDIA drivers a
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 ```
+
+## Working setups
+- `304.135` on GT200 GeForce GTX 260 (rev a1)
+- `384.111` on GF114M GeForce GTX 675M (rev a1)
