@@ -38,7 +38,7 @@ cd $HOME/repos/openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRA
 make -j$(nproc)
 sudo make install; cd  # install and go home
 ```
-For more references regarding FCL from source on other/older versions, refer to thess issues: [#3](https://github.com/roboticslab-uc3m/installation-guides/issues/3), [#45](https://github.com/roboticslab-uc3m/installation-guides/issues/45).
+For more references regarding FCL from source on other/older versions, refer to these issues: [#3](https://github.com/roboticslab-uc3m/installation-guides/issues/3), [#45](https://github.com/roboticslab-uc3m/installation-guides/issues/45).
 
 ## Install OpenRAVE (Ubuntu 12.04)
 
