@@ -1,5 +1,6 @@
 # Install pocketsphinx
 ```bash
+sudo apt install autoconf
 cd
 cd repos
 git clone https://github.com/cmusphinx/pocketsphinx
