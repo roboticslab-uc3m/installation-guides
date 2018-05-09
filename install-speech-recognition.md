@@ -43,12 +43,6 @@ Additionally, this project depends on YCM to download and build external package
 Our software integrates the previous dependencies. Note that you will be prompted for your password upon using `sudo` a couple of times:
 
 ```bash
-sudo apt install libgstreamer1.0-dev
-sudo apt install libgstreamer-plugins-base1.0-dev
-sudo apt install autoconf
-sudo apt install bison
-sudo apt install libtool # necessary for Ubuntu 14.04
-sudo apt install swig # necessary for Ubuntu 14.04
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/roboticslab-uc3m/speech.git  # Download speech software from the repository
