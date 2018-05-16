@@ -20,7 +20,7 @@ sudo make install  # install
 
 ## Experimental alternative: Install sphinxbase from apt (Ubuntu)
 
-Experimental alternative: Install sphinxbase from apt (Ubuntu)
+Experimental alternative: Install sphinxbase from apt (Ubuntu). On Xenial, installs `0.8+5prealpha-2ubuntu1`.
 ```bash
 sudo apt install libsphinxbase-dev
 ```
