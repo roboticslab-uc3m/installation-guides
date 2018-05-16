@@ -28,3 +28,30 @@ cd pocketsphinx
 make -j$(nproc)  # compile
 sudo make install # install
 ```
+
+# Configure gstreamer with pocketsphinx
+
+We need to configure the path to look for shared libaries:
+
+```bash
+echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib" >> ~/.bashrc
+echo "export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" >> ~/.bashrc
+echo "export GST_PLUGIN_PATH=$GST_PLUGIN_PATH:/usr/local/lib/gstreamer-1.0" >> ~/.bashrc
+```
+
+To verify that GStreamer can find the plugin. You should get a large amount of output, ending with something like this:
+
+```bash
+gst-inspect-1.0 pocketsphinx
+
+decoder             : The underlying decoder
+                       flags: readable
+                       Boxed pointer of type "PSDecoder"
+```
+
+to test that all is running ok:
+
+```bash
+sudo modprobe snd_pcm_oss
+pocketsphinx_continuous -inmic yes
+```
