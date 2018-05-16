@@ -18,9 +18,9 @@ make -j$(nproc)  # compile
 sudo make install  # install
 ```
 
-## Experimental alternative: Install sphinxbase from apt (Ubuntu)
+## Not good for latest pocketsphinx: Install sphinxbase from apt (Ubuntu)
 
-Experimental alternative: Install sphinxbase from apt (Ubuntu). On Xenial, installs `0.8+5prealpha-2ubuntu1`.
+**Not good for latest pocketsphinx** ([ATOW](https://github.com/cmusphinx/pocketsphinx/commit/6061af42f532baebb2a9cde66f05666845e3025b)): Install sphinxbase from apt (Ubuntu). On Xenial, installs `0.8+5prealpha-2ubuntu1`.
 ```bash
 sudo apt install libsphinxbase-dev
 ```
