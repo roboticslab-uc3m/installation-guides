@@ -29,7 +29,7 @@ make -j$(nproc)  # compile
 sudo make install # install
 ```
 
-# Configure gstreamer with pocketsphinx
+### Configure gstreamer with pocketsphinx
 
 We need to configure the path to look for shared libaries:
 
