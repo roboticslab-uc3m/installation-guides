@@ -58,7 +58,7 @@ pocketsphinx_continuous -inmic yes
 
 ### Troubleshooting gstreamer with pocketsphinx
 
-Most importantly, follow steps: first [gstreamer](), then [pocketsphinx]().
+Most importantly, follow steps in correct order: first [gstreamer](#install-gstreamer), then [pocketsphinx](#install-pocketsphinx), and finally configure. If you install `pocketsphinx` without `gstreamer`, you'll end up having to install `gstreamer` first, then re-`.configure`  `pocketsphinx`, compile and install again.
 
 Some tutorials also recommend:
 ```bash
