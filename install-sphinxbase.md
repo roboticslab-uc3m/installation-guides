@@ -8,8 +8,8 @@ Install sphinxbase  from source (Ubuntu):
 ```bash
 sudo apt install autoconf libtool
 sudo apt install bison
-cd
-cd repos
+cd  # go home
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/cmusphinx/sphinxbase.git
 cd sphinxbase
 ./autogen.sh
