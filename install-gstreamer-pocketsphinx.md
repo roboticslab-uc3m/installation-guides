@@ -34,10 +34,10 @@ sudo make install # install
 We need to configure the path to look for shared libaries:
 
 ```bash
-echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib" >> ~/.bashrc
-echo "export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" >> ~/.bashrc
 echo "export GST_PLUGIN_PATH=$GST_PLUGIN_PATH:/usr/local/lib/gstreamer-1.0" >> ~/.bashrc
 ```
+
+### Verify gstreamer with pocketsphinx
 
 To verify that GStreamer can find the plugin. You should get a large amount of output, ending with something like this:
 
@@ -49,9 +49,22 @@ decoder             : The underlying decoder
                        Boxed pointer of type "PSDecoder"
 ```
 
-to test that all is running ok:
+To test that all is running ok:
 
 ```bash
 sudo modprobe snd_pcm_oss
 pocketsphinx_continuous -inmic yes
 ```
+
+### Troubleshooting gstreamer with pocketsphinx
+
+Most importantly, follow steps: first [gstreamer](), then [pocketsphinx]().
+
+Some tutorials also recommend:
+```bash
+echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib" >> ~/.bashrc
+echo "export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" >> ~/.bashrc
+```
+
+# References
+- https://cmusphinx.github.io/wiki/gstreamer/
