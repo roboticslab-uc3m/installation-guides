@@ -52,7 +52,6 @@ decoder             : The underlying decoder
 To test that all is running ok:
 
 ```bash
-sudo modprobe snd_pcm_oss
 pocketsphinx_continuous -inmic yes
 ```
 
@@ -64,6 +63,11 @@ Some tutorials also recommend:
 ```bash
 echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib" >> ~/.bashrc
 echo "export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" >> ~/.bashrc
+```
+
+As well as:
+```bash
+sudo modprobe snd_pcm_oss # Depends on your sound system
 ```
 
 # References
