@@ -2,6 +2,12 @@
 
 We use YARP for communications. Official page: [link](http://www.yarp.it/) 
 
+- [Install YARP (Ubuntu)](#install-yarp-ubuntu)
+- [Install YARP (Windows)](#install-yarp-windows)
+- [Install Additional Plugins: Carriers](#install-additional-plugins-carriers)
+- [Install Additional Plugins: Devices](#install-additional-plugins-devices)
+- [Install Bindings](#install-bindings)
+
 ## Install YARP (Ubuntu)
 
 Installing YARP on Ubuntu is quite straightforward.
