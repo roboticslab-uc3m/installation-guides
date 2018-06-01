@@ -1,6 +1,6 @@
 # Install SWIG
 
-We use SWIG to generate language bindings for Python/Java/etc. from C/C++ code. Official website: [link](http://www.swig.org/).
+We use SWIG to generate language bindings for Python/Java/etc. from C/C++ code. Official: [website](http://www.swig.org/), [GitHub](https://github.com/swig/swig).
 
 ## Install SWIG (Ubuntu 14.10)
 
