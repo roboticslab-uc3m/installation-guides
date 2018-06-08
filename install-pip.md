@@ -13,7 +13,7 @@ Traceback (most recent call last):
 ImportError: cannot import name 'main'
 ```
 
-The simplest fix [I've found](https://github.com/pypa/pip/issues/5240#issuecomment-381677898) is to run the following command to upgrade pip by installing again the latest version:
+The simplest fix [I've found](https://github.com/pypa/pip/issues/5240#issuecomment-381677898) is to run the following command to upgrade pip by installing again the latest version (use `python` instead for python2):
 
 ```bash
 wget https://bootstrap.pypa.io/get-pip.py | sudo python3
