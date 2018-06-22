@@ -8,11 +8,11 @@ Note that you will be prompted for your password upon using `sudo`. Type:
 
 ```bash
 cd  # go home
-mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
-git clone https://github.com/robotology/ycm.git  # clone repository
-cd ycm; mkdir build; cd build; cmake ..  # configure
+mkdir -p repos && cd repos  # create $HOME/repos if it doesn't exist; then, enter it
+git clone https://github.com/robotology/ycm  # clone repository
+mkdir -p ycm/build && cd ycm/build && cmake ..  # configure
 make -j$(nproc)  # download external modules
-sudo make install; cd  # install and go home
+sudo make install && cd  # install and go home
 ```
 
 ## Include YCM in CMake project - soft dependency
