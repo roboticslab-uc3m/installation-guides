@@ -50,14 +50,3 @@ make -j$(nproc)
 sudo make install
 hash -r # rebuild executable cache to use new 'cmake' (2.8.9) command
 ```
-
-## Install CMake 2.8.9 (Debian 6.0.10)
-
-Make sure you have squeeze backports as APT sources set up as indicated on [yarp-devices-install-on-debian_6.md#the-specifics-apt-sources](https://github.com/roboticslab-uc3m/yarp-devices/blob/develop/doc/yarp-devices-install-on-debian-6.md#the-specifics-apt-sources).
-
-Then run the following lines from a terminal. Note that you will be prompted for your password upon using `sudo`.
-
-```bash
-sudo apt-get update
-sudo apt-get install -t squeeze-backports cmake cmake-curses-gui
-```
