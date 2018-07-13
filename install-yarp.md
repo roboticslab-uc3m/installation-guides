@@ -17,7 +17,7 @@ Note that you will be prompted for your password upon using `sudo` a couple of t
 As can be seen, here we are accounting for: YARP `lib_math`, the GUIs and `mjpeg` carrier.
 
 ```bash
-sudo apt install build-essential libace-dev git
+sudo apt install build-essential git
 sudo apt install libeigen3-dev  # Needed for creating YARP lib_math used for kinematics, etc.
 sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
 sudo apt install libjpeg8-dev   # Needed for mjpeg carrier
@@ -26,7 +26,7 @@ cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/yarp
 cd yarp; mkdir build; cd build
-cmake .. -DCREATE_LIB_MATH=ON -DCREATE_GUIS=ON -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_mjpeg=ON # configure
+cmake .. -DSKIP_ACE=ON -DCREATE_LIB_MATH=ON -DCREATE_GUIS=ON -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_mjpeg=ON # configure
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd # install and go home
 ```
