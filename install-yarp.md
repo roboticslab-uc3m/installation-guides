@@ -49,8 +49,6 @@ sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
 
 Binary releases usually work well: http://www.yarp.it/download.html
 
-See bindings section.
-
 # Install Additional Plugins: Carriers
 
 ## Install ROS support
