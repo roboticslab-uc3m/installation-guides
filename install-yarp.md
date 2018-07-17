@@ -45,6 +45,12 @@ echo "source ~/repos/yarp/scripts/yarp_completion" >> ~/.bashrc  # Activate in f
 sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
 ```
 
+### Note for Linux Mint 8.3 Sylvia
+```bash
+sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
+sudo apt-get install qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel # fix QQmlApplicationEngine failed to load component 
+```
+
 ## Install YARP (Windows)
 
 Binary releases usually work well: http://www.yarp.it/download.html
