@@ -46,6 +46,7 @@ sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
 ```
 
 ### Note for Linux Mint 8.3 Sylvia
+(tested on 64-bit XFCE desktop)
 ```bash
 sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
 sudo apt-get install qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel # fix QQmlApplicationEngine failed to load component 
