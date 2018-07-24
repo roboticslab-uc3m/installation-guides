@@ -18,17 +18,16 @@ As can be seen, here we are accounting for: YARP `lib_math`, the GUIs and `mjpeg
 
 ```bash
 sudo apt install build-essential git
-sudo apt install libeigen3-dev  # Needed for creating YARP lib_math used for kinematics, etc.
+sudo apt install libeigen3-dev # Needed for creating YARP lib_math used for kinematics, etc.
 sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
-sudo apt install libjpeg8-dev   # Needed for mjpeg carrier
-sudo apt install libedit-dev  # Enables keyboard arrow keys within an RPC communication channel via terminal
-cd  # go home
-mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
+sudo apt install libjpeg8-dev # Needed for mjpeg carrier
+sudo apt install libedit-dev # Enables keyboard arrow keys within an RPC communication channel via terminal
+mkdir -p ~/repos; cd ~/repos # Create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/yarp
-cd yarp; mkdir build; cd build
+cd yarp && mkdir build && cd build
 cmake .. -DSKIP_ACE=ON -DCREATE_LIB_MATH=ON -DCREATE_GUIS=ON -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_mjpeg=ON # configure
-make -j$(nproc)  # compile
-sudo make install; sudo ldconfig; cd # install and go home
+make -j$(nproc) # Compile
+sudo make install && sudo ldconfig && cd # Install and go home
 ```
 
 For additional options use `ccmake` instead of `cmake`.
@@ -36,20 +35,20 @@ For additional options use `ccmake` instead of `cmake`.
 A nice feature is to enable yarp auto-completion:
 
 ```bash
-source ~/repos/yarp/scripts/yarp_completion  # Activate in current bash session
-echo "source ~/repos/yarp/scripts/yarp_completion" >> ~/.bashrc  # Activate in future bash sessions
+source ~/repos/yarp/scripts/yarp_completion # Activate in current bash session
+echo "source ~/repos/yarp/scripts/yarp_completion" >> ~/.bashrc # Activate in future bash sessions
 ```
 
 ### Note for Linux Mint 17.3 Rosa
 ```bash
-sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
+sudo apt install libqt5opengl5-dev # Avoid error on yarpmanager/builder GUI
 ```
 
 ### Note for Linux Mint 8.3 Sylvia
 (tested on 64-bit XFCE desktop)
 ```bash
-sudo apt install libqt5opengl5-dev  # avoid error on yarpmanager/builder GUI
-sudo apt-get install qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel # fix QQmlApplicationEngine failed to load component 
+sudo apt install libqt5opengl5-dev # Avoid error on yarpmanager/builder GUI
+sudo apt-get install qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel # Fix QQmlApplicationEngine failed to load component 
 ```
 
 ## Install YARP (Windows)
@@ -64,11 +63,10 @@ Make sure you have installed previously YARP and that the ROS environment is not
 If you have the line `source /opt/ros/indigo/setup.bash` at the end of ~/.bashrc, comment it, save the file and open a new terminal.
 
 ```bash
-cd  # go home
-cd repos/yarp/build
+cd ~/repos/yarp/build
 cmake .. -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_tcpros=ON -DENABLE_yarpcar_xmlrpc=ON
-make -j$(nproc)  # compile
-sudo make install; sudo ldconfig; cd # install and go home
+make -j$(nproc) # Compile
+sudo make install && sudo ldconfig && cd # Install and go home
 ```
 
 # Install Additional Plugins: Devices
@@ -80,24 +78,22 @@ Make sure you have previously installed YARP and:
 - [Install OpenNI2 & NiTE2](install-openni-nite.md)
 
 ```bash
-cd  # go home
-cd repos/yarp/build
+cd ~/repos/yarp/build
 cmake .. -DCREATE_DEVICE_LIBRARY_MODULES=ON -DENABLE_yarpmod_OpenNI2DeviceServer=ON -DENABLE_yarpmod_OpenNI2DeviceClient=ON -DOpenNI2_INCLUDE_DIR=/usr/local/include/OpenNI2/ -DOpenNI2_LIBRARY=/usr/local/lib/libOpenNI2.so
-make -j$(nproc)  # compile
-sudo make install; sudo ldconfig; cd # install and go home
+make -j$(nproc) # Compile
+sudo make install && sudo ldconfig && cd # Install and go home
 ```
 You should now be able to launch `yarpdev --device OpenNI2DeviceServer`. It is a complex device, see options with `yarpdev --device OpenNI2DeviceServer --verbose` (where there is an option to see modes) or example [here](https://github.com/roboticslab-uc3m/teo-configuration-files/blob/ee168eaf61454113b1ac7113fbb24e10af679bc3/share/teoBase/scripts/teoBase.xml#L35-L36).
 
 Note ([ref](https://github.com/roboticslab-uc3m/vision/issues/83#issuecomment-390326913)): installation of *depthCamera* is broken at YARP 2.3.72 (and probably at 2.3.70.x, too). Did work at 2.3.68.x, fixed upstream at 2.3.72.1 (unreleased, see https://github.com/robotology/yarp/pull/1633). Workaround: do `cmake . -DYARP_HAS_OpenNI2=ON` and configure again.
 
 ### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
-NiTE only required for skeletons.
+NiTE only required for skeletons. In addition to above steps for OpenNI:
 ```bash
-cd  # go home In addition to above steps for OpenNI:
-cd repos/yarp/build
+cd ~/repos/yarp/build
 cmake .. -DNITE2_INCLUDE_LOCAL=/usr/local/include/NiTE-Linux-x64-2.2 -DNITE2_LIBRARY=/usr/local/lib/libNiTE2.so
-make -j$(nproc)  # compile
-sudo make install; sudo ldconfig; cd # install and go home
+make -j$(nproc) # Compile
+sudo make install && sudo ldconfig && cd # Install and go home
 ```
 You may need to launch `yarpdev --device OpenNI2DeviceServer` from `/YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist` if using NiTE.
 
@@ -111,17 +107,16 @@ First, install Python development packages.
 
 ```bash
 sudo apt update
-sudo apt install libpython-dev  # not installed by default on clean distros
+sudo apt install libpython-dev # Not installed by default on clean distros
 ```
 
 Make sure you have previously installed YARP.
 
 ```bash
-cd  # go home
-cd repos/yarp/build
+cd ~/repos/yarp/build
 cmake .. -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON
 make -j$(nproc)  # compile
-sudo make install; sudo ldconfig; cd # install and go home
+sudo make install && sudo ldconfig && cd # Install and go home
 ```
 
 Also, extra care should be taken with multiple Python versions (e.g. 2.x vs 3.x). The following command has been tested on Ubuntu Xenial to force Python 3.5m (note distro version is 3.5m, where `m` is `--with-pymalloc` [ref](https://www.python.org/dev/peps/pep-3149/#proposal)):
@@ -142,13 +137,7 @@ First, install the Java JDK. There are several versions at hand, so make sure yo
 ```bash
 sudo apt update
 sudo apt install openjdk-8-jdk  # on Trusty, use openjdk-7-jdk
-```
-
-Make sure you have previously installed YARP.
-
-```bash
-cd  # go home
-cd repos/yarp/build
+cd ~/repos/yarp/build
 cmake .. -DYARP_COMPILE_BINDINGS=ON -DCREATE_JAVA=ON
 sudo make install; sudo ldconfig; cd  # install and go home
 ```
@@ -172,7 +161,7 @@ Now, run the CMake command again and proceed with the installation:
 ```bash
 cd ~/repos/yarp/build
 cmake .. -DJAVA_AWT_INCLUDE_PATH=$JAVA_JVM_PATH/include -DJAVA_AWT_LIBRARY=$JAVA_JVM_PATH/include/jawt.h -DJAVA_INCLUDE_PATH=$JAVA_JVM_PATH/include -DJAVA_INCLUDE_PATH2=$JAVA_JVM_PATH/include/linux -DJAVA_JVM_LIBRARY=$JAVA_JVM_PATH/include/jni.h
-sudo make install; sudo ldconfig; cd  # install and go home
+sudo make install && sudo ldconfig && cd  # Install and go home
 ```
 
 You might need to set the `CLASSPATH` and `LD_LIBRARY_PATH` variables prior to calling YARP bindings in your application in order to find the generated `*.jar` and `*.so` files, respectively.
