@@ -103,21 +103,19 @@ Swig is needed in order to build all language bindings. Refer to [Install SWIG](
 
 ## Install Python bindings
 
-First, install Python development packages.
+Make sure you have previously installed YARP and:
 
 ```bash
 sudo apt update
-sudo apt install libpython-dev # Not installed by default on clean distros
-```
-
-Make sure you have previously installed YARP.
-
-```bash
+sudo apt install libpython-dev # Python development package are not installed by default on clean distros
 cd ~/repos/yarp/build
 cmake .. -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON
 make -j$(nproc)  # compile
 sudo make install && sudo ldconfig && cd # Install and go home
 ```
+You should now be able to launch `python` and `import yarp`.
+
+### Install Python bindings (troubleshooting)
 
 Also, extra care should be taken with multiple Python versions (e.g. 2.x vs 3.x). The following command has been tested on Ubuntu Xenial to force Python 3.5m (note distro version is 3.5m, where `m` is `--with-pymalloc` [ref](https://www.python.org/dev/peps/pep-3149/#proposal)):
 ```bash
@@ -134,6 +132,8 @@ sudo ln -s /usr/local/lib/python3/dist-packages/yarp.py /usr/local/lib/python3.5
 
 First, install the Java JDK. There are several versions at hand, so make sure you pick the Java release you are later going to work with in your applications.
 
+Make sure you have previously installed YARP and:
+
 ```bash
 sudo apt update
 sudo apt install openjdk-8-jdk  # on Trusty, use openjdk-7-jdk
@@ -141,6 +141,8 @@ cd ~/repos/yarp/build
 cmake .. -DYARP_COMPILE_BINDINGS=ON -DCREATE_JAVA=ON
 sudo make install; sudo ldconfig; cd  # install and go home
 ```
+
+### Install Java bindings (troubleshooting)
 
 In case you run into trouble because of CMake not finding Java paths, we'll define here a variable that may hold different values depending on the system you are working on, and use it later. As a prerequisite, inspect the usual JVM installation path with `ls /usr/lib/jvm`.
 
