@@ -37,3 +37,7 @@ git config --global user.email "user@example.com"
 ```
 
 You may set these values on a per-repository basis. In order to achieve that, browse to the root directory of the desired repo and type the previous commands, replacing `--global` with `--local`.
+
+## YCM and OpenSSL
+
+During its build phase, YCM expects that CMake offers support for the `https://` protocol. Older CMake releases and locally built instances may lack this, see [OpenSSL support](install-cmake.md#openssl-support).
