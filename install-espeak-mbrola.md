@@ -9,5 +9,6 @@ We use ESPEAK with MBROLA Voices for speech synthesis (TTS).
 ```bash
 sudo apt install espeak libespeak-dev
 sudo apt install mbrola-en1
+sudo apt install mbrola-us2
 sudo apt install mbrola-es1
 ```
