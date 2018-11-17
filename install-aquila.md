@@ -10,7 +10,7 @@ Official page: [link](http://aquila-dsp.org/)
 sudo apt install libsfml-dev
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
-git clone git://github.com/zsiciarz/aquila.git
+git clone https://github.com/zsiciarz/aquila.git
 cd aquila; mkdir build; cd build
 cmake ..
 make -j$(nproc)  # compile
