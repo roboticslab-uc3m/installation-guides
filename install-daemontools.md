@@ -1,6 +1,6 @@
-# install daemontools
+# Install daemontools
 
-## Install on Ubuntu
+## Install daemontools (Ubuntu)
 
 ```bash
 sudo apt install daemontools daemontools-run csh
