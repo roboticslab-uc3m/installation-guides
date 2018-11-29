@@ -42,8 +42,6 @@ You can get some log messages for debugging with:
 ps aux | grep readproctitle
 ```
 
------
-
-[help (link 1)](http://blog.teksol.info/pages/daemontools/tutorial)
-
-[help (link 2)](http://crossbar.io/docs/Automatic-startup-and-restart/)
+## Additional Resources
+- http://blog.teksol.info/pages/daemontools/tutorial
+- http://crossbar.io/docs/Automatic-startup-and-restart
