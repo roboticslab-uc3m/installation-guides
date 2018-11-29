@@ -44,4 +44,3 @@ ps aux | grep readproctitle
 
 ## Additional Resources
 - http://blog.teksol.info/pages/daemontools/tutorial
-- http://crossbar.io/docs/Automatic-startup-and-restart
