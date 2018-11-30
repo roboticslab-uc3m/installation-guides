@@ -32,7 +32,7 @@ Get the status of, say, a `/etc/service/yarprun/run` service with:
 sudo svstat /etc/service/yarprun # We do not point to run here
 ```
 
-# Troubleshooting
+## Troubleshooting
 You can get some log messages for debugging opening a separate terminal with:
 ```bash
 ps aux | grep readproctitle
