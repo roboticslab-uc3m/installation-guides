@@ -23,22 +23,19 @@ sudo svstat /etc/service/yarprun
 ```
 
 # Troubleshooting
-Stop the service with:
+You can get some log messages for debugging opening a separate terminal with:
+```bash
+ps aux | grep readproctitle
+```
 
+Then stop the service with:
 ```bash
 sudo svc -d /etc/service/yarprun`
 ```
 
-Start the service with:
-
+And start the service with:
 ```bash
 sudo svc -u /etc/service/yarprun`
-```
-
-You can get some log messages for debugging with:
-
-```bash
-ps aux | grep readproctitle
 ```
 
 ## Additional Resources
