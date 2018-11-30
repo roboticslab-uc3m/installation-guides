@@ -13,17 +13,16 @@ sudo apt install daemontools daemontools-run csh
 ```
 
 ## Create a service
-
 Create `/etc/service/whatever/run` and give `chmod +x` permissions.
 
 ## Monitoring
-
 Get the status of, say, a `/etc/service/yarprun` service with:
 
 ```bash
 sudo svstat /etc/service/yarprun
 ```
 
+# Troubleshooting
 Stop the service with:
 
 ```bash
