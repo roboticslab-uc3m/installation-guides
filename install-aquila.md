@@ -16,3 +16,9 @@ cmake ..
 make -j$(nproc)  # compile
 sudo make install; sudo ldconfig; cd  # install and go home
 ```
+
+Use the following command in case you get relocation errors when linking Aquila from a shared library ([#55](https://github.com/roboticslab-uc3m/installation-guides/issues/55)), then `make` and install again:
+
+```
+cmake .. -DBUILD_SHARED_LIBS=ON
+```
