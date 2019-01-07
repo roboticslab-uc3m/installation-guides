@@ -44,7 +44,7 @@ echo "source ~/repos/yarp/scripts/yarp_completion" >> ~/.bashrc # Activate in fu
 sudo apt install libqt5opengl5-dev # Avoid error on yarpmanager/builder GUI
 ```
 
-### Note for Linux Mint 8.3 Sylvia
+### Note for Linux Mint 18.3 Sylvia
 (tested on 64-bit XFCE desktop)
 ```bash
 sudo apt install libqt5opengl5-dev # Avoid error on yarpmanager/builder GUI
