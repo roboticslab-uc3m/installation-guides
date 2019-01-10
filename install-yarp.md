@@ -103,7 +103,7 @@ Swig is needed in order to build all language bindings. Refer to [Install SWIG](
 
 ## Install Python bindings
 
-Make sure you have previously installed YARP and:
+Make sure you have previously [installed YARP](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-yarp.md#install-yarp) and:
 
 ```bash
 sudo apt update
