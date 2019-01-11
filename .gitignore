@@ -1,10 +1,21 @@
-**/build*/
+# .gitignore
+## Files we want to have locally, but do not want to push to remote
+
+## Editor swap files
 *~
 *.swp
 *.orig
-tags
+
+## CMake and C/C++
+**/build*/
 CMakeLists.txt.user
-doc/html
-doc/doxygen_sqlite3.db
 *.cproject
 *.project
+tags
+
+## doxygen
+doc/html
+doc/doxygen_sqlite3.db
+
+## gitbook generated
+/_book/
