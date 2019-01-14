@@ -10,6 +10,7 @@ cd $HOME/installation-guides
 git pull
 echo "Gitbook installation-guides..."
 rm -r _book/
+# npm install -g gitbook
 /usr/local/bin/node /usr/local/bin/gitbook build
 /usr/local/bin/node /usr/local/bin/gitbook pdf . _book/installation-guides.pdf
 /usr/local/bin/node /usr/local/bin/gitbook mobi . _book/installation-guides.mobi
