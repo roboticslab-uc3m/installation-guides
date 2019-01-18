@@ -19,3 +19,6 @@ doc/doxygen_sqlite3.db
 
 ## gitbook generated
 /_book/
+
+## gitbook-summary generated
+/SUMMARY.md

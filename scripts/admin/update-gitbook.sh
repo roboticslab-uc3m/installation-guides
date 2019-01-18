@@ -10,9 +10,14 @@ cd $HOME/installation-guides
 git pull
 echo "Gitbook installation-guides..."
 rm -r _book/
+# npm install -g gitbook-summary
+/usr/local/bin/node /usr/local/bin/book sm
 # npm install -g gitbook
+sed -i "s/\/SUMMARY.md/#\/SUMMARY.md/g" .gitignore
 /usr/local/bin/node /usr/local/bin/gitbook build
 /usr/local/bin/node /usr/local/bin/gitbook pdf . _book/installation-guides.pdf
 /usr/local/bin/node /usr/local/bin/gitbook mobi . _book/installation-guides.mobi
 /usr/local/bin/node /usr/local/bin/gitbook epub . _book/installation-guides.epub
+sed -i "s/#\/SUMMARY.md/\/SUMMARY.md/g" .gitignore
+rm SUMMARY.md
 cd ..
