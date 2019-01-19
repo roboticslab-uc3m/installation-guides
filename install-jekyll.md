@@ -20,8 +20,8 @@ gem 'github-pages', group: :jekyll_plugins
 
 It is also common practice to have a file called `.gitignore` in the project root with (at least) the following contents:
 ```
-## gitbook generated
-/_book/
+# Jekyll generated
+/_site/
 /Gemfile.lock
 ```
 
