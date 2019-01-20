@@ -18,7 +18,7 @@ It is useful to serve on `localhost` to modify the website and see changes local
 
 1. From the root of the project, run the following command (which is universal for all [Gitbook (legacy)](https://github.com/GitbookIO/gitbook)-based projects):
 ```bash
-gitbook build && gitbook serve
+gitbook serve # command builds and serves
 ```
 
 2. You can now browse the site at the default location: http://127.0.0.1:4000
