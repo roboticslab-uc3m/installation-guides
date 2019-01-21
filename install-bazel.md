@@ -1,6 +1,6 @@
 # Install Bazel
 
-We use Bazel to build [Tensorflow](install-tensorflow.md).
+We use Bazel to build [TensorFlow](install-tensorflow.md).
 
 Official page: [link](https://bazel.build).
 
