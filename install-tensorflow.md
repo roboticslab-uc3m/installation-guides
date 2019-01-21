@@ -1,13 +1,13 @@
-# Install Tensorflow
+# Install TensorFlow
 
-We use Tensorflow as a Keras backend
+We use TensorFlow as a Keras backend
 
 Official page: [link](https://www.tensorflow.org/install/)
 
-## Dependencies for building Tensorflow
-To build Tensorflow (e.g. for GPU support) you'll need [Bazel](install-bazel.md).
+## Dependencies for building TensorFlow
+To build TensorFlow (e.g. for GPU support) you'll need [Bazel](install-bazel.md).
 
-## Install Tensorflow with GPU (Ubuntu 16.04)
+## Install TensorFlow with GPU (Ubuntu 16.04)
 
 This page is to track working setups and common pitfalls. It is not replacement for the official documentation, above. Before attempting GPU installation, check the official requirements on GPU (micro-architecture, etc), and go through all the official steps during the process, including the Post-installation Actions.
 
@@ -28,7 +28,7 @@ GM200 GeForce GTX TITAN X rev a1:
 - Not tested: CUDA 8.0 + tensorflow 1.4 (directly using `tensorflow-gpu` binary)
 
 ## Non-working setups
-Tensorflow for GPU at https://www.tensorflow.org/install/install_linux says:
+TensorFlow for GPU at https://www.tensorflow.org/install/install_linux says:
    - CUDA 9.0: http://docs.nvidia.com/cuda/cuda-installation-guide-linux/#axzz4VZnqTJ2A
       - Which recommends Drivers [390](http://www.nvidia.com/Download/driverResults.aspx/132530/en-us), with no GeForce 200 Series support (min GeForce 400 Series), but should support GeForce GTX 675M.
    - CUDA [micro-arch](https://en.wikipedia.org/wiki/CUDA#GPUs_supported) 3.0 Kepler from source, or 3.5 Kepler for bin: GTX 260 is 1.3 Tesla, and GTX 675M is 2.1 Fermi.
