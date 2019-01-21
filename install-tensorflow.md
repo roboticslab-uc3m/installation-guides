@@ -4,6 +4,9 @@ We use Tensorflow as a Keras backend
 
 Official page: [link](https://www.tensorflow.org/install/)
 
+## Dependencies for building Tensorflow
+To build Tensorflow (e.g. for GPU support) you'll need [Bazel](install-bazel.md).
+
 ## Install Tensorflow with GPU (Ubuntu 16.04)
 
 This page is to track working setups and common pitfalls. It is not replacement for the official documentation, above. Before attempting GPU installation, check the official requirements on GPU (micro-architecture, etc), and go through all the official steps during the process, including the Post-installation Actions.
