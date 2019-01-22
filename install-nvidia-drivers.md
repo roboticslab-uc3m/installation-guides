@@ -12,3 +12,7 @@ sudo apt update
 - `304.135` on GT200 GeForce GTX 260 (rev a1)
 - `384.111` on GF114M GeForce GTX 675M (rev a1)
 - `384.130` on GM200 GeForce GTX TITAN X (rev a1) (more modern also work but this one goes with CUDA, see [install-tensorflow-with-gpu-ubuntu-1604.md#working-setups](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-tensorflow.md#working-setups))
+
+## More CUDA related (may end up in new page)
+Note how CUDA installation may affect your installed NVIDIA drivers:
+- https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#handle-uninstallation
