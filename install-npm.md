@@ -4,7 +4,7 @@ NPM (Node.js Package Manager) is the package manager for JavaScript. We use it f
 
 Official page: [link](https://www.npmjs.com)
 
-## Install Jekyll (Ubuntu)
+## Install NPM (Ubuntu)
 
 ```bash
 sudo apt install npm
