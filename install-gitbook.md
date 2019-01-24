@@ -6,8 +6,9 @@ Official page: [link](https://github.com/GitbookIO/gitbook)
 
 First:
 - [Install NPM](install-npm.md)
+- [Install Node.js](install-node.md)
 
 Then:
 ```bash
-sudo npm install -g gitbook
+sudo npm install -g gitbook-cli
 ```
