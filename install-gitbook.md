@@ -12,3 +12,10 @@ Then:
 ```bash
 sudo npm install -g gitbook-cli
 ```
+
+## Troubleshooting
+
+To install missing plugins:
+```bash
+gitbook install
+```
