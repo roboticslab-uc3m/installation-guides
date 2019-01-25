@@ -5,13 +5,15 @@ We use TensorFlow as a Keras backend
 Official page: [link](https://www.tensorflow.org/install/)
 
 ## Dependencies for building TensorFlow
-To build TensorFlow (e.g. for GPU support) you'll need [Bazel](install-bazel.md).
+To build TensorFlow from source (e.g. for GPU support), you'll need:
+- [Bazel](install-bazel.md)
+- The python `enum` module, which on Ubuntu can be installed via: ```sudo apt install python-enum34```
 
 ## Install TensorFlow with GPU (Ubuntu 16.04)
 
-This page is to track working setups and common pitfalls. It is not replacement for the official documentation, above. Before attempting GPU installation, check the official requirements on GPU (micro-architecture, etc), and go through all the official steps during the process, including the Post-installation Actions.
+This page is to track working setups and common pitfalls. It is not replacement for the official documentation, above. Before attempting GPU installation, check the official requirements on GPU (micro-architecture, etc), and go through all the official steps during the process.
 
-The end of your `.profile` will probably end up looking something like:
+Some very important steps are those of the [Post-installation Actions (CUDA)](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#post-installation-actions). The end of your `.profile` will probably end up looking something like:
 ```bash
 # CUDA
 PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
