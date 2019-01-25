@@ -21,6 +21,7 @@ LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 # cuDNN
 LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}/usr/local/cuda/extras/CUPTI/lib64
 ```
+Note: better than `LD_LIBRARY_PATH`, put in correct place and run `ldconfig`.
 
 ## Working setups
 
