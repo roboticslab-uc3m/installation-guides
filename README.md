@@ -16,9 +16,9 @@ Please read the Developer Manual's [Asking Questions](http://robots.uc3m.es/gitb
 ### How to serve on localhost
 It is useful to serve on `localhost` to modify the website and see changes locally.
 
-**Note**: This specific repository is different, it uses a `SUMMARY.md` that is auto-generated via [scripts/admin/update-gitbook.sh](scripts/admin/update-gitbook.sh). For general guides refer to [install-gitbook](install-gitbook.md#to-be-able-to-serve-via-gitbook-legacy)
+**Note**: This specific repository is different, it uses a `SUMMARY.md` that is auto-generated via [scripts/admin/update-gitbook.sh](scripts/admin/update-gitbook.sh). For general guides refer to [install-gitbook](install-gitbook.md#to-be-able-to-serve-via-gitbook-legacy).
 
-1. From the root of the project, run the following command (which is universal for all [Gitbook (legacy)](https://github.com/GitbookIO/gitbook)-based projects):
+1. From the root of the project, run the following commands:
 ```bash
 gitbook serve # command builds and serves
 ```
