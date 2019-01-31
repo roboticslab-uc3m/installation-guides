@@ -32,7 +32,7 @@ It is useful to serve on `localhost` to modify the website and see changes local
 
 1. Recover `.gitignore` to its previous state:
    ```bash
-   sed -i "s/\/SUMMARY.md/#\/SUMMARY.md/g" .gitignore
+   sed -i "s/#\/SUMMARY.md/\/SUMMARY.md/g" .gitignore
    ```
 
 ### How to upload changes to GitHub
