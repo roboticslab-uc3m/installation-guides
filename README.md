@@ -38,6 +38,6 @@ It is useful to serve on `localhost` to modify the website and see changes local
 ### How to upload changes to GitHub
 This project is managed as any project on [GitHub](https://www.github.com). You may use [Git](https://git-scm.com) or even the GitHub web interface, both on which you can find many tutorials online. The following points are specific to the [Gitbook (legacy)](https://github.com/asrob-uc3m/actas/issues/148#issuecomment-449748350) mechanism used:
 
-1. Please **do not upload** the `_book/` folder. It is auto-generated locally, and the same should happen on the Gitbook (legacy) servers.
+1. Please **do not upload** the `_book/` folder. It is auto-generated locally, and the same should happen on the Gitbook (legacy) servers. For this repository, **do not upload** the `SUMMARY.md` file.
 
 2. It is safe to `git push` to any upstream branch, just remember that what is on `master` is what will be actually rendered as the website.
