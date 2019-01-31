@@ -28,6 +28,13 @@ gitbook serve # command builds and serves
 gitbook build
 ```
 
+## Additional Tools
+
+### gitbook-summary
+```bash
+npm install -g gitbook-summary
+```
+
 ## Troubleshooting
 To install missing plugins:
 ```bash
