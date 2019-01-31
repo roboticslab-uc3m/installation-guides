@@ -29,6 +29,11 @@ It is useful to serve on `localhost` to modify the website and see changes local
 
 1. You can now browse the site at the default location: http://127.0.0.1:4000
 
+1. Recover `.gitignore` to its previous state:
+   ```bash
+   sed -i "s/\/SUMMARY.md/#\/SUMMARY.md/g" .gitignore
+   ```
+
 ### How to upload changes to GitHub
 This project is managed as any project on [GitHub](https://www.github.com). You may use [Git](https://git-scm.com) or even the GitHub web interface, both on which you can find many tutorials online. The following points are specific to the [Gitbook (legacy)](https://github.com/asrob-uc3m/actas/issues/148#issuecomment-449748350) mechanism used:
 
