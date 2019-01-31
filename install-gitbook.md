@@ -13,8 +13,17 @@ Then:
 sudo npm install -g gitbook-cli
 ```
 
-## Troubleshooting
+## How to serve on localhost
+```bash
+gitbook serve # command builds and serves
+```
 
+## How to build to serve generated contents elsewhere
+```bash
+gitbook build
+```
+
+## Troubleshooting
 To install missing plugins:
 ```bash
 gitbook install
