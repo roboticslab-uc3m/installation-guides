@@ -22,6 +22,7 @@ It is useful to serve on `localhost` to modify the website and see changes local
 
 1. From the root of the project, run the following commands:
    ```bash
+   rm -r _book/
    book sm -i CONTRIBUTING
    sed -i "s/\/SUMMARY.md/#\/SUMMARY.md/g" .gitignore
    gitbook serve # command builds and serves
