@@ -12,6 +12,10 @@ Then:
 ```bash
 sudo npm install -g gitbook-cli
 ```
+
+## To be able to serve via Gitbook legacy
+Make sure your project has a file called `SUMMARY.md` in its root.
+
 ## How-To's
 
 ### How to serve on localhost
