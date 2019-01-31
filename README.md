@@ -16,16 +16,28 @@ Please read the Developer Manual's [Asking Questions](http://robots.uc3m.es/gitb
 ### How to serve on localhost
 It is useful to serve on `localhost` to modify the website and see changes locally.
 
-1. From the root of the project, run the following command (which is universal for all [Gitbook (legacy)](https://github.com/GitbookIO/gitbook)-based projects):
-```bash
-gitbook serve # command builds and serves
-```
+**Note**: This specific repository is different, it uses a `SUMMARY.md` that is auto-generated via [scripts/admin/update-gitbook.sh](scripts/admin/update-gitbook.sh). For general guides refer to [install-gitbook](install-gitbook.md#to-be-able-to-serve-via-gitbook-legacy).
 
-2. You can now browse the site at the default location: http://127.0.0.1:4000
+1. Make sure you have installed [gitbook-summary](install-gitbook.md#gitbook-summary).
+
+1. From the root of the project, run the following commands:
+   ```bash
+   rm -r _book/
+   book sm -i CONTRIBUTING
+   sed -i "s/\/SUMMARY.md/#\/SUMMARY.md/g" .gitignore
+   gitbook serve # command builds and serves
+   ```
+
+1. You can now browse the site at the default location: http://127.0.0.1:4000
+
+1. Recover `.gitignore` to its previous state:
+   ```bash
+   sed -i "s/#\/SUMMARY.md/\/SUMMARY.md/g" .gitignore
+   ```
 
 ### How to upload changes to GitHub
 This project is managed as any project on [GitHub](https://www.github.com). You may use [Git](https://git-scm.com) or even the GitHub web interface, both on which you can find many tutorials online. The following points are specific to the [Gitbook (legacy)](https://github.com/asrob-uc3m/actas/issues/148#issuecomment-449748350) mechanism used:
 
-1. Please **do not upload** the `_book/` folder. It is auto-generated locally, and the same should happen on the Gitbook (legacy) servers.
+1. Please **do not upload** the `_book/` folder. It is auto-generated locally, and the same should happen on the Gitbook (legacy) servers. For this repository, **do not upload** the `SUMMARY.md` file.
 
 2. It is safe to `git push` to any upstream branch, just remember that what is on `master` is what will be actually rendered as the website.

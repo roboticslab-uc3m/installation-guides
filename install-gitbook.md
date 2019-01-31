@@ -28,8 +28,16 @@ gitbook serve # command builds and serves
 gitbook build
 ```
 
-## Troubleshooting
+## Troubleshooting Gitbook legacy
 To install missing plugins:
 ```bash
 gitbook install
+```
+
+## Additional Tools
+
+### gitbook-summary
+A useful tool for auto-generating `SUMMARY.md` as done for [roboticslab-uc3m/installation-guides](https://github.com/roboticslab-uc3m/installation-guides). Install via:
+```bash
+sudo npm install -g gitbook-summary
 ```
