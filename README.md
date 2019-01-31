@@ -21,10 +21,11 @@ It is useful to serve on `localhost` to modify the website and see changes local
 1. Make sure you have installed [gitbook-summary]().
 
 1. From the root of the project, run the following commands:
-```bash
-book sm -i CONTRIBUTING
-gitbook serve # command builds and serves
-```
+   ```bash
+   book sm -i CONTRIBUTING
+   sed -i "s/\/SUMMARY.md/#\/SUMMARY.md/g" .gitignore
+   gitbook serve # command builds and serves
+   ```
 
 1. You can now browse the site at the default location: http://127.0.0.1:4000
 
