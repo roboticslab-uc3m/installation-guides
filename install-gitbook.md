@@ -39,5 +39,5 @@ gitbook install
 ### gitbook-summary
 A useful tool for auto-generating `SUMMARY.md` as done for [roboticslab-uc3m/installation-guides](https://github.com/roboticslab-uc3m/installation-guides). Install via:
 ```bash
-npm install -g gitbook-summary
+sudo npm install -g gitbook-summary
 ```
