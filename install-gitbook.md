@@ -12,13 +12,14 @@ Then:
 ```bash
 sudo npm install -g gitbook-cli
 ```
+## How-To's
 
-## How to serve on localhost
+### How to serve on localhost
 ```bash
 gitbook serve # command builds and serves
 ```
 
-## How to build to serve generated contents elsewhere
+### How to build to serve generated contents elsewhere
 ```bash
 gitbook build
 ```
