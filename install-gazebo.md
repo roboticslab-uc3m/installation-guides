@@ -7,3 +7,8 @@ Official page: [link](http://gazebosim.org).
 ```bash
 sudo apt install gazebo7
 ```
+
+You may also be interested in:
+```bash
+sudo apt install libgazebo7-dev
+```
