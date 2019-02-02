@@ -15,3 +15,9 @@ You'll need [pybox2d](https://github.com/pybox2d/pybox2d) for the [Box2D Simulat
 ```bash
 sudo -H pip install Box2D
 ```
+
+### Enable Atari Simulations
+You'll need this for the [Atari Simulations](https://gym.openai.com/envs/#atari).
+```bash
+sudo -H pip install gym[atari]
+```
