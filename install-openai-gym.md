@@ -21,3 +21,6 @@ You'll need this for the [Atari Simulations](https://gym.openai.com/envs/#atari)
 ```bash
 sudo -H pip install gym[atari]
 ```
+
+### Enable MuJoCo and Robotics Simulations
+You'll need this for the [MuJoCo Simulations](https://gym.openai.com/envs/#mujoco) and [Robotics Simulations](https://gym.openai.com/envs/#robotics). Link: https://github.com/openai/mujoco-py/
