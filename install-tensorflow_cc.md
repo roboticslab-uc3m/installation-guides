@@ -69,7 +69,7 @@ cd tensorflow_cc
 
 ```
 
-2. Build and install ´tensorflow_cc` as a library:
+2. Build and install `tensorflow_cc` as a library:
 
 There are two diferent types of libraries, shared and static.
 
