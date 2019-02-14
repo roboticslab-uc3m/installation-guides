@@ -12,7 +12,7 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C
 Download and install ROS
 ```bash
 sudo apt update
-sudo apt-get install ros-kinetic-desktop-full
+sudo apt install ros-kinetic-desktop-full
 ```
 
 ## Install ROS Indigo Igloo (Ubuntu 13.10 and 14.04)
