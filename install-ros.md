@@ -1,7 +1,21 @@
 # Install ROS
 ROS is used to communicate with a wide variety of robots. Specifically, we use it to communicate with TIAGo, a robot from PAL Robotics.
 
-## Install ROS Indigo (Ubuntu 13.10 and 14.04)
+## Install ROS Kinetic Kame (Ubuntu 16.04)
+
+Add the ros repository to apt sources and setup the repository keys
+```bash
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+```
+
+Download and install ROS
+```bash
+sudo apt update
+sudo apt-get install ros-kinetic-desktop-full
+```
+
+## Install ROS Indigo Igloo (Ubuntu 13.10 and 14.04)
 Add the ros repository to apt sources and setup the repository keys
 ```bash
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
