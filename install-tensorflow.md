@@ -28,7 +28,7 @@ Note: better than `LD_LIBRARY_PATH`, put in correct place and run `ldconfig`.
 ### RTX 2080 Ti
 - CUDA 10, cuDNN 7.5.
 - As general practice, better `.run` than `.deb`: e.g. gives option to install CUDA without modifying your installed [NVIDIA drivers](install-nvidia-drivers.md))
-- As in https://medium.com/@saitejadommeti/building-tensorflow-gpu-from-source-for-rtx-2080-96fed102fcca ended up using [bazel](install-bazel.md) `0.18.0` via `.run` (the `.deb` had a java package issue), and tensorflow `r0.11`. Otherwise ended up with Bazel not finding tensorflow configuration.
+- As in https://medium.com/@saitejadommeti/building-tensorflow-gpu-from-source-for-rtx-2080-96fed102fcca ended up using [bazel](install-bazel.md) `0.18.0` via `.run` (the `.deb` had a java package issue), and tensorflow `r1.11`. Otherwise ended up with Bazel not finding tensorflow configuration.
 - keras via pip, 2.2.3 or similar with no issues.
 
 ### GM200 GeForce GTX TITAN X rev a1:
