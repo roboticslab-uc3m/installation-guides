@@ -73,6 +73,8 @@ sudo make install && sudo ldconfig && cd # Install and go home
 
 ## Install additional YARP device: OpenNI2DeviceServer (Ubuntu)
 
+***Note:** tested on YARP 2.3.68.x and YARP 2.3.72.1, not compatible with YARP 3.x.*
+
 Make sure you have previously installed YARP and:
  
 - [Install OpenNI2 & NiTE2](install-openni-nite.md)
@@ -88,6 +90,9 @@ You should now be able to launch `yarpdev --device OpenNI2DeviceServer`. It is a
 Note ([ref](https://github.com/roboticslab-uc3m/vision/issues/83#issuecomment-390326913)): installation of *depthCamera* is broken at YARP 2.3.72 (and probably at 2.3.70.x, too). Did work at 2.3.68.x, fixed upstream at 2.3.72.1. Workaround: do `cmake . -DYARP_HAS_OpenNI2=ON` and configure again.
 
 ### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
+
+***Note:** not compatible with YARP 3.x.*
+
 NiTE only required for skeletons. In addition to above steps for OpenNI:
 ```bash
 cd ~/repos/yarp/build
