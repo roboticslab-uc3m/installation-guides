@@ -74,6 +74,9 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 60 --slave /u
 sudo update-alternatives --config gcc
 
 ```
+
+There are two diferent types of libraries, static and shared.
+
 ### Static library
 
 - Default
