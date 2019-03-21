@@ -9,7 +9,7 @@ We use `tensorflow_cc` for Tensorflow C++ API without using Bazel. Official page
 
 Installing `tensorflow_cc` on Ubuntu to use Tensorflow C++ API without using `bazel`. Use `cmake` to build your project using `tensorflow_cc` as library to access Tensorflow C++ API.
 
-Installing `tensorflow_cc` requeriments.
+Installing `tensorflow_cc` requirements.
 
 ```bash
 
