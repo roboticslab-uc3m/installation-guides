@@ -25,6 +25,7 @@ There are two diferent types of libraries, static and shared.
 - No GPU support
 - Basic functionalities
 
+Download and install `tensorflow_cc`.
 
 ```bash
 git clone https://github.com/FloopCZ/tensorflow_cc.git
@@ -39,6 +40,8 @@ make && sudo make install
 - Slower to build
 - GPU support
 - Full Tensorflow C++ API
+
+Download and install `tensorflow_cc`.
 
 ```bash
 git clone https://github.com/FloopCZ/tensorflow_cc.git
