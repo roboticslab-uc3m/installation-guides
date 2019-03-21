@@ -2,7 +2,7 @@
 
 We use TensorFlow as a Keras backend. Official page: [link](https://www.tensorflow.org/install/)
 
-Also see [install-tensorflow_cc](install-tensorflow_cc.md) for the CMake'd alternative (this official one uses Bazel).
+Also see [install-tensorflow_cc](install-tensorflow_cc.md) for an alternative that is more prepared for use with CMake.
 
 ## Dependencies for building TensorFlow
 To build TensorFlow from source (e.g. for GPU support), you'll need:
