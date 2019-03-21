@@ -103,7 +103,7 @@ make && sudo make install
 
 ## Note for Intel CPU older than ivybridge
 
-Intel CPU older than *[ivybridge](https://ark.intel.com/es-es/products/codename/29902/Ivy-Bridge)*:
+Intel CPU older than *[ivybridge](https://ark.intel.com/content/www/es/es/ark/products/codename/29902/ivy-bridge.html)*:
 ```bash
 
 export CC_OPT_FLAGS="-march=native"
