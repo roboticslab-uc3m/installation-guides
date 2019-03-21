@@ -16,7 +16,7 @@ sudo apt-get install build-essential curl git cmake unzip autoconf autogen autom
                      zlib1g-dev g++-7 python python3-numpy python3-dev python3-pip python3-wheel wget
 sudo updatedb
 ```
-There are two diferent types of libraries, shared and static.
+There are two diferent types of libraries, static and shared.
 
 ### Static library
 
