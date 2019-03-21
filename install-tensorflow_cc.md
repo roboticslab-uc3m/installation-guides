@@ -81,7 +81,7 @@ sudo update-alternatives --config gcc
 - No GPU support
 - Basic functionalities
 
-
+Download and install `tensorflow_cc::Static`.
 ```bash
 git clone https://github.com/FloopCZ/tensorflow_cc.git
 cd tensorflow_cc/tensorflow_cc
@@ -96,6 +96,7 @@ make && sudo make install
 - GPU support
 - Full Tensorflow C++ API
 
+Download and install `tensorflow_cc::Shared`.
 ```bash
 git clone https://github.com/FloopCZ/tensorflow_cc.git
 cd tensorflow_cc/tensorflow_cc
