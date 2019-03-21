@@ -1,6 +1,6 @@
 # Install tensorflow_cc
 
-We use `tensorflow_cc` for Tensorflow C++ API without using Bazel.Use `cmake` to build your project using `tensorflow_cc` as library. Official page: [link](https://github.com/FloopCZ/tensorflow_cc)
+We use `tensorflow_cc` for Tensorflow C++ API. Use `cmake` to build your project using `tensorflow_cc` as library. Official page: [link](https://github.com/FloopCZ/tensorflow_cc)
 
 - [Install tensorflow_cc (Ubuntu 18.04)](#install-tensorflow_cc-(Ubuntu-18.04))
 - [Install tensorflow_cc (Ubuntu 14.04 and 16.04)](#install-tensorflow_cc-(Ubuntu-14.04-and-16.04))
