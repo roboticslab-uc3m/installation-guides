@@ -34,6 +34,21 @@ PCL is available directly as part of `universe` in modern Ubuntu distros [[ref](
 sudo apt install libpcl-dev  # depends: libvtk6-dev
 ```
 
+Developers may find obscure `No rule to make target '/usr/lib/x86_64-linux-gnu/libproj.so'` errors in their PCL-dependent applications, this is due to a known bug. Workaround ([SO answer](https://stackoverflow.com/a/40034779)):
+
+```bash
+sudo apt install libproj-dev
+```
+
+Besides, remove a superfluous `vtkproj4` item from the list of PCL libraries in your CMake code:
+
+```cmake
+find_package(PCL 1.7) # you probably have this around somewhere
+list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4") # add this line afterwards
+```
+
+See also [PointCloudLibrary/pcl#2406](https://github.com/PointCloudLibrary/pcl/issues/2406#issuecomment-428101801) (linker error in case new point types are added).
+
 ## Install PCL (From source)
 
 Link: [install from source](http://pointclouds.org/documentation/tutorials/compiling_pcl_posix.php).
