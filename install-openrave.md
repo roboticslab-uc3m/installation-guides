@@ -32,7 +32,7 @@ Thus, `apt` would not try to install non-critical packages marked as *recommende
 
 In case you run into `non-constant-expression cannot be narrowed from type 'double' to 'float' in initializer list [-Wc++11-narrowing]` errors (happened on OpenRAVE 0.15 and a Clang 6.0.0/7.0.0 compiler), reconfigure CMake with the following option:
 
-`cmake .. -DOPENRAVE_IKFAST_FLOAT32=OFF`
+`cmake .. -DOPT_IKFAST_FLOAT32=OFF`
 
 ## Install OpenRAVE with FCL (Confirmed for Ubuntu 15.04, 15.10, 16.10, 17.04)
 
