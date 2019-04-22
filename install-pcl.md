@@ -44,7 +44,11 @@ Besides, remove a superfluous `vtkproj4` item from the list of PCL libraries in 
 
 ```cmake
 find_package(PCL 1.7) # you probably have this around somewhere
-list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4") # add this line afterwards
+
+# add these lines afterwards
+if(DEFINED PCL_LIBRARIES)
+    list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4")
+endif()
 ```
 
 See also [PointCloudLibrary/pcl#2406](https://github.com/PointCloudLibrary/pcl/issues/2406#issuecomment-428101801) (linker error in case new point types are added).
