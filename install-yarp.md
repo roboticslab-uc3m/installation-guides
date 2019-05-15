@@ -25,7 +25,7 @@ sudo apt install libedit-dev # Enables keyboard arrow keys within an RPC communi
 mkdir -p ~/repos; cd ~/repos # Create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/robotology/yarp
 cd yarp && mkdir build && cd build
-cmake .. -DSKIP_ACE=ON -DCREATE_LIB_MATH=ON -DCREATE_GUIS=ON -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_mjpeg=ON # configure
+cmake .. -DSKIP_ACE=ON -DCREATE_GUIS=ON -DENABLE_yarpcar_mjpeg=ON # configure
 make -j$(nproc) # Compile
 sudo make install && sudo ldconfig && cd # Install and go home
 ```
@@ -64,7 +64,7 @@ If you have the line `source /opt/ros/indigo/setup.bash` at the end of ~/.bashrc
 
 ```bash
 cd ~/repos/yarp/build
-cmake .. -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_tcpros=ON -DENABLE_yarpcar_xmlrpc=ON
+cmake .. -DENABLE_yarpcar_tcpros=ON -DENABLE_yarpcar_xmlrpc=ON
 make -j$(nproc) # Compile
 sudo make install && sudo ldconfig && cd # Install and go home
 ```
