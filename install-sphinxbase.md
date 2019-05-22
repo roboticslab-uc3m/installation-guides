@@ -1,6 +1,6 @@
 # Install sphinxbase
 
-`sphinxbase` is a dependency for compiling [pocketsphinx](install-pocketsphinx.md) from source.
+`sphinxbase` is a dependency for compiling [pocketsphinx](install-gstreamer-pocketsphinx.md) from source.
 
 # Install sphinxbase  from source (Ubuntu)
 
