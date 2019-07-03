@@ -15,5 +15,6 @@ make -C test && sudo make -C test install # test utilities (optional)
 sudo modprobe pcan # driver loading
 cd && cd repos/yarp-devices/build/
 ccmake .. -DENABLE_CanBusHico=OFF -DENABLE_CanBusPeak=ON  # configure yarp-devices to use CanBusPeak
-make -j$(nproc) # Compile
+make -j$(nproc) && sudo make install # Compile and install
+cd # go home
 ```
