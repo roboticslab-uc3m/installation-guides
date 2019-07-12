@@ -1,11 +1,10 @@
 # Install PCAN-M.2 Driver for Linux (Ubuntu 16.04)
 
-## Links of interest:
-* official page:  [link](https://www.peak-system.com/fileadmin/media/linux/index.htm)
-* manual:         [link](https://www.peak-system.com/fileadmin/media/linux/files/PCAN-Driver-Linux_UserMan_eng.pdf)
+## Links of interest
+* Official page:  [link](https://www.peak-system.com/fileadmin/media/linux/index.htm)
+* Manual:         [link](https://www.peak-system.com/fileadmin/media/linux/files/PCAN-Driver-Linux_UserMan_eng.pdf)
 
-## Driver installation:
-
+## Driver installation
 ```bash
 cd && mkdir -p ~/src/peak && cd ~/src/peak
 wget https://www.peak-system.com/fileadmin/media/linux/files/peak-linux-driver-8.5.1.tar.gz
@@ -17,7 +16,8 @@ make -C test && sudo make -C test install # test utilities (optional)
 make -C lib && sudo make -C lib install
 sudo modprobe pcan # driver loading
 ```
-## Activate CanBusPeak in yarp-devices:
+
+## Activate CanBusPeak in yarp-devices
 Note: These lines assume that yarp-devices has been cloned, configured and compiled. If not, follow the [installation instructions](https://github.com/roboticslab-uc3m/yarp-devices/blob/develop/doc/yarp-devices-install.md).
 
 ```bash
