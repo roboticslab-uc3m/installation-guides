@@ -84,7 +84,7 @@ make -j$(nproc) # Compile
 sudo make install && sudo ldconfig && cd # Install and go home
 ```
 
-You'll need a configuration file in order to launch this device. For instance, we use this command with an ASUS camera: `yarpdev --from xtion.ini` ([ref](https://github.com/roboticslab-uc3m/vision/blob/255af0dd568e90da854edfd3cadc8ecf155a9337/share/sensors/conf/xtion.ini)).
+You'll need a configuration file in order to launch this device. For instance, we use this command with an ASUS camera: `yarpdev --context sensors --from asus-xtion.ini` ([ref](https://github.com/roboticslab-uc3m/vision/blob/fc60ad9aed7dfbca647d9d4154ffb0e9b68edeaa/share/sensors/conf/asus-xtion.ini)).
 
 Note ([ref](https://github.com/roboticslab-uc3m/vision/issues/83#issuecomment-390326913)): installation of *depthCamera* is broken at YARP 2.3.72 (and probably at 2.3.70.x, too). Did work at 2.3.68.x, fixed upstream at 2.3.72.1. Workaround: do `cmake . -DYARP_HAS_OpenNI2=ON` and configure again.
 
