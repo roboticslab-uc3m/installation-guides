@@ -59,12 +59,14 @@ Binary releases usually work well: http://www.yarp.it/download.html
 
 ## Install ROS support
 
+***Note:** these carriers are now installed by default, ignore this if you are using YARP 3.x.*
+
 Make sure you have installed previously YARP and that the ROS environment is not sourced, as it causes the build to fail.
 If you have the line `source /opt/ros/indigo/setup.bash` at the end of ~/.bashrc, comment it, save the file and open a new terminal.
 
 ```bash
 cd ~/repos/yarp/build
-cmake .. -DENABLE_yarpcar_tcpros=ON -DENABLE_yarpcar_xmlrpc=ON
+cmake .. -DCREATE_OPTIONAL_CARRIERS=ON -DENABLE_yarpcar_tcpros=ON -DENABLE_yarpcar_xmlrpc=ON
 make -j$(nproc) # Compile
 sudo make install && sudo ldconfig && cd # Install and go home
 ```
