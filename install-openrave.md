@@ -81,7 +81,9 @@ Here's a small patch tested on OpenRAVE 0.9 to enhance console output on joint l
 ```bash
 cd $HOME/repos/openrave
 wget https://github.com/roboticslab-uc3m/openrave-yarp-plugins/files/3896779/98-limit-output.patch.log
-git apply 98-limit-output.patch.log
+git apply 98-limit-output.patch.log # modifies `plugins/basecontrollers/idealcontroller.cpp`
+wget https://github.com/roboticslab-uc3m/openrave-yarp-plugins/files/3898612/98-limit-output-2.patch.log
+git apply 98-limit-output-2.patch.log # modifies `src/libopenrave/kinbody.cpp`
 cd build; cmake ..
 make -j$(nproc)
 sudo make install; cd  # install and go home
