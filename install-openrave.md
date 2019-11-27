@@ -2,7 +2,16 @@
 
 We use the OpenRAVE core library for simulations.
 
-- Official links: [[OpenRAVE](http://openrave.org/)]. [[OpenRAVE: Building and Installing page](http://openrave.org/docs/latest_stable/coreapihtml/installation.html)].
+* Official links: [[OpenRAVE](http://openrave.org/)]. [[OpenRAVE: Building and Installing page](http://openrave.org/docs/latest_stable/coreapihtml/installation.html)].
+
+* [Install OpenRAVE (Most modern Ubuntu, such as 14.04 or 16.04)](#install-openrave-most-modern-ubuntu-such-as-1404-or-1604)
+* [Install OpenRAVE with FCL (Confirmed for Ubuntu 15.04, 15.10, 16.10, 17.04)](#install-openrave-with-fcl-confirmed-for-ubuntu-1504-1510-1610-1704)
+* [Install OpenRAVE (Ubuntu 12.04)](#install-openrave-ubuntu-1204)
+* [Install OpenRAVE (Windows)](#install-openrave-windows)
+* [Additional Information](#additional-information)
+    * [Generate Databases](#generate-databases)
+    * [External Tutorials](#external-tutorials)
+* [External Installation Tutorial/Script Links](#external-installation-tutorialscript-links)
 
 ## Install OpenRAVE (Most modern Ubuntu, such as 14.04 or 16.04)
 
@@ -65,18 +74,19 @@ References:
 - http://sukhoy.public.iastate.edu/openrave/
 - https://github.com/rdiankov/openrave
 
-# Generate Databases
+## Additional Information
+
+### Generate Databases
 
 - https://github.com/roboticslab-uc3m/teo-openrave-models/tree/develop/scripts/python ([permalink](https://github.com/roboticslab-uc3m/teo-openrave-models/tree/0efd49e662495f8ca329ac0089fc37243ab7519c/scripts/python))
 
-# External
+### External Tutorials
+- https://scaron.info/teaching/getting-started-with-openrave.html
 
-## External Installation Tutorial/Script Links:
+## External Installation Tutorial/Script Links
 - https://github.com/crigroup/openrave-installation
    - Older by same user: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)].
    - Older by same user: [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)].
 - [[ref3, xenial](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/)].
 - https://hub.docker.com/r/hamzamerzic/openrave
 
-### External Tutorials
-- https://scaron.info/teaching/getting-started-with-openrave.html
