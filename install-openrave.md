@@ -7,6 +7,7 @@ We use the OpenRAVE core library for simulations. Official links: [[OpenRAVE](ht
 * [Install OpenRAVE (Ubuntu 12.04)](#install-openrave-ubuntu-1204)
 * [Install OpenRAVE (Windows)](#install-openrave-windows)
 * [Additional Information](#additional-information)
+    * [Source Code Hacks](#source-code-hacks)
     * [Generate Databases](#generate-databases)
     * [External Tutorials](#external-tutorials)
 * [External Installation Tutorial/Script Links](#external-installation-tutorialscript-links)
@@ -73,6 +74,18 @@ References:
 - https://github.com/rdiankov/openrave
 
 ## Additional Information
+
+### Source Code Hacks
+
+Here's a small patch tested on OpenRAVE 0.9 to enhance console output on joint limits (provides joint name, and angles in degrees):
+```bash
+cd $HOME/repos/openrave
+wget https://github.com/roboticslab-uc3m/openrave-yarp-plugins/files/3896779/98-limit-output.patch.log
+git apply 98-limit-output.patch.log
+cd build; cmake ..
+make -j$(nproc)
+sudo make install; cd  # install and go home
+```
 
 ### Generate Databases
 
