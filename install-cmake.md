@@ -2,16 +2,49 @@
 
 We use CMake for project generating.
 
-Official download page: [link](https://cmake.org/download/)
+Official download page: [link](https://cmake.org/download/).
 
 ## Install CMake (Ubuntu)
 
-Installing CMake on Ubuntu is quite straightforward. Note that you will be prompted for your password upon using `sudo`. Type:
+### Ubuntu 16.04 and 18.04
+
+The latest CMake release is available via Kitware's PPA:
+
+```bash
+wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | sudo apt-key add -
+```
+
+For Ubuntu Bionic (18.04):
+
+```bash
+sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
+sudo apt-get update
+```
+
+For Ubuntu Xenial (16.04):
+
+```bash
+sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ xenial main'
+sudo apt-get update
+```
+
+Then, download and install CMake:
 
 ```bash
 sudo apt install cmake
-sudo apt install cmake-curses-gui  # Recommended, as it contains ccmake.
+sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 ```
+
+## Other providers
+
+CMake has been traditionally available via the Canonical PPA. Note, however, that these packages may contain versions that are older than those published in the Kitware PPA and thus break builds with recent software.
+
+```bash
+sudo apt install cmake
+sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
+```
+
+In addition, a pip wheels release exists: [ref](https://pypi.org/project/cmake/).
 
 ### Ubuntu 14.04 backports
 
