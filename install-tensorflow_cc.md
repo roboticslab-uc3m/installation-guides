@@ -57,7 +57,7 @@ make && sudo make install
 
 ### Shared library
 Will create CMake target `tensorflow_cc::Shared`.
-- Requires install [bazel](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-bazel.md)
+- Requires install [bazel](install-bazel.md)
 - Slower to build
 - GPU support
 - Full Tensorflow C++ API
