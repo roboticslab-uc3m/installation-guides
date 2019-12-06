@@ -1,6 +1,6 @@
 # Install tensorflow_cc
 
-We use `tensorflow_cc` for Tensorflow C++ API. Use `cmake` to build your project using `tensorflow_cc` as library. Official page: [link](https://github.com/FloopCZ/tensorflow_cc)
+We use `tensorflow_cc` for Tensorflow C++ API. Use `cmake` to build your project using `tensorflow_cc` as library. Official page: [FloopCZ/tensorflow_cc](https://github.com/FloopCZ/tensorflow_cc)
 
 Also see [install-tensorflow](install-tensorflow.md) for the official alternative (less prepared for use with CMake).
 
@@ -11,6 +11,9 @@ Also see [install-tensorflow](install-tensorflow.md) for the official alternativ
     * [Static library](#static-library)
 * [Troubleshooting](#troubleshooting)
     * [Note for Intel CPU older than ivybridge](#note-for-intel-cpu-older-than-ivybridge)
+* [Working setups](#working-setups)
+    * [tiago-entrenamiento](#tiago-entrenamiento)
+* [Non-working setups](#non-working-setups)
 
 ## Install dependencies (Ubuntu 18.04)
 
@@ -83,3 +86,14 @@ Intel CPU older than [ivybridge](https://ark.intel.com/content/www/es/es/ark/pro
 ```bash
 export CC_OPT_FLAGS="-march=native"
 ```
+
+## Working setups
+Related: [install-tensorflow#working-setups](install-tensorflow.md#working-setups)
+
+### tiago-entrenamiento
+- <https://github.com/FloopCZ/tensorflow_cc/commit/18af480b99a9b5d07333fc7b6dfd4d3313fb6d0f>
+
+## Non-working setups
+Related: [install-tensorflow#non-working-setups](install-tensorflow.md#non-working-setups)
+
+- Careful with Bazel versions, e.g. [Oct 23 2019 commit 4338525](https://github.com/FloopCZ/tensorflow_cc/commit/4338525e47d3aedd5e8c7e546f85ee06de97270a) specifies `0.26.1`.
