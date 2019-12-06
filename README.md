@@ -20,11 +20,11 @@ It is useful to serve on `localhost` to modify the website and see changes local
 
 1. Make sure you have installed [gitbook-summary](install-gitbook.md#gitbook-summary).
 
-1. To serve, from the root of the project, run: <./scripts/admin/gitbook-local-serve.sh>
+1. To serve, from the root of the project, run: [./scripts/admin/gitbook-local-serve.sh](scripts/admin/gitbook-local-serve.sh)
 
 1. You can now browse the site at the default location: http://127.0.0.1:4000
 
-1. To clean, (recover `.gitignore` to its previous state, remove generated `SUMMARY.md`), run: <./scripts/admin/gitbook-local-clean.sh>
+1. To clean, (recover `.gitignore` to its previous state, remove generated `SUMMARY.md`), run: [./scripts/admin/gitbook-local-clean.sh](scripts/admin/gitbook-local-clean.sh)
 
 ### How to upload changes to GitHub
 This project is managed as any project on [GitHub](https://www.github.com). You may use [Git](https://git-scm.com) or even the GitHub web interface, both on which you can find many tutorials online. The following points are specific to the [Gitbook (legacy)](https://github.com/asrob-uc3m/actas/issues/148#issuecomment-449748350) mechanism used:
