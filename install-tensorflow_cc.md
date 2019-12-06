@@ -52,7 +52,8 @@ git clone https://github.com/FloopCZ/tensorflow_cc.git
 cd tensorflow_cc/tensorflow_cc
 mkdir build && cd build
 cmake -DTENSORFLOW_STATIC=OFF -DTENSORFLOW_SHARED=ON ..
-make && sudo make install
+make -j$(nproc)
+sudo make install
 ```
 
 ### Static library
@@ -68,7 +69,8 @@ git clone https://github.com/FloopCZ/tensorflow_cc.git
 cd tensorflow_cc/tensorflow_cc
 mkdir build && cd build
 cmake ..
-make && sudo make install
+make -j$(nproc)
+sudo make install
 ```
 
 ## Troubleshooting
