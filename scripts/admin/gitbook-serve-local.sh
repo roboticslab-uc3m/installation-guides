@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 rm -r _book/
 book sm -i CONTRIBUTING
