@@ -30,9 +30,10 @@ It is useful to serve on `localhost` to modify the website and see changes local
 
 1. You can now browse the site at the default location: http://127.0.0.1:4000
 
-1. Recover `.gitignore` to its previous state:
+1. Recover `.gitignore` to its previous state, remove generated `SUMMARY.md`:
    ```bash
-   sed -i "s/#\/SUMMARY.md/\/SUMMARY.md/g" .gitignore
+   git checkout -- .gitignore
+   rm SUMMARY.md
    ```
 
 ### How to upload changes to GitHub
