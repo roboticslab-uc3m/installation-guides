@@ -6,7 +6,7 @@ Also see [install-tensorflow](install-tensorflow.md) for the official alternativ
 
 - [Install dependencies (Ubuntu 18.04)](#install-dependencies-ubuntu-1804)
 - [Install dependencies (Ubuntu 14.04 and 16.04)](#install-dependencies-ubuntu-1404-and-1604)
-- [Install tensorflow_cc (Ubuntu)](#install-tensorflow_cc-ubuntu)
+- [Install tensorflow_cc (Ubuntu)](#install-tensorflowcc-ubuntu)
 - [Troubleshooting](#troubleshooting)
 
 ## Install dependencies (Ubuntu 18.04)
@@ -37,7 +37,24 @@ sudo update-alternatives --config gcc
 ```
 
 ## Install tensorflow_cc (Ubuntu)
-You can create two diferent types of libraries: static or shared.
+You can create two diferent types of libraries: Shared (recommended) or Static.
+
+### Shared library
+Will create CMake target `tensorflow_cc::Shared`, which we use in [roboticslab-uc3m/vision](https://github.com/roboticslab-uc3m/vision) (recommended).
+- Requires install [bazel](install-bazel.md)
+- Slower to build
+- GPU support
+- Full Tensorflow C++ API
+
+Download and install:
+```bash
+git clone https://github.com/FloopCZ/tensorflow_cc.git
+cd tensorflow_cc/tensorflow_cc
+mkdir build && cd build
+cmake -DTENSORFLOW_STATIC=OFF -DTENSORFLOW_SHARED=ON ..
+make -j$(nproc)
+sudo make install
+```
 
 ### Static library
 Will create CMake target `tensorflow_cc::Static`.
@@ -52,23 +69,8 @@ git clone https://github.com/FloopCZ/tensorflow_cc.git
 cd tensorflow_cc/tensorflow_cc
 mkdir build && cd build
 cmake ..
-make && sudo make install
-```
-
-### Shared library
-Will create CMake target `tensorflow_cc::Shared`.
-- Requires install [bazel](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-bazel.md)
-- Slower to build
-- GPU support
-- Full Tensorflow C++ API
-
-Download and install:
-```bash
-git clone https://github.com/FloopCZ/tensorflow_cc.git
-cd tensorflow_cc/tensorflow_cc
-mkdir build && cd build
-cmake -DTENSORFLOW_STATIC=OFF -DTENSORFLOW_SHARED=ON ..
-make && sudo make install
+make -j$(nproc)
+sudo make install
 ```
 
 ## Troubleshooting
