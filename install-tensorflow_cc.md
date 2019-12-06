@@ -14,23 +14,19 @@ Also see [install-tensorflow](install-tensorflow.md) for the official alternativ
 Download and install requirements.
 
 ```bash
-sudo apt-get install build-essential curl git cmake unzip autoconf autogen automake libtool mlocate \
-                     zlib1g-dev g++-7 python python3-numpy python3-dev python3-pip python3-wheel wget realpath
-sudo updatedb
+sudo apt-get install build-essential curl git cmake unzip autoconf autogen automake libtool mlocate zlib1g-dev g++-7 python python3-numpy python3-dev python3-pip python3-wheel wget realpath
 ```
 
 ## Install dependencies (Ubuntu 14.04 and 16.04)
 Download and install requirements.
 ```bash
 
-sudo apt-get install build-essential curl git cmake unzip autoconf autogen automake libtool mlocate \
-                     zlib1g-dev python python3-numpy python3-dev python3-pip python3-wheel wget realpath
+sudo apt-get install build-essential curl git cmake unzip autoconf autogen automake libtool mlocate zlib1g-dev python python3-numpy python3-dev python3-pip python3-wheel wget realpath
 sudo updatedb
 ```
 Ubuntu 14.04 and 16.04 doesn´t allow GCC7 installation direcly, you should add `ubuntu-toolchain-r/test` repository to install.
 
 ```bash
-
 sudo apt-get update -y && \
 sudo apt-get upgrade -y && \
 sudo apt-get dist-upgrade -y && \
@@ -77,9 +73,10 @@ cmake -DTENSORFLOW_STATIC=OFF -DTENSORFLOW_SHARED=ON ..
 make && sudo make install
 ```
 
-# Troubleshooting
+## Troubleshooting
+
 ### Note for Intel CPU older than ivybridge
-Intel CPU older than *[ivybridge](https://ark.intel.com/content/www/es/es/ark/products/codename/29902/ivy-bridge.html)*:
+Intel CPU older than [ivybridge](https://ark.intel.com/content/www/es/es/ark/products/codename/29902/ivy-bridge.html):
 ```bash
 export CC_OPT_FLAGS="-march=native"
 ```
