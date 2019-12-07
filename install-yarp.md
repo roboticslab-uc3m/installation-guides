@@ -14,7 +14,7 @@ Installing YARP on Ubuntu is quite straightforward.
 
 Note that you will be prompted for your password upon using `sudo` a couple of times. 
 
-As can be seen, here we are accounting for: YARP `lib_math`, the GUIs and `mjpeg` carrier.
+As can be seen, here we are accounting for YARP GUIs and `mjpeg` carrier.
 
 ```bash
 sudo apt install build-essential git
@@ -23,7 +23,7 @@ sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5
 sudo apt install libjpeg8-dev # Needed for mjpeg carrier
 sudo apt install libedit-dev # Enables keyboard arrow keys within an RPC communication channel via terminal
 mkdir -p ~/repos; cd ~/repos # Create $HOME/repos if it doesn't exist; then, enter it
-git clone https://github.com/robotology/yarp
+git clone --branch=yarp-3.3 https://github.com/robotology/yarp
 cd yarp && mkdir build && cd build
 cmake .. -DSKIP_ACE=ON -DCREATE_GUIS=ON -DENABLE_yarpcar_mjpeg=ON # configure
 make -j$(nproc) # Compile
