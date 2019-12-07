@@ -9,7 +9,7 @@ We use YARP for communications. Official page: [link](http://www.yarp.it/)
 - [Install Additional Plugins: Devices](#install-additional-plugins-devices)
 - [Install Bindings](#install-bindings)
 
-## Preparation
+## Install dependencies
 Some dependencies must be installed for compilation:
 - [CMake >3.12](install-cmake.md)
 
