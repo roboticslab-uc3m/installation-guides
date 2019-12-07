@@ -2,11 +2,16 @@
 
 We use YARP for communications. Official page: [link](http://www.yarp.it/) 
 
+- [Install dependencies](#install-dependencies)
 - [Install YARP (Ubuntu)](#install-yarp-ubuntu)
 - [Install YARP (Windows)](#install-yarp-windows)
 - [Install Additional Plugins: Carriers](#install-additional-plugins-carriers)
 - [Install Additional Plugins: Devices](#install-additional-plugins-devices)
 - [Install Bindings](#install-bindings)
+
+## Preparation
+Some dependencies must be installed for compilation:
+- [CMake >3.12](install-cmake.md)
 
 ## Install YARP (Ubuntu)
 
