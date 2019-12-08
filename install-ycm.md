@@ -1,6 +1,6 @@
 # Install YCM
 
-We use YCM to benefit from additional CMake modules and superbuild support. The source code is hosted on [GitHub](https://github.com/robotology/ycm). Due to its nature, you may want to install it on your system (as a so-called hard dependency) or lazy-load on demand (soft dependency).
+We use [YCM](http://robotology.github.io/ycm/gh-pages/git-master/index.html) to benefit from additional CMake modules and superbuild support. The source code is hosted on GitHub at [robotology/ycm](https://github.com/robotology/ycm). Due to its nature, you may want to install it on your system (as a so-called hard dependency) or lazy-load on demand (soft dependency).
 
 Modern YCM releases require CMake 3.0 or higher (3.5+ since YCM 0.8), see [Install CMake](install-cmake.md). If working on Trusty, make sure you get the [Ubuntu 14.04 backports](install-cmake.md#ubuntu-1404-backports).
 
