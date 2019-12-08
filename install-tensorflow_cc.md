@@ -58,7 +58,7 @@ git clone https://github.com/FloopCZ/tensorflow_cc.git
 cd tensorflow_cc/tensorflow_cc
 mkdir build && cd build
 cmake -DTENSORFLOW_STATIC=OFF -DTENSORFLOW_SHARED=ON ..
-make -j$(nproc)
+make # No need for -j$(nproc), bazel will use all CPUs anyway
 sudo make install
 ```
 
