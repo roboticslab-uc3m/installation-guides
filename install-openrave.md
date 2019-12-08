@@ -10,6 +10,7 @@ We use the OpenRAVE core library for simulations. Official links: [[OpenRAVE](ht
     * [Source Code Hacks](#source-code-hacks)
     * [Generate Databases](#generate-databases)
     * [External Tutorials](#external-tutorials)
+* [Working setups](#working-setups)
 * [External Installation Tutorial/Script Links](#external-installation-tutorialscript-links)
 
 ## Install OpenRAVE (Most modern Ubuntu, such as 14.04 or 16.04)
@@ -95,6 +96,9 @@ sudo make install; cd  # install and go home
 
 ### External Tutorials
 - https://scaron.info/teaching/getting-started-with-openrave.html
+
+## Working setups
+- OpenRAVE `v0.9.0` on `Ubuntu 16.04.6 LTS (Xenial)` with `gcc (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010`.
 
 ## External Installation Tutorial/Script Links
 - https://github.com/crigroup/openrave-installation
