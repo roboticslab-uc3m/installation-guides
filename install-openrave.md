@@ -5,7 +5,8 @@ We use the OpenRAVE core library for simulations. Official links: [[OpenRAVE](ht
 * [Install OpenRAVE (Most modern Ubuntu, such as 14.04 or 16.04)](#install-openrave-most-modern-ubuntu-such-as-1404-or-1604)
 * [Install OpenRAVE (Ubuntu 12.04)](#install-openrave-ubuntu-1204)
 * [Install OpenRAVE (Windows)](#install-openrave-windows)
-* [Install Additional Plugins: FCL](#install-additional-plugins-fcl)
+* [Install Additional Plugins: Flexible Collision Library (FCL)](#install-additional-plugins-flexible-collision-library-fcl)
+* [Install Additional Plugins: OpenSceneGraph (OSG)](#install-additional-plugins-openscenegraph-osg)
 * [Additional Information](#additional-information)
     * [Source Code Hacks](#source-code-hacks)
     * [Generate Databases](#generate-databases)
@@ -44,17 +45,6 @@ In case you run into `non-constant-expression cannot be narrowed from type 'doub
 
 `cmake .. -DOPT_IKFAST_FLOAT32=OFF`
 
-## Install Additional Plugins: FCL
-
-The following is the Cannonical PPA way, which may not work for you. For more references regarding FCL from source on other/older versions, refer to these issues: [#3](https://github.com/roboticslab-uc3m/installation-guides/issues/3), [#45](https://github.com/roboticslab-uc3m/installation-guides/issues/45).
-
-```bash
-sudo apt install libfcl-dev
-cd $HOME/repos/openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRAVE=ON
-make -j$(nproc)
-sudo make install; cd  # install and go home
-```
-
 ## Install OpenRAVE (Ubuntu 12.04)
 
 To install a precompiled version of OpenRAVE, type:
@@ -75,6 +65,41 @@ References:
 - http://openrave.org/docs/latest_stable/coreapihtml/installation_windows.html
 - http://sukhoy.public.iastate.edu/openrave/
 - https://github.com/rdiankov/openrave
+
+## Install Additional Plugins: Flexible Collision Library (FCL)
+
+The following is the Cannonical PPA way, which may not work for you. For more references regarding FCL from source on other/older versions, refer to these issues: [#3](https://github.com/roboticslab-uc3m/installation-guides/issues/3), [#45](https://github.com/roboticslab-uc3m/installation-guides/issues/45).
+
+```bash
+sudo apt install libfcl-dev
+cd $HOME/repos/openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRAVE=ON
+make -j$(nproc)
+sudo make install; cd  # install and go home
+```
+
+The CMakes options when recompiling OpenRAVE are `OPT_FCL_COLLISION` / `OPENRAVE_PLUGIN_FCLRAVE`.
+
+## Install Additional Plugins: OpenSceneGraph (OSG)
+
+To get OSG to compile against OpenRAVE, first, you must download a specific version (all near 3.4.x should work) and set a CMake flag to use a specific Qt version:
+```bash
+sudo apt-get install libcairo2-dev libjasper-dev libpoppler-glib-dev libsdl2-dev libtiff5-dev libxrandr-dev
+git clone --branch OpenSceneGraph-3.4.1 https://github.com/openscenegraph/OpenSceneGraph
+cd OpenSceneGraph && mkdir build && cd build
+cmake .. -DDESIRED_QT_VERSION=4
+make -j4
+sudo make install
+```
+
+Then you must fix a set of environmental variables for OpenRAVE to actually detect OSG (else, error such as `Required > 3.4, failed because detected 3.4.2`):
+```bash
+export LD_LIBRARY_PATH="/usr/local/lib64:/usr/local/lib:$LD_LIBRARY_PATH"
+export OPENTHREADS_INC_DIR="/usr/local/include"
+export OPENTHREADS_LIB_DIR="/usr/local/lib64:/usr/local/lib"
+export PATH="$OPENTHREADS_LIB_DIR:$PATH"
+```
+
+The CMakes options when recompiling OpenRAVE are `OPT_QTOSG_VIEWER` / `OPENRAVE_PLUGIN_QTOSGRAVE` (and the viewer is called "qtosg" in contrast to "qtcoin").
 
 ## Additional Information
 
@@ -109,4 +134,3 @@ sudo make install; cd  # install and go home
    - Older by same user: [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)].
 - [[ref3, xenial](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/)].
 - https://hub.docker.com/r/hamzamerzic/openrave
-
