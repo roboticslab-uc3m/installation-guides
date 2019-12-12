@@ -58,7 +58,7 @@ sudo apt-get install openrave
 
 ## Install OpenRAVE (Windows)
 
-Installers such as openrave-0.9.0-5cfc74-win32-vc100-setup are broken (break do to broken Boost 1.44 and Qt links, not to mention old VS version), so we go old-school.
+Installers such as `openrave-0.9.0-5cfc74-win32-vc100-setup` are broken (break do to broken Boost 1.44 and Qt links, not to mention old VS version), so we go old-school.
 
 References:
 - http://robots.uc3m.es/index.php/OpenRAVE_R1457_Windows_Install
@@ -122,6 +122,7 @@ sudo make install; cd  # install and go home
 
 - https://github.com/roboticslab-uc3m/teo-openrave-models/tree/develop/scripts ([permalink](https://github.com/roboticslab-uc3m/teo-openrave-models/tree/358ddcc067dec62d0034b5a3b5e27926168651bd/scripts))
 - https://github.com/roboticslab-uc3m/openrave-tools
+- https://github.com/roboticslab-uc3m/openrave-yarp-plugins
 
 ### External Tutorials
 - https://scaron.info/teaching/getting-started-with-openrave.html
