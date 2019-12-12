@@ -94,6 +94,7 @@ sudo make install; cd  # install and go home
 ### Generate Databases
 
 - https://github.com/roboticslab-uc3m/teo-openrave-models/tree/develop/scripts ([permalink](https://github.com/roboticslab-uc3m/teo-openrave-models/tree/358ddcc067dec62d0034b5a3b5e27926168651bd/scripts))
+- https://github.com/roboticslab-uc3m/openrave-tools
 
 ### External Tutorials
 - https://scaron.info/teaching/getting-started-with-openrave.html
