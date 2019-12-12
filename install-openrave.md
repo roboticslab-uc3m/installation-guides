@@ -3,9 +3,9 @@
 We use the OpenRAVE core library for simulations. Official links: [[OpenRAVE](http://openrave.org/)]. [[OpenRAVE: Building and Installing page](http://openrave.org/docs/latest_stable/coreapihtml/installation.html)].
 
 * [Install OpenRAVE (Most modern Ubuntu, such as 14.04 or 16.04)](#install-openrave-most-modern-ubuntu-such-as-1404-or-1604)
-* [Install OpenRAVE with FCL (Confirmed for Ubuntu 15.04, 15.10, 16.10, 17.04)](#install-openrave-with-fcl-confirmed-for-ubuntu-1504-1510-1610-1704)
 * [Install OpenRAVE (Ubuntu 12.04)](#install-openrave-ubuntu-1204)
 * [Install OpenRAVE (Windows)](#install-openrave-windows)
+* [Install Additional Plugins: FCL](#install-additional-plugins-fcl)
 * [Additional Information](#additional-information)
     * [Source Code Hacks](#source-code-hacks)
     * [Generate Databases](#generate-databases)
@@ -44,7 +44,9 @@ In case you run into `non-constant-expression cannot be narrowed from type 'doub
 
 `cmake .. -DOPT_IKFAST_FLOAT32=OFF`
 
-## Install OpenRAVE with FCL (Confirmed for Ubuntu 15.04, 15.10, 16.10, 17.04)
+## Install Additional Plugins: FCL
+
+The following is the Cannonical PPA way, which may not work for you. For more references regarding FCL from source on other/older versions, refer to these issues: [#3](https://github.com/roboticslab-uc3m/installation-guides/issues/3), [#45](https://github.com/roboticslab-uc3m/installation-guides/issues/45).
 
 ```bash
 sudo apt install libfcl-dev
@@ -52,7 +54,6 @@ cd $HOME/repos/openrave; mkdir build; cd build; cmake .. -DOPENRAVE_PLUGIN_FCLRA
 make -j$(nproc)
 sudo make install; cd  # install and go home
 ```
-For more references regarding FCL from source on other/older versions, refer to these issues: [#3](https://github.com/roboticslab-uc3m/installation-guides/issues/3), [#45](https://github.com/roboticslab-uc3m/installation-guides/issues/45).
 
 ## Install OpenRAVE (Ubuntu 12.04)
 
