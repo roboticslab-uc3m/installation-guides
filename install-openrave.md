@@ -21,7 +21,7 @@ No official PPA, install from source. Note that you will be prompted for your pa
 
 ```bash
 sudo apt install git
-sudo apt install libboost-all-dev
+sudo apt install libboost-filesystem-dev libboost-system-dev libboost-python-dev libboost-thread-dev libboost-iostreams-dev
 sudo apt install libqt4-dev qt4-dev-tools libxml2-dev libode-dev
 sudo apt install libsoqt4-dev libcoin80-dev
 sudo apt install python-scipy  # For openravepy. Note that Xenial sympy is 0.7.6, see next line
