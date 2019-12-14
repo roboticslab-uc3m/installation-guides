@@ -24,7 +24,11 @@ As can be seen, here we are accounting for YARP GUIs and `mjpeg` carrier.
 ```bash
 sudo apt install build-essential git
 sudo apt install libeigen3-dev # Needed for creating YARP lib_math used for kinematics, etc.
-sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin qtdeclarative5-dialogs-plugin libqt5svg5
+sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \ # GUI stuff, Ubuntu 16.04+ (Xenial)
+  qml-module-qtquick2 qml-module-qtquick-window2 \
+  qml-module-qtmultimedia qml-module-qtquick-dialogs \
+  qml-module-qtquick-controls qml-module-qt-labs-folderlistmodel \
+  qml-module-qt-labs-settings
 sudo apt install libjpeg8-dev # Needed for mjpeg carrier
 sudo apt install libedit-dev # Enables keyboard arrow keys within an RPC communication channel via terminal
 mkdir -p ~/repos; cd ~/repos # Create $HOME/repos if it doesn't exist; then, enter it
@@ -43,6 +47,15 @@ A nice feature is to enable yarp auto-completion:
 source ~/repos/yarp/scripts/yarp_completion # Activate in current bash session
 echo "source ~/repos/yarp/scripts/yarp_completion" >> ~/.bashrc # Activate in future bash sessions
 ```
+
+### Note for Ubuntu 14.04 Trusty
+ (same [GUI dependencies](http://www.yarp.it/install_yarp_linux.html#install_qt5_ubuntu_trusty), but named differently)
+ ```bash
+ sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \
+  qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin \
+  qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin \
+  qtdeclarative5-dialogs-plugin libqt5svg5
+ ```
 
 ### Note for Linux Mint 17.3 Rosa
 ```bash
