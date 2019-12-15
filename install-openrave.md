@@ -136,7 +136,7 @@ The CMakes options when recompiling OpenRAVE are `OPT_QTOSG_VIEWER` / `OPENRAVE_
 
 ### Source Code Hacks
 
-Here's a small patch tested on OpenRAVE 0.9 to enhance console output on joint limits (provides joint name, and angles in degrees):
+Here's a small patch tested on OpenRAVE `v0.9.0` to enhance console output on joint limits (provides joint name, and angles in degrees):
 ```bash
 cd $HOME/repos/openrave
 wget https://github.com/roboticslab-uc3m/openrave-yarp-plugins/files/3896779/98-limit-output.patch.log
