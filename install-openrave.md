@@ -11,8 +11,8 @@ We use the OpenRAVE core library for simulations. Official links: [http://openra
 * [Install Additional Plugins: Flexible Collision Library (FCL)](#install-additional-plugins-flexible-collision-library-fcl)
 * [Install Additional Plugins: OpenSceneGraph (OSG)](#install-additional-plugins-openscenegraph-osg)
 * [Additional Information](#additional-information)
-    * [Source Code Hacks](#source-code-hacks)
     * [Generate Databases](#generate-databases)
+    * [Source Code Hacks](#source-code-hacks)
     * [External Tutorials](#external-tutorials)
 * [External Installation Tutorial/Script Links](#external-installation-tutorialscript-links)
 
@@ -134,6 +134,12 @@ The CMakes options when recompiling OpenRAVE are `OPT_QTOSG_VIEWER` / `OPENRAVE_
 
 ## Additional Information
 
+### Generate Databases
+
+- https://github.com/roboticslab-uc3m/teo-openrave-models/tree/develop/scripts ([permalink](https://github.com/roboticslab-uc3m/teo-openrave-models/tree/358ddcc067dec62d0034b5a3b5e27926168651bd/scripts))
+- https://github.com/roboticslab-uc3m/openrave-tools
+- https://github.com/roboticslab-uc3m/openrave-yarp-plugins
+
 ### Source Code Hacks
 
 Here's a small patch tested on OpenRAVE `v0.9.0` to enhance console output on joint limits (provides joint name, and angles in degrees):
@@ -147,12 +153,6 @@ cd build; cmake ..
 make -j$(nproc)
 sudo make install; cd  # install and go home
 ```
-
-### Generate Databases
-
-- https://github.com/roboticslab-uc3m/teo-openrave-models/tree/develop/scripts ([permalink](https://github.com/roboticslab-uc3m/teo-openrave-models/tree/358ddcc067dec62d0034b5a3b5e27926168651bd/scripts))
-- https://github.com/roboticslab-uc3m/openrave-tools
-- https://github.com/roboticslab-uc3m/openrave-yarp-plugins
 
 ### External Tutorials
 - https://scaron.info/teaching/getting-started-with-openrave.html
