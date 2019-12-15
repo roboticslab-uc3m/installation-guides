@@ -166,6 +166,7 @@ If you have no NVIDIA, probably the most interesting read is at [openrave-yarp-p
 ### Generate Databases
 
 - https://github.com/roboticslab-uc3m/teo-openrave-models/tree/develop/scripts ([permalink](https://github.com/roboticslab-uc3m/teo-openrave-models/tree/358ddcc067dec62d0034b5a3b5e27926168651bd/scripts))
+- https://github.com/roboticslab-uc3m/teo-openrave-models/issues/3
 - https://github.com/roboticslab-uc3m/openrave-tools
 - https://github.com/roboticslab-uc3m/openrave-yarp-plugins
 
