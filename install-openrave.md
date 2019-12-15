@@ -11,6 +11,7 @@ We use the OpenRAVE core library for simulations. Official links: [http://openra
 * [Install Additional Plugins: Flexible Collision Library (FCL)](#install-additional-plugins-flexible-collision-library-fcl)
 * [Install Additional Plugins: OpenSceneGraph (OSG)](#install-additional-plugins-openscenegraph-osg)
 * [Additional Information](#additional-information)
+    * [Offscreen Rendering (OpenRAVE RGB Cameras)](#offscreen-rendering-openrave-rgb-cameras)
     * [Generate Databases](#generate-databases)
     * [Source Code Hacks](#source-code-hacks)
     * [External Tutorials](#external-tutorials)
@@ -133,6 +134,34 @@ export PATH="$OPENTHREADS_LIB_DIR:$PATH"
 The CMakes options when recompiling OpenRAVE are `OPT_QTOSG_VIEWER` / `OPENRAVE_PLUGIN_QTOSGRAVE` (and the viewer is called "qtosg" in contrast to "qtcoin").
 
 ## Additional Information
+
+### Offscreen Rendering (OpenRAVE RGB Cameras)
+OpenRAVE requires "Offscreen Rendering" (more specifically called "indirect GLX rendering") to enable virtual RGB cameras in simulated environments. This section summarizes the conclusions from [openrave-yarp-plugins#48](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/issues/48).
+
+#### Symptoms that you have no "Offscreen Rendering"
+1. The OpenRAVE `showsensors` examples seem to work, but no separate window is open displaying the RGB camera output:
+    - OpenRAVE [src/cppexamples/orshowsensors.cpp](https://github.com/rdiankov/openrave/blob/v0.9.0/src/cppexamples/orshowsensors.cpp)
+    - OpenRAVE [python/examples/showsensors.py](https://github.com/rdiankov/openrave/blob/v0.9.0/python/examples/showsensors.py) (requires Python `openravepy` module)
+1. Cannot publish RGB camera output via `YarpOpenraveGrabber` nor `YarpOpenraveRGBDSensor`:
+    - roboticslab-uc3m [openrave-yarp-plugins/libraries/YarpPlugins](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/develop/libraries/YarpPlugins) ([perma](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/6c012a175ecfdd7d2eb63165716a2b2d3a97825a/libraries/YarpPlugins)) (examples require Python `openravepy` module due to [openrave-yarp-plugins#60](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/issues/60))
+1. You cannot generate `.jpg` files with the following snippet:
+    - jgvictores [snippets/coin3d](https://github.com/jgvictores/snippets/tree/master/coin3d) ([perma](https://github.com/jgvictores/snippets/tree/385f31bb130cf8373e64a8234fb91222e4a9dddd/coin3d)) (requires `libsimage-dev`)
+
+#### Solution (as of OpenRAVE `v0.9.0`, all requirements must be met)
+1. Install working NVIDIA drivers
+1. Create a custom `/usr/share/X11/xorg.conf.d/80-custom-glx.conf` file (in old Ubuntu distros, this would be part of `/etc/X11/xorg.conf`) with the following contents:
+```
+Section "ServerFlags"
+   Option "AllowIndirectGLX" "on"
+   Option "IndirectGLX" "on"
+EndSection
+```
+1. Forget about environmental variables `COIN_FULL_INDIRECT_RENDERING=1` or `COIN_DONT_INFORM_INDIRECT_RENDERING=1` unless you're concerned with warnings: no real effect.
+1. Reboot (resarting the desktop environment should suffice)
+1. For OpenRAVE, use "qtcoin" as viewer (not "qtosg")
+1. Recall that roboticslab-uc3m [openrave-yarp-plugins/libraries/YarpPlugins](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/develop/libraries/YarpPlugins) ([perma](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/6c012a175ecfdd7d2eb63165716a2b2d3a97825a/libraries/YarpPlugins)) examples require Python and therefore `openravepy` module due to [openrave-yarp-plugins#60](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/issues/60)
+
+If you have no NVIDIA, probably the most interesting read is at [openrave-yarp-plugins#48](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/issues/48#issuecomment-439866471) on DRI and AiGLX, but no results here yet.
 
 ### Generate Databases
 
