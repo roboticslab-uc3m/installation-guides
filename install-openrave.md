@@ -188,6 +188,7 @@ sudo make install; cd  # install and go home
 - https://scaron.info/teaching/getting-started-with-openrave.html
 
 ## External Installation Tutorial/Script Links
+- https://scaron.info/teaching/installing-openrave-on-ubuntu-16.04.html
 - https://github.com/crigroup/openrave-installation
    - Older by same user: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)].
    - Older by same user: [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)].
