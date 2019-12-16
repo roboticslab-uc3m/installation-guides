@@ -9,6 +9,7 @@ We use the OpenRAVE core library for simulations. Official links: [http://openra
 * [Install OpenRAVE (Ubuntu 12.04)](#install-openrave-ubuntu-1204)
 * [Install OpenRAVE (Windows)](#install-openrave-windows)
 * [Install Additional Plugins: Flexible Collision Library (FCL)](#install-additional-plugins-flexible-collision-library-fcl)
+    * [FCL Known Issues (Ubuntu 16.04)](#fcl-known-issues-ubuntu-1604)
 * [Install Additional Plugins: OpenSceneGraph (OSG)](#install-additional-plugins-openscenegraph-osg)
 * [Additional Information](#additional-information)
     * [Offscreen Rendering (OpenRAVE RGB Cameras)](#offscreen-rendering-openrave-rgb-cameras)
@@ -100,7 +101,7 @@ References:
 
 ## Install Additional Plugins: Flexible Collision Library (FCL)
 
-The following is the Cannonical PPA way, which may not work for you. For more references regarding FCL from source on other/older versions, refer to these issues: [#3](https://github.com/roboticslab-uc3m/installation-guides/issues/3), [#45](https://github.com/roboticslab-uc3m/installation-guides/issues/45).
+The following is the Cannonical PPA way, which may not work for you.
 
 ```bash
 sudo apt install libfcl-dev
@@ -110,6 +111,23 @@ sudo make install; cd  # install and go home
 ```
 
 The CMakes options when recompiling OpenRAVE are `OPT_FCL_COLLISION` / `OPENRAVE_PLUGIN_FCLRAVE`.
+
+### FCL Known Issues (Ubuntu 16.04)
+With the Cannonical PPA way, you'll run into:
+```
+-- Checking for module 'fcl'
+--   Found fcl, version 0.3.2
+-- Could not find FCL. Please install FCL (https://github.com/flexible-collision-library/fcl)
+```
+FCL `0.5.0` has been identified as working. Compile and install it via:
+```bash
+mkdir -p repos; cd repos # create $HOME/repos if it doesn't exist; then, enter it
+git clone --branch 0.5.0 https://github.com/flexible-collision-library/fcl
+cd fcl; mkdir build; cd build
+cmake ..
+make -j$(nproc)
+sudo make install; cd  # install and go home
+```
 
 ## Install Additional Plugins: OpenSceneGraph (OSG)
 
