@@ -89,7 +89,7 @@ sudo apt-get install openrave
 
 ## Install OpenRAVE (Windows)
 
-Long ago, this was easy. Now, installers such as `openrave-0.9.0-5cfc74-win32-vc100-setup` are broken (break do to broken Boost 1.44 and Qt links, not to mention old VS version), so we have to go old-school.
+Long ago, this was easy. Now, installers such as `openrave-0.9.0-5cfc74-win32-vc100-setup` are broken (due to broken Boost 1.44 and Qt links, as well as old Visual Studio version), so we have to go old-school.
 
 References:
 - http://robots.uc3m.es/index.php/OpenRAVE_R1457_Windows_Install
