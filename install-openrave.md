@@ -15,7 +15,7 @@ We use the OpenRAVE core library for simulations. Official links: [http://openra
     * [Offscreen Rendering (OpenRAVE RGB Cameras)](#offscreen-rendering-openrave-rgb-cameras)
     * [Generate Databases](#generate-databases)
     * [Source Code Hacks](#source-code-hacks)
-    * [External Tutorials](#external-tutorials)
+    * [Similar and Related Projects](#similar-and-related-projects)
 * [External Installation Tutorial/Script Links](#external-installation-tutorialscript-links)
 
 ## Install OpenRAVE (Ubuntu 18.04)
@@ -202,8 +202,14 @@ make -j$(nproc)
 sudo make install; cd  # install and go home
 ```
 
-### External Tutorials
-- https://scaron.info/teaching/getting-started-with-openrave.html
+### Similar and Related Projects
+- https://github.com/roboticslab-uc3m?q=openrave (roboticslab-uc3m)
+- https://github.com/personalrobotics?q=openrave
+- https://github.com/stephane-caron?tab=repositories&q=openrave
+- https://github.com/crigroup?q=openrave
+- https://github.com/jsk-ros-pkg/openrave_planning
+- Tutorials
+    - https://scaron.info/teaching/getting-started-with-openrave.html
 
 ## External Installation Tutorial/Script Links
 - https://scaron.info/teaching/installing-openrave-on-ubuntu-16.04.html
