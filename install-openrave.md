@@ -203,6 +203,7 @@ sudo make install; cd  # install and go home
 ```
 
 ### Similar and Related Projects
+- https://github.com/stephane-caron?tab=repositories&q=openrave
 - https://github.com/crigroup?q=openrave
 - https://github.com/jsk-ros-pkg/openrave_planning
 - Tutorials
