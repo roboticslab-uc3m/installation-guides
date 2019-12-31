@@ -208,6 +208,7 @@ sudo make install; cd  # install and go home
 - https://github.com/stephane-caron?tab=repositories&q=openrave
 - https://github.com/crigroup?q=openrave
 - https://github.com/jsk-ros-pkg/openrave_planning
+- http://opengrasp.sourceforge.net (https://sourceforge.net/p/opengrasp/code/HEAD/tree/)
 - Tutorials
     - https://scaron.info/teaching/getting-started-with-openrave.html
 
