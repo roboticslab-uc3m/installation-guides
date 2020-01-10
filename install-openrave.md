@@ -33,7 +33,7 @@ pip install --upgrade --user sympy==0.7.1 # OpenRAVE ikfast needs sympy 0.7.1, h
 sudo apt install libcollada-dom2.4-dp-dev  # Open .zae files, only Ubuntu 16.04
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
-git clone --branch master https://github.com/rdiankov/openrave.git
+git clone --branch boost-1.6x-forcompile https://github.com/roboticslab-uc3m/openrave.git # git clone --branch master https://github.com/rdiankov/openrave.git
 cd openrave; mkdir build; cd build
 cmake .. -DOPT_VIDEORECORDING=OFF  # Avoids AV errors
 make -j$(nproc)
