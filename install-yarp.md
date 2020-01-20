@@ -112,7 +112,7 @@ Note ([ref](https://github.com/roboticslab-uc3m/vision/issues/83#issuecomment-39
 
 ## Install additional YARP device: OpenNI2DeviceServer (Ubuntu)
 
-***Note:** tested on YARP 2.3.68.x and YARP 2.3.72.1, not compatible with YARP 3.x.*
+* **Note:** tested on YARP `2.3.68.x` and YARP `2.3.72.1`, not compatible with YARP `3.x.*`
 
 ```bash
 cd ~/repos/yarp/build
@@ -125,7 +125,7 @@ You should now be able to launch `yarpdev --device OpenNI2DeviceServer`. It is a
 
 ### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
 
-***Note:** not compatible with YARP 3.x.*
+* **Note:** not compatible with YARP `3.x.*`
 
 NiTE only required for skeletons. In addition to above steps for OpenNI:
 
@@ -216,7 +216,7 @@ You might need to set the `CLASSPATH` and `LD_LIBRARY_PATH` variables prior to c
 
 Two options here:
 1. Classical way via Java bindings, which is similar to Python, then setting the `classpath.txt` and `librarypath.txt` files contained within MATLAB. Ref: http://wiki.icub.org/wiki/Calling_yarp_from_Matlab Working setups on  Windows 10 (more complex than Ubuntu):
-   - Good 64 bit: `MATLAB R2017b (9.3, 64 bit) + yarp_2.3.70_v14_x86_amd64_1.exe	+	cmake 3.9.4	+ VS 15 2017 + jdk-8u162-windows-x64.exe` working nicely, only having to install `things.i` manually (see https://github.com/robotology/yarp/issues/698) and doing `javac -source 1.6 -target 1.6 *.java` (which is the default in code, but must be done manually, and manual says 1.3).
+   - Good 64 bit: `MATLAB R2017b (9.3, 64 bit)` + `yarp_2.3.70_v14_x86_amd64_1.exe` + `cmake 3.9.4` + `VS 15 2017` + `jdk-8u162-windows-x64.exe` working nicely, only having to install `things.i` manually (see https://github.com/robotology/yarp/issues/698) and doing `javac -source 1.6 -target 1.6 *.java` (which is the default in code, but must be done manually, and manual says 1.3).
    - Good 64 bit (portable): To avoid installing VS + JDK + CMake, [here]( https://sourceforge.net/projects/roboticslab/files/External/yarp/2.3.70_win_64_java/) we've put together some pre-compiled YARP bindings (note `vc_redist.x64.exe` to compensate the lack of VS, and forced us to compile bindings in `Release` not `Debug`).
    - Ye-oldie 32 bit: `MATLAB R2015b (8.6, 32 bit) + yarp_2.3.70_v14_x86_1.exe	+	cmake 3.9.4	+ VS 15 2017 + jdk-8u152-windows-i586.exe	+ MATLAB R2015b (8.6 32 bit)` working nicely, only having to install `things.i` manually (see https://github.com/robotology/yarp/issues/698) and doing `javac -source 1.3 -target 1.3 *.java` with `1.5` instead.
 1. A different method: New repo directly against MATLAB: [yarp-matlab-bindings](https://github.com/robotology-playground/yarp-matlab-bindings). Some issues:
@@ -229,3 +229,5 @@ Two options here:
 
 ### Similar and Related
 - http://robots.uc3m.es/gitbook-developer-manual/appendix/yarp-tricks.html ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/9c11c75d4ef5de8ac43a90ab3184fdf8e85a3290/appendix/yarp-tricks.md))
+- - [YARP Tutorial (Spanish)](https://asrob-uc3m.gitbooks.io/tutoriales/content/software/programming/yarp.html) ([perma](https://github.com/asrob-uc3m/tutoriales/blob/cbc8d820b143f10ede306bfa2224614b00e4a180/software/programming/yarp.md))
+- [YARP Devices Tutorial (Spanish)](http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices)
