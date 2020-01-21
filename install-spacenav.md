@@ -9,7 +9,7 @@ Official page: [link](http://spacenav.sourceforge.net/).
 You'll get the development files from:
 
 ```bash
-sudo apt install libspnav-dev
+sudo apt install libspnav-dev spacenavd
 ```
 
-Includes the `spacenavd` daemon.
+Omit the `spacenavd` package in case you don't want to install the daemon (e.g. you won't connect the device to your PC).
