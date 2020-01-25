@@ -214,7 +214,9 @@ sudo make install; cd  # install and go home
 - http://opengrasp.sourceforge.net (https://sourceforge.net/p/opengrasp/code/HEAD/tree/)
 - http://www.iearobotics.com/wiki/index.php?title=OpenRave_y_robots_modulares
 - Tutorials
+    - http://openrave.org/docs/latest_stable/getting_started
     - https://scaron.info/teaching/getting-started-with-openrave.html
+    - https://legacy.gitbook.com/book/crigroup/osrobotics ([gitbook](https://crigroup.gitbooks.io/osrobotics))
 
 ## External Installation Tutorial/Script Links
 - https://scaron.info/teaching/installing-openrave-on-ubuntu-16.04.html
