@@ -213,6 +213,7 @@ sudo make install; cd  # install and go home
 - https://github.com/gtrll/orgpmp2
 - http://opengrasp.sourceforge.net (https://sourceforge.net/p/opengrasp/code/HEAD/tree/)
 - http://www.iearobotics.com/wiki/index.php?title=OpenRave_y_robots_modulares
+- https://github.com/MichalXh/debug_ikfast
 - Tutorials
     - http://openrave.org/docs/latest_stable/examples
     - https://scaron.info/teaching/getting-started-with-openrave.html
