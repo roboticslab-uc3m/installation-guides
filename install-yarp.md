@@ -26,11 +26,11 @@ As can be seen, here we are accounting for YARP GUIs and `mjpeg` carrier.
 ```bash
 sudo apt install build-essential git
 sudo apt install libeigen3-dev # Needed for creating YARP lib_math used for kinematics, etc.
-sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \ # GUI stuff, Ubuntu 16.04+ (Xenial)
+sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \ 
   qml-module-qtquick2 qml-module-qtquick-window2 \
   qml-module-qtmultimedia qml-module-qtquick-dialogs \
   qml-module-qtquick-controls qml-module-qt-labs-folderlistmodel \
-  qml-module-qt-labs-settings
+  qml-module-qt-labs-settings # GUI stuff, Ubuntu 16.04+ (Xenial)
 sudo apt install libjpeg8-dev # Needed for mjpeg carrier
 sudo apt install libedit-dev # Enables keyboard arrow keys within an RPC communication channel via terminal
 mkdir -p ~/repos; cd ~/repos # Create $HOME/repos if it doesn't exist; then, enter it
