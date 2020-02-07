@@ -20,6 +20,20 @@ modprobe jr3pci-driver  # Replaces: insmod jr3pci-driver.ko
 mknod /dev/jr3 c 39 0  # Equivalent to (in code dir): make node
 chmod 777 /dev/jr3
 ```
+Note: the `/etc/rc.local` file on Ubuntu and Debian systems are used to execute commands at system startup. But there's no such file in **Ubuntu 18.04**. So, we need to create it adding this lines:
+
+```bash
+#!/bin/bash
+modprobe jr3pci-driver
+mknod /dev/jr3 c 39 0 
+chmod 777 /dev/jr3
+exit 0
+```
+Now make it executable with:
+
+```bash
+chmod +x /etc/rc.local
+```
 
 ## View JR3 data
 
