@@ -26,7 +26,7 @@ As can be seen, here we are accounting for YARP GUIs and `mjpeg` carrier.
 ```bash
 sudo apt install build-essential git
 sudo apt install libeigen3-dev # Needed for creating YARP lib_math used for kinematics, etc.
-sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \ 
+sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \
   qml-module-qtquick2 qml-module-qtquick-window2 \
   qml-module-qtmultimedia qml-module-qtquick-dialogs \
   qml-module-qtquick-controls qml-module-qt-labs-folderlistmodel \
