@@ -210,6 +210,7 @@ sudo make install; cd  # install and go home
 - https://github.com/crigroup?q=openrave
 - https://github.com/roboticsleeds?q=openrave
 - https://github.com/jsk-ros-pkg/openrave_planning
+- https://github.com/BerkeleyAutomation/OpenRAVE-motion-planner
 - https://github.com/gtrll/orgpmp2
 - http://opengrasp.sourceforge.net (https://sourceforge.net/p/opengrasp/code/HEAD/tree/)
 - http://www.iearobotics.com/wiki/index.php?title=OpenRave_y_robots_modulares
