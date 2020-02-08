@@ -1,6 +1,6 @@
 # Install Aravis 0.4
 
-1. Download the current stable release  [here](http://ftp.gnome.org/pub/GNOME/sources/aravis/0.4/).
+1. Download the current stable release  [here](http://ftp.gnome.org/pub/GNOME/sources/aravis/0.4/) (backup [here](https://sourceforge.net/projects/roboticslab/files/External/aravis)).
 2. Install the following dependencies:
 ```
 sudo apt install glib-2.0 gobject-2.0 gio-2.0 libxml-2.0 thread-2.0 zlib gstreamer-base-1.0 streamer-app-1.0 gstreamer-base-0.10 gstreamer-app-0.10 gstreamer-video-1.0 gtk+-3.0 libnotify
