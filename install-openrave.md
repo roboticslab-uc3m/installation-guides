@@ -15,6 +15,7 @@ We use the OpenRAVE core library for simulations. Official links: [http://openra
     * [Offscreen Rendering (OpenRAVE RGB Cameras)](#offscreen-rendering-openrave-rgb-cameras)
     * [Generate Databases](#generate-databases)
     * [Source Code Hacks](#source-code-hacks)
+    * [Tutorials and Examples](#tutorials-and-examples)
     * [Similar and Related Projects](#similar-and-related-projects)
 * [External Installation Tutorial/Script Links](#external-installation-tutorialscript-links)
 
@@ -203,6 +204,11 @@ make -j$(nproc)
 sudo make install; cd  # install and go home
 ```
 
+### Tutorials and Examples
+- http://openrave.org/docs/latest_stable/examples
+- https://scaron.info/teaching/getting-started-with-openrave.html
+- https://legacy.gitbook.com/book/crigroup/osrobotics ([gitbook](https://crigroup.gitbooks.io/osrobotics))
+
 ### Similar and Related Projects
 - https://github.com/roboticslab-uc3m?q=openrave (roboticslab-uc3m)
 - https://github.com/personalrobotics?q=openrave
@@ -216,10 +222,6 @@ sudo make install; cd  # install and go home
 - http://www.iearobotics.com/wiki/index.php?title=OpenRave_y_robots_modulares
 - http://openrave.programmingvision.com/wiki/index.php/Projects
 - https://github.com/MichalXh/debug_ikfast
-- Tutorials
-    - http://openrave.org/docs/latest_stable/examples
-    - https://scaron.info/teaching/getting-started-with-openrave.html
-    - https://legacy.gitbook.com/book/crigroup/osrobotics ([gitbook](https://crigroup.gitbooks.io/osrobotics))
 
 ## External Installation Tutorial/Script Links
 - https://scaron.info/teaching/installing-openrave-on-ubuntu-16.04.html
