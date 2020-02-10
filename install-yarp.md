@@ -1,6 +1,6 @@
 # Install YARP
 
-We use YARP for communications. Official page: [link](http://www.yarp.it/) 
+We use YARP for communications. Official page: [http://www.yarp.it](http://www.yarp.it), [http://www.yarp.it/install.html](http://www.yarp.it/install.html)
 
 - [Install Dependencies](#install-dependencies)
 - [Install YARP (Ubuntu)](#install-yarp-ubuntu)
@@ -234,7 +234,9 @@ Two options here:
     - [YARP Devices Tutorial (Spanish)](http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices)
 - Recommendations:
     - [Programming with YARP](http://robots.uc3m.es/gitbook-developer-manual/programming-with-yarp.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/c0cb6952e14079b3fcf9d36e1830b92c07bf8bde/programming-with-yarp.md))
-- [YARP Tricks](http://robots.uc3m.es/gitbook-developer-manual/appendix/yarp-tricks.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/9c11c75d4ef5de8ac43a90ab3184fdf8e85a3290/appendix/yarp-tricks.md))
+- Hacks and tricks:
+    - [YARP Tricks](http://robots.uc3m.es/gitbook-developer-manual/appendix/yarp-tricks.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/9c11c75d4ef5de8ac43a90ab3184fdf8e85a3290/appendix/yarp-tricks.md))
+    - http://wiki.icub.org/wiki/YarpTricks
 - Examples:
     - https://github.com/robotology/yarp/tree/master/example ([perma](https://github.com/robotology/yarp/tree/fcbd455603e13a5ddc439f9d4592bf000b8dcdff/example)) (official, C++)
     - https://github.com/robotology/yarp/tree/master/bindings ([perma](https://github.com/robotology/yarp/tree/fcbd455603e13a5ddc439f9d4592bf000b8dcdff/bindings)) (official)
@@ -243,3 +245,4 @@ Two options here:
 ### Similar and Related
 - https://github.com/robotology?q=yarp (org of official repo)
 - https://github.com/roboticslab-uc3m?q=yarp (roboticslab-uc3m)
+- https://github.com/inria-larsen?q=yarp
