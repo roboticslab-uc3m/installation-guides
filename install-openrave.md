@@ -206,6 +206,7 @@ sudo make install; cd  # install and go home
 
 ### Tutorials and Examples
 - http://openrave.org/docs/latest_stable/examples
+- http://openrave.org/docs/latest_stable/coreapihtml/cpp_examples.html
 - https://scaron.info/teaching/getting-started-with-openrave.html
 - https://legacy.gitbook.com/book/crigroup/osrobotics ([gitbook](https://crigroup.gitbooks.io/osrobotics))
 
