@@ -11,6 +11,8 @@ We use YARP for communications. Official page: [http://www.yarp.it](http://www.y
 - [Additional Information](#additional-information)
     - [Tutorials and Examples](#tutorials-and-examples)
     - [Similar and Related](#similar-and-related)
+- [External Installation Tutorial/Script Links](#external-installation-tutorialscript-links)
+
 
 ## Install Dependencies
 Some dependencies must be installed for compilation:
@@ -246,3 +248,7 @@ Two options here:
 - https://github.com/robotology?q=yarp (org of official repo)
 - https://github.com/roboticslab-uc3m?q=yarp (roboticslab-uc3m)
 - https://github.com/inria-larsen?q=yarp
+
+## External Installation Tutorial/Script Links
+- https://hub.docker.com/r/h2020infuse/yarpmonitor-ubuntu-prod
+
