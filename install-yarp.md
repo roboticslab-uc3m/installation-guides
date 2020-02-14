@@ -250,5 +250,6 @@ Two options here:
 - https://github.com/inria-larsen?q=yarp
 
 ## External Installation Tutorial/Script Links
-- https://hub.docker.com/r/h2020infuse/yarpmonitor-ubuntu-prod
-
+- Docker
+    - https://hub.docker.com/search?q=yarp&type=image (avoid `yarpc`)
+    - https://hub.docker.com/r/h2020infuse/yarpmonitor-ubuntu-prod
