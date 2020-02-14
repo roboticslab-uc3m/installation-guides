@@ -231,3 +231,4 @@ sudo make install; cd  # install and go home
    - Older by same user: [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)].
 - [[ref3, xenial](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/)].
 - https://hub.docker.com/r/hamzamerzic/openrave
+- https://hub.docker.com/r/personalrobotics/ros-openrave/
