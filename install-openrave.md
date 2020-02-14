@@ -170,12 +170,12 @@ OpenRAVE requires "Offscreen Rendering" (more specifically called "indirect GLX 
 #### Solution (as of OpenRAVE `v0.9.0`, all requirements must be met)
 1. Install working NVIDIA drivers
 1. Create a custom `/usr/share/X11/xorg.conf.d/80-custom-glx.conf` file (in old Ubuntu distros, this would be part of `/etc/X11/xorg.conf`) with the following contents:
-```
-Section "ServerFlags"
-   Option "AllowIndirectGLX" "on"
-   Option "IndirectGLX" "on"
-EndSection
-```
+    ```
+    Section "ServerFlags"
+        Option "AllowIndirectGLX" "on"
+        Option "IndirectGLX" "on"
+    EndSection
+    ```
 1. Forget about environmental variables `COIN_FULL_INDIRECT_RENDERING=1` or `COIN_DONT_INFORM_INDIRECT_RENDERING=1` unless you're concerned with warnings: no real effect.
 1. Reboot (resarting the desktop environment should suffice)
 1. For OpenRAVE, use "qtcoin" as viewer (not "qtosg")
