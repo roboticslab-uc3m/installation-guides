@@ -230,5 +230,7 @@ sudo make install; cd  # install and go home
    - Older by same user: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)].
    - Older by same user: [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)].
 - [[ref3, xenial](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/)].
-- https://hub.docker.com/r/hamzamerzic/openrave
-- https://hub.docker.com/r/personalrobotics/ros-openrave/
+- Docker
+    - https://hub.docker.com/search?q=openrave&type=image
+    - https://hub.docker.com/r/hamzamerzic/openrave
+    - https://hub.docker.com/r/personalrobotics/ros-openrave
