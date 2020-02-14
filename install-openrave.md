@@ -178,8 +178,7 @@ OpenRAVE requires "Offscreen Rendering" (more specifically called "indirect GLX 
     ```
 1. Forget about environmental variables `COIN_FULL_INDIRECT_RENDERING=1` or `COIN_DONT_INFORM_INDIRECT_RENDERING=1` unless you're concerned with warnings: no real effect.
 1. Reboot (resarting the desktop environment should suffice)
-1. For OpenRAVE, use "qtcoin" as viewer (not "qtosg")
-1. Recall that roboticslab-uc3m [openrave-yarp-plugins/libraries/YarpPlugins](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/develop/libraries/YarpPlugins) ([perma](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/6c012a175ecfdd7d2eb63165716a2b2d3a97825a/libraries/YarpPlugins)) examples require Python and therefore `openravepy` module due to [openrave-yarp-plugins#60](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/issues/60)
+1. For OpenRAVE, use `qtcoin` as viewer (and not `qtosg`): `openrave --viewer qtcoin` (parameter works in several other contexts as well)
 
 If you have no NVIDIA, probably the most interesting read is at [openrave-yarp-plugins#48](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/issues/48#issuecomment-439866471) on DRI and AiGLX, but no results here yet.
 
