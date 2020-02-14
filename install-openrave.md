@@ -162,8 +162,7 @@ OpenRAVE requires "Offscreen Rendering" (more specifically called "indirect GLX 
 1. The OpenRAVE `showsensors` examples seem to work, but no separate window is open displaying the RGB camera output:
     - OpenRAVE [src/cppexamples/orshowsensors.cpp](https://github.com/rdiankov/openrave/blob/v0.9.0/src/cppexamples/orshowsensors.cpp)
     - OpenRAVE [python/examples/showsensors.py](https://github.com/rdiankov/openrave/blob/v0.9.0/python/examples/showsensors.py) (requires Python `openravepy` module)
-1. Cannot publish RGB camera output via `YarpOpenraveGrabber` nor `YarpOpenraveRGBDSensor`:
-    - roboticslab-uc3m [openrave-yarp-plugins/libraries/YarpPlugins](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/develop/libraries/YarpPlugins) ([perma](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/6c012a175ecfdd7d2eb63165716a2b2d3a97825a/libraries/YarpPlugins)) (examples require Python `openravepy` module due to [openrave-yarp-plugins#60](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/issues/60))
+1. Cannot publish RGB camera output via [YarpOpenraveGrabber](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/develop/libraries/YarpPlugins/YarpOpenraveGrabber) ([perma](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/489470911f59d236d86ca2f09da7b2ca544d990e/libraries/YarpPlugins/YarpOpenraveGrabber)) nor [YarpOpenraveRGBDSensor](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/develop/libraries/YarpPlugins/YarpOpenraveRGBDSensor) ([perma](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/tree/489470911f59d236d86ca2f09da7b2ca544d990e/libraries/YarpPlugins/YarpOpenraveRGBDSensor)).
 1. You cannot generate `.jpg` files with the following snippet:
     - jgvictores [snippets/coin3d](https://github.com/jgvictores/snippets/tree/master/coin3d) ([perma](https://github.com/jgvictores/snippets/tree/385f31bb130cf8373e64a8234fb91222e4a9dddd/coin3d)) (requires `libsimage-dev`)
 
