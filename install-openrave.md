@@ -159,6 +159,7 @@ The CMakes options when recompiling OpenRAVE are `OPT_QTOSG_VIEWER` / `OPENRAVE_
 OpenRAVE requires "Offscreen Rendering" (more specifically called "indirect GLX rendering") to enable virtual RGB cameras in simulated environments. This section summarizes the conclusions from [openrave-yarp-plugins#48](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/issues/48).
 
 #### Symptoms that you have no "Offscreen Rendering"
+1. A `offscreen renderer failed (check video driver), disabling` message, then constant `cannot render offscreen` messages.
 1. The OpenRAVE `showsensors` examples seem to work, but no separate window is open displaying the RGB camera output:
     - OpenRAVE [src/cppexamples/orshowsensors.cpp](https://github.com/rdiankov/openrave/blob/v0.9.0/src/cppexamples/orshowsensors.cpp)
     - OpenRAVE [python/examples/showsensors.py](https://github.com/rdiankov/openrave/blob/v0.9.0/python/examples/showsensors.py) (requires Python `openravepy` module)
