@@ -25,5 +25,8 @@ sudo -H pip install gym[atari]
 ### Enable MuJoCo and Robotics Simulations
 You'll need this for the [MuJoCo Simulations](https://gym.openai.com/envs/#mujoco) and [Robotics Simulations](https://gym.openai.com/envs/#robotics). Link: https://github.com/openai/mujoco-py/
 
-### Enable Roboschool Simulations
-The downside to MuJoCo and Robotics are the license issues. However, you can get simulations that are very similar at [openai/roboschool](https://github.com/openai/roboschool). Update: now DEPRECATED in favor of <https://github.com/openai/gym/blob/master/docs/environments.md#pybullet-robotics-environments>.
+### Enable PyBullet Simulations
+The downside to MuJoCo and Robotics are the license issues. However, you can get simulations that are very similar at <https://github.com/openai/gym/blob/master/docs/environments.md#pybullet-robotics-environments>. Installation should be straightforward, obtaining `pybullet_envs` rather effortlessly:
+```bash
+sudo -H pip install pybullet
+```
