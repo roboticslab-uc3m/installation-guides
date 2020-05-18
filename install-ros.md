@@ -14,6 +14,7 @@ Download and install ROS
 sudo apt update
 sudo apt install ros-kinetic-desktop-full
 sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt install ros-kinetic-catkin python-catkin-tools 
 sudo rosdep init
 rosdep update
 ```
