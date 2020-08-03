@@ -163,10 +163,16 @@ You should now be able to launch `python` and `import yarp`.
 
 ### Install Python bindings (troubleshooting)
 
-Also, extra care should be taken with multiple Python versions (e.g. 2.x vs 3.x). The following command has been tested on Ubuntu Xenial to force Python 3.5m (note distro version is 3.5m, where `m` is `--with-pymalloc` [ref](https://www.python.org/dev/peps/pep-3149/#proposal)):
+Mind that, **starting from YARP 3.4, support for Python 2.x has been dropped**. You can use the CMake variable `CMAKE_INSTALL_PYTHON3DIR` to select the most adequate location for the installed module. This is useful in case the interpreter is unable to find it (`python3 -c "import yarp"`). For instance, you can end up with the YARP module installed in `lib/python3/`, whereas standard Python module path might be `lib/python3.6/` (this has been observed on Ubuntu Bionic). For this specific scenario:
+
+```bash
+cmake -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON -DCMAKE_INSTALL_PYTHON3DIR=lib/python3.6/dist-packages ..
+```
+
+Extra care should be taken with multiple Python versions (e.g. 2.x vs 3.x) in earlier releases. The following command has been tested on Ubuntu Xenial to force Python 3.5m (note distro version is 3.5m, where `m` is `--with-pymalloc`; [ref](https://www.python.org/dev/peps/pep-3149/#proposal)):
 ```bash
 sudo apt install libpython3-dev
-cmake -DYARP_COMPILE_BINDINGS:BOOL=ON -DCREATE_PYTHON:BOOL=ON -DYARP_USE_PYTHON_VERSION=3.5 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so -DCMAKE_INSTALL_PYTHONDIR=lib/python3.5/dist-packages -DPYTHON_EXECUTABLE=/usr/bin/python3 ..
+cmake -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON -DYARP_USE_PYTHON_VERSION=3.5 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so -DCMAKE_INSTALL_PYTHONDIR=lib/python3.5/dist-packages -DPYTHON_EXECUTABLE=/usr/bin/python3 ..
 ```
 
 In this specific case, `CMAKE_INSTALL_PYTHONDIR` is apparently ignored, so you should:
