@@ -45,7 +45,7 @@ sudo make install && sudo ldconfig && cd # Install and go home
 
 For additional options use `ccmake` instead of `cmake`.
 
-A nice feature is to enable yarp auto-completion:
+To enable yarp auto-completion (**do not** do this for YARP 3.4+, as it has been moved to `data/bash-completion/yarp` and installed by default):
 
 ```bash
 source ~/repos/yarp/scripts/yarp_completion # Activate in current bash session
