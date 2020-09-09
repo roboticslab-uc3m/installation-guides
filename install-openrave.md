@@ -2,6 +2,7 @@
 
 We use the OpenRAVE core library for simulations. Official links: [http://openrave.org](http://openrave.org), [OpenRAVE: Building and Installing](http://openrave.org/docs/latest_stable/coreapihtml/installation.html).
 
+* [Install dependencies](#install-dependencies)
 * [Install OpenRAVE (Ubuntu 18.04)](#install-openrave-ubuntu-1804)
     * [Known Issues (Ubuntu 18.04)](#known-issues-ubuntu-1804)
 * [Install OpenRAVE (Ubuntu 16.04 and 14.04)](#install-openrave-ubuntu-1604-and-1404)
@@ -18,6 +19,10 @@ We use the OpenRAVE core library for simulations. Official links: [http://openra
     * [Tutorials and Examples](#tutorials-and-examples)
     * [Similar and Related Projects](#similar-and-related-projects)
 * [External Installation Tutorial/Script Links](#external-installation-tutorialscript-links)
+
+## Install dependencies
+
+* [Install RapidJSON](install-rapidjson.md)
 
 ## Install OpenRAVE (Ubuntu 18.04)
 
