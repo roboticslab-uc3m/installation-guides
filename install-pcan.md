@@ -18,7 +18,7 @@ sudo modprobe pcan # driver loading
 ```
 
 ## Activate CanBusPeak in yarp-devices
-Note: These lines assume that yarp-devices has been cloned, configured and compiled. If not, follow the [installation instructions](https://github.com/roboticslab-uc3m/yarp-devices/blob/develop/doc/yarp-devices-install.md).
+Note: These lines assume that yarp-devices has been cloned, configured and compiled. If not, follow the [installation instructions](https://github.com/roboticslab-uc3m/yarp-devices/blob/master/doc/yarp-devices-install.md).
 
 ```bash
 cd && cd repos/yarp-devices/build/

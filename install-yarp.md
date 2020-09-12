@@ -151,7 +151,7 @@ Swig is needed in order to build all language bindings. Refer to [Install SWIG](
 
 ## Install Python bindings
 
-Make sure you have previously [installed YARP](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-yarp.md#install-yarp) and:
+Make sure you have previously [installed YARP](install-yarp.md#install-yarp) and:
 
 ```bash
 sudo apt update
@@ -250,7 +250,7 @@ Two options here:
 - Examples
     - https://github.com/robotology/yarp/tree/master/example ([perma](https://github.com/robotology/yarp/tree/fcbd455603e13a5ddc439f9d4592bf000b8dcdff/example)) (official, C++)
     - https://github.com/robotology/yarp/tree/master/bindings ([perma](https://github.com/robotology/yarp/tree/fcbd455603e13a5ddc439f9d4592bf000b8dcdff/bindings)) (official)
-    - https://github.com/roboticslab-uc3m/yarp-devices/tree/develop/examples ([perma](https://github.com/roboticslab-uc3m/yarp-devices/tree/97771c958f493aa91ad1bc592444b3626efdaf55/examples)) (roboticslab-uc3m)
+    - https://github.com/roboticslab-uc3m/yarp-devices/tree/master/examples ([perma](https://github.com/roboticslab-uc3m/yarp-devices/tree/97771c958f493aa91ad1bc592444b3626efdaf55/examples)) (roboticslab-uc3m)
 
 ### Similar and Related
 - https://github.com/robotology?q=yarp (org of official repo)
