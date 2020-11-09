@@ -2,7 +2,7 @@
 
 Official page: [link](http://gazebosim.org).
 
-## Install Gazebo (Ubuntu 18.04)
+## Install Gazebo (Ubuntu 18.04 and 20.04)
 
 ```bash
 sudo apt install gazebo9
