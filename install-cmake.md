@@ -6,6 +6,15 @@ Official download page: [link](https://cmake.org/download/).
 
 ## Install CMake (Ubuntu)
 
+### Ubuntu 20.04
+
+For Ubuntu Focal (20.04):
+
+```bash
+sudo apt install cmake
+sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
+```
+
 ### Ubuntu 16.04 and 18.04
 
 The latest CMake release is available via Kitware's PPA:
