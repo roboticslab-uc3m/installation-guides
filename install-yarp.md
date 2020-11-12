@@ -61,12 +61,6 @@ YARP 3.4+ (July '20) requires a modern GCC compiler. We found that GCC 5.4/5.5 l
   qtdeclarative5-dialogs-plugin libqt5svg5
  ```
 
-### Note for Linux Mint 17.3 Rosa
-
-```bash
-sudo apt install libqt5opengl5-dev # Avoid error on yarpmanager/builder GUI
-```
-
 ### Note for Linux Mint 18.3 Sylvia
 
 (tested on 64-bit XFCE desktop)
@@ -208,6 +202,7 @@ Two options here:
 ## Additional Information
 
 ### Tutorials and Examples
+
 - Tutorials
     - [YARP Tutorial (Spanish)](https://asrob-uc3m.gitbooks.io/tutoriales/content/software/programming/yarp.html) ([perma](https://github.com/asrob-uc3m/tutoriales/blob/cbc8d820b143f10ede306bfa2224614b00e4a180/software/programming/yarp.md))
     - [YARP Devices Tutorial (Spanish)](http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices)
@@ -222,11 +217,13 @@ Two options here:
     - https://github.com/roboticslab-uc3m/yarp-devices/tree/master/examples ([perma](https://github.com/roboticslab-uc3m/yarp-devices/tree/97771c958f493aa91ad1bc592444b3626efdaf55/examples)) (roboticslab-uc3m)
 
 ### Similar and Related
+
 - https://github.com/robotology?q=yarp (org of official repo)
 - https://github.com/roboticslab-uc3m?q=yarp (roboticslab-uc3m)
 - https://github.com/inria-larsen?q=yarp
 
 ## External Installation Tutorial/Script Links
+
 - Docker
     - https://hub.docker.com/search?q=yarp&type=image (avoid `yarpc` which is unrelated)
     - https://hub.docker.com/r/h2020infuse/yarpmonitor-ubuntu-prod

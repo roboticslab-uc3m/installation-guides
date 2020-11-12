@@ -2,6 +2,12 @@
 
 This is Legacy documentation regarding YARP installations. Updated YARP installation at: [Install YARP](install-yarp.md)
 
+## Note for Linux Mint 17.3 Rosa
+
+```bash
+sudo apt install libqt5opengl5-dev # Avoid error on yarpmanager/builder GUI
+```
+
 ## Install additional YARP device: OpenNI2DeviceServer (Ubuntu)
 
 * **Note:** tested on YARP `2.3.68.x` and YARP `2.3.72.1`, not compatible with YARP `3.x.*`
@@ -15,7 +21,7 @@ sudo make install && sudo ldconfig && cd # Install and go home
 
 You should now be able to launch `yarpdev --device OpenNI2DeviceServer`. It is a complex device, see options with `yarpdev --device OpenNI2DeviceServer --verbose` (where there is an option to see modes) or example [here](https://github.com/roboticslab-uc3m/teo-configuration-files/blob/ee168eaf61454113b1ac7113fbb24e10af679bc3/share/teoBase/scripts/teoBase.xml#L35-L36).
 
-### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
+## Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
 
 * **Note:** not compatible with YARP `3.x.*`
 
