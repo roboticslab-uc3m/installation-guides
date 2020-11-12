@@ -1,4 +1,4 @@
-## Install Travis
+# Install Travis
 
 This library is a wrapper of OpenCV hosted on GitHub.
 
