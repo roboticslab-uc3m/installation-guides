@@ -4,17 +4,6 @@ We use `tensorflow_cc` for Tensorflow C++ API. Use `cmake` to build your project
 
 Also see [install-tensorflow](install-tensorflow.md) for the official alternative (less prepared for use with CMake).
 
-* [Install dependencies (Ubuntu 18.04)](#install-dependencies-ubuntu-1804)
-* [Install dependencies (Ubuntu 14.04 and 16.04)](#install-dependencies-ubuntu-1404-and-1604)
-* [Install tensorflow_cc (Ubuntu)](#install-tensorflowcc-ubuntu)
-    * [Shared library](#shared-library)
-    * [Static library](#static-library)
-* [Troubleshooting](#troubleshooting)
-    * [Note for Intel CPU older than ivybridge](#note-for-intel-cpu-older-than-ivybridge)
-* [Working setups](#working-setups)
-    * [tiago-entrenamiento](#tiago-entrenamiento)
-* [Non-working setups](#non-working-setups)
-
 ## Install dependencies (Ubuntu 18.04)
 
 Download and install requirements.
