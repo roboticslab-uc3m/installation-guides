@@ -7,18 +7,8 @@ We use YARP for communications. Official pages:
 
 Legacy documentation regarding YARP installations can be found at: [(Legacy) Install YARP](legacy-install-yarp.md)
 
-- [Install Dependencies](#install-dependencies)
-- [Install YARP (Ubuntu)](#install-yarp-ubuntu)
-- [Install YARP (Windows)](#install-yarp-windows)
-- [Install Additional Plugins: Carriers](#install-additional-plugins-carriers)
-- [Install Additional Plugins: Devices](#install-additional-plugins-devices)
-- [Install Bindings](#install-bindings)
-- [Additional Information](#additional-information)
-    - [Tutorials and Examples](#tutorials-and-examples)
-    - [Similar and Related](#similar-and-related)
-- [External Installation Tutorial/Script Links](#external-installation-tutorialscript-links)
-
 ## Install Dependencies
+
 Some dependencies must be installed for compilation:
 - [CMake >3.12](install-cmake.md)
 
@@ -58,9 +48,11 @@ echo "source ~/repos/yarp/scripts/yarp_completion" >> ~/.bashrc # Activate in fu
 ```
 
 ### Note for Ubuntu 16.04 Xenial
+
 YARP 3.4+ (July '20) requires a modern GCC compiler. We found that GCC 5.4/5.5 leads to compilation issues. Please follow [this guide](https://gist.github.com/jlblancoc/99521194aba975286c80f93e47966dc5) to install and use GCC 7 instead. In case you are building on top of previously generated YARP files, make sure to either delete *build/CMakeCache.txt* or remove the *build* directory entirely.
 
 ### Note for Ubuntu 14.04 Trusty
+
  (same [GUI dependencies](http://www.yarp.it/install_yarp_linux.html#install_qt5_ubuntu_trusty), but named differently)
  ```bash
  sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \
@@ -70,11 +62,13 @@ YARP 3.4+ (July '20) requires a modern GCC compiler. We found that GCC 5.4/5.5 l
  ```
 
 ### Note for Linux Mint 17.3 Rosa
+
 ```bash
 sudo apt install libqt5opengl5-dev # Avoid error on yarpmanager/builder GUI
 ```
 
 ### Note for Linux Mint 18.3 Sylvia
+
 (tested on 64-bit XFCE desktop)
 ```bash
 sudo apt install libqt5opengl5-dev # Avoid error on yarpmanager/builder GUI
@@ -85,9 +79,9 @@ sudo apt-get install qml-module-qt-labs-settings qml-module-qt-labs-folderlistmo
 
 Binary releases usually work well: http://www.yarp.it/download.html
 
-# Install Additional Plugins: Carriers
+## Install Additional Plugins: Carriers
 
-## Install ROS support
+### Install ROS support
 
 **Note:** these carriers are now installed by default, ignore this if you are using YARP 3.x.x
 
@@ -101,9 +95,9 @@ make -j$(nproc) # Compile
 sudo make install && sudo ldconfig && cd # Install and go home
 ```
 
-# Install Additional Plugins: Devices
+## Install Additional Plugins: Devices
 
-## Install additional YARP device: depthCamera (Ubuntu)
+### Install additional YARP device: depthCamera (Ubuntu)
 
 Make sure you have previously installed YARP and:
  
@@ -120,41 +114,11 @@ You'll need a configuration file in order to launch this device. For instance, w
 
 Note ([ref](https://github.com/roboticslab-uc3m/vision/issues/83#issuecomment-390326913)): installation of *depthCamera* is broken at YARP 2.3.72 (and probably at 2.3.70.x, too). Did work at 2.3.68.x, fixed upstream at 2.3.72.1. Workaround: do `cmake . -DYARP_HAS_OpenNI2=ON` and configure again.
 
-## Install additional YARP device: OpenNI2DeviceServer (Ubuntu)
-
-* **Note:** tested on YARP `2.3.68.x` and YARP `2.3.72.1`, not compatible with YARP `3.x.*`
-
-```bash
-cd ~/repos/yarp/build
-cmake .. -DCREATE_DEVICE_LIBRARY_MODULES=ON -DENABLE_yarpmod_OpenNI2DeviceServer=ON -DENABLE_yarpmod_OpenNI2DeviceClient=ON -DOpenNI2_INCLUDE_DIR=/usr/local/include/OpenNI2/ -DOpenNI2_LIBRARY=/usr/local/lib/libOpenNI2.so
-make -j$(nproc) # Compile
-sudo make install && sudo ldconfig && cd # Install and go home
-```
-
-You should now be able to launch `yarpdev --device OpenNI2DeviceServer`. It is a complex device, see options with `yarpdev --device OpenNI2DeviceServer --verbose` (where there is an option to see modes) or example [here](https://github.com/roboticslab-uc3m/teo-configuration-files/blob/ee168eaf61454113b1ac7113fbb24e10af679bc3/share/teoBase/scripts/teoBase.xml#L35-L36).
-
-### Install additional YARP device: OpenNI2DeviceServer (Ubuntu) with NiTE (skeletons)
-
-* **Note:** not compatible with YARP `3.x.*`
-
-NiTE only required for skeletons. In addition to above steps for OpenNI:
-
-- [Install NiTE2.2 (Ubuntu)](install-openni-nite.md#install-nite22-ubuntu)
-
-```bash
-cd ~/repos/yarp/build
-cmake .. -DNITE2_INCLUDE_LOCAL=/usr/local/include/NiTE-Linux-x64-2.2 -DNITE2_LIBRARY=/usr/local/lib/libNiTE2.so
-make -j$(nproc) # Compile
-sudo make install && sudo ldconfig && cd # Install and go home
-```
-
-You may need to launch `yarpdev --device OpenNI2DeviceServer` from `/YOUR_PATH_TO/NiTE-Linux-x64-2.2/Redist` if using NiTE.
-
-# Install Bindings
+## Install Bindings
 
 Swig is needed in order to build all language bindings. Refer to [Install SWIG](install-swig.md).
 
-## Install Python bindings
+### Install Python bindings
 
 Make sure you have previously [installed YARP](install-yarp.md#install-yarp) and:
 
@@ -168,7 +132,7 @@ sudo make install && sudo ldconfig && cd # Install and go home
 ```
 You should now be able to launch `python` and `import yarp`.
 
-### Install Python bindings (troubleshooting)
+#### Install Python bindings (troubleshooting)
 
 Mind that, **starting from YARP 3.4, support for Python 2.x has been dropped**. You can use the CMake variable `CMAKE_INSTALL_PYTHON3DIR` to select the most adequate location for the installed module. This is useful in case the interpreter is unable to find it (`python3 -c "import yarp"`). For instance, you can end up with the YARP module installed in `lib/python3/`, whereas standard Python module path might be `lib/python3.6/` (this has been observed on Ubuntu Bionic). For this specific scenario:
 
@@ -188,7 +152,7 @@ sudo ln -s /usr/local/lib/python3/dist-packages/_yarp.so /usr/local/lib/python3.
 sudo ln -s /usr/local/lib/python3/dist-packages/yarp.py /usr/local/lib/python3.5/dist-packages/
 ```
 
-## Install Java bindings
+### Install Java bindings
 
 First, install the Java JDK. There are several versions at hand, so make sure you pick the Java release you are later going to work with in your applications.
 
@@ -202,7 +166,7 @@ cmake .. -DYARP_COMPILE_BINDINGS=ON -DCREATE_JAVA=ON
 sudo make install; sudo ldconfig; cd  # install and go home
 ```
 
-### Install Java bindings (troubleshooting)
+#### Install Java bindings (troubleshooting)
 
 In case you run into trouble because of CMake not finding Java paths, we'll define here a variable that may hold different values depending on the system you are working on, and use it later. As a prerequisite, inspect the usual JVM installation path with `ls /usr/lib/jvm`.
 
@@ -228,7 +192,7 @@ sudo make install && sudo ldconfig && cd  # Install and go home
 
 You might need to set the `CLASSPATH` and `LD_LIBRARY_PATH` variables prior to calling YARP bindings in your application in order to find the generated `*.jar` and `*.so` files, respectively.
 
-## Install MATLAB bindings
+### Install MATLAB bindings
 
 Two options here:
 1. Classical way via Java bindings, which is similar to Python, then setting the `classpath.txt` and `librarypath.txt` files contained within MATLAB. Ref: http://wiki.icub.org/wiki/Calling_yarp_from_Matlab Working setups on  Windows 10 (more complex than Ubuntu):

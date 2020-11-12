@@ -7,22 +7,6 @@ We use the OpenRAVE core library for simulations. Official links:
 
 Legacy documentation regarding OpenRAVE installations can be found at: [(Legacy) Install OpenRAVE](legacy-install-openrave.md)
 
-* [Install dependencies](#install-dependencies)
-* [Install OpenRAVE (Ubuntu 18.04)](#install-openrave-ubuntu-1804)
-    * [Known Issues (Ubuntu 18.04)](#known-issues-ubuntu-1804)
-* [Install OpenRAVE (Ubuntu 16.04 and 14.04)](#install-openrave-ubuntu-1604-and-1404)
-    * [Known Issues (Ubuntu 16.04)](#known-issues-ubuntu-1604)
-* [Install Additional Plugins: Flexible Collision Library (FCL)](#install-additional-plugins-flexible-collision-library-fcl)
-    * [FCL Known Issues (Ubuntu 16.04)](#fcl-known-issues-ubuntu-1604)
-* [Install Additional Plugins: OpenSceneGraph (OSG)](#install-additional-plugins-openscenegraph-osg)
-* [Additional Information](#additional-information)
-    * [Offscreen Rendering (OpenRAVE RGB Cameras)](#offscreen-rendering-openrave-rgb-cameras)
-    * [Generate Databases](#generate-databases)
-    * [Source Code Hacks](#source-code-hacks)
-    * [Tutorials and Examples](#tutorials-and-examples)
-    * [Similar and Related Projects](#similar-and-related-projects)
-* [External Installation Tutorial/Script Links](#external-installation-tutorialscript-links)
-
 ## Install dependencies
 
 * [Install RapidJSON](install-rapidjson.md)
