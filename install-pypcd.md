@@ -9,10 +9,10 @@ Pure Python module to read and write point clouds stored in the [PCD file format
 Open a terminal and execute the following commands (use `python3` instead to install it for Python 3):
 
 ```bash
-$ cd 
-$ mkdir -p repos
-$ cd repos
-$ git clone https://github.com/dimatura/pypcd.git
-$ cd pypcd
-$ sudo python setup.py install
+cd 
+mkdir -p repos
+cd repos
+git clone https://github.com/dimatura/pypcd.git
+cd pypcd
+sudo python setup.py install
 ```
