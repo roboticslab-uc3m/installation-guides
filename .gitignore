@@ -6,21 +6,11 @@
 *.swp
 *.orig
 
-## CMake and C/C++
-**/build*/
-CMakeLists.txt.user
-*.cproject
-*.project
-tags
+## gitbook
+/_book/
 
-## doxygen
-doc/html
-doc/doxygen_sqlite3.db
+## gitbook install
+/node_modules/
 
-## gitbook generated
-_book/
-
-node_modules/
-
-## gitbook-summary generated
-SUMMARY.md
+## gitbook-summary
+/SUMMARY.md
