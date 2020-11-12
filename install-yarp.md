@@ -1,6 +1,11 @@
 # Install YARP
 
-We use YARP for communications. Official page: [http://www.yarp.it](http://www.yarp.it), [http://www.yarp.it/install.html](http://www.yarp.it/install.html)
+We use YARP for communications. Official pages:
+
+- [http://www.yarp.it](http://www.yarp.it)
+- [http://www.yarp.it/install.html](http://www.yarp.it/install.html)
+
+Legacy documentation regarding YARP installations can be found at: [(Legacy) Install YARP](legacy-install-yarp.md)
 
 - [Install Dependencies](#install-dependencies)
 - [Install YARP (Ubuntu)](#install-yarp-ubuntu)

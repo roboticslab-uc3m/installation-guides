@@ -1,14 +1,17 @@
 # Install OpenRAVE
 
-We use the OpenRAVE core library for simulations. Official links: [http://openrave.org](http://openrave.org), [OpenRAVE: Building and Installing](http://openrave.org/docs/latest_stable/coreapihtml/installation.html).
+We use the OpenRAVE core library for simulations. Official links: 
+
+- [http://openrave.org](http://openrave.org)
+- [OpenRAVE: Building and Installing](http://openrave.org/docs/latest_stable/coreapihtml/installation.html)
+
+Legacy documentation regarding OpenRAVE installations can be found at: [(Legacy) Install OpenRAVE](legacy-install-openrave.md)
 
 * [Install dependencies](#install-dependencies)
 * [Install OpenRAVE (Ubuntu 18.04)](#install-openrave-ubuntu-1804)
     * [Known Issues (Ubuntu 18.04)](#known-issues-ubuntu-1804)
 * [Install OpenRAVE (Ubuntu 16.04 and 14.04)](#install-openrave-ubuntu-1604-and-1404)
     * [Known Issues (Ubuntu 16.04)](#known-issues-ubuntu-1604)
-* [Install OpenRAVE (Ubuntu 12.04)](#install-openrave-ubuntu-1204)
-* [Install OpenRAVE (Windows)](#install-openrave-windows)
 * [Install Additional Plugins: Flexible Collision Library (FCL)](#install-additional-plugins-flexible-collision-library-fcl)
     * [FCL Known Issues (Ubuntu 16.04)](#fcl-known-issues-ubuntu-1604)
 * [Install Additional Plugins: OpenSceneGraph (OSG)](#install-additional-plugins-openscenegraph-osg)
@@ -85,27 +88,6 @@ Thus, `apt` would not try to install non-critical packages marked as *recommende
 
 ### Known Issues (Ubuntu 16.04)
 - OpenRAVE `v0.9.0` with `gcc-7` fails to compile. Recommendation: switch back to `gcc-5 (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010`.
-
-## Install OpenRAVE (Ubuntu 12.04)
-
-To install a precompiled version of OpenRAVE, type:
-
-```bash
-sudo add-apt-repository ppa:openrave/release
-sudo apt-get update
-sudo apt-get install openrave
-```
-
-## Install OpenRAVE (Windows)
-
-Long ago, this was easy. Now, installers such as `openrave-0.9.0-5cfc74-win32-vc100-setup` are broken (due to broken Boost 1.44 and Qt links, as well as old Visual Studio version), so we have to go old-school.
-
-References:
-- http://robots.uc3m.es/index.php/OpenRAVE_R1457_Windows_Install
-- https://www.cs.cmu.edu/~motionplanning/homework/hw1/hw1.html
-- http://openrave.org/docs/latest_stable/coreapihtml/installation_windows.html
-- http://sukhoy.public.iastate.edu/openrave/
-- https://github.com/rdiankov/openrave
 
 ## Install Additional Plugins: Flexible Collision Library (FCL)
 
