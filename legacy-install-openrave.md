@@ -2,9 +2,6 @@
 
 This is Legacy documentation regarding YARP installations. Updated YARP installation at: [Install OpenRAVE](install-openrave.md)
 
-* [Install OpenRAVE (Ubuntu 12.04)](#install-openrave-ubuntu-1204)
-* [Install OpenRAVE (Windows)](#install-openrave-windows)
-
 ## Install OpenRAVE (Ubuntu 12.04)
 
 To install a precompiled version of OpenRAVE, type:
