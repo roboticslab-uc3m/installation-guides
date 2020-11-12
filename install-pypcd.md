@@ -1,8 +1,8 @@
 # Install pypcd
 
-Pure Python module to read and write point clouds stored in the [PCD file format](http://pointclouds.org/documentation/tutorials/pcd_file_format.php), used by the [Point Cloud Library](http://pointclouds.org/).
+Pure Python module to read and write point clouds stored in the [PCD file format](http://pointclouds.org/documentation/tutorials/pcd_file_format.php), used by the [Point Cloud Library](http://pointclouds.org/). Official website:
 
-[Official website](https://github.com/dimatura/pypcd)
+- https://github.com/dimatura/pypcd
 
 ## Install from sources
 
