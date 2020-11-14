@@ -10,13 +10,14 @@ Legacy documentation regarding YARP installations can be found at: [(Legacy) Ins
 ## Install Dependencies
 
 Some dependencies must be installed for compilation:
+
 - [CMake >3.12](install-cmake.md)
 
 ## Install YARP (Ubuntu)
 
 Installing YARP on Ubuntu is quite straightforward.
 
-Note that you will be prompted for your password upon using `sudo` a couple of times. 
+Note that you will be prompted for your password upon using `sudo` a couple of times.
 
 As can be seen, here we are accounting for YARP GUIs and `mjpeg` carrier.
 
@@ -53,25 +54,27 @@ YARP 3.4+ (July '20) requires a modern GCC compiler. We found that GCC 5.4/5.5 l
 
 ### Note for Ubuntu 14.04 Trusty
 
- (same [GUI dependencies](http://www.yarp.it/install_yarp_linux.html#install_qt5_ubuntu_trusty), but named differently)
- ```bash
- sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \
+(same [GUI dependencies](http://www.yarp.it/install_yarp_linux.html#install_qt5_ubuntu_trusty), but named differently)
+
+```bash
+sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \
   qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin \
   qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin \
   qtdeclarative5-dialogs-plugin libqt5svg5
- ```
+```
 
 ### Note for Linux Mint 18.3 Sylvia
 
 (tested on 64-bit XFCE desktop)
+
 ```bash
 sudo apt install libqt5opengl5-dev # Avoid error on yarpmanager/builder GUI
-sudo apt-get install qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel # Fix QQmlApplicationEngine failed to load component 
+sudo apt-get install qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel # Fix QQmlApplicationEngine failed to load component
 ```
 
 ## Install YARP (Windows)
 
-Binary releases usually work well: http://www.yarp.it/download.html
+Binary releases usually work well: <http://www.yarp.it/download.html>
 
 ## Install Additional Plugins: Carriers
 
@@ -94,7 +97,7 @@ sudo make install && sudo ldconfig && cd # Install and go home
 ### Install additional YARP device: depthCamera (Ubuntu)
 
 Make sure you have previously installed YARP and:
- 
+
 - [Install OpenNI2 (Ubuntu)](install-openni-nite.md#install-openni2-ubuntu)
 
 ```bash
@@ -124,6 +127,7 @@ cmake .. -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON
 make -j$(nproc)  # compile
 sudo make install && sudo ldconfig && cd # Install and go home
 ```
+
 You should now be able to launch `python` and `import yarp`.
 
 #### Install Python bindings (troubleshooting)
@@ -135,12 +139,14 @@ cmake -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON -DCMAKE_INSTALL_PYTHON3DIR=l
 ```
 
 Extra care should be taken with multiple Python versions (e.g. 2.x vs 3.x) in earlier releases. The following command has been tested on Ubuntu Xenial to force Python 3.5m (note distro version is 3.5m, where `m` is `--with-pymalloc`; [ref](https://www.python.org/dev/peps/pep-3149/#proposal)):
+
 ```bash
 sudo apt install libpython3-dev
 cmake -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON -DYARP_USE_PYTHON_VERSION=3.5 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so -DCMAKE_INSTALL_PYTHONDIR=lib/python3.5/dist-packages -DPYTHON_EXECUTABLE=/usr/bin/python3 ..
 ```
 
 In this specific case, `CMAKE_INSTALL_PYTHONDIR` is apparently ignored, so you should:
+
 ```bash
 sudo ln -s /usr/local/lib/python3/dist-packages/_yarp.so /usr/local/lib/python3.5/dist-packages/
 sudo ln -s /usr/local/lib/python3/dist-packages/yarp.py /usr/local/lib/python3.5/dist-packages/
@@ -189,41 +195,41 @@ You might need to set the `CLASSPATH` and `LD_LIBRARY_PATH` variables prior to c
 ### Install MATLAB bindings
 
 Two options here:
-1. Classical way via Java bindings, which is similar to Python, then setting the `classpath.txt` and `librarypath.txt` files contained within MATLAB. Ref: http://wiki.icub.org/wiki/Calling_yarp_from_Matlab Working setups on  Windows 10 (more complex than Ubuntu):
-   - Good 64 bit: `MATLAB R2017b (9.3, 64 bit)` + `yarp_2.3.70_v14_x86_amd64_1.exe` + `cmake 3.9.4` + `VS 15 2017` + `jdk-8u162-windows-x64.exe` working nicely, only having to install `things.i` manually (see https://github.com/robotology/yarp/issues/698) and doing `javac -source 1.6 -target 1.6 *.java` (which is the default in code, but must be done manually, and manual says 1.3).
-   - Good 64 bit (portable): To avoid installing VS + JDK + CMake, [here]( https://sourceforge.net/projects/roboticslab/files/External/yarp/2.3.70_win_64_java/) we've put together some pre-compiled YARP bindings (note `vc_redist.x64.exe` to compensate the lack of VS, and forced us to compile bindings in `Release` not `Debug`).
-   - Ye-oldie 32 bit: `MATLAB R2015b (8.6, 32 bit) + yarp_2.3.70_v14_x86_1.exe	+	cmake 3.9.4	+ VS 15 2017 + jdk-8u152-windows-i586.exe	+ MATLAB R2015b (8.6 32 bit)` working nicely, only having to install `things.i` manually (see https://github.com/robotology/yarp/issues/698) and doing `javac -source 1.3 -target 1.3 *.java` with `1.5` instead.
+
+1. Classical way via Java bindings, which is similar to Python, then setting the `classpath.txt` and `librarypath.txt` files contained within MATLAB. Ref: <http://wiki.icub.org/wiki/Calling_yarp_from_Matlab> Working setups on  Windows 10 (more complex than Ubuntu):
+   - Good 64 bit: `MATLAB R2017b (9.3, 64 bit)` + `yarp_2.3.70_v14_x86_amd64_1.exe` + `cmake 3.9.4` + `VS 15 2017` + `jdk-8u162-windows-x64.exe` working nicely, only having to install `things.i` manually (see <https://github.com/robotology/yarp/issues/698>) and doing `javac -source 1.6 -target 1.6 *.java` (which is the default in code, but must be done manually, and manual says 1.3).
+   - Good 64 bit (portable): To avoid installing VS + JDK + CMake, [here](https://sourceforge.net/projects/roboticslab/files/External/yarp/2.3.70_win_64_java/) we've put together some pre-compiled YARP bindings (note `vc_redist.x64.exe` to compensate the lack of VS, and forced us to compile bindings in `Release` not `Debug`).
+   - Ye-oldie 32 bit: `MATLAB R2015b (8.6, 32 bit) + yarp_2.3.70_v14_x86_1.exe + cmake 3.9.4 + VS 15 2017 + jdk-8u152-windows-i586.exe + MATLAB R2015b (8.6 32 bit)` working nicely, only having to install `things.i` manually (see <https://github.com/robotology/yarp/issues/698>) and doing `javac -source 1.3 -target 1.3 *.java` with `1.5` instead.
 1. A different method: New repo directly against MATLAB: [yarp-matlab-bindings](https://github.com/robotology-playground/yarp-matlab-bindings). Some issues:
    - Requires setting variables such as `YARP_DIR` and even `YCM_DIR`.
    - This seems to imply a separately built YCM, but see [this issue](https://github.com/robotology/yarp/issues/1552#issuecomment-366449572).
    - It links against MATLAB libs, so you must match compiler in addition to bits (Windows MATLAB 2017b only provides 64-bit mingw version).
-
 
 ## Additional Information
 
 ### Tutorials and Examples
 
 - Tutorials
-    - [YARP Tutorial (Spanish)](https://asrob-uc3m.gitbooks.io/tutoriales/content/software/programming/yarp.html) ([perma](https://github.com/asrob-uc3m/tutoriales/blob/cbc8d820b143f10ede306bfa2224614b00e4a180/software/programming/yarp.md))
-    - [YARP Devices Tutorial (Spanish)](http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices)
+  - [YARP Tutorial (Spanish)](https://asrob-uc3m.gitbooks.io/tutoriales/content/software/programming/yarp.html) ([perma](https://github.com/asrob-uc3m/tutoriales/blob/cbc8d820b143f10ede306bfa2224614b00e4a180/software/programming/yarp.md))
+  - [YARP Devices Tutorial (Spanish)](http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices)
 - Recommendations
-    - [Programming with YARP](http://robots.uc3m.es/gitbook-developer-manual/programming-with-yarp.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/c0cb6952e14079b3fcf9d36e1830b92c07bf8bde/programming-with-yarp.md))
+  - [Programming with YARP](http://robots.uc3m.es/gitbook-developer-manual/programming-with-yarp.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/c0cb6952e14079b3fcf9d36e1830b92c07bf8bde/programming-with-yarp.md))
 - Hacks and tricks
-    - [YARP Tricks](http://robots.uc3m.es/gitbook-developer-manual/appendix/yarp-tricks.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/9c11c75d4ef5de8ac43a90ab3184fdf8e85a3290/appendix/yarp-tricks.md))
-    - http://wiki.icub.org/wiki/YarpTricks
+  - [YARP Tricks](http://robots.uc3m.es/gitbook-developer-manual/appendix/yarp-tricks.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/9c11c75d4ef5de8ac43a90ab3184fdf8e85a3290/appendix/yarp-tricks.md))
+  - <http://wiki.icub.org/wiki/YarpTricks>
 - Examples
-    - https://github.com/robotology/yarp/tree/master/example ([perma](https://github.com/robotology/yarp/tree/fcbd455603e13a5ddc439f9d4592bf000b8dcdff/example)) (official, C++)
-    - https://github.com/robotology/yarp/tree/master/bindings ([perma](https://github.com/robotology/yarp/tree/fcbd455603e13a5ddc439f9d4592bf000b8dcdff/bindings)) (official)
-    - https://github.com/roboticslab-uc3m/yarp-devices/tree/master/examples ([perma](https://github.com/roboticslab-uc3m/yarp-devices/tree/97771c958f493aa91ad1bc592444b3626efdaf55/examples)) (roboticslab-uc3m)
+  - <https://github.com/robotology/yarp/tree/master/example> ([perma](https://github.com/robotology/yarp/tree/fcbd455603e13a5ddc439f9d4592bf000b8dcdff/example)) (official, C++)
+  - <https://github.com/robotology/yarp/tree/master/bindings> ([perma](https://github.com/robotology/yarp/tree/fcbd455603e13a5ddc439f9d4592bf000b8dcdff/bindings)) (official)
+  - <https://github.com/roboticslab-uc3m/yarp-devices/tree/master/examples> ([perma](https://github.com/roboticslab-uc3m/yarp-devices/tree/97771c958f493aa91ad1bc592444b3626efdaf55/examples)) (roboticslab-uc3m)
 
 ### Similar and Related
 
-- https://github.com/robotology?q=yarp (org of official repo)
-- https://github.com/roboticslab-uc3m?q=yarp (roboticslab-uc3m)
-- https://github.com/inria-larsen?q=yarp
+- <https://github.com/robotology?q=yarp> (org of official repo)
+- <https://github.com/roboticslab-uc3m?q=yarp> (roboticslab-uc3m)
+- <https://github.com/inria-larsen?q=yarp>
 
 ## External Installation Tutorial/Script Links
 
 - Docker
-    - https://hub.docker.com/search?q=yarp&type=image (avoid `yarpc` which is unrelated)
-    - https://hub.docker.com/r/h2020infuse/yarpmonitor-ubuntu-prod
+  - <https://hub.docker.com/search?q=yarp&type=image> (avoid `yarpc` which is unrelated)
+  - <https://hub.docker.com/r/h2020infuse/yarpmonitor-ubuntu-prod>
