@@ -7,15 +7,13 @@ We use YARP for communications. Official pages:
 
 Legacy documentation regarding YARP installations can be found at: [(Legacy) Install YARP](legacy-install-yarp.md)
 
-## Install Dependencies
+## Install YARP (Ubuntu 18.04)
 
-Some dependencies must be installed for compilation:
+Install Dependencies that must be installed for compilation:
 
 - [CMake >3.12](install-cmake.md)
 
-## Install YARP (Ubuntu)
-
-Installing YARP on Ubuntu is quite straightforward.
+Then, installing YARP on Ubuntu is quite straightforward.
 
 Note that you will be prompted for your password upon using `sudo` a couple of times.
 
@@ -51,17 +49,6 @@ echo "source ~/repos/yarp/scripts/yarp_completion" >> ~/.bashrc # Activate in fu
 ### Note for Ubuntu 16.04 Xenial
 
 YARP 3.4+ (July '20) requires a modern GCC compiler. We found that GCC 5.4/5.5 leads to compilation issues. Please follow [this guide](https://gist.github.com/jlblancoc/99521194aba975286c80f93e47966dc5) to install and use GCC 7 instead. In case you are building on top of previously generated YARP files, make sure to either delete *build/CMakeCache.txt* or remove the *build* directory entirely.
-
-### Note for Ubuntu 14.04 Trusty
-
-(same [GUI dependencies](http://www.yarp.it/install_yarp_linux.html#install_qt5_ubuntu_trusty), but named differently)
-
-```bash
-sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \
-  qtdeclarative5-qtquick2-plugin qtdeclarative5-window-plugin \
-  qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin \
-  qtdeclarative5-dialogs-plugin libqt5svg5
-```
 
 ### Note for Linux Mint 18.3 Sylvia
 
