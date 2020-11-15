@@ -1,8 +1,14 @@
 # Install NPM
 
-NPM (Node.js Package Manager) is the package manager for JavaScript. We use it for [gitbook](install-gitbook.md) and similar.
+NPM (Node.js Package Manager) is the package manager for [Node.js](install-node.md). We use it for [gitbook](install-gitbook.md) and similar.
 
 Official page: [link](https://www.npmjs.com)
+
+## Install NPM (Ubuntu 20.04)
+
+```bash
+sudo apt install npm # Install npm 6.14.4
+```
 
 ## Install NPM (Ubuntu)
 
