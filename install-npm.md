@@ -12,7 +12,8 @@ sudo apt install npm
 
 ## Using NPM
 
-- https://docs.npmjs.com/cli/install
+- <https://docs.npmjs.com/cli/install>
+
 ```bash
 npm install (with no args, in package dir)
 npm install [<@scope>/]<name>
@@ -29,7 +30,9 @@ npm install <folder>
 In global mode (with `-g` or `--global`), it installs the package  as a global package, so may require `sudo`.
 
 ## Troubleshooting NPM
+
 Hack for `phantomjs` and `svgexport` is to use `--unsafe-perm` if fails even with `sudo`:
+
 ```bash
 sudo npm -g install phantomjs-prebuilt --upgrade --unsafe-perm
 suod npm -g install svgexport --unsafe-perm
