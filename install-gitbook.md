@@ -24,24 +24,24 @@ Make sure your project has a file called `SUMMARY.md` in its root.
 
 ## How-To's
 
-### How to serve on localhost
+### How to install Gitbook plugins (if present in project)
+
+Only necesary once per project (and only if any, specified in `book.json`). They are installed in `./node_modules/`, which should usually be set as ignored (not uploaded to repository).
+
+```bash
+gitbook install
+```
+
+### How to serve (defaults to `localhost:4000`)
 
 ```bash
 gitbook serve # command builds and serves
 ```
 
-### How to build to serve generated contents elsewhere
+### How to build (generate `_book` without serving)
 
 ```bash
 gitbook build
-```
-
-## Troubleshooting Gitbook
-
-To install missing plugins:
-
-```bash
-gitbook install
 ```
 
 ## Additional Tools
