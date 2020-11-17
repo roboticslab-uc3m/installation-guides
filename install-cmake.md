@@ -40,7 +40,7 @@ sudo apt-get update
 Then, download and install CMake:
 
 ```bash
-sudo apt install cmake
+sudo apt install cmake # ubuntu 18.04: cmake 3.18.4
 sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 ```
 
