@@ -49,7 +49,7 @@ sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 CMake has been traditionally available via the Canonical PPA. Note, however, that these packages may contain versions that are older than those published in the Kitware PPA and thus break builds with recent software.
 
 ```bash
-sudo apt install cmake
+sudo apt install cmake # ubuntu 18.04: cmake 3.10.2.
 sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 ```
 
