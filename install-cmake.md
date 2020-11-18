@@ -13,7 +13,7 @@ sudo apt install cmake
 sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 ```
 
-## Install CMake (Ubuntu 18.04 Bionic)
+## Install CMake 3.18+ (Ubuntu 18.04 Bionic)
 
 The latest CMake release per distro (cmake 3.18.4 as of 2020/11/18) is available via Kitware's PPA:
 
@@ -33,7 +33,7 @@ sudo apt install cmake
 sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 ```
 
-### Other providers
+### Other providers: Install CMake 3.10+ (Ubuntu 18.04 Bionic)
 
 CMake has been traditionally available via the Canonical PPA. Note, however, that these packages may contain versions that are older (cmake 3.10.2 as of 2020/11/18) than those published in the Kitware PPA and thus break builds with recent software. Skip adding other repositories and simply:
 
