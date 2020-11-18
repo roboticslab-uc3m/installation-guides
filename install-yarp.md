@@ -4,6 +4,8 @@ We use YARP for communications. Official pages:
 
 - [http://www.yarp.it](http://www.yarp.it)
 - [http://www.yarp.it/install.html](http://www.yarp.it/install.html)
+- [YARP Supported Distributions
+](http://wiki.icub.org/wiki/YARP_Supported_Distributions)
 
 Legacy documentation regarding YARP installations can be found at: [(Legacy) Install YARP](legacy-install-yarp.md)
 
