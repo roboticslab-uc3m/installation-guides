@@ -2,7 +2,7 @@
 
 This is Legacy documentation regarding YARP installations. Updated YARP installation at: [Install YARP](install-yarp.md)
 
-## Install YARP (Ubuntu 14.04)
+## Install YARP (Ubuntu 14.04 Trusty)
 
 Install Dependencies that must be installed for compilation:
 

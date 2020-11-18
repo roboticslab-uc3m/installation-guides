@@ -7,7 +7,7 @@ We use YARP for communications. Official pages:
 
 Legacy documentation regarding YARP installations can be found at: [(Legacy) Install YARP](legacy-install-yarp.md)
 
-## Install YARP (Ubuntu 18.04)
+## Install YARP (Ubuntu 18.04 Bionic)
 
 Install Dependencies that must be installed for compilation:
 
