@@ -56,23 +56,6 @@ sudo make install; cd  # install and go home
 
 The CMakes options when recompiling OpenRAVE are `OPT_FCL_COLLISION` / `OPENRAVE_PLUGIN_FCLRAVE`.
 
-### FCL Known Issues (Ubuntu 16.04)
-With the Cannonical PPA way, you'll run into:
-```
--- Checking for module 'fcl'
---   Found fcl, version 0.3.2
--- Could not find FCL. Please install FCL (https://github.com/flexible-collision-library/fcl)
-```
-FCL `0.5.0` has been identified as working. Compile and install it via:
-```bash
-mkdir -p repos; cd repos # create $HOME/repos if it doesn't exist; then, enter it
-git clone --branch 0.5.0 https://github.com/flexible-collision-library/fcl
-cd fcl; mkdir build; cd build
-cmake ..
-make -j$(nproc)
-sudo make install; cd  # install and go home
-```
-
 ## Install Additional Plugins: OpenSceneGraph (OSG)
 
 To get OSG to compile against OpenRAVE, first, you must download a specific version (`OpenSceneGraph-3.4.1` for OpenRAVE `v0.9.0`) and set a CMake flag to use a specific Qt version (`-DDESIRED_QT_VERSION=4` for OpenRAVE `v0.9.0`):

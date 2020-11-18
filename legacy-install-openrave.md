@@ -37,6 +37,27 @@ Thus, `apt` would not try to install non-critical packages marked as *recommende
 
 - OpenRAVE 0.9.0 with `gcc-7` fails to compile. Recommendation: switch back to `gcc-5 (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010`.
 
+### FCL Known Issues (Ubuntu 16.04 Xenial)
+
+With the Cannonical PPA way, you'll run into:
+
+```
+-- Checking for module 'fcl'
+--   Found fcl, version 0.3.2
+-- Could not find FCL. Please install FCL (https://github.com/flexible-collision-library/fcl)
+```
+
+FCL `0.5.0` has been identified as working. Compile and install it via:
+
+```bash
+mkdir -p repos; cd repos # create $HOME/repos if it doesn't exist; then, enter it
+git clone --branch 0.5.0 https://github.com/flexible-collision-library/fcl
+cd fcl; mkdir build; cd build
+cmake ..
+make -j$(nproc)
+sudo make install; cd  # install and go home
+```
+
 ## Install OpenRAVE (Ubuntu 12.04 Precise)
 
 To install a precompiled version of OpenRAVE, type:
