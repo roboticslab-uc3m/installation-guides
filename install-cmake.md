@@ -15,7 +15,7 @@ sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 
 ## Install CMake (Ubuntu 18.04 Bionic)
 
-The latest CMake release is available via Kitware's PPA:
+The latest CMake release per distro (cmake 3.18.4 as of 2020/11/18) is available via Kitware's PPA:
 
 ```bash
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | sudo apt-key add -
@@ -29,36 +29,16 @@ sudo apt-get update
 Then, download and install CMake:
 
 ```bash
-sudo apt install cmake # ubuntu 18.04: cmake 3.18.4
-sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
-```
-
-## Install CMake (Ubuntu 16.04 Xenial)
-
-The latest CMake release is available via Kitware's PPA:
-
-```bash
-wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | sudo apt-key add -
-```
-
-```bash
-sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ xenial main'
-sudo apt-get update
-```
-
-Then, download and install CMake:
-
-```bash
 sudo apt install cmake
 sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 ```
 
-## Other providers
+### Other providers
 
-CMake has been traditionally available via the Canonical PPA. Note, however, that these packages may contain versions that are older than those published in the Kitware PPA and thus break builds with recent software.
+CMake has been traditionally available via the Canonical PPA. Note, however, that these packages may contain versions that are older (cmake 3.10.2 as of 2020/11/18) than those published in the Kitware PPA and thus break builds with recent software. Skip adding other repositories and simply:
 
 ```bash
-sudo apt install cmake # ubuntu 18.04: cmake 3.10.2.
+sudo apt install cmake
 sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 ```
 

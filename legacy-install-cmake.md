@@ -2,9 +2,29 @@
 
 This is Legacy documentation regarding CMake installations. Updated CMake installation at: [Install CMake](install-cmake.md)
 
+## Install CMake (Ubuntu 16.04 Xenial)
+
+The latest CMake release is available via Kitware's PPA:
+
+```bash
+wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | sudo apt-key add -
+```
+
+```bash
+sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ xenial main'
+sudo apt-get update
+```
+
+Then, download and install CMake:
+
+```bash
+sudo apt install cmake
+sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
+```
+
 ### Install CMake backports (Ubuntu 14.04 Trusty)
 
-CMake packages up to release 2.8.12 are distributed on Ubuntu Trusty (14.04). However, a CMake 3.5 backport is also included in the oficial repositories.
+CMake packages up to release 2.8.12 are distributed on Ubuntu Trusty (14.04). However, a CMake 3.5 backport is also included in the oficial repositories. Skip adding other repositories and simply:
 
 ```bash
 sudo apt update
