@@ -6,7 +6,7 @@ This is Legacy documentation regarding YARP installations. Updated YARP installa
 
 No official PPA, install from source. Install Dependencies that must be installed for compilation:
 
-- [CMake >3.12](install-cmake.md)
+- [CMake](install-cmake.md)
 
 Note that you will be prompted for your password upon using `sudo`.
 

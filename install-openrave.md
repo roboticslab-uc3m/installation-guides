@@ -15,7 +15,7 @@ Legacy documentation regarding OpenRAVE installations can be found at: [(Legacy)
 
 No official PPA, install from source. Install Dependencies that must be installed for compilation:
 
-- [CMake >3.12](install-cmake.md)
+- [CMake 3.12](install-cmake.md)
 
 Note that you will be prompted for your password upon using `sudo`.
 
