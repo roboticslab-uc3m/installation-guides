@@ -2,11 +2,11 @@
 
 We use CMake for project generating.
 
-Official download page: [link](https://cmake.org/download/).
+Official download page: <https://cmake.org/download/>.
 
-## Install CMake (Ubuntu)
+Legacy documentation regarding CMake installations can be found at: [(Legacy) Install CMake](legacy-install-cmake.md)
 
-### Ubuntu 20.04
+## Install CMake (Ubuntu 20.04)
 
 For Ubuntu Focal (20.04):
 
@@ -15,7 +15,7 @@ sudo apt install cmake
 sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 ```
 
-### Ubuntu 16.04 and 18.04
+## Install CMake (Ubuntu 16.04 and 18.04)
 
 The latest CMake release is available via Kitware's PPA:
 
@@ -54,26 +54,6 @@ sudo apt install cmake-curses-gui  # Recommended, includes ccmake.
 ```
 
 In addition, a pip wheels release exists: [ref](https://pypi.org/project/cmake/).
-
-### Ubuntu 14.04 backports
-
-CMake packages up to release 2.8.12 are distributed on Ubuntu Trusty (14.04). However, a CMake 3.5 backport is also included in the oficial repositories.
-
-```bash
-sudo apt update
-sudo apt install cmake3
-sudo apt install cmake3-curses-gui  # Recommended, includes ccmake
-```
-
-### Ubuntu 12.04 backports
-
-CMake packages up to release 2.8.7 are distributed on Ubuntu precise (12.04). However, you can pull and install CMake 2.8.11.2 from an additional repository:
-
-```bash
-sudo add-apt-repository ppa:kalakris/cmake
-sudo apt-get update
-sudo apt-get install cmake
-```
 
 ### OpenSSL support (older distros and building from sources)
 
