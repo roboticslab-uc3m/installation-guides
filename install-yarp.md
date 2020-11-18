@@ -46,11 +46,7 @@ source ~/repos/yarp/scripts/yarp_completion # Activate in current bash session
 echo "source ~/repos/yarp/scripts/yarp_completion" >> ~/.bashrc # Activate in future bash sessions
 ```
 
-### Note for Ubuntu 16.04 Xenial
-
-YARP 3.4+ (July '20) requires a modern GCC compiler. We found that GCC 5.4/5.5 leads to compilation issues. Please follow [this guide](https://gist.github.com/jlblancoc/99521194aba975286c80f93e47966dc5) to install and use GCC 7 instead. In case you are building on top of previously generated YARP files, make sure to either delete *build/CMakeCache.txt* or remove the *build* directory entirely.
-
-### Note for Linux Mint 18.3 Sylvia
+## Note for Linux Mint 18.3 Sylvia
 
 (tested on 64-bit XFCE desktop)
 

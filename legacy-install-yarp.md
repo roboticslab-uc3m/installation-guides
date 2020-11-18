@@ -2,6 +2,49 @@
 
 This is Legacy documentation regarding YARP installations. Updated YARP installation at: [Install YARP](install-yarp.md)
 
+## Install YARP (Ubuntu 16.04 Xenial)
+
+Install Dependencies that must be installed for compilation:
+
+- [CMake >3.12](install-cmake.md)
+
+Then, installing YARP on Ubuntu is quite straightforward.
+
+Note that you will be prompted for your password upon using `sudo` a couple of times.
+
+As can be seen, here we are accounting for YARP GUIs and `mjpeg` carrier.
+
+```bash
+sudo apt install build-essential git
+sudo apt install libeigen3-dev # Needed for creating YARP lib_math used for kinematics, etc.
+sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \
+  qml-module-qtquick2 qml-module-qtquick-window2 \
+  qml-module-qtmultimedia qml-module-qtquick-dialogs \
+  qml-module-qtquick-controls qml-module-qt-labs-folderlistmodel \
+  qml-module-qt-labs-settings # GUI stuff, Ubuntu 16.04+ (Xenial)
+sudo apt install libjpeg8-dev # Needed for mjpeg carrier
+sudo apt install libedit-dev # Enables keyboard arrow keys within an RPC communication channel via terminal
+mkdir -p ~/repos; cd ~/repos # Create $HOME/repos if it doesn't exist; then, enter it
+git clone --branch=yarp-3.3 https://github.com/robotology/yarp
+cd yarp && mkdir build && cd build
+cmake .. -DSKIP_ACE=ON -DCREATE_GUIS=ON -DENABLE_yarpcar_mjpeg=ON -DENABLE_yarpcar_depthimage=ON -DENABLE_yarpcar_depthimage=ON
+make -j$(nproc) # Compile
+sudo make install && sudo ldconfig && cd # Install and go home
+```
+
+For additional options use `ccmake` instead of `cmake`.
+
+To enable yarp auto-completion (**do not** do this for YARP 3.4+, as it has been moved to `data/bash-completion/yarp` and installed by default):
+
+```bash
+source ~/repos/yarp/scripts/yarp_completion # Activate in current bash session
+echo "source ~/repos/yarp/scripts/yarp_completion" >> ~/.bashrc # Activate in future bash sessions
+```
+
+### Note regarding YARP 3.4+
+
+YARP 3.4+ (July '20) requires a modern GCC compiler. We found that GCC 5.4/5.5 leads to compilation issues. Please follow [this guide](https://gist.github.com/jlblancoc/99521194aba975286c80f93e47966dc5) to install and use GCC 7 instead. In case you are building on top of previously generated YARP files, make sure to either delete *build/CMakeCache.txt* or remove the *build* directory entirely.
+
 ## Install YARP (Ubuntu 14.04 Trusty)
 
 Install Dependencies that must be installed for compilation:
