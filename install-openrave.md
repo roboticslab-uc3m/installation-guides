@@ -7,15 +7,12 @@ We use the OpenRAVE core library for simulations. Official links:
 
 Legacy documentation regarding OpenRAVE installations can be found at: [(Legacy) Install OpenRAVE](legacy-install-openrave.md)
 
-## Install dependencies
-
-* [Install RapidJSON](install-rapidjson.md)
-
 ## Install OpenRAVE (Ubuntu 18.04)
 
 No official PPA, install from source. Install Dependencies that must be installed for compilation:
 
-- [CMake 3.12](install-cmake.md)
+- [Install CMake](install-cmake.md)
+- [Install RapidJSON](install-rapidjson.md)
 
 Note that you will be prompted for your password upon using `sudo`.
 
