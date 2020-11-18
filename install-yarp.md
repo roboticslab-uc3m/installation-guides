@@ -7,11 +7,43 @@ We use YARP for communications. Official pages:
 
 Legacy documentation regarding YARP installations can be found at: [(Legacy) Install YARP](legacy-install-yarp.md)
 
-## Install YARP (Ubuntu 18.04 Bionic)
+## Install YARP 3.4 (Ubuntu 20.04 Focal)
 
 Install Dependencies that must be installed for compilation:
 
-- [CMake >3.12](install-cmake.md)
+- [Install CMake 3.12+](install-cmake.md)
+
+Then, installing YARP on Ubuntu is quite straightforward.
+
+Note that you will be prompted for your password upon using `sudo` a couple of times.
+
+As can be seen, here we are accounting for YARP GUIs and `mjpeg` carrier.
+
+```bash
+sudo apt install build-essential git
+sudo apt install libeigen3-dev # Needed for creating YARP lib_math used for kinematics, etc.
+sudo apt install qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev \
+  qml-module-qtquick2 qml-module-qtquick-window2 \
+  qml-module-qtmultimedia qml-module-qtquick-dialogs \
+  qml-module-qtquick-controls qml-module-qt-labs-folderlistmodel \
+  qml-module-qt-labs-settings # GUI stuff, Ubuntu 16.04+ (Xenial)
+sudo apt install libjpeg8-dev # Needed for mjpeg carrier
+sudo apt install libedit-dev # Enables keyboard arrow keys within an RPC communication channel via terminal
+mkdir -p ~/repos; cd ~/repos # Create $HOME/repos if it doesn't exist; then, enter it
+git clone --branch=yarp-3.4 https://github.com/robotology/yarp
+cd yarp && mkdir build && cd build
+cmake .. -DSKIP_ACE=ON -DCREATE_GUIS=ON -DENABLE_yarpcar_mjpeg=ON -DENABLE_yarpcar_depthimage=ON -DENABLE_yarpcar_depthimage=ON
+make -j$(nproc) # Compile
+sudo make install && sudo ldconfig && cd # Install and go home
+```
+
+For additional options use `ccmake` instead of `cmake`.
+
+## Install YARP 3.3 (Ubuntu 18.04 Bionic)
+
+Install Dependencies that must be installed for compilation:
+
+- [Install CMake 3.12+](install-cmake.md)
 
 Then, installing YARP on Ubuntu is quite straightforward.
 
