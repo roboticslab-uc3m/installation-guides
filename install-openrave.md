@@ -43,36 +43,6 @@ Thus, `apt` would not try to install non-critical packages marked as *recommende
 ### Known Issues (Ubuntu 18.04)
 - In case you run into `non-constant-expression cannot be narrowed from type 'double' to 'float' in initializer list [-Wc++11-narrowing]` errors (happened on OpenRAVE 0.15 and a Clang 6.0.0/7.0.0 compiler), reconfigure CMake with the following option: `cmake .. -DOPT_IKFAST_FLOAT32=OFF`
 
-## Install OpenRAVE (Ubuntu 16.04 and 14.04)
-
-No official PPA, install from source. Note that you will be prompted for your password upon using `sudo`.
-
-```bash
-sudo apt install git
-sudo apt install libboost-filesystem-dev libboost-system-dev libboost-python-dev libboost-thread-dev libboost-iostreams-dev libboost-date-time-dev
-sudo apt install libqt4-dev qt4-dev-tools libxml2-dev libode-dev
-sudo apt install libsoqt4-dev libcoin80-dev
-sudo apt install python-scipy  # For openravepy. Note that Xenial sympy is 0.7.6, see next line
-pip install --upgrade --user sympy==0.7.1 # OpenRAVE ikfast needs sympy 0.7.1, https://github.com/rdiankov/openrave/pull/407
-sudo apt install libcollada-dom2.4-dp-dev  # Open .zae files, only Ubuntu 16.04
-cd  # go home
-mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
-git clone --branch v0.9.0 https://github.com/rdiankov/openrave.git
-cd openrave; mkdir build; cd build
-cmake .. -DOPT_VIDEORECORDING=OFF  # Avoids AV errors
-make -j$(nproc)
-sudo make install; cd  # install and go home
-```
-
-Note that you may end up requiring over 2 GB of free space during the installation of `apt` dependencies. To avoid that, use the `--no-install-recommends` option as in:
-
-`sudo apt install --no-install-recommends package`
-
-Thus, `apt` would not try to install non-critical packages marked as *recommended* by the dependencies of OpenRAVE.
-
-### Known Issues (Ubuntu 16.04)
-- OpenRAVE `v0.9.0` with `gcc-7` fails to compile. Recommendation: switch back to `gcc-5 (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010`.
-
 ## Install Additional Plugins: Flexible Collision Library (FCL)
 
 The following is the Cannonical PPA way, which may not work for you.
