@@ -13,11 +13,14 @@ Legacy documentation regarding OpenRAVE installations can be found at: [(Legacy)
 
 ## Install OpenRAVE (Ubuntu 18.04)
 
-No official PPA, install from source. Note that you will be prompted for your password upon using `sudo`.
+No official PPA, install from source. Install Dependencies that must be installed for compilation:
+
+- [CMake >3.12](install-cmake.md)
+
+Note that you will be prompted for your password upon using `sudo`.
 
 ```bash
 sudo apt install git # probably already installed
-sudo apt install cmake # probably already installed, do not duplicate if installed from source
 sudo apt install libboost-filesystem-dev libboost-system-dev libboost-python-dev libboost-thread-dev libboost-iostreams-dev libboost-numpy-dev
 sudo apt install libqt4-dev qt4-dev-tools libxml2-dev libode-dev
 sudo apt install libsoqt4-dev libcoin80-dev

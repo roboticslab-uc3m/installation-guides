@@ -4,7 +4,11 @@ This is Legacy documentation regarding YARP installations. Updated YARP installa
 
 ## Install OpenRAVE (Ubuntu 16.04 Xenial and 14.04 Trusty)
 
-No official PPA, install from source. Note that you will be prompted for your password upon using `sudo`.
+No official PPA, install from source. Install Dependencies that must be installed for compilation:
+
+- [CMake >3.12](install-cmake.md)
+
+Note that you will be prompted for your password upon using `sudo`.
 
 ```bash
 sudo apt install git
@@ -30,6 +34,7 @@ Note that you may end up requiring over 2 GB of free space during the installati
 Thus, `apt` would not try to install non-critical packages marked as *recommended* by the dependencies of OpenRAVE.
 
 ### Known Issues (Ubuntu 16.04 Xenial)
+
 - OpenRAVE 0.9.0 with `gcc-7` fails to compile. Recommendation: switch back to `gcc-5 (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010`.
 
 ## Install OpenRAVE (Ubuntu 12.04 Precise)
@@ -47,8 +52,9 @@ sudo apt-get install openrave
 Long ago, this was easy. Now, installers such as `openrave-0.9.0-5cfc74-win32-vc100-setup` are broken (due to broken Boost 1.44 and Qt links, as well as old Visual Studio version), so we have to go old-school.
 
 References:
-- http://robots.uc3m.es/index.php/OpenRAVE_R1457_Windows_Install
-- https://www.cs.cmu.edu/~motionplanning/homework/hw1/hw1.html
-- http://openrave.org/docs/latest_stable/coreapihtml/installation_windows.html
-- http://sukhoy.public.iastate.edu/openrave/
-- https://github.com/rdiankov/openrave
+
+- <http://robots.uc3m.es/index.php/OpenRAVE_R1457_Windows_Install>
+- <https://www.cs.cmu.edu/~motionplanning/homework/hw1/hw1.html>
+- <http://openrave.org/docs/latest_stable/coreapihtml/installation_windows.html>
+- <http://sukhoy.public.iastate.edu/openrave/>
+- <https://github.com/rdiankov/openrave>
