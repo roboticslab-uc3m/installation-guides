@@ -6,7 +6,9 @@ Official download page: <https://cmake.org/download/>.
 
 Legacy documentation regarding CMake installations can be found at: [(Legacy) Install CMake](legacy-install-cmake.md)
 
-## Install CMake (Ubuntu 20.04 Focal)
+## Install CMake 3.16+ (Ubuntu 20.04 Focal)
+
+Install CMake 3.16.3 via the conventional Canonical PPA:
 
 ```bash
 sudo apt install cmake
