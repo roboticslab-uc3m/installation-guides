@@ -6,7 +6,7 @@ This is Legacy documentation regarding YARP installations. Updated YARP installa
 
 Install Dependencies that must be installed for compilation:
 
-- [CMake >3.12](install-cmake.md)
+- [Install CMake 3.12+](install-cmake.md)
 
 Then, installing YARP on Ubuntu is quite straightforward.
 
