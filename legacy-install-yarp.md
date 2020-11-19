@@ -27,7 +27,7 @@ sudo apt install libedit-dev # Enables keyboard arrow keys within an RPC communi
 mkdir -p ~/repos; cd ~/repos # Create $HOME/repos if it doesn't exist; then, enter it
 git clone --branch=yarp-3.3 https://github.com/robotology/yarp
 cd yarp && mkdir build && cd build
-cmake .. -DSKIP_ACE=ON -DCREATE_GUIS=ON -DENABLE_yarpcar_mjpeg=ON -DENABLE_yarpcar_depthimage=ON -DENABLE_yarpcar_depthimage=ON
+cmake .. -DSKIP_ACE=ON -DCREATE_GUIS=ON -DENABLE_yarpcar_mjpeg=ON -DENABLE_yarpcar_depthimage=ON -DENABLE_yarpcar_depthimage2=ON
 make -j$(nproc) # Compile
 sudo make install && sudo ldconfig && cd # Install and go home
 ```
