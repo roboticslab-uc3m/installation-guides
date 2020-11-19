@@ -1,4 +1,4 @@
-# Install CoppeliaSim
+# Install CoppeliaSim (formerly, V-REP)
 
 Official page: <https://www.coppeliarobotics.com>
 
