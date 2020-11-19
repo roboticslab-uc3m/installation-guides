@@ -14,6 +14,7 @@ Legacy documentation regarding YARP installations can be found at: [(Legacy) Ins
 Install Dependencies that must be installed for compilation:
 
 - [Install CMake 3.12+](install-cmake.md)
+- [Install YCM 0.11+](install-ycm.md)
 
 Then, installing YARP on Ubuntu is quite straightforward.
 
