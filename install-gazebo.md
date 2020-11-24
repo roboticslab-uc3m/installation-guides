@@ -25,3 +25,9 @@ You may also be interested in:
 ```bash
 sudo apt install libgazebo7-dev
 ```
+
+## Additional Information
+
+### Similar and Related
+
+- <https://github.com/roboticslab-uc3m?q=gazebo> (roboticslab-uc3m)
