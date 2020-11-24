@@ -7,7 +7,7 @@ We use the OpenRAVE core library for simulations. Official links:
 
 Legacy documentation regarding OpenRAVE installations can be found at: [(Legacy) Install OpenRAVE](legacy-install-openrave.md)
 
-## Install OpenRAVE master (Ubuntu 18.04 Bionic)
+## Install OpenRAVE 0.54 (Ubuntu 18.04 Bionic)
 
 No official PPA, install from source. Install Dependencies that must be installed for compilation:
 
