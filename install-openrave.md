@@ -40,7 +40,7 @@ Note that you may end up requiring over 2 GB of free space during the installati
 
 Thus, `apt` would not try to install non-critical packages marked as *recommended* by the dependencies of OpenRAVE.
 
-### Known Issues (Ubuntu 18.04)
+### Known Issues (Ubuntu 18.04 Bionic)
 - In case you run into `non-constant-expression cannot be narrowed from type 'double' to 'float' in initializer list [-Wc++11-narrowing]` errors (happened on OpenRAVE 0.15 and a Clang 6.0.0/7.0.0 compiler), reconfigure CMake with the following option: `cmake .. -DOPT_IKFAST_FLOAT32=OFF`
 
 ## Install Additional Plugins: Flexible Collision Library (FCL)
