@@ -7,6 +7,31 @@ We use the OpenRAVE core library for simulations. Official links:
 
 Legacy documentation regarding OpenRAVE installations can be found at: [(Legacy) Install OpenRAVE](legacy-install-openrave.md)
 
+## Install OpenRAVE 0.54.0 (Ubuntu 20.04 Focal)
+
+No official PPA, install from source. Install Dependencies that must be installed for compilation:
+
+- [Install CMake](install-cmake.md)
+- [Install RapidJSON](install-rapidjson.md)
+
+Note that you will be prompted for your password upon using `sudo`.
+
+```bash
+sudo apt install git # probably already installed
+sudo apt install libboost-filesystem-dev libboost-system-dev libboost-python-dev libboost-thread-dev libboost-iostreams-dev libboost-numpy-dev
+sudo apt install libqt4-dev qt4-dev-tools libxml2-dev libode-dev
+sudo apt install libsoqt4-dev libcoin80-dev
+sudo apt install liblapack-dev
+sudo apt install libcollada-dom2.4-dp-dev  # Open .zae files, avoid cmake 3.19 error on 18.04 Bionic
+cd  # go home
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
+git clone --branch master https://github.com/rdiankov/openrave.git
+cd openrave; mkdir build; cd build
+cmake .. -DOPT_VIDEORECORDING=OFF -DOPT_PYTHON=OFF
+make -j$(nproc)
+sudo make install; cd  # install and go home
+```
+
 ## Install OpenRAVE 0.54.0 (Ubuntu 18.04 Bionic)
 
 No official PPA, install from source. Install Dependencies that must be installed for compilation:
