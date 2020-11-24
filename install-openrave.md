@@ -22,6 +22,7 @@ sudo apt install libboost-filesystem-dev libboost-system-dev libboost-python-dev
 sudo apt install libxml2-dev libode-dev
 sudo apt install liblapack-dev
 sudo apt install libcollada-dom2.4-dp-dev
+sudo apt install libopenscenegraph-dev # OSG 3.6.4 ok with OR 4c43d49895934b61cc286a6b41a10d3661fde465
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone --branch master https://github.com/rdiankov/openrave.git
