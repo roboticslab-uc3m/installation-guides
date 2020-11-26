@@ -11,8 +11,8 @@ Legacy documentation regarding OpenRAVE installations can be found at: [(Legacy)
 
 Tested and works on fresh installs. Easy, but not guaranteed to work, nor to be the fastest mechanism (e.g. fcl not mandatory, and osg could alternatively be installed via `apt` in 20.04 Focal). Provides:
 
-- Ubuntu 18.04 Bionic: OpenRAVE 0.9.0 with Python 2 bindings, FCL, and Qtcoin viewer.
 - Ubuntu 20.04 Focal: OpenRAVE 0.54.0 with Python 2 bindings, FCL, and OpenSceneGraph viewer.
+- Ubuntu 18.04 Bionic: OpenRAVE 0.9.0 with Python 2 bindings, FCL, and Qtcoin viewer.
 
 ```bash
 sudo apt install git # probably already installed
@@ -37,9 +37,11 @@ cd openrave-installation
 ./install-openrave.sh
 ```
 
-Also on 20.04 had to run the [`pip install ipython h5py numpy scipy wheel`](https://github.com/crigroup/openrave-installation/blob/b2766bd789e2432c4485dff189e75cf328f243ec/install-dependencies.sh#L44) line manually, and `rm -rf ~/openrave` to run `./install-openrave.sh` again.
+### Troubleshooting OpenRAVE via scripts (Ubuntu 18.04 Bionic and Ubuntu 20.04 Focal)
 
-Moreover, if Ubuntu installation not fresh, beware of Python 2 vs 3 issues. Troubleshooting, make sure `python --version` gives you Python 2, else `update-alternatives` is your friend.
+Also on 20.04 Focal had to run the [`pip install ipython h5py numpy scipy wheel`](https://github.com/crigroup/openrave-installation/blob/b2766bd789e2432c4485dff189e75cf328f243ec/install-dependencies.sh#L44) line manually, and `rm -rf ~/openrave` to run `./install-openrave.sh` again.
+
+Moreover, if Ubuntu installation not fresh, beware of Python 2 vs 3 issues. Troubleshooting, make sure `python --version` gives you Python 2, else `update-alternatives` is your friend. Finally, in line with this, make sure you have the Python 2 development headers, which should be at `/usr/include/python2.7`.
 
 ## Install OpenRAVE 0.54.0 (Ubuntu 20.04 Focal)
 
