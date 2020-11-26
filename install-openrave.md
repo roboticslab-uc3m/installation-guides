@@ -1,6 +1,6 @@
 # Install OpenRAVE
 
-We use the OpenRAVE core library for simulations. Official links: 
+We use the OpenRAVE core library for simulations. Official links:
 
 - [http://openrave.org](http://openrave.org)
 - [OpenRAVE: Building and Installing](http://openrave.org/docs/latest_stable/coreapihtml/installation.html)
@@ -111,6 +111,7 @@ The CMakes options when recompiling OpenRAVE are `OPT_FCL_COLLISION` / `OPENRAVE
 ## Install Additional Plugins: OpenSceneGraph (OSG)
 
 To get OSG to compile against OpenRAVE, first, you must download a specific version (`OpenSceneGraph-3.4.1` for OpenRAVE `v0.9.0`) and set a CMake flag to use a specific Qt version (`-DDESIRED_QT_VERSION=4` for OpenRAVE `v0.9.0`):
+
 ```bash
 sudo apt-get install libcairo2-dev libjasper-dev libpoppler-glib-dev libsdl2-dev libtiff5-dev libxrandr-dev
 git clone --branch OpenSceneGraph-3.4.1 https://github.com/openscenegraph/OpenSceneGraph
@@ -121,6 +122,7 @@ sudo make install
 ```
 
 Then you must fix a set of environmental variables for OpenRAVE to actually detect OSG (else, error such as `Required > 3.4, failed because detected 3.4.2`):
+
 ```bash
 export LD_LIBRARY_PATH="/usr/local/lib64:/usr/local/lib:$LD_LIBRARY_PATH"
 export OPENTHREADS_INC_DIR="/usr/local/include"
@@ -133,9 +135,11 @@ The CMakes options when recompiling OpenRAVE are `OPT_QTOSG_VIEWER` / `OPENRAVE_
 ## Additional Information
 
 ### Offscreen Rendering (OpenRAVE RGB Cameras)
+
 OpenRAVE requires "Offscreen Rendering" (more specifically called "indirect GLX rendering") to enable virtual RGB cameras in simulated environments. This section summarizes the conclusions from [openrave-yarp-plugins#48](https://github.com/roboticslab-uc3m/openrave-yarp-plugins/issues/48).
 
 #### Symptoms that you have no "Offscreen Rendering"
+
 1. An `offscreen renderer failed (check video driver), disabling` message, then constant `cannot render offscreen` messages.
 1. The OpenRAVE `showsensors` examples open the main environment window, but no separate window is open displaying the RGB camera output:
     - OpenRAVE [src/cppexamples/orshowsensors.cpp](https://github.com/rdiankov/openrave/blob/v0.9.0/src/cppexamples/orshowsensors.cpp)
@@ -145,14 +149,17 @@ OpenRAVE requires "Offscreen Rendering" (more specifically called "indirect GLX 
     - jgvictores [snippets/coin3d](https://github.com/jgvictores/snippets/tree/master/coin3d) ([perma](https://github.com/jgvictores/snippets/tree/385f31bb130cf8373e64a8234fb91222e4a9dddd/coin3d)) (requires `libsimage-dev`)
 
 #### Solution (as of OpenRAVE `v0.9.0`, all requirements must be met)
+
 1. Install working NVIDIA drivers
 1. Create a custom `/usr/share/X11/xorg.conf.d/80-custom-glx.conf` file (in old Ubuntu distros, this would be part of `/etc/X11/xorg.conf`) with the following contents:
-    ```
-    Section "ServerFlags"
-        Option "AllowIndirectGLX" "on"
-        Option "IndirectGLX" "on"
-    EndSection
-    ```
+
+  ```text
+  Section "ServerFlags"
+      Option "AllowIndirectGLX" "on"
+      Option "IndirectGLX" "on"
+  EndSection
+  ```
+
 1. Forget about environmental variables `COIN_FULL_INDIRECT_RENDERING=1` or `COIN_DONT_INFORM_INDIRECT_RENDERING=1` unless you're concerned with warnings: no real effect.
 1. Reboot (resarting the desktop environment should suffice)
 1. For OpenRAVE, use `qtcoin` as viewer (and not `qtosg`): `openrave --viewer qtcoin` (parameter works in several other contexts as well)
@@ -161,14 +168,15 @@ If you have no NVIDIA, probably the most interesting read is at [openrave-yarp-p
 
 ### Generate Databases
 
-- https://github.com/roboticslab-uc3m/teo-openrave-models/tree/master/scripts ([permalink](https://github.com/roboticslab-uc3m/teo-openrave-models/tree/358ddcc067dec62d0034b5a3b5e27926168651bd/scripts))
-- https://github.com/roboticslab-uc3m/teo-openrave-models/issues/3
-- https://github.com/roboticslab-uc3m/openrave-tools
-- https://github.com/roboticslab-uc3m/openrave-yarp-plugins
+- <https://github.com/roboticslab-uc3m/teo-openrave-models/tree/master/scripts> ([permalink](https://github.com/roboticslab-uc3m/teo-openrave-models/tree/358ddcc067dec62d0034b5a3b5e27926168651bd/scripts))
+- <https://github.com/roboticslab-uc3m/teo-openrave-models/issues/3>
+- <https://github.com/roboticslab-uc3m/openrave-tools>
+- <https://github.com/roboticslab-uc3m/openrave-yarp-plugins>
 
 ### Source Code Hacks
 
 Here's a small patch tested on OpenRAVE `v0.9.0` to enhance console output on joint limits (provides joint name, and angles in degrees):
+
 ```bash
 cd $HOME/repos/openrave
 wget https://github.com/roboticslab-uc3m/openrave-yarp-plugins/files/3896779/98-limit-output.patch.log
@@ -181,37 +189,42 @@ sudo make install; cd  # install and go home
 ```
 
 ### Tutorials and Examples
-- http://openrave.org/docs/latest_stable/examples
-- http://openrave.org/docs/latest_stable/coreapihtml/cpp_examples.html
-- https://scaron.info/teaching/getting-started-with-openrave.html
-- https://legacy.gitbook.com/book/crigroup/osrobotics ([gitbook](https://crigroup.gitbooks.io/osrobotics))
+
+- <http://openrave.org/docs/latest_stable/examples>
+- <http://openrave.org/docs/latest_stable/coreapihtml/cpp_examples.html>
+- <https://scaron.info/teaching/getting-started-with-openrave.html>
+- <https://legacy.gitbook.com/book/crigroup/osrobotics> ([gitbook](https://crigroup.gitbooks.io/osrobotics))
 
 ### Similar and Related Projects
-- https://github.com/roboticslab-uc3m?q=openrave (roboticslab-uc3m)
-- https://github.com/personalrobotics?q=openrave
-- https://github.com/stephane-caron?tab=repositories&q=openrave
-- https://github.com/crigroup?q=openrave
-- https://github.com/roboticsleeds?q=openrave
-- https://github.com/jsk-ros-pkg/openrave_planning
-- https://github.com/BerkeleyAutomation/OpenRAVE-motion-planner
-- https://github.com/gtrll/orgpmp2
-- http://opengrasp.sourceforge.net (https://sourceforge.net/p/opengrasp/code/HEAD/tree/)
-- http://www.iearobotics.com/wiki/index.php?title=OpenRave_y_robots_modulares
-- http://openrave.programmingvision.com/wiki/index.php/Projects
-- https://github.com/MichalXh/debug_ikfast
+
+- <https://github.com/roboticslab-uc3m?q=openrave> (roboticslab-uc3m)
+- <https://github.com/personalrobotics?q=openrave>
+- <https://github.com/stephane-caron?tab=repositories&q=openrave>
+- <https://github.com/crigroup?q=openrave>
+- <https://github.com/roboticsleeds?q=openrave>
+- <https://github.com/jsk-ros-pkg/openrave_planning>
+- <https://github.com/BerkeleyAutomation/OpenRAVE-motion-planner>
+- <https://github.com/gtrll/orgpmp2>
+- <http://opengrasp.sourceforge.net> (<https://sourceforge.net/p/opengrasp/code/HEAD/tree/>)
+- <http://www.iearobotics.com/wiki/index.php?title=OpenRave_y_robots_modulares>
+- <http://openrave.programmingvision.com/wiki/index.php/Projects>
+- <https://github.com/MichalXh/debug_ikfast>
 
 ## External Installation Tutorial/Script Links
-- https://scaron.info/teaching/installing-openrave-on-ubuntu-16.04.html
-- https://github.com/crigroup/openrave-installation
-   - Older by same user: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)].
-   - Older by same user: [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)].
+
+- <https://scaron.info/teaching/installing-openrave-on-ubuntu-16.04.html>
+- <https://github.com/crigroup/openrave-installation>
+  - Older by same user: [[ref1, trusty, see next link if still in trouble with FCL](http://fsuarez6.github.io/blog/openrave-trusty/)].
+  - Older by same user: [[ref2, xenial](http://fsuarez6.github.io/blog/workstation-setup-xenial/)].
 - [[ref3, xenial](http://www.aizac.info/installing-openrave0-9-on-ubuntu-trusty-14-04-64bit/)].
 - Not tested: ROS packages such as [`ros-indigo-openrave`/`ros-kinetic-openrave`](http://wiki.ros.org/openrave). According to [this](https://answers.ros.org/question/243441/how-to-install-openrave/), should be fine but perhaps missing components such as `openravepy`. According to [http://docs.ros.org/melodic/api/moveit_tutorials/html/doc/ikfast/ikfast_tutorial.html](http://docs.ros.org/melodic/api/moveit_tutorials/html/doc/ikfast/ikfast_tutorial.html#openrave-installation), may be as easy as:
-    ```bash
-    sudo apt install ros-indigo-openrave
-    export PYTHONPATH=$PYTHONPATH:`openrave-config --python-dir`
-    ```
+
+  ```bash
+  sudo apt install ros-indigo-openrave
+  export PYTHONPATH=$PYTHONPATH:`openrave-config --python-dir`
+  ```
+
 - Docker
-    - https://hub.docker.com/search?q=openrave&type=image
-    - https://hub.docker.com/r/hamzamerzic/openrave
-    - https://hub.docker.com/r/personalrobotics/ros-openrave
+  - <https://hub.docker.com/search?q=openrave&type=image>
+  - <https://hub.docker.com/r/hamzamerzic/openrave>
+  - <https://hub.docker.com/r/personalrobotics/ros-openrave>
