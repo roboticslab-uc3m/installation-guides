@@ -4,10 +4,16 @@ NPM (Node.js Package Manager) is the package manager for [Node.js](install-node.
 
 Official page: [link](https://www.npmjs.com)
 
-## Install NPM (Ubuntu 20.04)
+## Install NPM (Ubuntu 20.04 Focal)
 
 ```bash
 sudo apt install npm # Install npm 6.14.4
+```
+
+## Install NPM (Ubuntu 18.04 Bionic)
+
+```bash
+sudo apt install npm # Install npm 3.5.2
 ```
 
 ## Install NPM (Ubuntu)
