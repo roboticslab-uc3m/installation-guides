@@ -23,3 +23,37 @@ sudo apt install nodejs # install node 8.10.0
 ```bash
 sudo apt install nodejs-legacy # install node 4.2.6
 ```
+
+## Install specific Node.js version (Ubuntu)
+
+First remove node:
+
+```bash
+sudo apt-get remove nodejs npm  
+```
+
+Then update & upgrade:
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+Then get your desired Node version:
+
+```bash
+//where setup_12.x, replace with desired major version
+curl -sL deb.nodesource.com/setup_12.x | sudo -E bash - 
+```
+
+And then install your new node version:
+
+```bash
+sudo apt-get install -y nodejs
+```
+
+## Check installed Node.js version
+
+```bash
+node -v
+```
