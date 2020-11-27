@@ -39,10 +39,9 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-Then get your desired Node version:
+Then get your desired Node version (where setup_12.x, replace with desired major version):
 
 ```bash
-//where setup_12.x, replace with desired major version
 curl -sL deb.nodesource.com/setup_12.x | sudo -E bash - 
 ```
 
