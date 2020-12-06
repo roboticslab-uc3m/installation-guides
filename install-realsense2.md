@@ -47,3 +47,7 @@ You'll need to copy or symlink udev rules prior to using the camera:
 ```bash
 sudo ln -s ~/repos/librealsense/config/99-realsense-libusb.rules /etc/udev/rules.d/99-realsense-libusb.rules
 ```
+
+## Working setups
+
+- Ubuntu 18.04 Bionic with kernel `4.15.0-126-generic` (`linux-image-generic` with `linux-headers-generic`). Via `sudo apt install librealsense2-dkms` got `modinfo uvcvideo | grep "version:"` to return `version: 1.1.2.realsense-1.3.14 srcversion: BE1821F94C3D410077ACD10`. Due to ROS Melodic dependencies, had to compile apart, `v2.29.0`, got `realsense-viewer` which helped upgrade the sensor firmware to `05.11.15.00` and finally get rid of the "recognized as Keyboard". Aditionally, only recognizes USB 2.1, and have to set 6 fps.
