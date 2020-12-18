@@ -3,7 +3,7 @@
 Official page: [link](https://gym.openai.com).
 Official install: [link](https://github.com/openai/gym#installation) and [link](https://gym.openai.com/docs/#installation).
 
-## Install OpenAI Gym (Ubuntu 16.04)
+## Install OpenAI Gym (Ubuntu)
 
 ```bash
 sudo -H pip install gym
