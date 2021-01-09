@@ -1,6 +1,9 @@
 # Install Webots
 
-Official page: <https://cyberbotics.com/>
+Official pages:
+
+- <https://cyberbotics.com>
+- <https://cyberbotics.com/doc/guide/installation-procedure>
 
 ## Install Webots (all platforms)
 
