@@ -147,7 +147,13 @@ make -j$(nproc)  # compile
 sudo make install && sudo ldconfig && cd # Install and go home
 ```
 
-You should now be able to launch `python` and `import yarp`.
+#### Install Python bindings (checking)
+
+Check your installation via (should output nothing; if bad you will see a ModuleNotFoundError):
+
+```
+python -c "import yarp"
+```
 
 #### Install Python bindings (troubleshooting)
 
@@ -164,7 +170,14 @@ sudo apt install libpython3-dev
 cmake -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON -DYARP_USE_PYTHON_VERSION=3.5 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so -DCMAKE_INSTALL_PYTHONDIR=lib/python3.5/dist-packages -DPYTHON_EXECUTABLE=/usr/bin/python3 ..
 ```
 
-In this specific case, `CMAKE_INSTALL_PYTHONDIR` is apparently ignored, so you should:
+For many Python 3.x, `CMAKE_INSTALL_PYTHONDIR` is apparently ignored, so `python -c "import site; print(site.getsitepackages())"` is your friend, most probably the first element `python -c "import site; print(site.getsitepackages()[0])"` is good for you. You may have to:
+
+```bash
+sudo ln -s /usr/local/lib/python3/dist-packages/_yarp.so `python -c "import site; print(site.getsitepackages()[0])"`
+sudo ln -s /usr/local/lib/python3/dist-packages/yarp.py `python -c "import site; print(site.getsitepackages()[0])"`
+```
+
+Specifically for Python 3.5m this will expand to:
 
 ```bash
 sudo ln -s /usr/local/lib/python3/dist-packages/_yarp.so /usr/local/lib/python3.5/dist-packages/
