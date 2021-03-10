@@ -2,9 +2,13 @@
 
 Official page: <https://nodejs.org>
 
-Many updated versions for package managers can be found at: <https://nodejs.org/en/download/package-manager/>
-
 You may also be interested in [NPM](install-npm.md) (Node.js Package Manager).
+
+## Install Node.js (all platforms)
+
+Main downloads page (now already includes `npm`): <https://nodejs.org/en/download>
+
+Many updated versions for package managers can be found at: <https://nodejs.org/en/download/package-manager/>
 
 ## Install Node.js (Ubuntu 20.04 Focal)
 
