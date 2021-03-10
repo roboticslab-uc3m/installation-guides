@@ -10,7 +10,7 @@ First:
 
 - [Install NPM](install-npm.md)
 - [Install Node.js](install-node.md)
-  - Note that `gitbook 3.2.3` works with `node 10.19.0`, but not with `node 14.x`.
+  - Note that `gitbook 3.2.3` works with `node 10.19.0` and `node 10.24.0`, but not with `node 14.x`.
 
 Then:
 
