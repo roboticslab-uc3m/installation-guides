@@ -1,12 +1,12 @@
 # Install NPM
 
-NPM (Node.js Package Manager) is the package manager for [Node.js](install-node.md). We use it for [gitbook](install-gitbook.md) and similar.
+NPM (Node.js Package Manager) is the package manager for [Node.js](install-nodejs.md). We use it for [gitbook](install-gitbook.md) and similar.
 
 Official page: <https://www.npmjs.com>
 
 ## Install NPM (all platforms)
 
-Official [Node.js](install-node.md) installers now typically come with `npm` included.
+Official [Node.js](install-nodejs.md) installers now typically come with `npm` included.
 
 ## Install NPM (Ubuntu 20.04 Focal)
 
