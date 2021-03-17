@@ -6,8 +6,10 @@ Official page: [link](https://jekyllrb.com).
 
 ## Install Jekyll (Ubuntu)
 
+Bundler requires Ruby version >= 2.3.0, which is the default for Ubuntu 18.04 Bionic and Ubuntu 20.04 Focal
+
 ```bash
-sudo apt install ruby2.3-dev # bundler requires Ruby version >= 2.3.0
+sudo apt install ruby-dev
 sudo gem install bundler jekyll
 ```
 
