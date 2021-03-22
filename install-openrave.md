@@ -15,7 +15,7 @@ Tested and works on fresh installs. Easy, but not guaranteed to work, nor to be 
 - Ubuntu 18.04 Bionic: OpenRAVE 0.9.0 with Python 2 bindings, FCL, and Qtcoin viewer.
 
 ```bash
-sudo apt install git # probably already installed
+sudo apt install git lsb-release # probably already installed
 ```
 
 On a fresh 20.04 Focal had to configure git email and user, even dummy okay:
