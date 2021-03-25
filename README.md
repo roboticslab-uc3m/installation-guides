@@ -4,7 +4,7 @@
 
 Installation Guides @ [roboticslab-uc3m](https://github.com/roboticslab-uc3m)
 
-Currently hosted at http://robots.uc3m.es/gitbook-installation-guides
+Currently hosted at https://roboticslab-uc3m.github.io/installation-guides/
 
 ## If you have any doubts or comments
 Please read the Developer Manual's [Asking Questions](http://robots.uc3m.es/gitbook-developer-manual/asking-questions.html) section, and once you've succeded with its [self-evaluation](http://robots.uc3m.es/gitbook-developer-manual/asking-questions.html#self-evaluation-time) follow the recommendations by commenting publicly [HERE](https://github.com/roboticslab-uc3m/installation-guides/issues/new) if required
