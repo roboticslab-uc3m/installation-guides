@@ -155,29 +155,35 @@ Check your installation via (should output nothing; if bad you will see a Module
 python -c "import yarp"
 ```
 
+Depending on your configuration, you might need to use `python3` (or `python2`) instead of `python`.
+
 #### Install Python bindings (troubleshooting)
 
-Mind that, **starting from YARP 3.4, support for Python 2.x has been dropped**. You can use the CMake variable `CMAKE_INSTALL_PYTHON3DIR` to select the most adequate location for the installed module. This is useful in case the interpreter is unable to find it (`python3 -c "import yarp"`). For instance, you can end up with the YARP module installed in `lib/python3/`, whereas standard Python module path might be `lib/python3.6/` (this has been observed on Ubuntu Bionic). For this specific scenario:
+Mind that, **starting from YARP 3.4, support for Python 2.x has been dropped**.
+
+You can use the CMake variable `CMAKE_INSTALL_PYTHON3DIR` to select the most adequate location for the installed module (in YARP 3.3 and earlier, use `CMAKE_INSTALL_PYTHONDIR` along with `YARP_USE_PYTHON_VERSION`, more details below). This is useful in case the interpreter is unable to find it (see previous section). For instance, you can end up with the YARP module installed in `lib/python3/`, whereas standard Python module path might be `lib/python3.6/` (this has been observed on Ubuntu Bionic and Focal). For this specific scenario:
 
 ```bash
-cmake -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON -DCMAKE_INSTALL_PYTHON3DIR=lib/python3.6/dist-packages ..
+cmake -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON -DCMAKE_INSTALL_PYTHON3DIR:PATH=lib/python3.6/dist-packages ..
 ```
 
-Extra care should be taken with multiple Python versions (e.g. 2.x vs 3.x) in earlier releases. The following command has been tested on Ubuntu Xenial to force Python 3.5m (note distro version is 3.5m, where `m` is `--with-pymalloc`; [ref](https://www.python.org/dev/peps/pep-3149/#proposal)):
+Don't omit the `:PATH`!
+
+Extra care should be taken with multiple Python versions (e.g. 2.x vs 3.x) in earlier YARP releases. Use `YARP_USE_PYTHON_VERSION` to select the desired version. The following command has been tested on Ubuntu Xenial to force Python 3.5m (note distro version is 3.5m, where `m` is `--with-pymalloc`; [ref](https://www.python.org/dev/peps/pep-3149/#proposal)):
 
 ```bash
 sudo apt install libpython3-dev
-cmake -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON -DYARP_USE_PYTHON_VERSION=3.5 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so -DCMAKE_INSTALL_PYTHONDIR=lib/python3.5/dist-packages -DPYTHON_EXECUTABLE=/usr/bin/python3 ..
+cmake -DYARP_COMPILE_BINDINGS=ON -DCREATE_PYTHON=ON -DYARP_USE_PYTHON_VERSION=3.5 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so -DCMAKE_INSTALL_PYTHONDIR:PATH=lib/python3.5/dist-packages -DPYTHON_EXECUTABLE=/usr/bin/python3 ..
 ```
 
-For many Python 3.x, `CMAKE_INSTALL_PYTHONDIR` is apparently ignored, so `python -c "import site; print(site.getsitepackages())"` is your friend, most probably the first element `python -c "import site; print(site.getsitepackages()[0])"` is good for you. You may have to:
+Prior to YARP 3.4 the `CMAKE_INSTALL_PYTHONDIR` option might be ignored, therefore we suggest to create symlinks. Use `python -c "import site; print(site.getsitepackages()[0])"` to retrieve a list of possible destinations of Python modules, ideally the first element would be good enough for your needs. Then:
 
 ```bash
 sudo ln -s /usr/local/lib/python3/dist-packages/_yarp.so `python -c "import site; print(site.getsitepackages()[0])"`
 sudo ln -s /usr/local/lib/python3/dist-packages/yarp.py `python -c "import site; print(site.getsitepackages()[0])"`
 ```
 
-Specifically for Python 3.5m this will expand to:
+Specifically for Python 3.5m, this may expand to:
 
 ```bash
 sudo ln -s /usr/local/lib/python3/dist-packages/_yarp.so /usr/local/lib/python3.5/dist-packages/
