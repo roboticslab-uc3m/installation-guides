@@ -70,3 +70,7 @@ sudo ln -s ~/repos/librealsense/config/99-realsense-libusb.rules /etc/udev/rules
 srcversion: 7DDF3FE59FEE362F69D0241`. Due to Ubuntu system dependencies (mostly graphical/`libgtk-3-dev`-related), had to compile apart. Used `v2.29.0` to maintain installation close to that of Ubuntu 18.04 Bionic machine (at time of writing, below), got `realsense-viewer` which was compatible with sensor firmware `05.11.15.00`. Again, only recognizes USB 2.1, and have to set 6 fps.
 
 - Ubuntu 18.04 Bionic: Kernel `4.15.0-126-generic` (`linux-image-generic` with `linux-headers-generic`). Via `sudo apt install librealsense2-dkms` got `modinfo uvcvideo | grep "version:"` to return `version: 1.1.2.realsense-1.3.14 srcversion: BE1821F94C3D410077ACD10`. Due to ROS Melodic dependencies (mostly graphical/`libgtk-3-dev`-related), had to compile apart, `v2.29.0`, got `realsense-viewer` which helped upgrade the sensor firmware to `05.11.15.00` and finally get rid of the "recognized as Keyboard" (as well as the `uvcvideo: Failed to query (GET_CUR) UVC control 1 on unit 3`). Aditionally, only recognizes USB 2.1, and have to set 6 fps.
+
+## Similar and Related
+
+- [robotology/yarp-device-realsense2](https://github.com/robotology/yarp-device-realsense2)
