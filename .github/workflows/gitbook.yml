@@ -1,0 +1,30 @@
+name: GitBook
+
+on:
+  push:
+    branches:
+    - master
+    paths-ignore:
+    - README.md
+    - CONTRIBUTING.md
+    - CMakeLists.txt
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: fkirc/skip-duplicate-actions@master
+      with:
+        cancel_others: 'true'
+    - uses: actions/checkout@v2
+    - name: Run GitBook
+      run: |
+        docker run --rm -v $GITHUB_WORKSPACE:/gitbook ghcr.io/roboticslab-uc3m/gitbook:latest book summary
+        docker run --rm -v $GITHUB_WORKSPACE:/gitbook ghcr.io/roboticslab-uc3m/gitbook:latest gitbook install
+        docker run --rm -v $GITHUB_WORKSPACE:/gitbook ghcr.io/roboticslab-uc3m/gitbook:latest gitbook build
+    - uses: crazy-max/ghaction-github-pages@v2
+      with:
+        build_dir: _book
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
