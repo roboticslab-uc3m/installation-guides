@@ -2,6 +2,21 @@
 
 We use `gstreamer` with `pocketsphinx` within speech recognition.
 
+## Install gstreamer with pocketsphinx (Ubuntu 20.04 Focal)
+
+```bash
+sudo apt install pocketsphinx libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-pocketsphinx
+```
+
+Next, you can verify the detection of Spanish sentences on the dictionary and models hosted in our [speech](https://github.com/roboticslab-uc3m/speech) repository.
+
+```bash
+cd speech/share
+pocketsphinx_continuous -inmic yes -lm dictionary/es-20k.lm -dict dictionary/es-20k.dic -hmm model/es/
+```
+
+Check out the following sections if something goes wrong.
+
 ## Install gstreamer
 
 ```bash
