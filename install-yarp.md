@@ -4,8 +4,7 @@ We use YARP for communications. Official pages:
 
 - [http://www.yarp.it](http://www.yarp.it)
 - [http://www.yarp.it/install.html](http://www.yarp.it/install.html)
-- [YARP Supported Distributions
-](http://wiki.icub.org/wiki/YARP_Supported_Distributions)
+- [YARP Supported Distributions](http://wiki.icub.org/wiki/YARP_Supported_Distributions)
 - Also check out issue that tracks external devices: <https://github.com/robotology/yarp/issues/2372>
 
 Legacy documentation regarding YARP installations can be found at: [(Legacy) Install YARP](legacy-install-yarp.md)
@@ -248,12 +247,12 @@ Two options here:
 ### Tutorials and Examples
 
 - Tutorials
-  - [YARP Tutorial (Spanish)](http://wiki.asrob.uc3m.es/gitbook-tutoriales/software/programming/yarp.html) ([perma](https://github.com/asrob-uc3m/tutoriales/blob/694b1bf6efeb716493272b9553cc9561812c7960/software/programming/yarp.md))
+  - [YARP Tutorial (Spanish)](https://asrob.uc3m.es/tutoriales/software/programming/yarp.html) ([perma](https://github.com/asrob-uc3m/tutoriales/blob/694b1bf6efeb716493272b9553cc9561812c7960/software/programming/yarp.md))
   - [YARP Devices Tutorial (Spanish)](http://wiki.asrob.uc3m.es/index.php/Tutorial_yarp_devices)
 - Recommendations
-  - [Programming with YARP](http://robots.uc3m.es/gitbook-developer-manual/programming-with-yarp.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/c0cb6952e14079b3fcf9d36e1830b92c07bf8bde/programming-with-yarp.md))
+  - [Programming with YARP](https://robots.uc3m.es/developer-manual/programming-with-yarp.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/c0cb6952e14079b3fcf9d36e1830b92c07bf8bde/programming-with-yarp.md))
 - Hacks and tricks
-  - [YARP Tricks](http://robots.uc3m.es/gitbook-developer-manual/appendix/yarp-tricks.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/9c11c75d4ef5de8ac43a90ab3184fdf8e85a3290/appendix/yarp-tricks.md))
+  - [YARP Tricks](https://robots.uc3m.es/developer-manual/appendix/yarp-tricks.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/9c11c75d4ef5de8ac43a90ab3184fdf8e85a3290/appendix/yarp-tricks.md))
   - <http://wiki.icub.org/wiki/YarpTricks>
 - Examples
   - <https://github.com/robotology/yarp/tree/master/example> ([perma](https://github.com/robotology/yarp/tree/fcbd455603e13a5ddc439f9d4592bf000b8dcdff/example)) (official, C++)
