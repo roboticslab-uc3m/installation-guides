@@ -248,7 +248,7 @@ Two options here:
 
 - Tutorials
   - [YARP Tutorial (Spanish)](https://asrob.uc3m.es/tutoriales/software/programming/yarp.html) ([perma](https://github.com/asrob-uc3m/tutoriales/blob/694b1bf6efeb716493272b9553cc9561812c7960/software/programming/yarp.md))
-  - [YARP Devices Tutorial (Spanish)](https://apps-robots.uc3m.es/asrob/wiki/index.php/Tutorial_yarp_devices)
+  - [YARP Devices Tutorial (Spanish)](https://apps-robots.uc3m.es/asrob/wiki/Tutorial_yarp_devices)
 - Recommendations
   - [Programming with YARP](https://robots.uc3m.es/developer-manual/programming-with-yarp.html) ([perma](https://github.com/roboticslab-uc3m/developer-manual/blob/c0cb6952e14079b3fcf9d36e1830b92c07bf8bde/programming-with-yarp.md))
 - Hacks and tricks
