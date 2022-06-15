@@ -11,8 +11,8 @@ sudo apt install pocketsphinx libgstreamer1.0-dev libgstreamer-plugins-base1.0-d
 Next, you can verify the detection of Spanish sentences on the dictionary and models hosted in our [speech](https://github.com/roboticslab-uc3m/speech) repository.
 
 ```bash
-cd speech/share
-pocketsphinx_continuous -inmic yes -lm dictionary/es-20k.lm -dict dictionary/es-20k.dic -hmm model/es/
+cd ~/repos/speech/share/speechRecognition
+pocketsphinx_continuous -inmic yes -lm dictionary/20k-es.lm -dict dictionary/20k-es.dic -hmm model/es/
 ```
 
 Check out the following sections if something goes wrong.
