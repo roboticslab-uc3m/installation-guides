@@ -1,19 +1,26 @@
 # Install JR3
 
-Download, compile and install JR3 kernel driver.
+Download and compile JR3 kernel driver:
 ```bash
 cd  # go home
 mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
 git clone https://github.com/roboticslab-uc3m/jr3pci-linux
 cd jr3pci-linux
 make
+```
+
+In order to install and load the driver in kernel, at this point you may go away with a simple `sudo make install`. This will also install the IOCTL header for use by dependent project (such as our YARP device). To achieve the latter in an isolated manner, use `sudo make install-header`.
+
+The traditional way we used to do this instead is detailed below (beware: the header will need to be installed manually):
+
+```bash
 cd /lib/modules/$(uname -r)/kernel/drivers
 sudo mkdir -p jr3
 sudo cp $HOME/repos/jr3pci-linux/jr3pci-driver.ko jr3/
 sudo depmod
 ```
 
-To load the compiled driver, add the following lines to `/etc/rc.local` (lines before the exit) to automatically run the jr3 module in the PC switching on (may require `sudo` if run manually):
+In case the compiled driver is not regitered and loaded automatically, add the following lines to `/etc/rc.local` (lines before the exit) to load the jr3 kernel module on startup (may require `sudo` if run manually):
 
 ```bash
 modprobe jr3pci-driver  # Replaces: insmod jr3pci-driver.ko
@@ -37,7 +44,15 @@ chmod +x /etc/rc.local
 
 ## View JR3 data
 
-In order to  run the acquisition program for all sensors data acquisition:
+There is a handy ncurses utility included in the driver repository. Make sure you have installed the Ncurses library and then compile the application:
+
+```bash
+sudo apt install libncurses-dev
+cd repos/jr3pci-linux
+make jr3mon
+```
+
+If you want to go the YARP way, then you can use our acquisition device:
 1. Install https://github.com/roboticslab-uc3m/yarp-devices
 1. Go to manipulation PC:
    ```
