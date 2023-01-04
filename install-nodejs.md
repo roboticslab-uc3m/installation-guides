@@ -4,6 +4,12 @@ Official page: <https://nodejs.org>
 
 You may also be interested in [NPM](install-npm.md) (Node.js Package Manager).
 
+## Install Node.js via Node Version Manager (linux, macOS, WSL)
+
+In practice, it may be useful to be able to quickly install and use different versions of Node.js via the command line.
+
+See <https://github.com/nvm-sh/nvm#installing-and-updating>
+
 ## Install Node.js (all platforms)
 
 Main downloads page (now already includes `npm`): <https://nodejs.org/en/download>
