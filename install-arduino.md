@@ -57,3 +57,7 @@ Try each (thanks `david_2018` at <https://forum.arduino.cc/t/solved-can-not-uplo
 
 - Tools > Processor: "ATmega328P"
 - Tools> Processor: "ATmega328P (Old Bootloader)"
+
+### Tutorials and Examples
+
+- <https://programarfacil.com/blog/arduino-blog/curso-de-arduino/>
