@@ -8,6 +8,8 @@ sudo apt install arduino
 
 ## Troubleshooting
 
+### Arduino does not open (Ubuntu 22.04 Jammy)
+
 Issue <https://bugs.launchpad.net/ubuntu/+source/arduino/+bug/1916278> (Ubuntu 22.04.1 Jammy):
 
 ```
@@ -34,3 +36,24 @@ Solution (via <https://bugs.launchpad.net/ubuntu/+source/arduino/+bug/1916278/co
 sudo apt install libserialport0 patchelf
 sudo patchelf --add-needed /usr/lib/x86_64-linux-gnu/libserialport.so.0 /usr/lib/x86_64-linux-gnu/liblistSerialsj.so.1.4.0
 ```
+
+### No ports in Tools: Ports (Ubuntu 22.04 Jammy)
+
+Inspecting in `dmesg`/`tail -f /var/log/syslog`, lots of `brltty`. Solution (via `flaviut` at <https://unix.stackexchange.com/questions/670636/unable-to-use-usb-dongle-based-on-usb-serial-converter-chip/670637#670637>):
+
+```bash
+for f in /usr/lib/udev/rules.d/*brltty*.rules; do
+    sudo ln -s /dev/null "/etc/udev/rules.d/$(basename "$f")"
+done
+sudo udevadm control --reload-rules
+sudo systemctl mask brltty.path
+```
+
+And reboot!
+
+### avrdude: stk500_recv(): programmer is not responding (Arduino Nano)
+
+Try each (thanks `david_2018` at <https://forum.arduino.cc/t/solved-can-not-upload-to-nano-after-ubuntu-update-feb-04-2022/955456/3>):
+
+- Tools > Processor: "ATmega328P"
+- Tools> Processor: "ATmega328P (Old Bootloader)"
