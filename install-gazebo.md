@@ -2,6 +2,20 @@
 
 Official page: <http://gazebosim.org>
 
+## Install Gazebo (Ubuntu 22.04)
+
+Isntall Gazebo 11 via:
+
+```bash
+sudo apt install gazebo
+```
+
+You may also be interested in:
+
+```bash
+sudo apt install libgazebo-dev
+```
+
 ## Install Gazebo (Ubuntu 18.04 and 20.04)
 
 ```bash
