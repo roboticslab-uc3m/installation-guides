@@ -1,4 +1,6 @@
-# Install OpenAI Gym
+# (Legacy) Install OpenAI Gym
+
+This is Legacy documentation regarding OpenAI Gym installations. Updated Gymnasium installation at: [Install Gymnasium](install-gymnasium.md)
 
 Official page: [link](https://gym.openai.com).
 Official install: [link](https://github.com/openai/gym#installation) and [link](https://gym.openai.com/docs/#installation).

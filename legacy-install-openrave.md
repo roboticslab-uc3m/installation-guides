@@ -1,6 +1,6 @@
 # (Legacy) Install OpenRAVE
 
-This is Legacy documentation regarding YARP installations. Updated YARP installation at: [Install OpenRAVE](install-openrave.md)
+This is Legacy documentation regarding OpenRAVE installations. Updated OpenRAVE installation at: [Install OpenRAVE](install-openrave.md)
 
 ## Install OpenRAVE 0.9.0 (Ubuntu 16.04 Xenial and 14.04 Trusty)
 
