@@ -4,11 +4,9 @@
 
 ```bash
 cd  # go home
-mkdir -p repos && cd repos  # make $HOME/repos if it doesn't exist; then, enter it		
-git clone https://github.com/roboticslab-uc3m/yarp-devices.git  # Download yarp-devices software from the repository		
-cd  # go home
 mkdir -p src && cd src  # make $HOME/src if it doesn't exist; then, enter it
-tar xvf ../yarp-devices/extern/hcanpci/linux-2-6-32/100_hcanpci_linux-v1207en-edi1822.tar.gz
+wget https://sourceforge.net/projects/roboticslab/files/External/hcanpci/linux-2-6-32/100_hcanpci_linux-v1207en-edi1822.tar.gz
+tar -xzf 100_hcanpci_linux-v1207en-edi1822.tar.gz
 cd hcanpci_linux-v1207en/driver
 make
 sudo mkdir /lib/modules/2.6.32-5-686/kernel/can
@@ -22,7 +20,7 @@ sudo ln -s $PWD/driver/makenodes.sh /usr/local/bin
 ```bash
 cd  # go home
 cd repos
-git clone https://github.com/munozyanez/hc-driver-4.9
+git clone https://github.com/roboticslab-uc3m/hc-driver-4.9
 cd hc-driver-4.9/miniPCI2to4CH/driver
 make
 sudo mkdir /lib/modules/4.4.0-31-generic/kernel/can
