@@ -13,6 +13,12 @@ sudo apt install autoconf intltool python-gobject-dev gobject-introspection gtk-
 5. Run `./configure`
 6. Run `make`
 7. Run `sudo make install`
+8. Run `sudo ldconfig`
+9. Install the [udev rules](https://www.flir.com/support-center/iis/machine-vision/application-note/getting-started-with-aravis-in-linux/) in `/etc/udev/rules.d/aravis.rules`:
+   ```
+   # FLIR Integrated Imaging Solutions
+   SUBSYSTEM=="usb", ATTRS {idVendor}=="1e10", MODE:="0666", TAG+="uaccess", TAG+="udev-acl"
+   ```
 
 ## If you need some special features...
 Depending on what you need, you have to call autogen with different parameters.
