@@ -5,7 +5,7 @@
 ```
 sudo apt install glib-2.0 gobject-2.0 gio-2.0 libxml-2.0 thread-2.0 zlib gstreamer-base-1.0 streamer-app-1.0 gstreamer-base-0.10 gstreamer-app-0.10 gstreamer-video-1.0 gtk+-3.0 libnotify
 ```
-3. Install even more dependiencies:
+3. Install even more dependencies:
 ```
 sudo apt install autoconf intltool python-gobject-dev gobject-introspection gtk-doc-tools libgstreamer0.10-dev python-gst0.10-dev libxml2-dev
 ```
@@ -14,7 +14,7 @@ sudo apt install autoconf intltool python-gobject-dev gobject-introspection gtk-
 6. Run `make`
 7. Run `sudo make install`
 8. Run `sudo ldconfig`
-9. Copy the [udev rules](https://github.com/AravisProject/aravis/blob/0d1ffd1b19e10927739aa398bad0f8d2fab967ca/src/aravis.rules) into `/etc/udev/rules.d/aravis.rules` ([source](https://www.flir.com/support-center/iis/machine-vision/application-note/getting-started-with-aravis-in-linux/)):
+9. (for USB cameras only) Copy the [udev rules](https://github.com/AravisProject/aravis/blob/0d1ffd1b19e10927739aa398bad0f8d2fab967ca/src/aravis.rules) into `/etc/udev/rules.d/aravis.rules` ([source](https://www.flir.com/support-center/iis/machine-vision/application-note/getting-started-with-aravis-in-linux/)):
    ```
    # FLIR Integrated Imaging Solutions
    SUBSYSTEM=="usb", ATTRS {idVendor}=="1e10", MODE:="0666", TAG+="uaccess", TAG+="udev-acl"
