@@ -6,13 +6,8 @@
 sudo apt install git
 ```
 
-## Set your username and e-mail
+## Additional Information
 
-Set your username and e-mail. Type the following commands anywhere, filling the corresponding fields:
+### Tutorials and Examples
 
-```bash
-git config --global user.name "My Username"
-git config --global user.email "user@example.com"
-```
-
-You may set these values on a per-repository basis. In order to achieve that, browse to the root directory of the desired repo and type the previous commands, replacing `--global` with `--local`.
+- <https://asrob.uc3m.es/tutoriales/software/version-control/git.html>
