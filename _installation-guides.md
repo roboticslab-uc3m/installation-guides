@@ -6,9 +6,9 @@ Installation Guides @ [roboticslab-uc3m](https://github.com/roboticslab-uc3m)
 
 Click on the option you want, or use the arrows to move sequentially
 
-## Additional notes
+## Editing Installation Guides
 
-The content of this documentation is generated from files hosted at <https://github.com/roboticslab-uc3m/installation-guides>
+The content of this documentation is generated from files hosted at: <https://github.com/roboticslab-uc3m/installation-guides>
 
 ## If you have any doubts or comments
 
