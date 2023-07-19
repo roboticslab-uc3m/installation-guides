@@ -2,6 +2,10 @@
 
 We use [Docker](https://www.docker.com) for images and containers.
 
+## Install Docker (all platforms)
+
+Simply go to [Docker](https://www.docker.com) and download your version.
+
 ## Additional Information
 
 ### Similar and related
