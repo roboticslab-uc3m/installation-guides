@@ -2,7 +2,7 @@
 
 We use YARP for communications. Official pages:
 
-- <http://www.yarp.it>
+- <https://www.yarp.it>
 - <https://www.yarp.it/latest/yarp_installation.html>
 - [YARP Supported Distributions](http://wiki.icub.org/wiki/YARP_Supported_Distributions)
 - Also check out issue that tracks external devices: <https://github.com/robotology/yarp/issues/2372>
