@@ -1,6 +1,6 @@
 # Install KDL
 
-We use Orocos KDL for robot kinematics. Official download page: [link](http://www.orocos.org/kdl).
+We use Orocos KDL for robot kinematics. Official download page: <https://www.orocos.org/kdl>
 
 Make sure you have previously installed [Eigen3](install-eigen.md).
 
