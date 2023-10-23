@@ -265,8 +265,9 @@ Two options here:
 - <https://github.com/roboticslab-uc3m?q=yarp> (roboticslab-uc3m)
 - <https://github.com/inria-larsen?q=yarp>
 
-## External Installation Tutorial/Script Links
+## Docker
 
-- Docker
-  - <https://hub.docker.com/search?q=yarp&type=image> (avoid `yarpc` which is unrelated)
-  - <https://hub.docker.com/r/h2020infuse/yarpmonitor-ubuntu-prod>
+- <https://github.com/roboticslab-uc3m/teo-demos-misc/pkgs/container/teo-demos-misc> -> `ghcr.io/roboticslab-uc3m/teo-demos-misc:latest`
+- <https://github.com/orgs/robotology/discussions/660>
+- <https://hub.docker.com/search?q=yarp&type=image> (avoid `yarpc` which is unrelated)
+- <https://hub.docker.com/r/h2020infuse/yarpmonitor-ubuntu-prod>
