@@ -260,8 +260,10 @@ sudo make install; cd  # install and go home
   export PYTHONPATH=$PYTHONPATH:`openrave-config --python-dir`
   ```
 
-- Docker
-  - <https://hub.docker.com/search?q=openrave&type=image>
-    - <https://hub.docker.com/r/cielavenir/openrave>: [jammy](https://hub.docker.com/layers/cielavenir/openrave/jammy/images/sha256-fd7bf35e740a300b716a1f2d40a972f9d7bde62d499e9cecf02d7a310c25ec61?context=explore) tag works (including graphics and python)
-    - <https://hub.docker.com/r/hamzamerzic/openrave>
-    - <https://hub.docker.com/r/personalrobotics/ros-openrave>
+## Docker
+
+- <https://github.com/roboticslab-uc3m/teo-demos-misc/pkgs/container/teo-demos-misc> -> `ghcr.io/roboticslab-uc3m/teo-demos-misc:latest`
+- <https://hub.docker.com/r/cielavenir/openrave>: [jammy](https://hub.docker.com/layers/cielavenir/openrave/jammy/images/sha256-fd7bf35e740a300b716a1f2d40a972f9d7bde62d499e9cecf02d7a310c25ec61?context=explore) tag works (including graphics and python)
+- <https://hub.docker.com/search?q=openrave&type=image>
+- <https://hub.docker.com/r/hamzamerzic/openrave>
+- <https://hub.docker.com/r/personalrobotics/ros-openrave>
