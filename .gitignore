@@ -1,4 +1,3 @@
-# .gitignore
 ## Files we want to have locally, but do not want to push to remote
 
 ## Editor swap files
@@ -6,11 +5,8 @@
 *.swp
 *.orig
 
-## gitbook
-/_book/
+## CMake build system
+**/build*/
 
-## gitbook install
-/node_modules/
-
-## gitbook-summary
-##/SUMMARY.md
+## MkDocs
+/site/

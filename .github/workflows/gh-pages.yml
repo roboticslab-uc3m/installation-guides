@@ -1,0 +1,25 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+    - master
+    paths:
+    - docs/**
+    - mkdocs.yml
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: fkirc/skip-duplicate-actions@v5
+      with:
+        cancel_others: 'true'
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # for the 'Last updated' timestamp
+    - name: Install requirements
+      run: pip install -r requirements.txt
+    - name: Build and deploy site
+      run: mkdocs gh-deploy --no-history

@@ -1,0 +1,130 @@
+site_name: Installation Guides
+
+repo_name: roboticslab-uc3m/installation-guides
+repo_url: https://github.com/roboticslab-uc3m/installation-guides
+edit_uri: blob/master/docs/
+
+theme:
+  name: material
+  language: en
+  logo: assets/roboticslab.svg
+  favicon: assets/favicon.ico
+  features:
+    - content.action.edit
+    - content.action.view
+    - navigation.footer
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light-blue
+      accent: light-blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light-blue
+      accent: light-blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+extra:
+  social:
+    - icon: material/web
+      link: http://roboticslab.uc3m.es/
+    - icon: fontawesome/brands/github
+      link: https://github.com/roboticslab-uc3m
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/uc3mRoboticsLab
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@RoboticsLabUC3M
+
+exclude_docs: |
+  fig/README.md
+  fig/editable/README.md
+
+nav:
+- Installation Guides: README.md
+- Install Anaconda: install-anaconda.md
+- Install Aquila: install-aquila.md
+- Install Aravis: install-aravis.md
+- Install Arduino: install-arduino.md
+- Install Bazel: install-bazel.md
+- Install Boost: install-boost.md
+- Install Build Essential: install-build-essential.md
+- Install CMake: install-cmake.md
+- Install CoppeliaSim: install-coppeliasim.md
+- Install CWiiD: install-cwiid.md
+- Install daemontools: install-daemontools.md
+- Install Docker: install-docker.md
+- Install ECF: install-ecf.md
+- Install Eigen: install-eigen.md
+- Install eSpeak MBROLA: install-espeak-mbrola.md
+- Install Gazebo: install-gazebo.md
+- Install Git: install-git.md
+- Install Gitbook: install-gitbook.md
+- Install GLib: install-glib.md
+- Install googletest: install-googletest.md
+- Install GStreamer Pocketsphinx: install-gstreamer-pocketsphinx.md
+- Install Gymnasium: install-gymnasium.md
+- Install Hcanpci: install-hcanpci.md
+- Install iCub: install-icub.md
+- Install Jekyll: install-jekyll.md
+- Install JR3: install-jr3.md
+- Install KDL: install-kdl.md
+- Install Netgear A6100: install-netgear-a6100.md
+- Install Node.js: install-nodejs.md
+- Install NPM: install-npm.md
+- Install NumPy: install-numpy.md
+- Install NVIDIA Drivers: install-nvidia-drivers.md
+- Install OpenCV: install-opencv.md
+- Install OpenNI NiTE: install-openni-nite.md
+- Install OpenRAVE: install-openrave.md
+- Install PCan: install-pcan.md
+- Install PCL: install-pcl.md
+- Install pip: install-pip.md
+- Install Pygame: install-pygame.md
+- Install pypcd: install-pypcd.md
+- Install Python: install-python.md
+- Install RapidJSON: install-rapidjson.md
+- Install RealSense 2: install-realsense2.md
+- Install ROS: install-ros.md
+- Install Scikit Image: install-scikit-image.md
+- Install Setuptools: install-setuptools.md
+- Install Softgym: install-softgym.md
+- Install Spacenav: install-spacenav.md
+- Install Sphinxbase: install-sphinxbase.md
+- Install SWIG: install-swig.md
+- Install TensorFlow Cc: install-tensorflow_cc.md
+- Install TensorFlow: install-tensorflow.md
+- Install Travislib: install-travislib.md
+- Install Webots: install-webots.md
+- Install XSENS: install-xsens.md
+- Install XWiimote: install-xwiimote.md
+- Install YARP: install-yarp.md
+- Install YCM: install-ycm.md
+- Legacy:
+  - Legacy Install CMake: legacy/legacy-install-cmake.md
+  - Legacy Install OpenAI Gym: legacy/legacy-install-openai-gym.md
+  - Legacy Install OpenRAVE: legacy/legacy-install-openrave.md
+  - Legacy Install YARP: legacy/legacy-install-yarp.md
+
+use_directory_urls: false
+
+markdown_extensions:
+  - toc:
+      permalink: '#'
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - open-in-new-tab
+  - git-revision-date-localized

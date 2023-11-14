@@ -1,8 +1,0 @@
-.page-toc {
-    float: none;
-}
-
-.page-toc li:before {
-    content: "\00a0";
-    margin-left: -24px;
-}
