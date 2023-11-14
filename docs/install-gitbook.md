@@ -1,10 +1,10 @@
-# Install Gitbook
+# Install GitBook
 
-Page related to open source Gitbook (sometimes aka Legacy), not new closed source version.
+Page related to open source GitBook (sometimes aka Legacy), not new closed source version.
 
 Official page: <https://github.com/GitbookIO/gitbook>
 
-## Install Gitbook (Ubuntu)
+## Install GitBook (Ubuntu)
 
 First:
 
@@ -18,13 +18,13 @@ Then:
 sudo npm install -g gitbook-cli
 ```
 
-## To be able to serve via Gitbook
+## To be able to serve via GitBook
 
 Make sure your project has a file called `SUMMARY.md` in its root.
 
 ## How-To's
 
-### How to install Gitbook plugins (if present in project)
+### How to install GitBook plugins (if present in project)
 
 Only necesary once per project (and only if any, specified in `book.json`). They are installed in `./node_modules/`, which should usually be set as ignored (not uploaded to repository).
 

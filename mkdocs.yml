@@ -70,7 +70,7 @@ nav:
 - Install eSpeak MBROLA: install-espeak-mbrola.md
 - Install Gazebo: install-gazebo.md
 - Install Git: install-git.md
-- Install Gitbook: install-gitbook.md
+- Install GitBook: install-gitbook.md
 - Install GLib: install-glib.md
 - Install googletest: install-googletest.md
 - Install GStreamer Pocketsphinx: install-gstreamer-pocketsphinx.md
