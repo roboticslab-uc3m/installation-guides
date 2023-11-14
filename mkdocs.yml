@@ -52,7 +52,7 @@ exclude_docs: |
   fig/editable/README.md
 
 nav:
-- Installation Guides: README.md
+- Home: README.md
 - Install Anaconda: install-anaconda.md
 - Install Aquila: install-aquila.md
 - Install Aravis: install-aravis.md
