@@ -11,3 +11,4 @@ Simply go to <https://www.coppeliarobotics.com/downloads> and download your vers
 ### Similar and Related
 
 - <https://github.com/roboticslab-uc3m?q=coppeliasim> (roboticslab-uc3m)
+- [stepjam/PyRep](https://github.com/stepjam/PyRep)
