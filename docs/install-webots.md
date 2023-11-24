@@ -9,4 +9,4 @@ Official pages:
 
 Simply go to <https://cyberbotics.com/#download> and download your version.
 
-More versions can be found at <https://github.com/cyberbotics/webots/releases> (stable releases R202Xx are best for users, avoid nightly builds).
+More versions can be found at <https://github.com/cyberbotics/webots/releases> (avoid nightly builds, go for stable releases named R202Xx which are best for users).
