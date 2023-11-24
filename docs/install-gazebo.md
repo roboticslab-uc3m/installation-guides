@@ -1,10 +1,13 @@
 # Install Gazebo
 
-Official page: <http://gazebosim.org>
+Official pages:
+
+- <https://gazebosim.org>
+- <https://classic.gazebosim.org>
 
 ## Install Gazebo (Ubuntu 22.04)
 
-Isntall Gazebo 11 via:
+Install Gazebo 11 (Classic) via:
 
 ```bash
 sudo apt install gazebo
@@ -18,6 +21,8 @@ sudo apt install libgazebo-dev
 
 ## Install Gazebo (Ubuntu 18.04 and 20.04)
 
+Install Gazebo 9 (Classic) via:
+
 ```bash
 sudo apt install gazebo9
 ```
@@ -29,6 +34,8 @@ sudo apt install libgazebo9-dev
 ```
 
 ## Install Gazebo (Ubuntu 16.04)
+
+Install Gazebo 7 (Classic) via:
 
 ```bash
 sudo apt install gazebo7
