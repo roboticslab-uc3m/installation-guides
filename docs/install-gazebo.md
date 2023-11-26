@@ -47,6 +47,22 @@ You may also be interested in:
 sudo apt install libgazebo7-dev
 ```
 
+## Troubleshooting
+
+### Bad screen output (WSL/WSL2 with Ubuntu 22.04 Jammy)
+
+- Description: Bad screen output using WSL/WSL2 with Ubuntu 22.04 Jammy, deformed gray image (good image flashes when attempting 3D navigation).
+- Solution: As described at [Taskbar window caption shows [WARN: COPY MODE] #312](https://github.com/microsoft/wslg/discussions/312), fixed via upgrading to mesa 21.x:
+
+    ```bash
+    sudo add-apt-repository ppa:kisak/kisak-mesa
+    sudo apt-get update
+    sudo apt upgrade
+    ```
+
+    Then close Ubuntu, run `wsl --shutdown` from Windows, and finally restart Ubuntu.
+
+
 ## Additional Information
 
 ### Similar and Related
