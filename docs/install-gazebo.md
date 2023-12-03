@@ -19,7 +19,23 @@ You may also be interested in:
 sudo apt install libgazebo-dev
 ```
 
-## Install Gazebo (Ubuntu 18.04 Bionic and Ubuntu 20.04 Focal)
+## Install Gazebo (Ubuntu 20.04 Focal)
+
+Note that Gazebo 9 (Classic) is also avaliable for this distro.
+
+Install Gazebo 11 (Classic) via:
+
+```bash
+sudo apt install gazebo11
+```
+
+You may also be interested in:
+
+```bash
+sudo apt install libgazebo11-dev
+```
+
+## Install Gazebo (Ubuntu 18.04 Bionic)
 
 Install Gazebo 9 (Classic) via:
 
