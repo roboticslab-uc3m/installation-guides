@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.12)
 
 # Define a project.
 project(ROBOTICSLAB_INSTALLATION_GUIDES LANGUAGES NONE)
@@ -10,34 +10,20 @@ find_package(YARP 3.0 REQUIRED)
 # Set some useful variables - paths relative to the installation prefix.
 yarp_configure_external_installation(roboticslab-installation-guides)
 
-# Collect Markdown files. Globbing is evil, but we don't care. All we
-# need CMake here for is to support superbuild-like repos through YCM.
-file(GLOB md ${CMAKE_SOURCE_DIR}/*.md)
-
-# Install files, create a copy in the local build tree.
-yarp_install(FILES ${md}
+# Install docs, and also create a copy in the local build tree.
+yarp_install(DIRECTORY docs
              DESTINATION ${ROBOTICSLAB-INSTALLATION-GUIDES_CONTEXTS_INSTALL_DIR})
 
-# Store this package in the user registry.
-export(PACKAGE ${PROJECT_NAME})
+# Store the package in the user registry.
+set(CMAKE_EXPORT_PACKAGE_REGISTRY ON)
 
-# Define CMAKE_INSTALL_<dir> and CMAKE_INSTALL_FULL_<dir> variables.
-include(GNUInstallDirs)
+# Create and install config files.
+include(InstallBasicPackageFiles)
 
-# Set installation path for CMake files.
-if(WIN32 AND NOT CYGWIN)
-    set(_cmake_destination CMake)
-else()
-    set(_cmake_destination ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME})
-endif()
-
-# Create dummy CMake configuration export file.
-file(WRITE ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake
-     "# Dummy CMake configuration export file.")
-
-# Install CMake configuration file.
-install(FILES ${CMAKE_BINARY_DIR}/${PROJECT_NAME}Config.cmake
-        DESTINATION ${_cmake_destination})
+install_basic_package_files(ROBOTICSLAB_INSTALLATION_GUIDES
+                            VERSION 0.1.0
+                            COMPATIBILITY AnyNewerVersion
+                            NO_EXPORT)
 
 # Add uninstall rule.
 include(AddUninstallTarget)
