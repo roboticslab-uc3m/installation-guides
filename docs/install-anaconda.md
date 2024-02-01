@@ -16,7 +16,7 @@ This usually not so easy, some package need additional steps:
 
 ## Install YARP python bindings inside anaconda
 
-Make sure you have performed a [normal installation](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-yarp.md) of YARP first. Then:
+Make sure you have performed a [normal installation](./install-yarp.md) of YARP first. Then:
 
 ```bash
 export PATH="~/anaconda2/bin:$PATH" #Activate anaconda

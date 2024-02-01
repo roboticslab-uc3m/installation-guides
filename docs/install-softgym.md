@@ -31,7 +31,7 @@ A Dockerfile and pre-built Docker container for compiling SoftGym exists. Part o
 
 - Install [docker-ce](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 - Install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker#quickstart)
-- Install [Anaconda](https://github.com/roboticslab-uc3m/installation-guides/blob/master/install-anaconda.md)
+- Install [Anaconda](./install-anaconda.md)
 - Install Pybind11 using `conda install pybind11`
 
 ### Running pre-built Dockerfile
