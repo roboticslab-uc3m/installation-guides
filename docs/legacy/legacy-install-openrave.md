@@ -2,6 +2,36 @@
 
 This is Legacy documentation regarding OpenRAVE installations. Updated OpenRAVE installation at: [Install OpenRAVE](../install-openrave.md)
 
+## Install OpenRAVE 0.9.0 (Ubuntu 18.04 Bionic)
+
+No official PPA, install from source. Install dependencies that must be installed for compilation:
+
+- [Install CMake](install-cmake.md)
+
+Note that you will be prompted for your password upon using `sudo`.
+
+```bash
+sudo apt install git # probably already installed
+sudo apt install libboost-filesystem-dev libboost-system-dev libboost-python-dev libboost-thread-dev libboost-iostreams-dev libboost-numpy-dev
+sudo apt install libqt4-dev qt4-dev-tools libxml2-dev libode-dev
+sudo apt install libsoqt4-dev libcoin80-dev
+sudo apt install rapidjson-dev liblapack-dev
+# sudo apt install python-scipy  # For openravepy. Note that 16.04 Xenial sympy is 0.7.6, see next line
+# pip install --upgrade --user sympy==0.7.1 # OpenRAVE ikfast needs sympy 0.7.1, https://github.com/rdiankov/openrave/pull/407
+sudo apt install libcollada-dom2.4-dp-dev  # Open .zae files, avoid cmake 3.19 error on 18.04 Bionic
+cd  # go home
+mkdir -p repos; cd repos  # create $HOME/repos if it doesn't exist; then, enter it
+git clone --branch boost-1.6x-forcompile https://github.com/roboticslab-uc3m/openrave.git # git clone --branch master https://github.com/rdiankov/openrave.git
+cd openrave; mkdir build; cd build
+cmake .. -DOPT_VIDEORECORDING=OFF  # Avoids AV errors
+make -j$(nproc)
+sudo make install; cd  # install and go home
+```
+
+### Known Issues (Ubuntu 18.04 Bionic)
+
+- In case you run into `non-constant-expression cannot be narrowed from type 'double' to 'float' in initializer list [-Wc++11-narrowing]` errors (happened on OpenRAVE 0.15 and a Clang 6.0.0/7.0.0 compiler), reconfigure CMake with the following option: `cmake .. -DOPT_IKFAST_FLOAT32=OFF`
+
 ## Install OpenRAVE 0.9.0 (Ubuntu 16.04 Xenial and 14.04 Trusty)
 
 No official PPA, install from source. Install Dependencies that must be installed for compilation:
