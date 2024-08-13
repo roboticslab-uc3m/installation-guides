@@ -45,4 +45,4 @@ You may set these values on a per-repository basis. In order to achieve that, br
 
 ## YCM and OpenSSL
 
-During its build phase, YCM expects that CMake offers support for the `https://` protocol. Older CMake releases and locally built instances may lack this, see [OpenSSL support](install-cmake.md#openssl-support).
+During its build phase, YCM expects that CMake offers support for the `https://` protocol. Older CMake releases and locally built instances may lack this, see [OpenSSL support](legacy/legacy-install-cmake.md#openssl-support-older-distros-and-building-from-sources).

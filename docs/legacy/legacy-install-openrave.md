@@ -6,7 +6,7 @@ This is Legacy documentation regarding OpenRAVE installations. Updated OpenRAVE 
 
 No official PPA, install from source. Install dependencies that must be installed for compilation:
 
-- [Install CMake](install-cmake.md)
+- [Install CMake](../install-cmake.md)
 
 Note that you will be prompted for your password upon using `sudo`.
 
