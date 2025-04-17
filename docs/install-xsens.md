@@ -19,7 +19,7 @@ yarpdev --list | grep xsensmtx
 
 ## Set rules to avoid needing sudo
 
-In order to allow a non-sudoer to read data from the sensors connected via USB port, you need to add a rule for udev system. 
+In order to allow a non-sudoer to read data from the sensors connected via USB port, you need to add a rule for udev system.
 
 Similar to the advice from [debian udev documentation](https://wiki.debian.org/udev), create `/etc/udev/rules.d/80-persistent-local-usb.rules` with the following contents:
 ```
@@ -30,7 +30,7 @@ KERNEL == "ttyUSB0", MODE = "0777"
 
 Run (may require `sudo` if rules not set):
 ```bash
-yarpdev --device inertial --subdevice xsensmtx --name /inertial
+yarpdev --device deviceBundler --wrapper_device multipleanalogsensorsserver --attached_device xsensmtx --name /inertial --period 5
 ```
 
 Data can be vizualized via classic `yarp read ... /inertial` or like in [teoTools.xml](https://github.com/roboticslab-uc3m/teo-configuration-files/blob/762ebe5079e05da38602e21e2feccd9901d8513d/share/teoTools/scripts/teoTools.xml#L74-L79).

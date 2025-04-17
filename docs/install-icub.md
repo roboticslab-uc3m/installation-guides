@@ -18,6 +18,6 @@ Try `xsensmtx` out:
 ```bash
 [Terminal 1] yarp server
 [Terminal 2] sudo chmod 777 /dev/ttyUSB0
-[Terminal 2] sudo yarpdev --subdevice xsensmtx --device inertial --name /inertial
+[Terminal 2] sudo yarpdev --device deviceBundler --wrapper_device multipleanalogsensorsserver --attached_device xsensmtx --name /inertial --period 5
 [Terminal 3] yarp read ... /inertial
 ```
