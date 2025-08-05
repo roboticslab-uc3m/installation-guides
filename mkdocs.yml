@@ -79,6 +79,7 @@ nav:
 - Install iCub: install-icub.md
 - Install Jekyll: install-jekyll.md
 - Install JR3: install-jr3.md
+- Install Kaldi: install-kaldi.md
 - Install KDL: install-kdl.md
 - Install Netgear A6100: install-netgear-a6100.md
 - Install Node.js: install-nodejs.md
@@ -91,6 +92,7 @@ nav:
 - Install PCan: install-pcan.md
 - Install PCL: install-pcl.md
 - Install pip: install-pip.md
+- Install Piper: install-piper.md
 - Install Pygame: install-pygame.md
 - Install pypcd: install-pypcd.md
 - Install Python: install-python.md
@@ -106,6 +108,7 @@ nav:
 - Install TensorFlow Cc: install-tensorflow_cc.md
 - Install TensorFlow: install-tensorflow.md
 - Install Travislib: install-travislib.md
+- Install Vosk: install-vosk.md
 - Install Webots: install-webots.md
 - Install XSENS: install-xsens.md
 - Install XWiimote: install-xwiimote.md
