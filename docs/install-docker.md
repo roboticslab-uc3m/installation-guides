@@ -21,6 +21,8 @@ sudo usermod -aG docker $USER
 
 Then log out and in or simply `newgrp docker`.
 
+Additionally, if you have an NVIDIA GPU, it is recommended to [Install the NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html), e.g. it will be required by `rocker --nvidia`.
+
 ## Additional Information
 
 ### Similar and related
