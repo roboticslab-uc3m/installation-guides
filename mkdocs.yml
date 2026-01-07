@@ -68,7 +68,7 @@ nav:
 - Install ECF: install-ecf.md
 - Install Eigen: install-eigen.md
 - Install eSpeak MBROLA: install-espeak-mbrola.md
-- Install Gazebo: install-gazebo.md
+- Install Gazebo (Gazebo Sim): install-gazebo.md
 - Install Git: install-git.md
 - Install GitBook: install-gitbook.md
 - Install GLib: install-glib.md
