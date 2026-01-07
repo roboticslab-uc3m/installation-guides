@@ -1,4 +1,4 @@
-# Install Gazebo Classic
+# (Legacy) Install Gazebo Classic
 
 For new Gazebo Sim, refer to: [Install Gazebo (Gazebo Sim)](../install-gazebo.md)
 
