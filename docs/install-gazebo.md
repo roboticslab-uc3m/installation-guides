@@ -12,7 +12,8 @@ Follow the steps on <https://gazebosim.org/docs/harmonic/install_ubuntu/>
 ### Gazebo Harmonic + ROS 2 Jazzy (Ubuntu 24.04 Noble)
 
 ```bash
-sudo apt install ros-jazzy-gz-ros2-*
+sudo apt install ros-jazzy-ros-gz
+sudo apt install ros-jazzy-gz-ros2-control*
 ```
 
 More info:
@@ -27,7 +28,8 @@ Follow the steps on <https://gazebosim.org/docs/fortress/install_ubuntu/>
 ### Gazebo Fortress + ROS 2 Humble (Ubuntu 22.04 Jammy)
 
 ```bash
-sudo apt install ros-humble-gz-ros2-*
+sudo apt install ros-humble-ros-gz
+sudo apt install ros-humble-gz-ros2-control*
 ```
 
 More info:
