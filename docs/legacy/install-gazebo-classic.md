@@ -1,7 +1,8 @@
 # Install Gazebo Classic
 
+For new Gazebo Sim, refer to: [Install Gazebo (Gazebo Sim)](../install-gazebo.md)
+
 - Official page: <https://classic.gazebosim.org>
-- For new Gazebo Sim, refer to: [install-gazebo](install-gazebo.md)
 
 ## Install Gazebo (Ubuntu 22.04 Jammy)
 
