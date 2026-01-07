@@ -116,6 +116,7 @@ nav:
 - Install YCM: install-ycm.md
 - Legacy:
   - Legacy Install CMake: legacy/legacy-install-cmake.md
+  - Legacy Install Gazebo Classic: legacy/legacy-install-gazebo-classic.md
   - Legacy Install OpenAI Gym: legacy/legacy-install-openai-gym.md
   - Legacy Install OpenRAVE: legacy/legacy-install-openrave.md
   - Legacy Install YARP: legacy/legacy-install-yarp.md
