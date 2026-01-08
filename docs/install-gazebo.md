@@ -11,7 +11,7 @@ Do **not** follow the steps on <https://gazebosim.org/docs/harmonic/install_ubun
 
 ```bash
 sudo apt install ros-jazzy-ros-gz
-sudo apt install ros-jazzy-gz-ros2-control*
+# sudo apt install ros-jazzy-gz-ros2-control* # optional
 ```
 
 More info:
@@ -25,7 +25,7 @@ Do **not** follow the steps on <https://gazebosim.org/docs/fortress/install_ubun
 
 ```bash
 sudo apt install ros-humble-ros-gz
-sudo apt install ros-humble-gz-ros2-control*
+# sudo apt install ros-humble-gz-ros2-control* # optional
 ```
 
 More info:
