@@ -7,7 +7,7 @@ This page refers to the current versions of Gazebo (Gazebo Sim). Legacy document
 
 ## Install Gazebo Harmonic + ROS 2 Jazzy (Ubuntu 24.04 Noble)
 
-Do **not** follow the steps on <https://gazebosim.org/docs/harmonic/install_ubuntu/>, and instead directly:
+Do **not** follow the steps on <https://gazebosim.org/docs/harmonic/install_ubuntu/>, and **instead** directly:
 
 ```bash
 sudo apt install ros-jazzy-ros-gz
@@ -21,7 +21,7 @@ More info:
 
 ## Install Gazebo Fortress + ROS 2 Humble (Ubuntu 22.04 Jammy)
 
-Do **not** follow the steps on <https://gazebosim.org/docs/fortress/install_ubuntu/>, and instead directly:
+Do **not** follow the steps on <https://gazebosim.org/docs/fortress/install_ubuntu/>, and **instead** directly:
 
 ```bash
 sudo apt install ros-humble-ros-gz
