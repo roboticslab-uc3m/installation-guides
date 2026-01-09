@@ -14,6 +14,12 @@ sudo apt install ros-jazzy-ros-gz
 # sudo apt install ros-jazzy-gz-ros2-control* # optional
 ```
 
+You can check the installed version:
+
+```bash
+gz sim --versions # 8.10.0 or any 8.x.x corresponds to Harmonic
+```
+
 More info:
 
 - <https://github.com/gazebosim/ros_gz/tree/jazzy/ros_gz_sim_demos>
@@ -26,6 +32,12 @@ Do **not** follow the steps on <https://gazebosim.org/docs/fortress/install_ubun
 ```bash
 sudo apt install ros-humble-ros-gz
 # sudo apt install ros-humble-gz-ros2-control* # optional
+```
+
+You can check the installed version:
+
+```bash
+ign gazebo --versions # 6.16.0 or any 6.x.x corresponds to Fortress
 ```
 
 More info:
