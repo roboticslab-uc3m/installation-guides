@@ -45,6 +45,30 @@ More info:
 - <https://github.com/gazebosim/ros_gz/tree/humble/ros_gz_sim_demos>
 - <https://gazebosim.org/docs/fortress/ros2_integration/>
 
+## Install Python Bindings (Gazebo Harmonic)
+
+Two options:
+
+1. (ROS2-oriented) Use the mechanism offered by Monterey Bay Aquarium Research Institute (MBARI):
+
+    ```bash
+    sudo apt update
+    sudo apt install ros-jazzy-gz-sim-vendor ros-jazzy-gz-math-vendor
+    python3 -m pip install -i https://mbari-org.github.io/gz-python-bindings/simple gz-python-bindings --break-system-packages
+    ```
+
+2. (DRL-oriented) If using Conda is not an issue:
+
+    ```bash
+    conda create -n gz python=3.10
+    conda activate gz
+    conda install -c conda-forge gz-sim8 gz-math7
+    ```
+
+Examples of Gazebo Python API (Harmonic): <https://github.com/gazebosim/gz-sim/tree/gz-sim8/examples/scripts/python_api> ([perma](https://github.com/gazebosim/gz-sim/tree/93b230694e267fb584915c2f2b1b4d9e147b4395/examples/scripts/python_api))
+
+However, more advanced examples are in the Gazebo Python API (Jetty): <https://github.com/gazebosim/gz-sim/tree/gz-sim10/examples/scripts> ([perma](https://github.com/gazebosim/gz-sim/tree/bc97d949153cc6eec8293f058d7285b890a63be2/examples/scripts))
+
 ## Troubleshooting
 
 Also see [(Legacy) Install Gazebo Classic: Troubleshooting](legacy/legacy-install-gazebo-classic.md#troubleshooting)
