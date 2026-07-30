@@ -1,4 +1,20 @@
-# Install Aravis 0.4
+# Install Aravis
+
+## Install Aravis 0.8
+
+Aravis is now available through apt packages along with some useful tooling:
+
+```
+sudo apt libaravis-dev aravis-tools aravis-tools-cli
+```
+
+If you are going to build applications for Aravis, you might need to perform system introspection using PkgConfig. We noticed that additional development packages are necessary for PkgConfig to correctly find Aravis:
+
+```
+sudo apt install libglib2.0-dev libxml2-dev zlib1g-dev libusb-1.0-0-dev
+```
+
+## Install Aravis 0.4
 
 1. Download the current stable release  [here](http://ftp.gnome.org/pub/GNOME/sources/aravis/0.4/) (backup [here](https://sourceforge.net/projects/roboticslab/files/External/aravis)).
 2. Install the following dependencies:
