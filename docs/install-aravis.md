@@ -36,7 +36,7 @@ sudo apt install autoconf intltool python-gobject-dev gobject-introspection gtk-
    SUBSYSTEM=="usb", ATTRS {idVendor}=="1e10", MODE:="0666", TAG+="uaccess", TAG+="udev-acl"
    ```
 
-## If you need some special features...
+### If you need some special features...
 Depending on what you need, you have to call autogen with different parameters.
 
 The most common are:
@@ -69,5 +69,5 @@ For an overview over all available arguments try configure --help
 
 In case the library is built with `./autogen.sh --enable-viewer --enable-introspection=yes` some more packages are needed: `sudo apt install libgirepository1.0-dev libnotify-dev lib-gtk-3-dev`
 
-## Original Source
-Should you have any trouble with the installation process, you can read the original source of this guide [here](https://github.com/TheImagingSource/tiscamera/wiki/Aravis).
+### Original Source
+Should you have any trouble with the installation process, you can read the original source of this guide [here]([https://github.com/TheImagingSource/tiscamera/wiki/Aravis](https://www.theimagingsource.com/en-us/documentation/tiscamera/)).
