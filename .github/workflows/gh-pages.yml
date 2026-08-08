@@ -9,17 +9,31 @@ on:
     - mkdocs.yml
   workflow_dispatch:
 
+concurrency:
+  group: ${{github.workflow}}-${{github.ref}}
+  cancel-in-progress: true
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: fkirc/skip-duplicate-actions@v5
-      with:
-        cancel_others: 'true'
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
       with:
         fetch-depth: 0 # for the 'Last updated' timestamp
-    - name: Install requirements
-      run: pip install -r requirements.txt
-    - name: Build and deploy site
-      run: mkdocs gh-deploy --no-history
+    - run: pip install -r requirements.txt
+    - run: mkdocs build
+    - uses: actions/upload-pages-artifact@v5
+      with:
+        path: site
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    runs-on: ubuntu-latest
+    steps:
+    - id: deployment
+      uses: actions/deploy-pages@v5
